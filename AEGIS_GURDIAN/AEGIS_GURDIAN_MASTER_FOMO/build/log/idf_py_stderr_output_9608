@@ -1,0 +1,42 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403cd9a0: [0;33mprocess_segment_data[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/esp_image_format.c[0m[0m:[1;31m818[0m
+[0m--- (inlined by) [0;33mprocess_segment[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/esp_image_format.c[0m[0m:[1;31m694[0m
+[0m--- (inlined by) [0;33mprocess_segments[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/esp_image_format.c[0m[0m:[1;31m595[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40381aa9: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x40381a71: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4038b6d9: [0;33m__assert_func[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/assert.c[0m[0m:[1;31m81[0m
+[0m--- 0x40378c12: [0;33mspi_flash_disable_interrupts_caches_and_other_cpu[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/cache_utils.c[0m[0m:[1;31m127[0m
+[0m--- 0x40378fab: [0;33mcache_disable[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/spi_flash_os_func_app.c[0m[0m:[1;31m75[0m
+[0m--- 0x40378fb9: [0;33mspi1_start[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/spi_flash_os_func_app.c[0m[0m:[1;31m133[0m
+[0m--- 0x4038fe49: [0;33mspiflash_start_core[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/esp_flash_api.c[0m[0m:[1;31m238[0m
+[0m--- 0x4038fe79: [0;33mspiflash_start_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/esp_flash_api.c[0m[0m:[1;31m249[0m
+[0m--- 0x4038f95b: [0;33mesp_flash_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/esp_flash_api.c[0m[0m:[1;31m981[0m
+[0m--- 0x42126e3f: [0;33mesp_partition_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_partition/partition_target.c[0m[0m:[1;31m38[0m
+[0m--- 0x42063a1f: [0;33mspiffs_api_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/spiffs_api.c[0m[0m:[1;31m27[0m
+[0m--- 0x4206748b: [0;33mspiffs_phys_rd[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/spiffs/src/spiffs_cache.c[0m[0m:[1;31m161[0m
+[0m--- 0x42064dde: [0;33mspiffs_page_data_check[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/spiffs/src/spiffs_nucleus.c[0m[0m:[1;31m20[0m
+[0m--- 0x42066f9c: [0;33mspiffs_object_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/spiffs/src/spiffs_nucleus.c[0m[0m:[1;31m2052[0m
+[0m--- 0x42063ca0: [0;33mspiffs_hydro_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/spiffs/src/spiffs_hydrogen.c[0m[0m:[1;31m414[0m
+[0m--- 0x420641e7: [0;33mSPIFFS_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/spiffs/src/spiffs_hydrogen.c[0m[0m:[1;31m426[0m
+[0m--- 0x420638a9: [0;33mvfs_spiffs_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs/esp_spiffs.c[0m[0m:[1;31m573[0m
+[0m--- 0x4200c322: [0;33mesp_vfs_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/vfs/vfs.c[0m[0m:[1;31m1008[0m
+[0m--- 0x421be863: [0;33m__sread[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c[0m[0m:[1;31m47[0m
+[0m--- 0x421be6fa: [0;33m__srefill_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c[0m[0m:[1;31m115[0m
+[0m--- 0x421be09e: [0;33m_fread_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c[0m[0m:[1;31m228[0m
+[0m--- 0x421be125: [0;33mfread[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c[0m[0m:[1;31m266[0m
+[0m--- 0x420d98c7: [0;33mdl::recognition::DataBase::load_database_from_storage(int)[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_GURDIAN/AEGIS_GURDIAN_MASTER_FOMO/managed_components/espressif__esp-dl/vision/recognition/dl_recognition_database.cpp[0m[0m:[1;31m80[0m
+[0m--- 0x420d9a41: [0;33mdl::recognition::DataBase::DataBase(char const*, int)[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_GURDIAN/AEGIS_GURDIAN_MASTER_FOMO/managed_components/espressif__esp-dl/vision/recognition/dl_recognition_database.cpp[0m[0m:[1;31m16[0m
+[0m--- 0x4200ebf4: [0;33mHumanFaceRecognizer::HumanFaceRecognizer(HumanFaceFeat*, char*, float, int)[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_GURDIAN/AEGIS_GURDIAN_MASTER_FOMO/managed_components/espressif__human_face_recognition/human_face_recognition.hpp[0m[0m:[1;31m36[0m
+[0m--- (inlined by) [0;33minit_face_recognition[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_GURDIAN/AEGIS_GURDIAN_MASTER_FOMO/main/main.cpp[0m[0m:[1;31m904[0m
+[0m--- (inlined by) [0;33mface_task[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_GURDIAN/AEGIS_GURDIAN_MASTER_FOMO/main/main.cpp[0m[0m:[1;31m1093[0m
+[0m--- 0x40382889: [0;33mvPortTaskWrapper[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m143[0m
+[0m--- 0x40381c49: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m

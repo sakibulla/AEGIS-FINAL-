@@ -1,0 +1,1378 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (438) esp_image: segment 1: paddr=001d4fd4 vaddr=3fca2100 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400451d8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c210020 size=1c4fach (1855404) map[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4fd4 vaddr=3fca2100 size=0a79ch ( 42908) load[0m
+[0;32mI (447) esp_image: segment 2: paddr=001df778 vaddr=40374000 size=008a0h (  2208) load[0m
+[0;32mI (448) esp_image: segment 3: paddr=001e0020 vaddr=42000020 size=204cb8h (2116792) map[0m
+[0;32mI (837) esp_image: segment 4: paddr=003e4ce0 vaddr=403748a0 size=1d780h (120704) load[0m
+[0;32mI (865) esp_image: segment 5: paddr=00402468 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (878) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (878) boot: Disabling RNG early entropy source...[0m
+[0;32mI (889) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (889) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (889) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (891) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (895) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (900) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (904) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (909) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (913) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (918) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (923) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (927) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (931) esp_psram: Speed: 40MHz[0m
+[0;32mI (934) cpu_start: Multicore app[0m
+[0;32mI (1668) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1676) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1677) cpu_start: Pro cpu start user code[0m
+[0;32mI (1677) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1679) app_init: Application information:[0m
+[0;32mI (1683) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1688) app_init: App version:      1[0m
+[0;32mI (1691) app_init: Compile time:     Aug 18 2026 14:56:47[0m
+[0;32mI (1696) app_init: ELF file SHA256:  09ba7765c...[0m
+[0;32mI (1701) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1705) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1709) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1713) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1723) heap_init: At 3FCC2928 len 00026DE8 (155 KiB): RAM[0m
+[0;32mI (1728) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1734) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1739) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1744) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1752) spi_flash: detected chip: generic[0m
+[0;32mI (1755) spi_flash: flash io: dio[0m
+[0;33mW (1758) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1768) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1774) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1781) main_task: Started on CPU0[0m
+[0;32mI (1781) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1791) main_task: Calling app_main()[0m
+[0;32mI (1791) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1801) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1801) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1831) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1831) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1831) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1831) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1841) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1891) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1891) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1901) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1911) VOICE: Voice system ready[0m
+[0;32mI (1911) VOICE: Voice feed task started[0m
+[0;32mI (1911) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1921) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1921) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1931) VOICE: Listening for: Hi ESP[0m
+[0;32mI (5191) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (5191) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (5191) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (5191) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (5201) cam_hal: cam init ok[0m
+[0;32mI (5201) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (5201) sccb: sccb_i2c_port=1[0m
+[0;32mI (5221) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (5221) camera: Detected OV2640 camera[0m
+[0;32mI (5221) camera: Detected camera at address=0x30[0m
+[0;32mI (5301) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (5301) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (5301) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (5311) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (5321) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (5321) cam_hal: cam config ok[0m
+[0;32mI (5321) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (5401) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker mcam_hal: EV-EOF-OVF
+issing
+[0;32mI (5461) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;33mW (5461) AEGIS_GUARDIAN: [HEAP] after init_camera        free_internal=139967 largest_internal=65536 free_total=8144623 free_psram=8004656[0m
+[0;32mI (5631) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (5641) pp: pp rom version: e7ae62f[0m
+[0;32mI (5641) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (5651) wifi:wifi driver task: 3fce116c, prio:23, stack:6656, core=0[0m
+[0;32mI (5661) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (5661) wifi:wifi certification version: v7.0[0m
+[0;32mI (5661) wifi:config NVS flash: enabled[0m
+[0;32mI (5661) wifi:config nano formatting: disabled[0m
+[0;32mI (5661) wifi:Init data frame dynamic rx buffer num: 16[0m
+[0;32mI (5671) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (5671) wifi:Init management short buffer num: 32[0m
+[0;32mI (5681) wifi:Init static tx buffer num: 16[0m
+[0;32mI (5681) wifi:Init tx cache buffer num: 16[0m
+[0;32mI (5681) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (5691) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (5691) wifi:Init static rx buffer num: 6[0m
+[0;32mI (5701) wifi:Init dynamic rx buffer num: 16[0m
+[0;32mI (5701) wifi_init: rx ba win: 6[0m
+[0;32mI (5701) wifi_init: accept mbox: 6[0m
+[0;32mI (5711) wifi_init: tcpip mbox: 32[0m
+[0;32mI (5711) wifi_init: udp mbox: 6[0m
+[0;32mI (5711) wifi_init: tcp mbox: 6[0m
+[0;32mI (5711) wifi_init: tcp tx win: 5760[0m
+[0;32mI (5721) wifi_init: tcp rx win: 5760[0m
+[0;32mI (5721) wifi_init: tcp mss: 1440[0m
+[0;32mI (5721) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (5731) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (5731) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (5741) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (5781) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (5781) wifi:enable tsf[0m
+[0;32mI (5791) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (5791) AEGIS_GUARDIAN: [HEAP] after wifi_init/start    free_internal=65155 largest_internal=31744 free_total=8029591 free_psram=7964436[0m
+[0;32mI (5801) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (5801) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 1[0m
+[0;32mI (5811) ESPNOW_MASTER: Guardian MAC: E8:F6:0A:D6:C8:E8[0m
+[0;32mI (5811) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (5821) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (5821) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (5821) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;33mW (5831) AEGIS_GUARDIAN: [HEAP] after espnow_master_init free_internal=65031 largest_internal=31744 free_total=8029415 free_psram=7964384[0m
+[0;32mI (5841) LVGL: Starting LVGL task[0m
+[0;32mI (5981) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (5991) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (5991) AEGIS_GUARDIAN: [HEAP] after display init       free_internal=62031 largest_internal=31744 free_total=7999491 free_psram=7937460[0m
+[0;32mI (6001) SWARM_LINK: Swarm link ready on channel 6 (Guardian)[0m
+[0;32mI (6001) SWARM_LINK: Swarm: broadcasting WAKE[0m
+[0;33mW (6011) AEGIS_GUARDIAN: [HEAP] after swarm_link_init    free_internal=61995 largest_internal=31744 free_total=7999359 free_psram=7937364[0m
+[0;32mI (6021) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (6031) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[0;33mW (6081) AEGIS_GUARDIAN: [HEAP] just before esp_wifi_connect free_internal=42535 largest_internal=31744 free_total=7979899 free_psram=7937364[0m
+[0;32mI (6091) AEGIS_GUARDIAN: HTTP server active (snapshot-only, no live /stream)[0m
+[0;32mI (6091) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (6121) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (6141) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (6161) wifi:connected with A34, aid = 2, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (6161) wifi:security: WPA2-PSK, phy: bgn, rssi: -38, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (6171) wifi:pm start, type: 0[0m
+
+[0;32mI (6171) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (6181) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (6211) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (6211) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (7231) esp_netif_handlers: sta ip: 10.122.202.110, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (7231) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.122.202.110[0m
+[0;32mI (7231) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -38 dBm)[0m
+[0;32mI (7241) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;33mW (7251) AEGIS_GUARDIAN: [HEAP] before face_task creation free_internal=30319 largest_internal=21504 free_total=7963387 free_psram=7933068[0m
+[0;32mI (7251) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;32mI (7261) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (7491) AEGIS_GUARDIAN: Backend GET / OK (HTTP 200)[0m
+[0;32mI (7491) AEGIS_GUARDIAN: Backend Health Check: {"status":"online","system":"A.E.G.I.S. Backend active","video_stream_url":"/api/v1/video/stream/Guardian","video_viewer_url":"/video"}[0m
+[0;32mI (7571) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario OK (HTTP 200)[0m
+[0;32mI (7571) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":7948459,"psram":7932952},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_5s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (7751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (7761) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (7761) AEGIS_GUARDIAN: Object AI task CPU1[0m
+[0;32mI (7761) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":7927027,"psram":7912252},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_6s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (7771) AEGIS_GUARDIAN: Object model input: 96x96[0m
+[0;32mI (7761) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (7811) main_task: Returned from app_main()[0m
+[0;32mI (7991) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;33mW (9391) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (9471) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (9481) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (10021) AEGIS_GUARDIAN: Face AI OK[0m
+[0;33mW (10021) AEGIS_GUARDIAN: [HEAP] after face models loaded free_internal=4463 largest_internal=1856 free_total=4410751 free_psram=4406288[0m
+[0;32mI (10021) AEGIS_GUARDIAN: Owner loaded: ID=0[0m
+[0;32mI (11001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (12991) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (12991) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3487771,"psram":3471952},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_11s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (13271) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (16011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (17991) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (17991) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3487227,"psram":3471408},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_16s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (18251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (21011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (21021) spi_master: setup_dma_priv_buffer(1214): Failed to allocate priv TX buffer[0m
+[1;31mE (21021) lcd_panel.io.spi: panel_io_spi_tx_color(405): spi transmit (queue) color failed[0m
+[1;31mE (21031) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed[0m
+[0;32mI (26001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (26911) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (26911) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (26911) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (26911) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (27051) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (27051) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (29251) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (31001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (31481) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (32151) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (32151) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (32151) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (32221) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (32221) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (36011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (39641) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (39641) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (40701) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;33mW (40711) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[0;32mI (41011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (41021) AEGIS_GUARDIAN: Backend POST /api/v1/incidents/report OK (HTTP 200)[0m
+[0;32mI (41021) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (41911) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (41911) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (42271) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (42271) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (43101) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (43111) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (43271) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (43271) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (44301) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (44311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492923,"psram":3469576},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_42s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (44641) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (44791) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (44801) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492711,"psram":3469364},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_43s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (45811) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (46001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (47791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (47821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (47851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (47881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (47911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (47961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (47991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48441) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (48501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (50301) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (50301) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492619,"psram":3469272},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_48s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (50521) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (51001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (52621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (52981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (53971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54121) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (54231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (55301) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (55301) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492619,"psram":3469272},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_53s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (55511) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (56001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (57621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (57991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (60411) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (60411) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492619,"psram":3469272},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_58s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (61001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (61491) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (65901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (65911) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_64s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (66001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (67261) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (70911) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (70911) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_69s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (71001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (71901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (75911) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (75911) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_74s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (76011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (76711) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (81001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (81501) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (81501) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_79s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (81781) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (86031) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (86691) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (86701) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_84s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (88021) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (91011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (92311) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (92311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_90s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (92611) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (96001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (97311) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (97311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_95s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (98301) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (101001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (102311) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (102311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_100s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (103261) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (106001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (107631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107801) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (107901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (107901) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_106s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (107911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (107961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (109101) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (111001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (112621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (112901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (112901) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_111s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (112911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (112951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (114241) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (116011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (117621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (117901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (117901) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_116s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (117901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (117951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (119011) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (121001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (122611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (122991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123351) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123411) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123441) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (123501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (123511) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (123511) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492627,"psram":3469280},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_121s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (123531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (124021) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (126011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (127621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (127991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128401) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (128511) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (128511) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_126s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (128521) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (128561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (129501) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (131011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (132621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (132981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133171) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133261) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133291) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133321) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133351) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (133511) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (133511) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_131s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (133521) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (133561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (134521) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (136001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (139101) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (139101) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_137s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (140311) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (141011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (144101) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (144101) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_142s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (145101) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (146031) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (147631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147831) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147891) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147921) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (147981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148121) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148401) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148541) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148571) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (148971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (149011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (149041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (149071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (149101) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (149101) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_147s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (149101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (149151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (150211) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (151001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (152631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152891) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152921) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (152981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153171) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153261) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153291) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153451) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153481) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153511) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153541) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (153991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154451) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154481) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154511) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154551) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154581) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (154701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (154701) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (154711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_152s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (154731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (155901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (156011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (157611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (157971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158451) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158481) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158511) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158541) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158571) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (158991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159351) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159411) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159441) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159571) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159601) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (159711) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (159711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_157s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (159721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (159761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (160701) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (161001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (162611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162801) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162831) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162891) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (162991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163411) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163441) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (163981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164401) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164521) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164551) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164581) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (164711) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (164711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_162s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (164721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (164781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (165781) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (166021) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (167631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167831) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (167991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168171) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (168981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169171) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169261) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169291) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169321) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169351) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169521) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169551) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169581) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (169971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170171) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (170301) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (170311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_168s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (170311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (170361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (170801) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (171001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (172621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (172971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173451) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173521) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (173971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174121) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (174231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (175321) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (175321) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_173s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (176001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (176291) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;33mW (177621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (177651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (177681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (177711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (177741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (181001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (180421) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (181101) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_179s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (181531) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (186001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (186421) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (186421) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_184s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (188301) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (191001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (192071) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (192071) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_190s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (193111) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (196001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (197071) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (197071) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_195s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (198211) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (201001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (202601) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (202641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (202671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (202701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (202701) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (202711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_200s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (202731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (202761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (203901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (206011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (207621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (207651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (207691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (207711) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (207711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_205s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (207721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (207761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (208701) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (211001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (212611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (212641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (212671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (212711) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (212711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_210s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (212721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (212761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (213751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (216001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (217641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217801) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217921) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (217961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218121) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (218311) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (218321) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_216s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (218341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (218381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (219511) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (221001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (223321) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (223321) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_221s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (224311) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (226001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (229111) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (229111) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_227s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (229461) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (231001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (232621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (232971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233071) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233391) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233421) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233451) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233481) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233551) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233811) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (233961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (234001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (234031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (234061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (234091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (234111) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (234111) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_232s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (234121) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (234161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (235111) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (236001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (239111) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (239111) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_237s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (239901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (241001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (242601) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (242991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243131) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243191) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243351) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243411) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243441) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243601) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243631) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243781) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243831) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243891) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243921) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (243981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244041) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244401) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244521) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244571) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (244701) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (244711) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_242s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (244711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (244761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (245901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (246001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (249721) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (249721) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_247s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (250711) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (251011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (254721) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (254721) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_252s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (255501) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (256001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (257621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257871) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257901) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257931) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257961) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (257991) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258121) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258151) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258181) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258211) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258321) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258351) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258381) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258411) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258441) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258471) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258501) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258581) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258801) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258831) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258861) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258891) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258921) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258951) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (258981) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259011) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259111) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259171) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259231) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259341) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259371) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259401) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259431) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259461) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259491) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259531) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259561) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259591) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259791) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259821) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259851) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (259971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260021) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260051) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260081) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260101) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260241) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260271) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260301) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (260311) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (260311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_258s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (260331) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (260361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (261001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (261501) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (265501) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (265501) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_263s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (266011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (266701) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (271001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (271091) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (271101) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_269s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (271531) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (276011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (276421) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (276421) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_274s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (277481) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (281001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (281891) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (281901) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_280s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (283101) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (286021) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (287071) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (287071) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_285s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (287901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (291001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (292621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (292661) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (292681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (292701) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (292701) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_290s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (292731) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (292761) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (293901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (296001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (297621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (297651) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (297681) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (297701) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (297701) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_295s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (297711) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (297751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (298701) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (301011) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (302611) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (302641) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (302671) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (302701) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (302701) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_300s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (302701) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (302751) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (303751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (306001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (307691) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307721) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307741) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307771) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307801) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307841) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307881) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307911) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307941) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (307971) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308001) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308031) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308061) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308091) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308141) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308161) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308201) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308221) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308251) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308281) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (308311) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (308311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492647,"psram":3469300},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_306s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (308311) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (308361) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (308751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (311001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (313321) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (313321) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_311s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (313621) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (316001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (318421) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (318421) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_316s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (319531) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (321001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (323911) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (323921) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_322s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (324271) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (326001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (328981) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (328981) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_327s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (329931) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (331001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (333981) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (333981) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_332s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (335221) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (336001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (339501) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (339511) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_337s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (339751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (341001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (344521) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (344521) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3492643,"psram":3469296},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_342s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (344751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (346001) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (347621) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (349571) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (349581) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3484571,"psram":3461700},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_347s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m

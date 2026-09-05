@@ -1,0 +1,5 @@
+{
+    "idf.currentSetup": "/home/hp/.espressif/v6.0.2/esp-idf",
+    "esp8266-idf.comPort": "/dev/ttyACM0",
+    "idf.port": "/dev/ttyACM0"
+}

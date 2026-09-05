@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "AEGIS",
+    "displayName": "AEGIS",
+    "slug": "aegis-app",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "scheme": "aegis",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-asset"
+    ],
+    "android": {
+      "package": "com.anonymous.aegisapp"
+    }
+  }
+}

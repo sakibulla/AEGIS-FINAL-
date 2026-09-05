@@ -1,0 +1,7 @@
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+"-specs=E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_slave/build/specs/picolibc.specs"
+-fno-rtti

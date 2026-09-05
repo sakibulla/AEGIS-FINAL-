@@ -1,0 +1,6 @@
+"-specs=E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+-fno-rtti

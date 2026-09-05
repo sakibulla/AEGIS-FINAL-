@@ -1,0 +1,44 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x42008fd3: [0;33ms_test_psram[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_psram/system_layer/esp_psram.c[0m[0m:[1;31m700[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42174da5: [0;33mets_timer_setfn[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_timer/src/ets_timer_legacy.c[0m[0m:[1;31m58[0m
+[0m--- 0x40381a67: [0;33m_esp_error_check_failed[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x40381aa9: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x40381a71: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4038b5c1: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40381a67: [0;33m_esp_error_check_failed[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x42174da5: [0;33mets_timer_setfn[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_timer/src/ets_timer_legacy.c[0m[0m:[1;31m58[0m
+[0m--- 0x4219ad61: [0;33mesp_coex_common_timer_setfn_wrapper[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_coex/esp32s3/esp_coex_adapter.c[0m[0m:[1;31m119[0m
+[0m--- 0x42165d46: [0;33mieee80211_sta_new_state[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x421676ed: [0;33mieee80211_mlme_connect_bss[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x421612a6: [0;33mcnx_csa_fn[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x421619cf: [0;33mcnx_softap_csa[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x42161f0a: [0;33mcnx_do_handoff_internal[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215b311: [0;33mwifi_sta_connect_internal_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215eb7c: [0;33mwifi_ipc_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215c352: [0;33mieee80211_ioctl_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215f2d5: [0;33mieee80211_ioctl[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x42160c47: [0;33mesp_wifi_ipc_internal[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215c28d: [0;33mesp_wifi_sta_connect_internal[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4218d053: [0;33mwpa_sta_connect[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c[0m[0m:[1;31m270[0m
+[0m--- 0x4216266d: [0;33mcnx_remove_rc_except[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4216282d: [0;33mcnx_start_handoff_cb[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x42154d6d: [0;33mclear_bss_queue[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215522b: [0;33mscan_inter_channel_timeout_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215255f: [0;33mchm_end_op[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x42152581: [0;33mchm_end_op_timeout_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215f585: [0;33mieee80211_ap_sa_query_timeout[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4215f7c3: [0;33mieee80211_timer_do_process[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4038c6c9: [0;33mppTask[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x40382889: [0;33mvPortTaskWrapper[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m143[0m
+[0m--- 0x40381c49: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

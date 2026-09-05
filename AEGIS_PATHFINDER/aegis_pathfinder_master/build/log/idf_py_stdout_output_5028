@@ -1,0 +1,127 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/partition_table/partition-table.bin E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/aegis_yolo_vision.bin"
+aegis_yolo_vision.bin binary size 0x1a0f30 bytes. Smallest app partition is 0x700000 bytes. 0x55f0d0 bytes (77%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/bootloader/bootloader.bin"
+Bootloader binary size 0x4d00 bytes. 0x3300 bytes (40%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\Espressif\frameworks\esp-idf-v5.5.5\components\esptool_py && E:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif/frameworks/esp-idf-v5.5.5 -D SERIAL_TOOL=E:/Espressif/python_env/idf5.5_py3.10_env/Scripts/python.exe;;E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build -P E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM11 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB 0x0 bootloader/bootloader.bin 0x10000 aegis_yolo_vision.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.12.0
+Serial port COM11
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 94:a9:90:0a:ef:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00004fff...
+Flash will be erased from 0x00010000 to 0x001b0fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+SHA digest in image updated
+Compressed 19712 bytes to 12782...
+Writing at 0x00000000... (100 %)
+Wrote 19712 bytes (12782 compressed) at 0x00000000 in 0.4 seconds (effective 448.4 kbit/s)...
+Hash of data verified.
+Compressed 1707824 bytes to 1305058...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001c528... (2 %)
+Writing at 0x00026f09... (3 %)
+Writing at 0x0002b3c4... (5 %)
+Writing at 0x0002f763... (6 %)
+Writing at 0x00033cd2... (7 %)
+Writing at 0x000381cd... (8 %)
+Writing at 0x0003c46f... (10 %)
+Writing at 0x000407a7... (11 %)
+Writing at 0x00044ced... (12 %)
+Writing at 0x00049283... (13 %)
+Writing at 0x0004d844... (15 %)
+Writing at 0x00051db8... (16 %)
+Writing at 0x0005622d... (17 %)
+Writing at 0x0005a5cf... (18 %)
+Writing at 0x0005e9e0... (20 %)
+Writing at 0x000630cd... (21 %)
+Writing at 0x0006754c... (22 %)
+Writing at 0x0006b8b5... (23 %)
+Writing at 0x0006fd2e... (25 %)
+Writing at 0x00074163... (26 %)
+Writing at 0x000785f1... (27 %)
+Writing at 0x0007cb5b... (28 %)
+Writing at 0x00080ffe... (30 %)
+Writing at 0x000855fe... (31 %)
+Writing at 0x0008992b... (32 %)
+Writing at 0x0008ddb3... (33 %)
+Writing at 0x000923f8... (35 %)
+Writing at 0x00096bce... (36 %)
+Writing at 0x0009b0ce... (37 %)
+Writing at 0x0009f440... (38 %)
+Writing at 0x000a389c... (40 %)
+Writing at 0x000a7be7... (41 %)
+Writing at 0x000ac0f2... (42 %)
+Writing at 0x000b063c... (43 %)
+Writing at 0x000b4e93... (45 %)
+Writing at 0x000b9dda... (46 %)
+Writing at 0x000be197... (47 %)
+Writing at 0x000c3d92... (48 %)
+Writing at 0x000cee5d... (50 %)
+Writing at 0x000d57d1... (51 %)
+Writing at 0x000db41c... (52 %)
+Writing at 0x000e047b... (53 %)
+Writing at 0x000e6756... (55 %)
+Writing at 0x000ed346... (56 %)
+Writing at 0x000f31f1... (57 %)
+Writing at 0x000f87da... (58 %)
+Writing at 0x000fe016... (60 %)
+Writing at 0x0010307f... (61 %)
+Writing at 0x00108b89... (62 %)
+Writing at 0x0010e2a4... (63 %)
+Writing at 0x00113adc... (65 %)
+Writing at 0x00119156... (66 %)
+Writing at 0x0011e700... (67 %)
+Writing at 0x00123caa... (68 %)
+Writing at 0x00128ee0... (70 %)
+Writing at 0x0012e08f... (71 %)
+Writing at 0x001331db... (72 %)
+Writing at 0x00138b79... (73 %)
+Writing at 0x0013e088... (75 %)
+Writing at 0x001437b1... (76 %)
+Writing at 0x00149045... (77 %)
+Writing at 0x0014eac1... (78 %)
+Writing at 0x00153b39... (80 %)
+Writing at 0x00158da1... (81 %)
+Writing at 0x0015de79... (82 %)
+Writing at 0x001632d5... (83 %)
+Writing at 0x0016849a... (85 %)
+Writing at 0x0016d5c7... (86 %)
+Writing at 0x00172ecf... (87 %)
+Writing at 0x00178203... (88 %)
+Writing at 0x0017d3c5... (90 %)
+Writing at 0x00182cae... (91 %)
+Writing at 0x00188104... (92 %)
+Writing at 0x0018da33... (93 %)
+Writing at 0x00193336... (95 %)
+Writing at 0x0019bd53... (96 %)
+Writing at 0x001a18e7... (97 %)
+Writing at 0x001a7e7b... (98 %)
+Writing at 0x001ad04b... (100 %)
+Wrote 1707824 bytes (1305058 compressed) at 0x00010000 in 16.9 seconds (effective 808.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 122...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (122 compressed) at 0x00008000 in 0.1 seconds (effective 421.6 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 793.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

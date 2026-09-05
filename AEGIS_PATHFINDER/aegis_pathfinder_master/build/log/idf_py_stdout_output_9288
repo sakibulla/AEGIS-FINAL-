@@ -1,0 +1,124 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (237) esp_image: segment 1: paddr=000c87a4 vaddr=3fc99f00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd8bd
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=b877ch (755580) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=000c87a4 vaddr=3fc99f00 size=07874h ( 30836) load[0m
+[0;32mI (244) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=b672ch (747308) map[0m
+[0;32mI (383) esp_image: segment 3: paddr=00186754 vaddr=3fca1774 size=00a58h (  2648) load[0m
+[0;32mI (384) esp_image: segment 4: paddr=001871b4 vaddr=40374000 size=15e38h ( 89656) load[0m
+[0;32mI (407) esp_image: segment 5: paddr=0019cff4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (427) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (427) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (428) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (430) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (434) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (438) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (442) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (447) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (452) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (457) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (462) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (466) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (471) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (474) esp_psram: Speed: 80MHz[0m
+[0;32mI (477) cpu_start: Multicore app[0m
+[0;32mI (893) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (901) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (902) cpu_start: Pro cpu start user code[0m
+[0;32mI (902) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (903) app_init: Application information:[0m
+[0;32mI (907) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (912) app_init: App version:      1[0m
+[0;32mI (915) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (920) app_init: ELF file SHA256:  f3b29cc6d...[0m
+[0;32mI (925) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (929) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (932) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (936) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (940) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (947) heap_init: At 3FCA9EF8 len 0003F818 (254 KiB): RAM[0m
+[0;32mI (952) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (957) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (962) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (969) spi_flash: detected chip: gd[0m
+[0;32mI (972) spi_flash: flash io: dio[0m
+[0;32mI (975) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (981) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (999) main_task: Started on CPU0[0m
+[0;32mI (999) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1000) main_task: Calling app_main()[0m
+[0;32mI (1003) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1010) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1016) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1023) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1030) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1058) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1060) pp: pp rom version: e7ae62f[0m
+[0;32mI (1060) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1062) wifi:wifi driver task: 3fcb9530, prio:23, stack:6656, core=0[0m
+[0;32mI (1076) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1076) wifi:wifi certification version: v7.0[0m
+[0;32mI (1076) wifi:config NVS flash: enabled[0m
+[0;32mI (1078) wifi:config nano formatting: disabled[0m
+[0;32mI (1082) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1087) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1092) wifi:Init management short buffer num: 32[0m
+[0;32mI (1096) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1100) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1104) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1108) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1112) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1117) wifi_init: rx ba win: 6[0m
+[0;32mI (1119) wifi_init: accept mbox: 6[0m
+[0;32mI (1122) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1125) wifi_init: udp mbox: 6[0m
+[0;32mI (1128) wifi_init: tcp mbox: 6[0m
+[0;32mI (1131) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1134) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1138) wifi_init: tcp mss: 1440[0m
+[0;32mI (1141) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1145) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1148) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1153) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1196) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1196) wifi:enable tsf[0m
+[0;32mI (1198) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1200) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1200) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (1207) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1213) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1217) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (1221) wifi:sta is connecting, return error[0m
+[0;32mI (1227) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (1236) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1236) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1236) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1236) AEGIS_PATHFINDER: AEGIS P

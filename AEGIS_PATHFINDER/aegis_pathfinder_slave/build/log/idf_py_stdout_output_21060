@@ -1,0 +1,93 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_slave\build\AEGIS_SWARM_SLAVE.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_slave\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15836
+ho 0 tail 12 room 4
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (29) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 16 2026 14:41:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=184e0h ( 99552) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00028508 vaddr=3ffb0000 size=0434ch ( 17228) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002c85c vaddr=40080000 size=037bch ( 14268) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=7ab24h (502564) map[0m
+[0;32mI (307) esp_image: segment 4: paddr=000aab4c vaddr=400837bc size=1444ch ( 83020) load[0m
+[0;32mI (339) esp_image: segment 5: paddr=000befa0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (351) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (351) boot: Disabling RNG early entropy source...[0m
+[0;32mI (362) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (371) cpu_start: Pro cpu start user code[0m
+[0;32mI (371) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (372) app_init: Application information:[0m
+[0;32mI (376) app_init: Project name:     AEGIS_SWARM_SLAVE[0m
+[0;32mI (381) app_init: App version:      1[0m
+[0;32mI (384) app_init: Compile time:     Aug 16 2026 14:40:24[0m
+[0;32mI (389) app_init: ELF file SHA256:  055d81fc4...[0m
+[0;32mI (394) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (398) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (401) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (405) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (409) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (416) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (421) heap_init: At 3FFB8730 len 000278D0 (158 KiB): DRAM[0m
+[0;32mI (426) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (431) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (437) heap_init: At 40097C08 len 000083F8 (32 KiB): IRAM[0m
+[0;33mW (443) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (455) spi_flash: detected chip: generic[0m
+[0;32mI (459) spi_flash: flash io: dio[0m
+[0;32mI (462) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (467) AEGIS_SWARM_SLAVE: Booting A.E.G.I.S. Swarm Slave Node...[0m
+[0;32mI (475) MOTOR_CTRL: TB6612 Motor Controller active with 180° Sweep Navigation.[0m
+[0;32mI (501) SERVO_SWEEP: Servo Driver online on GPIO 15.[0m
+[0;32mI (502) HC_SR04: HC-SR04 Ultrasonic Driver online on TRIG:21 ECHO:22.[0m
+[0;32mI (512) wifi:wifi driver task: 3ffbf920, prio:23, stack:6656, core=0[0m
+[0;32mI (517) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (517) wifi:wifi certification version: v7.0[0m
+[0;32mI (518) wifi:config NVS flash: enabled[0m
+[0;32mI (519) wifi:config nano formatting: disabled[0m
+[0;32mI (523) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (528) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (532) wifi:Init management short buffer num: 32[0m
+[0;32mI (536) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (540) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (544) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (553) wifi_init: rx ba win: 6[0m
+[0;32mI (555) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (561) wifi_init: udp mbox: 6[0m
+[0;32mI (563) wifi_init: tcp mbox: 6[0m
+[0;32mI (566) wifi_init: tcp tx win: 5760[0m
+[0;32mI (569) wifi_init: tcp rx win: 5760[0m
+[0;32mI (573) wifi_init: tcp mss: 1440[0m
+[0;32mI (576) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (579) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (663) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (678) wifi:mode : sta (00:70:07:26:b5:b4)[0m
+[0;32mI (678) wifi:enable tsf[0m
+[0;32mI (681) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (683) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (683) ESPNOW_SLAVE: ESP-NOW Pathfinder Slave active on Wi-Fi Channel 6[0m
+[0;32mI (687) AEGIS_SWARM_SLAVE: Swarm Slave fully operational. Awaiting Master commands.[0m

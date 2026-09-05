@@ -1,0 +1,1658 @@
+
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <inttypes.h>
+
+#include "esp_log.h"
+#include "esp_system.h"
+#include "esp_heap_caps.h"
+#include "esp_camera.h"
+#include "img_converters.h"
+#include "esp_http_server.h"
+#include "esp_wifi.h"
+#include "esp_event.h"
+#include "esp_spiffs.h"
+#include "esp_netif.h"
+#include "nvs_flash.h"
+
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "freertos/event_groups.h"
+#include "freertos/semphr.h"
+
+#include "edge-impulse-sdk/classifier/ei_run_classifier.h"
+#include "human_face_detect.hpp"
+#include "human_face_recognition.hpp"
+#include "dl_image_define.hpp"
+
+static const char *TAG = "AEGIS";
+
+/* =========================================================
+ * Wi-Fi
+ * ========================================================= */
+
+#define WIFI_SSID "Sakibmob"
+#define WIFI_PASS "12345678"
+
+#define WIFI_CONNECTED_BIT BIT0
+
+static EventGroupHandle_t s_wifi_event_group = NULL;
+
+/* =========================================================
+ * Camera
+ * ========================================================= */
+
+#define CAM_WIDTH  320
+#define CAM_HEIGHT 240
+
+#define PWDN_GPIO_NUM  -1
+#define RESET_GPIO_NUM -1
+#define XCLK_GPIO_NUM  15
+
+#define SIOD_GPIO_NUM  4
+#define SIOC_GPIO_NUM  5
+
+#define Y9_GPIO_NUM    16
+#define Y8_GPIO_NUM    17
+#define Y7_GPIO_NUM    18
+#define Y6_GPIO_NUM    12
+#define Y5_GPIO_NUM    10
+#define Y4_GPIO_NUM     8
+#define Y3_GPIO_NUM     9
+#define Y2_GPIO_NUM    11
+
+#define VSYNC_GPIO_NUM  6
+#define HREF_GPIO_NUM   7
+#define PCLK_GPIO_NUM  13
+
+#define CAMERA_XCLK_HZ       20000000
+#define CAMERA_JPEG_QUALITY  12
+#define CAMERA_FB_COUNT      2
+
+/* =========================================================
+ * Timing
+ * ========================================================= */
+
+#define STREAM_DELAY_MS       66
+#define FACE_INTERVAL_MS      1000
+#define OBJECT_INTERVAL_MS    1500
+
+/* =========================================================
+ * Face recognition
+ * ========================================================= */
+
+/*
+ * IMPORTANT:
+ *
+ * Set this to 1 for the FIRST clean test.
+ *
+ * It deletes old faces from:
+ * /spiflash/face_db
+ *
+ * Then the first face detected after boot becomes owner.
+ *
+ * After owner recognition works correctly, change to 0
+ * so the database is preserved.
+ */
+#define RESET_FACE_DB_ON_BOOT 1
+
+#define AUTO_ENROLL_FIRST_FACE 1
+
+#define OWNER_SIMILARITY_THRESHOLD 0.40f
+
+/* =========================================================
+ * Security state
+ * ========================================================= */
+
+typedef enum {
+    SECURITY_UNKNOWN = 0,
+    SECURITY_OWNER,
+    SECURITY_INTRUDER,
+    SECURITY_NO_FACE
+} security_state_t;
+
+static volatile security_state_t g_security_state = SECURITY_UNKNOWN;
+
+static volatile int g_owner_id = -1;
+static volatile bool g_owner_enrolled = false;
+static volatile bool g_enrollment_in_progress = false;
+
+/* =========================================================
+ * Camera synchronization
+ * ========================================================= */
+
+static SemaphoreHandle_t s_camera_mutex = NULL;
+
+/* =========================================================
+ * AI buffers
+ * ========================================================= */
+
+static uint8_t *s_rgb_full = NULL;
+static uint8_t *s_model_input = NULL;
+
+/* =========================================================
+ * HTTP server
+ * ========================================================= */
+
+static httpd_handle_t stream_httpd = NULL;
+
+/* =========================================================
+ * Face AI
+ * ========================================================= */
+
+static HumanFaceDetect *s_face_detect = nullptr;
+static HumanFaceRecognizer *s_face_recognizer = nullptr;
+
+/* =========================================================
+ * CAMERA INITIALIZATION
+ * ========================================================= */
+
+static esp_err_t init_camera()
+{
+    camera_config_t config = {};
+
+    config.ledc_channel = LEDC_CHANNEL_0;
+    config.ledc_timer   = LEDC_TIMER_0;
+
+    config.pin_d0 = Y2_GPIO_NUM;
+    config.pin_d1 = Y3_GPIO_NUM;
+    config.pin_d2 = Y4_GPIO_NUM;
+    config.pin_d3 = Y5_GPIO_NUM;
+    config.pin_d4 = Y6_GPIO_NUM;
+    config.pin_d5 = Y7_GPIO_NUM;
+    config.pin_d6 = Y8_GPIO_NUM;
+    config.pin_d7 = Y9_GPIO_NUM;
+
+    config.pin_xclk  = XCLK_GPIO_NUM;
+    config.pin_pclk  = PCLK_GPIO_NUM;
+    config.pin_vsync = VSYNC_GPIO_NUM;
+    config.pin_href  = HREF_GPIO_NUM;
+
+    config.pin_sccb_sda = SIOD_GPIO_NUM;
+    config.pin_sccb_scl = SIOC_GPIO_NUM;
+
+    config.pin_pwdn  = PWDN_GPIO_NUM;
+    config.pin_reset = RESET_GPIO_NUM;
+
+    config.xclk_freq_hz = CAMERA_XCLK_HZ;
+
+    config.pixel_format = PIXFORMAT_JPEG;
+    config.frame_size   = FRAMESIZE_QVGA;
+    config.jpeg_quality = CAMERA_JPEG_QUALITY;
+
+    config.fb_count    = CAMERA_FB_COUNT;
+    config.fb_location = CAMERA_FB_IN_PSRAM;
+
+    /*
+     * LATEST is better for streaming + AI because we want
+     * the newest frame instead of processing old frames.
+     */
+    config.grab_mode = CAMERA_GRAB_LATEST;
+
+    ESP_LOGI(TAG, "Initializing camera...");
+
+    esp_err_t err = esp_camera_init(&config);
+
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Camera initialization failed: 0x%x", err);
+        return err;
+    }
+
+    sensor_t *sensor = esp_camera_sensor_get();
+
+    if (sensor) {
+        sensor->set_framesize(sensor, FRAMESIZE_QVGA);
+        sensor->set_quality(sensor, CAMERA_JPEG_QUALITY);
+        sensor->set_hmirror(sensor, 0);
+        sensor->set_vflip(sensor, 0);
+    }
+
+    ESP_LOGI(TAG, "Camera OK");
+
+    return ESP_OK;
+}
+
+/* =========================================================
+ * SAFE CAMERA CAPTURE
+ * ========================================================= */
+
+static camera_fb_t *camera_get_frame()
+{
+    if (!s_camera_mutex)
+        return NULL;
+
+    if (xSemaphoreTake(
+            s_camera_mutex,
+            pdMS_TO_TICKS(1000)) != pdTRUE) {
+
+        ESP_LOGW(TAG, "Camera mutex timeout");
+        return NULL;
+    }
+
+    camera_fb_t *fb = esp_camera_fb_get();
+
+    if (!fb) {
+        ESP_LOGW(TAG, "Camera frame capture failed");
+        xSemaphoreGive(s_camera_mutex);
+        return NULL;
+    }
+
+    return fb;
+}
+
+static void camera_return_frame(camera_fb_t *fb)
+{
+    if (fb)
+        esp_camera_fb_return(fb);
+
+    if (s_camera_mutex)
+        xSemaphoreGive(s_camera_mutex);
+}
+
+/* =========================================================
+ * WIFI
+ * ========================================================= */
+
+static void wifi_event_handler(
+    void *arg,
+    esp_event_base_t event_base,
+    int32_t event_id,
+    void *event_data)
+{
+    if (event_base == WIFI_EVENT &&
+        event_id == WIFI_EVENT_STA_START) {
+
+        ESP_LOGI(TAG, "Wi-Fi connecting...");
+        esp_wifi_connect();
+    }
+
+    else if (event_base == WIFI_EVENT &&
+             event_id == WIFI_EVENT_STA_DISCONNECTED) {
+
+        ESP_LOGW(TAG, "Wi-Fi disconnected");
+
+        xEventGroupClearBits(
+            s_wifi_event_group,
+            WIFI_CONNECTED_BIT);
+
+        esp_wifi_connect();
+    }
+
+    else if (event_base == IP_EVENT &&
+             event_id == IP_EVENT_STA_GOT_IP) {
+
+        ip_event_got_ip_t *event =
+            (ip_event_got_ip_t *)event_data;
+
+        ESP_LOGI(
+            TAG,
+            "IP: " IPSTR,
+            IP2STR(&event->ip_info.ip));
+
+        xEventGroupSetBits(
+            s_wifi_event_group,
+            WIFI_CONNECTED_BIT);
+    }
+}
+
+static void wifi_init()
+{
+    s_wifi_event_group = xEventGroupCreate();
+
+    if (!s_wifi_event_group) {
+        ESP_LOGE(TAG, "Wi-Fi event group failed");
+        return;
+    }
+
+    ESP_ERROR_CHECK(esp_netif_init());
+
+    ESP_ERROR_CHECK(
+        esp_event_loop_create_default());
+
+    esp_netif_create_default_wifi_sta();
+
+    wifi_init_config_t cfg =
+        WIFI_INIT_CONFIG_DEFAULT();
+
+    ESP_ERROR_CHECK(
+        esp_wifi_init(&cfg));
+
+    ESP_ERROR_CHECK(
+        esp_event_handler_register(
+            WIFI_EVENT,
+            ESP_EVENT_ANY_ID,
+            wifi_event_handler,
+            NULL));
+
+    ESP_ERROR_CHECK(
+        esp_event_handler_register(
+            IP_EVENT,
+            IP_EVENT_STA_GOT_IP,
+            wifi_event_handler,
+            NULL));
+
+    wifi_config_t wifi_config = {};
+
+    strncpy(
+        (char *)wifi_config.sta.ssid,
+        WIFI_SSID,
+        sizeof(wifi_config.sta.ssid) - 1);
+
+    strncpy(
+        (char *)wifi_config.sta.password,
+        WIFI_PASS,
+        sizeof(wifi_config.sta.password) - 1);
+
+    wifi_config.sta.threshold.authmode =
+        WIFI_AUTH_WPA2_PSK;
+
+    ESP_ERROR_CHECK(
+        esp_wifi_set_mode(WIFI_MODE_STA));
+
+    ESP_ERROR_CHECK(
+        esp_wifi_set_config(
+            WIFI_IF_STA,
+            &wifi_config));
+
+    ESP_ERROR_CHECK(
+        esp_wifi_start());
+
+    ESP_LOGI(TAG, "Waiting for Wi-Fi...");
+
+    xEventGroupWaitBits(
+        s_wifi_event_group,
+        WIFI_CONNECTED_BIT,
+        pdFALSE,
+        pdTRUE,
+        portMAX_DELAY);
+
+    ESP_LOGI(TAG, "Wi-Fi connected");
+}
+
+/* =========================================================
+ * SPIFFS
+ * ========================================================= */
+
+static bool init_spiffs()
+{
+    esp_vfs_spiffs_conf_t conf = {
+        .base_path = "/spiflash",
+        .partition_label = NULL,
+        .max_files = 10,
+        .format_if_mount_failed = true
+    };
+
+    esp_err_t ret =
+        esp_vfs_spiffs_register(&conf);
+
+    if (ret != ESP_OK) {
+        ESP_LOGE(
+            TAG,
+            "SPIFFS mount failed: 0x%x",
+            ret);
+
+        return false;
+    }
+
+    size_t total = 0;
+    size_t used  = 0;
+
+    ret = esp_spiffs_info(
+        NULL,
+        &total,
+        &used);
+
+    if (ret == ESP_OK) {
+        ESP_LOGI(
+            TAG,
+            "SPIFFS: %u/%u bytes",
+            (unsigned)used,
+            (unsigned)total);
+    }
+
+    struct stat st;
+
+    if (stat("/spiflash/face_db", &st) != 0) {
+
+        ESP_LOGI(
+            TAG,
+            "Creating face database directory");
+
+        mkdir(
+            "/spiflash/face_db",
+            0777);
+    }
+
+    return true;
+}
+
+/* =========================================================
+ * FACE RECOGNITION INITIALIZATION
+ * ========================================================= */
+
+static bool init_face_recognition()
+{
+    ESP_LOGI(
+        TAG,
+        "Initializing face recognition...");
+
+    s_face_detect =
+        new HumanFaceDetect();
+
+    if (!s_face_detect) {
+        ESP_LOGE(
+            TAG,
+            "HumanFaceDetect allocation failed");
+
+        return false;
+    }
+
+    HumanFaceFeat *feat =
+        new HumanFaceFeat();
+
+    if (!feat) {
+        ESP_LOGE(
+            TAG,
+            "HumanFaceFeat allocation failed");
+
+        return false;
+    }
+
+    s_face_recognizer =
+        new HumanFaceRecognizer(
+            feat,
+            (char *)"/spiflash/face_db");
+
+    if (!s_face_recognizer) {
+        ESP_LOGE(
+            TAG,
+            "HumanFaceRecognizer allocation failed");
+
+        return false;
+    }
+
+    ESP_LOGI(TAG, "Face AI OK");
+
+    return true;
+}
+
+/* =========================================================
+ * RESET FACE DATABASE
+ * ========================================================= */
+
+static void reset_face_database()
+{
+#if RESET_FACE_DB_ON_BOOT
+
+    if (!s_face_recognizer)
+        return;
+
+    int old_count =
+        s_face_recognizer->get_num_feats();
+
+    ESP_LOGW(
+        TAG,
+        "Existing face records: %d",
+        old_count);
+
+    if (old_count > 0) {
+
+        ESP_LOGW(
+            TAG,
+            "Clearing old face database...");
+
+        esp_err_t ret =
+            s_face_recognizer->clear_all_feats();
+
+        if (ret == ESP_OK) {
+
+            ESP_LOGI(
+                TAG,
+                "Face database cleared");
+
+        } else {
+
+            ESP_LOGE(
+                TAG,
+                "Failed to clear face DB: %d",
+                ret);
+        }
+    }
+
+#endif
+}
+
+/* =========================================================
+ * OWNER ENROLLMENT
+ * ========================================================= */
+
+static bool enroll_owner(
+    uint8_t *rgb,
+    std::list<dl::detect::result_t> &faces)
+{
+    if (!rgb ||
+        !s_face_recognizer ||
+        faces.empty()) {
+
+        return false;
+    }
+
+    dl::image::img_t img = {
+        .data = rgb,
+        .width = CAM_WIDTH,
+        .height = CAM_HEIGHT,
+        .pix_type =
+            dl::image::DL_IMAGE_PIX_TYPE_RGB888
+    };
+
+    /*
+     * IMPORTANT:
+     *
+     * Get the number BEFORE enrollment.
+     *
+     * If database contains:
+     *
+     * 0,1,2
+     *
+     * the new owner will normally become ID 3.
+     *
+     * Therefore we must NOT hardcode owner_id = 0.
+     */
+    int new_owner_id =
+        s_face_recognizer->get_num_feats();
+
+    ESP_LOGI(
+        TAG,
+        "Current face records: %d",
+        new_owner_id);
+
+    ESP_LOGI(
+        TAG,
+        "Enrolling owner as ID=%d...",
+        new_owner_id);
+
+    esp_err_t ret =
+        s_face_recognizer->enroll(
+            img,
+            faces);
+
+    if (ret != ESP_OK) {
+
+        ESP_LOGE(
+            TAG,
+            "Owner enrollment failed: %d",
+            ret);
+
+        return false;
+    }
+
+    g_owner_id = new_owner_id;
+    g_owner_enrolled = true;
+
+    ESP_LOGI(
+        TAG,
+        "====================================");
+
+    ESP_LOGI(
+        TAG,
+        "OWNER ENROLLED");
+
+    ESP_LOGI(
+        TAG,
+        "OWNER ID = %d",
+        g_owner_id);
+
+    ESP_LOGI(
+        TAG,
+        "====================================");
+
+    return true;
+}
+
+/* =========================================================
+ * FACE TASK
+ * ========================================================= */
+
+static void face_task(void *arg)
+{
+    ESP_LOGI(
+        TAG,
+        "Face task started on CPU%d",
+        xPortGetCoreID());
+
+    if (!init_face_recognition()) {
+
+        ESP_LOGE(
+            TAG,
+            "Face AI unavailable");
+
+        vTaskDelete(NULL);
+        return;
+    }
+
+    /*
+     * For first testing:
+     *
+     * clear old database so first face gets ID 0.
+     */
+    reset_face_database();
+
+    size_t rgb_size =
+        CAM_WIDTH *
+        CAM_HEIGHT *
+        3;
+
+    uint8_t *rgb =
+        (uint8_t *)heap_caps_malloc(
+            rgb_size,
+            MALLOC_CAP_SPIRAM |
+            MALLOC_CAP_8BIT);
+
+    if (!rgb) {
+
+        ESP_LOGE(
+            TAG,
+            "Face RGB buffer allocation failed");
+
+        vTaskDelete(NULL);
+        return;
+    }
+
+    ESP_LOGI(
+        TAG,
+        "Face RGB buffer allocated: %u bytes",
+        (unsigned)rgb_size);
+
+    TickType_t last_wake =
+        xTaskGetTickCount();
+
+    while (true) {
+
+        camera_fb_t *fb =
+            camera_get_frame();
+
+        if (!fb) {
+
+            vTaskDelay(
+                pdMS_TO_TICKS(100));
+
+            continue;
+        }
+
+        bool ok =
+            fmt2rgb888(
+                fb->buf,
+                fb->len,
+                fb->format,
+                rgb);
+
+        camera_return_frame(fb);
+
+        if (!ok) {
+
+            ESP_LOGW(
+                TAG,
+                "JPEG -> RGB conversion failed");
+
+            vTaskDelay(
+                pdMS_TO_TICKS(100));
+
+            continue;
+        }
+
+        dl::image::img_t img = {
+            .data = rgb,
+            .width = CAM_WIDTH,
+            .height = CAM_HEIGHT,
+            .pix_type =
+                dl::image::DL_IMAGE_PIX_TYPE_RGB888
+        };
+
+        auto faces =
+            s_face_detect->run(img);
+
+        if (faces.empty()) {
+
+            g_security_state =
+                SECURITY_NO_FACE;
+
+        } else {
+
+#if AUTO_ENROLL_FIRST_FACE
+
+            if (!g_owner_enrolled &&
+                !g_enrollment_in_progress) {
+
+                g_enrollment_in_progress =
+                    true;
+
+                ESP_LOGI(
+                    TAG,
+                    "First face detected");
+
+                bool enrolled =
+                    enroll_owner(
+                        rgb,
+                        faces);
+
+                if (enrolled) {
+
+                    g_security_state =
+                        SECURITY_OWNER;
+
+                } else {
+
+                    g_security_state =
+                        SECURITY_UNKNOWN;
+                }
+
+                g_enrollment_in_progress =
+                    false;
+            }
+
+            else
+
+#endif
+            {
+
+                auto result =
+                    s_face_recognizer->recognize(
+                        img,
+                        faces);
+
+                if (!result.empty()) {
+
+                    int id =
+                        result[0].id;
+
+                    float sim =
+                        result[0].similarity;
+
+                    ESP_LOGI(
+                        TAG,
+                        "Recognize -> id=%d sim=%.3f owner_id=%d",
+                        id,
+                        sim,
+                        g_owner_id);
+
+                    if (g_owner_enrolled &&
+                        id == g_owner_id &&
+                        sim >=
+                            OWNER_SIMILARITY_THRESHOLD) {
+
+                        g_security_state =
+                            SECURITY_OWNER;
+
+                        ESP_LOGI(
+                            TAG,
+                            ">>> OWNER CONFIRMED");
+
+                    } else {
+
+                        g_security_state =
+                            SECURITY_INTRUDER;
+
+                        ESP_LOGW(
+                            TAG,
+                            ">>> INTRUDER id=%d sim=%.2f",
+                            id,
+                            sim);
+                    }
+
+                } else {
+
+                    g_security_state =
+                        SECURITY_INTRUDER;
+
+                    ESP_LOGW(
+                        TAG,
+                        ">>> INTRUDER - UNKNOWN FACE");
+                }
+            }
+        }
+
+        vTaskDelayUntil(
+            &last_wake,
+            pdMS_TO_TICKS(
+                FACE_INTERVAL_MS));
+    }
+}
+
+/* =========================================================
+ * EDGE IMPULSE FEATURE CALLBACK
+ * ========================================================= */
+
+static int raw_feature_get_data(
+    size_t offset,
+    size_t length,
+    float *out_ptr)
+{
+    if (!s_model_input ||
+        !out_ptr) {
+
+        return -1;
+    }
+
+    size_t pixel =
+        offset * 3;
+
+    for (size_t i = 0;
+         i < length;
+         i++) {
+
+        uint8_t r =
+            s_model_input[pixel];
+
+        uint8_t g =
+            s_model_input[pixel + 1];
+
+        uint8_t b =
+            s_model_input[pixel + 2];
+
+        out_ptr[i] =
+            (float)(
+                (r << 16) |
+                (g << 8) |
+                b);
+
+        pixel += 3;
+    }
+
+    return 0;
+}
+
+/* =========================================================
+ * CROP + RESIZE
+ * ========================================================= */
+
+static void crop_resize(
+    uint8_t *src,
+    int sw,
+    int sh,
+    uint8_t *dst,
+    int dw,
+    int dh)
+{
+    if (!src || !dst)
+        return;
+
+    float source_aspect =
+        (float)sw / (float)sh;
+
+    float destination_aspect =
+        (float)dw / (float)dh;
+
+    int crop_width  = sw;
+    int crop_height = sh;
+
+    if (source_aspect >
+        destination_aspect) {
+
+        crop_width =
+            (int)(sh *
+                  destination_aspect);
+
+    } else {
+
+        crop_height =
+            (int)(sw /
+                  destination_aspect);
+    }
+
+    int offset_x =
+        (sw - crop_width) / 2;
+
+    int offset_y =
+        (sh - crop_height) / 2;
+
+    for (int y = 0;
+         y < dh;
+         y++) {
+
+        int sy =
+            offset_y +
+            (y * crop_height / dh);
+
+        if (sy >= sh)
+            sy = sh - 1;
+
+        for (int x = 0;
+             x < dw;
+             x++) {
+
+            int sx =
+                offset_x +
+                (x * crop_width / dw);
+
+            if (sx >= sw)
+                sx = sw - 1;
+
+            size_t source_index =
+                ((size_t)sy * sw + sx) * 3;
+
+            size_t destination_index =
+                ((size_t)y * dw + x) * 3;
+
+            dst[destination_index] =
+                src[source_index];
+
+            dst[destination_index + 1] =
+                src[source_index + 1];
+
+            dst[destination_index + 2] =
+                src[source_index + 2];
+        }
+    }
+}
+
+/* =========================================================
+ * OBJECT DETECTION
+ * ========================================================= */
+
+static void run_object_detection()
+{
+    if (!s_rgb_full ||
+        !s_model_input) {
+
+        return;
+    }
+
+    camera_fb_t *fb =
+        camera_get_frame();
+
+    if (!fb)
+        return;
+
+    bool ok =
+        fmt2rgb888(
+            fb->buf,
+            fb->len,
+            fb->format,
+            s_rgb_full);
+
+    camera_return_frame(fb);
+
+    if (!ok) {
+
+        ESP_LOGW(
+            TAG,
+            "Object RGB conversion failed");
+
+        return;
+    }
+
+    crop_resize(
+        s_rgb_full,
+        CAM_WIDTH,
+        CAM_HEIGHT,
+        s_model_input,
+        EI_CLASSIFIER_INPUT_WIDTH,
+        EI_CLASSIFIER_INPUT_HEIGHT);
+
+    signal_t signal = {};
+
+    signal.total_length =
+        EI_CLASSIFIER_INPUT_WIDTH *
+        EI_CLASSIFIER_INPUT_HEIGHT;
+
+    signal.get_data =
+        raw_feature_get_data;
+
+    ei_impulse_result_t result = {};
+
+    EI_IMPULSE_ERROR ret =
+        run_classifier(
+            &signal,
+            &result,
+            false);
+
+    if (ret != EI_IMPULSE_OK) {
+
+        ESP_LOGW(
+            TAG,
+            "Edge Impulse error: %d",
+            ret);
+
+        return;
+    }
+
+    bool detected = false;
+
+    for (size_t i = 0;
+         i < result.bounding_boxes_count;
+         i++) {
+
+        auto &b =
+            result.bounding_boxes[i];
+
+        if (b.value <= 0.5f)
+            continue;
+
+        detected = true;
+
+        ESP_LOGI(
+            TAG,
+            "[OBJ] %s %.1f%% x=%" PRIu32
+            " y=%" PRIu32
+            " w=%" PRIu32
+            " h=%" PRIu32,
+            b.label,
+            b.value * 100.0f,
+            b.x,
+            b.y,
+            b.width,
+            b.height);
+    }
+
+    if (!detected) {
+
+        ESP_LOGD(
+            TAG,
+            "[OBJ] No object above threshold");
+    }
+
+    if (g_security_state ==
+        SECURITY_INTRUDER) {
+
+        ESP_LOGW(
+            TAG,
+            "SECURITY ALERT: INTRUDER");
+    }
+}
+
+/* =========================================================
+ * COMBINED AI TASK
+ *
+ * This replaces the old separate inference_task.
+ *
+ * It prevents the 48 KB inference task creation failure.
+ * ========================================================= */
+
+static void ai_task(void *arg)
+{
+    ESP_LOGI(
+        TAG,
+        "AI task started on CPU%d",
+        xPortGetCoreID());
+
+    size_t full_size =
+        CAM_WIDTH *
+        CAM_HEIGHT *
+        3;
+
+    size_t model_size =
+        EI_CLASSIFIER_INPUT_WIDTH *
+        EI_CLASSIFIER_INPUT_HEIGHT *
+        3;
+
+    s_rgb_full =
+        (uint8_t *)heap_caps_malloc(
+            full_size,
+            MALLOC_CAP_SPIRAM |
+            MALLOC_CAP_8BIT);
+
+    s_model_input =
+        (uint8_t *)heap_caps_malloc(
+            model_size,
+            MALLOC_CAP_SPIRAM |
+            MALLOC_CAP_8BIT);
+
+    if (!s_rgb_full ||
+        !s_model_input) {
+
+        ESP_LOGE(
+            TAG,
+            "Object AI buffer allocation failed");
+
+        if (s_rgb_full) {
+            free(s_rgb_full);
+            s_rgb_full = NULL;
+        }
+
+        if (s_model_input) {
+            free(s_model_input);
+            s_model_input = NULL;
+        }
+
+        vTaskDelete(NULL);
+        return;
+    }
+
+    ESP_LOGI(
+        TAG,
+        "Object full RGB buffer: %u bytes",
+        (unsigned)full_size);
+
+    ESP_LOGI(
+        TAG,
+        "Object model buffer: %u bytes",
+        (unsigned)model_size);
+
+    TickType_t last_object =
+        xTaskGetTickCount();
+
+    while (true) {
+
+        /*
+         * Object detection runs independently
+         * from face recognition.
+         */
+        run_object_detection();
+
+        vTaskDelayUntil(
+            &last_object,
+            pdMS_TO_TICKS(
+                OBJECT_INTERVAL_MS));
+    }
+}
+
+/* =========================================================
+ * HTTP STREAM
+ * ========================================================= */
+
+static esp_err_t stream_handler(
+    httpd_req_t *req)
+{
+    static const char *content_type =
+        "multipart/x-mixed-replace;boundary=frame";
+
+    static const char *boundary =
+        "\r\n--frame\r\n";
+
+    static const char *part =
+        "Content-Type: image/jpeg\r\n"
+        "Content-Length: %u\r\n\r\n";
+
+    esp_err_t ret =
+        httpd_resp_set_type(
+            req,
+            content_type);
+
+    if (ret != ESP_OK)
+        return ret;
+
+    char header[64];
+
+    while (true) {
+
+        camera_fb_t *fb =
+            camera_get_frame();
+
+        if (!fb) {
+
+            vTaskDelay(
+                pdMS_TO_TICKS(50));
+
+            continue;
+        }
+
+        int header_len =
+            snprintf(
+                header,
+                sizeof(header),
+                part,
+                (unsigned)fb->len);
+
+        ret =
+            httpd_resp_send_chunk(
+                req,
+                boundary,
+                strlen(boundary));
+
+        if (ret == ESP_OK) {
+
+            ret =
+                httpd_resp_send_chunk(
+                    req,
+                    header,
+                    header_len);
+        }
+
+        if (ret == ESP_OK) {
+
+            ret =
+                httpd_resp_send_chunk(
+                    req,
+                    (const char *)fb->buf,
+                    fb->len);
+        }
+
+        camera_return_frame(fb);
+
+        if (ret != ESP_OK) {
+
+            ESP_LOGI(
+                TAG,
+                "Stream client disconnected");
+
+            return ret;
+        }
+
+        vTaskDelay(
+            pdMS_TO_TICKS(
+                STREAM_DELAY_MS));
+    }
+}
+
+/* =========================================================
+ * ROOT HANDLER
+ * ========================================================= */
+
+static esp_err_t root_handler(
+    httpd_req_t *req)
+{
+    httpd_resp_set_status(
+        req,
+        "302 Found");
+
+    httpd_resp_set_hdr(
+        req,
+        "Location",
+        "/stream");
+
+    return httpd_resp_send(
+        req,
+        NULL,
+        0);
+}
+
+/* =========================================================
+ * HTTP SERVER
+ * ========================================================= */
+
+static void start_stream_server()
+{
+    httpd_config_t config =
+        HTTPD_DEFAULT_CONFIG();
+
+    config.stack_size = 8192;
+    config.max_uri_handlers = 8;
+
+    config.recv_wait_timeout = 10;
+    config.send_wait_timeout = 10;
+
+    httpd_uri_t root = {
+        .uri = "/",
+        .method = HTTP_GET,
+        .handler = root_handler,
+        .user_ctx = NULL
+    };
+
+    httpd_uri_t stream = {
+        .uri = "/stream",
+        .method = HTTP_GET,
+        .handler = stream_handler,
+        .user_ctx = NULL
+    };
+
+    esp_err_t ret =
+        httpd_start(
+            &stream_httpd,
+            &config);
+
+    if (ret != ESP_OK) {
+
+        ESP_LOGE(
+            TAG,
+            "HTTP server start failed: 0x%x",
+            ret);
+
+        return;
+    }
+
+    httpd_register_uri_handler(
+        stream_httpd,
+        &root);
+
+    httpd_register_uri_handler(
+        stream_httpd,
+        &stream);
+
+    ESP_LOGI(
+        TAG,
+        "HTTP server started");
+
+    ESP_LOGI(
+        TAG,
+        "Open: http://<ESP32-IP>/");
+
+    ESP_LOGI(
+        TAG,
+        "Stream: http://<ESP32-IP>/stream");
+}
+
+/* =========================================================
+ * SECURITY STATE STRING
+ * ========================================================= */
+
+static const char *security_state_string(
+    security_state_t state)
+{
+    switch (state) {
+
+        case SECURITY_OWNER:
+            return "OWNER";
+
+        case SECURITY_INTRUDER:
+            return "INTRUDER";
+
+        case SECURITY_NO_FACE:
+            return "NO FACE";
+
+        default:
+            return "UNKNOWN";
+    }
+}
+
+/* =========================================================
+ * STATUS TASK
+ * ========================================================= */
+
+static void status_task(void *arg)
+{
+    while (true) {
+
+        ESP_LOGI(
+            TAG,
+            "Security=%s | OwnerID=%d | Enrolled=%s | "
+            "FreeHeap=%u | PSRAM=%u",
+            security_state_string(
+                g_security_state),
+            g_owner_id,
+            g_owner_enrolled ?
+                "YES" : "NO",
+            (unsigned)
+                esp_get_free_heap_size(),
+            (unsigned)
+                heap_caps_get_free_size(
+                    MALLOC_CAP_SPIRAM));
+
+        vTaskDelay(
+            pdMS_TO_TICKS(5000));
+    }
+}
+
+/* =========================================================
+ * APP MAIN
+ * ========================================================= */
+
+extern "C" void app_main(void)
+{
+    ESP_LOGI(
+        TAG,
+        "====================================");
+
+    ESP_LOGI(
+        TAG,
+        "          AEGIS START");
+
+    ESP_LOGI(
+        TAG,
+        "====================================");
+
+    /* =====================================================
+     * NVS
+     * ===================================================== */
+
+    esp_err_t ret =
+        nvs_flash_init();
+
+    if (ret ==
+            ESP_ERR_NVS_NO_FREE_PAGES ||
+        ret ==
+            ESP_ERR_NVS_NEW_VERSION_FOUND) {
+
+        ESP_LOGW(
+            TAG,
+            "Erasing NVS...");
+
+        ESP_ERROR_CHECK(
+            nvs_flash_erase());
+
+        ret =
+            nvs_flash_init();
+    }
+
+    ESP_ERROR_CHECK(ret);
+
+    /* =====================================================
+     * Camera mutex
+     * ===================================================== */
+
+    s_camera_mutex =
+        xSemaphoreCreateMutex();
+
+    if (!s_camera_mutex) {
+
+        ESP_LOGE(
+            TAG,
+            "Camera mutex creation failed");
+
+        return;
+    }
+
+    ESP_LOGI(
+        TAG,
+        "Camera mutex OK");
+
+    /* =====================================================
+     * Camera
+     * ===================================================== */
+
+    ret =
+        init_camera();
+
+    if (ret != ESP_OK) {
+
+        ESP_LOGE(
+            TAG,
+            "Camera initialization failed");
+
+        return;
+    }
+
+    /* =====================================================
+     * SPIFFS
+     * ===================================================== */
+
+    if (!init_spiffs()) {
+
+        ESP_LOGE(
+            TAG,
+            "SPIFFS initialization failed");
+
+        return;
+    }
+
+    /* =====================================================
+     * Wi-Fi
+     * ===================================================== */
+
+    wifi_init();
+
+    /* =====================================================
+     * HTTP stream
+     * ===================================================== */
+
+    start_stream_server();
+
+    /* =====================================================
+     * Give camera + Wi-Fi time to settle
+     * ===================================================== */
+
+    vTaskDelay(
+        pdMS_TO_TICKS(500));
+
+    /* =====================================================
+     * Face task
+     *
+     * Only 16 KB stack.
+     * Face RGB data is in PSRAM.
+     * ===================================================== */
+
+    BaseType_t face_result =
+        xTaskCreatePinnedToCore(
+            face_task,
+            "face_task",
+            16 * 1024,
+            NULL,
+            5,
+            NULL,
+            0);
+
+    if (face_result != pdPASS) {
+
+        ESP_LOGE(
+            TAG,
+            "Failed to create face task");
+
+    } else {
+
+        ESP_LOGI(
+            TAG,
+            "Face task created");
+    }
+
+    /* =====================================================
+     * Object AI task
+     *
+     * Reduced stack compared with old
+     * 48 KB inference task.
+     *
+     * Object buffers are in PSRAM.
+     * ===================================================== */
+
+    vTaskDelay(
+        pdMS_TO_TICKS(500));
+
+    BaseType_t ai_result =
+        xTaskCreatePinnedToCore(
+            ai_task,
+            "ai_task",
+            16 * 1024,
+            NULL,
+            3,
+            NULL,
+            1);
+
+    if (ai_result != pdPASS) {
+
+        ESP_LOGE(
+            TAG,
+            "Failed to create AI task");
+
+        ESP_LOGE(
+            TAG,
+            "Largest internal block: %u",
+            (unsigned)
+                heap_caps_get_largest_free_block(
+                    MALLOC_CAP_INTERNAL |
+                    MALLOC_CAP_8BIT));
+
+    } else {
+
+        ESP_LOGI(
+            TAG,
+            "AI task created");
+    }
+
+    /* =====================================================
+     * Status task
+     * ===================================================== */
+
+    BaseType_t status_result =
+        xTaskCreatePinnedToCore(
+            status_task,
+            "status_task",
+            4096,
+            NULL,
+            2,
+            NULL,
+            0);
+
+    if (status_result != pdPASS) {
+
+        ESP_LOGE(
+            TAG,
+            "Failed to create status task");
+    }
+
+    /* =====================================================
+     * READY
+     * ===================================================== */
+
+    ESP_LOGI(
+        TAG,
+        "====================================");
+
+    ESP_LOGI(
+        TAG,
+        "          AEGIS READY");
+
+    ESP_LOGI(
+        TAG,
+        "====================================");
+
+    ESP_LOGI(
+        TAG,
+        "Camera: QVGA 320x240");
+
+    ESP_LOGI(
+        TAG,
+        "XCLK: 20 MHz");
+
+    ESP_LOGI(
+        TAG,
+        "Stream: ~15 FPS");
+
+    ESP_LOGI(
+        TAG,
+        "Face AI: ENABLED");
+
+    ESP_LOGI(
+        TAG,
+        "Object AI: ENABLED");
+
+#if AUTO_ENROLL_FIRST_FACE
+
+    ESP_LOGI(
+        TAG,
+        "Auto owner enrollment: ENABLED");
+
+    ESP_LOGI(
+        TAG,
+        "First detected face becomes owner");
+
+#else
+
+    ESP_LOGI(
+        TAG,
+        "Auto owner enrollment: DISABLED");
+
+#endif
+
+#if RESET_FACE_DB_ON_BOOT
+
+    ESP_LOGW(
+        TAG,
+        "Face DB reset: ENABLED");
+
+    ESP_LOGW(
+        TAG,
+        "Old faces will be deleted on boot");
+
+#else
+
+    ESP_LOGI(
+        TAG,
+        "Face DB reset: DISABLED");
+
+#endif
+
+    ESP_LOGI(
+        TAG,
+        "====================================");
+}
+

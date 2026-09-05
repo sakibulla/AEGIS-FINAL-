@@ -1,0 +1,18 @@
+CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240=y
+CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+CONFIG_ESP32S3_SPIRAM_SUPPORT=y
+CONFIG_SPIRAM=y
+CONFIG_SPIRAM_MODE_OCT=y
+CONFIG_SPIRAM_SPEED_80M=y
+CONFIG_ESP32S3_DATA_CACHE_64KB=y
+CONFIG_ESP32S3_INSTRUCTION_CACHE_32KB=y
+CONFIG_FREERTOS_HZ=1000
+CONFIG_COMPILER_OPTIMIZATION_PERF=y
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# Camera SCCB must use the legacy I2C driver — esp_codec_dev (pulled in
+# transitively by the esp32_s3_eye BSP for the swarm display) hard-codes the
+# legacy driver, and ESP-IDF aborts at boot if both the legacy and new I2C
+# drivers are linked into the same binary ("CONFLICT! driver_ng is not
+# allowed to be used with this old driver").
+CONFIG_SCCB_HARDWARE_I2C_DRIVER_LEGACY=y

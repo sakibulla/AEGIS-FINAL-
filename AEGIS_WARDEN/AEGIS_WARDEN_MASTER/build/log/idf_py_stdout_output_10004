@@ -1,0 +1,891 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\aegis_warden.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (135) esp_image: segment 1: paddr=00047ff0 vaddr=3fca3000 sizeI (404) octal_psram: vendor id    : 0x0d (AP)[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40041a79
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 16 2026 18:50:04[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00300000[0m
+[0;32mI (75) boot:  3 storage          Unknown data     01 82 00310000 004f0000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=37fc8h (229320) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=00047ff0 vaddr=3fca3000 size=08028h ( 32808) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=00050020 vaddr=42000020 size=1135d4h (1127892) map[0m
+[0;32mI (348) esp_image: segment 3: paddr=001635fc vaddr=3fcab028 size=007a0h (  1952) load[0m
+[0;32mI (349) esp_image: segment 4: paddr=00163da4 vaddr=40378000 size=1af28h (110376) load[0m
+[0;32mI (377) esp_image: segment 5: paddr=0017ecd4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (389) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (389) boot: Disabling RNG early entropy source...[0m
+[0;32mI (399) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (399) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (400) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (401) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (406) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (410) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (414) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (419) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (424) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (428) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (434) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (438) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (443) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (446) esp_psram: Speed: 80MHz[0m
+[0;32mI (449) cpu_start: Multicore app[0m
+[0;32mI (865) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (873) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (874) cpu_start: Pro cpu start user code[0m
+[0;32mI (874) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (875) app_init: Application information:[0m
+[0;32mI (879) app_init: Project name:     aegis_warden[0m
+[0;32mI (883) app_init: App version:      1[0m
+[0;32mI (887) app_init: Compile time:     Aug 16 2026 18:49:40[0m
+[0;32mI (892) app_init: ELF file SHA256:  68c3c17aa...[0m
+[0;32mI (896) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (900) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (904) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (908) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (912) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (918) heap_init: At 3FCC2A18 len 00026CF8 (155 KiB): RAM[0m
+[0;32mI (923) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (928) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (934) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (941) spi_flash: detected chip: gd[0m
+[0;32mI (943) spi_flash: flash io: dio[0m
+[0;33mW (947) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (956) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (962) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (969) main_task: Started on CPU0[0m
+[0;32mI (972) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (980) main_task: Calling app_main()[0m
+[0;32mI (983) WARDEN: ========================================[0m
+[0;32mI (988) WARDEN:        A.E.G.I.S. WARDEN MASTER[0m
+[0;32mI (992) WARDEN:        FIRE + SMOKE AI NODE[0m
+[0;32mI (996) WARDEN: ========================================[0m
+[0;32mI (1001) WARDEN: Project: AEGIS_WARDEN[0m
+[0;32mI (1005) WARDEN: Input: 96x96[0m
+[0;32mI (1007) WARDEN: Raw samples: 9216[0m
+[0;32mI (1011) WARDEN: TFLite arena: 185036 bytes[0m
+[0;32mI (1014) WARDEN: Detection threshold: 0.50[0m
+[0;32mI (1035) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1036) cam_hal: cam init ok[0m
+[0;32mI (1036) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1036) sccb: sccb_i2c_port=1[0m
+[0;32mI (1048) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1049) camera: Detected OV2640 camera[0m
+[0;32mI (1049) camera: Detected camera at address=0x30[0m
+[0;32mI (1127) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1127) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1128) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1137) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1147) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1153) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1158) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1164) cam_hal: cam config ok[0m
+[0;32mI (1167) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1242) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1283) WARDEN: OV2640 initialized: QVGA RGB565 -> 96x96 model crop[0m
+[0;32mI (1283) WARDEN: Initializing backend communication...[0m
+[0;32mI (1283) WARDEN: Initializing backend communication...[0m
+[0;32mI (1287) WARDEN: Backend URL: http://10.122.202.83:8000[0m
+[0;32mI (1292) WARDEN: Bot ID: Warden[0m
+[0;32mI (1296) pp: pp rom version: e7ae62f[0m
+[0;32mI (1299) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1304) wifi:wifi driver task: 3fcd9980, prio:23, stack:6656, core=0[0m
+cam_hal: FB-OVF
+[0;32mI (1319) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1319) wifi:wifi certification version: v7.0[0m
+[0;32mI (1319) wifi:config NVS flash: enabled[0m
+[0;32mI (1322) wifi:config nano formatting: disabled[0m
+[0;32mI (1326) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1331) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1335) wifi:Init management short buffer num: 32[0m
+[0;32mI (1340) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1344) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1348) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1352) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1356) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1361) wifi_init: rx ba win: 6[0m
+[0;32mI (1363) wifi_init: accept mbox: 6[0m
+[0;32mI (1366) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1369) wifi_init: udp mbox: 6[0m
+[0;32mI (1372) wifi_init: tcp mbox: 6[0m
+[0;32mI (1375) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1378) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1382) wifi_init: tcp mss: 1440[0m
+[0;32mI (1385) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1388) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1393) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (1432) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1482) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1483) wifi:enable tsf[0m
+cam_hal: FB-SIZE: 46080 != 153600
+[0;32mI (1484) WARDEN: Wi-Fi initialization complete, SSID: A34[0m
+[0;32mI (1484) WARDEN: Wi-Fi station started, connecting...[0m
+[0;32mI (1499) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1500) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1540) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1563) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1581) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1582) wifi:security: WPA2-PSK, phy: bgn, rssi: -42, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1588) wifi:pm start, type: 1[0m
+
+[0;32mI (1589) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1598) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1606) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1614) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2639) esp_netif_handlers: sta ip: 10.122.202.50, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (2639) WARDEN: Connected to Wi-Fi, IP: 10.122.202.50[0m
+[0;32mI (2641) WARDEN: Connected to SSID: A34[0m
+[0;32mI (3675) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (3907) WARDEN: Backend health check: ONLINE[0m
+[0;32mI (3907) WARDEN: Telemetry task started[0m
+[0;32mI (3907) WARDEN: Backend initialization complete[0m
+[0;32mI (3908) WARDEN: Warden STA MAC: 94:A9:90:0A:EF:6C[0m
+[0;32mI (3912) WARDEN: ESP-NOW using Wi-Fi channel: 6 (from AP connection)[0m
+[0;32mI (3919) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (3922) WARDEN: ESP-NOW Slave: 00:70:07:7E:D8:14[0m
+[0;32mI (3927) LVGL: Starting LVGL task[0m
+[0;32mI (4057) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (4074) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (4074) wifi:STA is scanning or connecting, or AP has connected with external STAs, cannot set channel[0m
+
+[0;32mI (4076) SWARM_LINK: Swarm link ready on channel 6 (Warden)[0m
+[0;32mI (4081) WARDEN: Initializing camera streaming server...[0m
+[0;32mI (4086) CAM_STREAM: Starting camera stream server on port 81[0m
+[0;32mI (4101) CAM_STREAM: Live /stream disabled (snapshot-only mode) — was: http://10.122.202.50:81/stream[0m
+[0;32mI (4102) CAM_STREAM: Snapshot endpoint: http://[IP]:81/capture[0m
+[0;32mI (4107) CAM_STREAM: Snapshot endpoint: http://[IP]:81/snapshot[0m
+[0;32mI (4113) CAM_STREAM: Status endpoint: http://[IP]:81/status[0m
+[0;32mI (4118) WARDEN: Camera up in snapshot-only mode (no live /stream): http://10.122.202.50:81/stream[0m
+[0;32mI (4127) WARDEN: ========================================[0m
+[0;32mI (4132) WARDEN: Warden Master READY[0m
+[0;32mI (4135) WARDEN: Watching for FIRE / SMOKE...[0m
+[0;32mI (4139) WARDEN: ========================================[0m
+[0;32mI (4144) main_task: Returned from app_main()[0m
+[0;32mI (7098) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (9097) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (14085) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (19078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (20053) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (24086) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (29077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (33006) WARDEN: Inference | DSP=5ms NN=2938ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (34089) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (39078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (44077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (45961) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (49078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (54077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (54976) CAM_STREAM: Capture requested[0m
+[0;32mI (55076) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (55076) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (55142) CAM_STREAM: JPEG conversion successful: 9297 bytes[0m
+[0;32mI (55156) CAM_STREAM: Capture sent: 9297 bytes (JPEG)[0m
+[0;32mI (55159) CAM_STREAM: Capture requested[0m
+[0;32mI (55260) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (55260) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (55325) CAM_STREAM: JPEG conversion successful: 9272 bytes[0m
+[0;32mI (55338) CAM_STREAM: Capture sent: 9272 bytes (JPEG)[0m
+[0;32mI (55341) CAM_STREAM: Capture requested[0m
+[0;32mI (55441) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (55441) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (55507) CAM_STREAM: JPEG conversion successful: 8899 bytes[0m
+[0;32mI (55522) CAM_STREAM: Capture sent: 8899 bytes (JPEG)[0m
+[0;32mI (55808) CAM_STREAM: Capture requested[0m
+[0;32mI (55908) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (55908) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (55973) CAM_STREAM: JPEG conversion successful: 8951 bytes[0m
+[0;32mI (55993) CAM_STREAM: Capture sent: 8951 bytes (JPEG)[0m
+[0;32mI (56182) CAM_STREAM: Capture requested[0m
+[0;32mI (56282) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (56282) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (56347) CAM_STREAM: JPEG conversion successful: 9055 bytes[0m
+[0;32mI (56357) CAM_STREAM: Capture sent: 9055 bytes (JPEG)[0m
+[0;32mI (56699) CAM_STREAM: Capture requested[0m
+[0;32mI (56799) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (56799) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (56870) CAM_STREAM: JPEG conversion successful: 8929 bytes[0m
+[0;32mI (56878) CAM_STREAM: Capture sent: 8929 bytes (JPEG)[0m
+[0;32mI (57206) CAM_STREAM: Capture requested[0m
+[0;32mI (57306) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (57306) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (57376) CAM_STREAM: JPEG conversion successful: 7746 bytes[0m
+[0;32mI (57428) CAM_STREAM: Capture sent: 7746 bytes (JPEG)[0m
+[0;32mI (57726) CAM_STREAM: Capture requested[0m
+[0;32mI (57827) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (57827) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (57895) CAM_STREAM: JPEG conversion successful: 7258 bytes[0m
+[0;32mI (58002) CAM_STREAM: Capture sent: 7258 bytes (JPEG)[0m
+[0;32mI (58233) CAM_STREAM: Capture requested[0m
+[0;32mI (58334) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (58334) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (58405) CAM_STREAM: JPEG conversion successful: 6318 bytes[0m
+[0;32mI (58415) CAM_STREAM: Capture sent: 6318 bytes (JPEG)[0m
+[0;32mI (58743) CAM_STREAM: Capture requested[0m
+[0;32mI (58844) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (58844) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (58915) CAM_STREAM: JPEG conversion successful: 6607 bytes[0m
+[0;32mI (59030) CAM_STREAM: Capture sent: 6607 bytes (JPEG)[0m
+[0;32mI (59078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (59164) CAM_STREAM: Capture requested[0m
+[0;32mI (59264) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (59264) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (59335) CAM_STREAM: JPEG conversion successful: 6886 bytes[0m
+[0;32mI (59345) CAM_STREAM: Capture sent: 6886 bytes (JPEG)[0m
+[0;32mI (59488) WARDEN: Inference | DSP=5ms NN=3011ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (59652) CAM_STREAM: Capture requested[0m
+[0;32mI (59753) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (59753) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (59817) CAM_STREAM: JPEG conversion successful: 7971 bytes[0m
+[0;32mI (59825) CAM_STREAM: Capture sent: 7971 bytes (JPEG)[0m
+[0;32mI (60175) CAM_STREAM: Capture requested[0m
+[0;32mI (60275) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (60275) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (60340) CAM_STREAM: JPEG conversion successful: 8703 bytes[0m
+[0;32mI (60347) CAM_STREAM: Capture sent: 8703 bytes (JPEG)[0m
+[0;32mI (64080) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (69078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (72441) WARDEN: Inference | DSP=5ms NN=2938ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (74077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (75449) CAM_STREAM: Capture requested[0m
+[0;32mI (75550) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (75550) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (75616) CAM_STREAM: JPEG conversion successful: 9093 bytes[0m
+[0;32mI (75623) CAM_STREAM: Capture sent: 9093 bytes (JPEG)[0m
+[0;32mI (76154) CAM_STREAM: Capture requested[0m
+[0;32mI (76254) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (76254) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (76319) CAM_STREAM: JPEG conversion successful: 9058 bytes[0m
+[0;32mI (76327) CAM_STREAM: Capture sent: 9058 bytes (JPEG)[0m
+[0;32mI (76764) CAM_STREAM: Capture requested[0m
+[0;32mI (76864) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (76864) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (76930) CAM_STREAM: JPEG conversion successful: 9022 bytes[0m
+[0;32mI (76940) CAM_STREAM: Capture sent: 9022 bytes (JPEG)[0m
+[0;32mI (77708) CAM_STREAM: Capture requested[0m
+[0;32mI (77808) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (77808) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (77873) CAM_STREAM: JPEG conversion successful: 9462 bytes[0m
+[0;32mI (77893) CAM_STREAM: Capture sent: 9462 bytes (JPEG)[0m
+[0;32mI (78814) CAM_STREAM: Capture requested[0m
+[0;32mI (78915) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (78915) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (78980) CAM_STREAM: JPEG conversion successful: 9145 bytes[0m
+[0;32mI (78989) CAM_STREAM: Capture sent: 9145 bytes (JPEG)[0m
+[0;32mI (79078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (80419) CAM_STREAM: Capture requested[0m
+[0;32mI (80520) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (80520) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (80585) CAM_STREAM: JPEG conversion successful: 9156 bytes[0m
+[0;32mI (80616) CAM_STREAM: Capture sent: 9156 bytes (JPEG)[0m
+[0;32mI (80767) CAM_STREAM: Capture requested[0m
+[0;32mI (80868) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (80868) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (80934) CAM_STREAM: JPEG conversion successful: 9872 bytes[0m
+[0;32mI (81027) CAM_STREAM: Capture sent: 9872 bytes (JPEG)[0m
+[0;32mI (81695) CAM_STREAM: Capture requested[0m
+[0;32mI (81796) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (81796) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (81861) CAM_STREAM: JPEG conversion successful: 10222 bytes[0m
+[0;32mI (81905) CAM_STREAM: Capture sent: 10222 bytes (JPEG)[0m
+[0;32mI (82603) CAM_STREAM: Capture requested[0m
+[0;32mI (82704) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (82704) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (82782) CAM_STREAM: JPEG conversion successful: 17249 bytes[0m
+[0;33mW (82837) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (82838) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (82841) CAM_STREAM: Capture requested[0m
+[0;32mI (82941) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (82941) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (83020) CAM_STREAM: JPEG conversion successful: 21856 bytes[0m
+[0;33mW (83170) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (83171) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (83175) CAM_STREAM: Capture requested[0m
+[0;32mI (83275) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (83275) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (83352) CAM_STREAM: JPEG conversion successful: 17445 bytes[0m
+[0;32mI (83454) CAM_STREAM: Capture sent: 17445 bytes (JPEG)[0m
+[0;32mI (83729) CAM_STREAM: Capture requested[0m
+[0;32mI (83829) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (83829) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (83905) CAM_STREAM: JPEG conversion successful: 17444 bytes[0m
+[0;32mI (84017) CAM_STREAM: Capture sent: 17444 bytes (JPEG)[0m
+[0;32mI (84080) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (84156) CAM_STREAM: Capture requested[0m
+[0;32mI (84256) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (84256) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (84331) CAM_STREAM: JPEG conversion successful: 16359 bytes[0m
+[0;32mI (84354) CAM_STREAM: Capture sent: 16359 bytes (JPEG)[0m
+[0;32mI (84753) CAM_STREAM: Capture requested[0m
+[0;32mI (84853) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (84853) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (84932) CAM_STREAM: JPEG conversion successful: 17628 bytes[0m
+[0;32mI (84960) CAM_STREAM: Capture sent: 17628 bytes (JPEG)[0m
+[0;32mI (85265) CAM_STREAM: Capture requested[0m
+[0;32mI (85365) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (85365) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (85441) CAM_STREAM: JPEG conversion successful: 13789 bytes[0m
+[0;32mI (85462) CAM_STREAM: Capture sent: 13789 bytes (JPEG)[0m
+[0;32mI (85491) WARDEN: Inference | DSP=5ms NN=3035ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (85675) CAM_STREAM: Capture requested[0m
+[0;32mI (85776) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (85776) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (85844) CAM_STREAM: JPEG conversion successful: 14533 bytes[0m
+[0;32mI (85866) CAM_STREAM: Capture sent: 14533 bytes (JPEG)[0m
+[0;32mI (86186) CAM_STREAM: Capture requested[0m
+[0;32mI (86287) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (86287) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (86356) CAM_STREAM: JPEG conversion successful: 15019 bytes[0m
+[0;32mI (86374) CAM_STREAM: Capture sent: 15019 bytes (JPEG)[0m
+[0;32mI (86699) CAM_STREAM: Capture requested[0m
+[0;32mI (86799) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (86799) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (86868) CAM_STREAM: JPEG conversion successful: 15374 bytes[0m
+[0;32mI (86887) CAM_STREAM: Capture sent: 15374 bytes (JPEG)[0m
+[0;32mI (87236) CAM_STREAM: Capture requested[0m
+[0;32mI (87337) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (87337) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (87406) CAM_STREAM: JPEG conversion successful: 15486 bytes[0m
+[0;32mI (87432) CAM_STREAM: Capture sent: 15486 bytes (JPEG)[0m
+[0;32mI (87723) CAM_STREAM: Capture requested[0m
+[0;32mI (87824) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (87824) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (87893) CAM_STREAM: JPEG conversion successful: 15685 bytes[0m
+[0;32mI (87975) CAM_STREAM: Capture sent: 15685 bytes (JPEG)[0m
+[0;32mI (88233) CAM_STREAM: Capture requested[0m
+[0;32mI (88333) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (88333) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (88402) CAM_STREAM: JPEG conversion successful: 15248 bytes[0m
+[0;32mI (88439) CAM_STREAM: Capture sent: 15248 bytes (JPEG)[0m
+[0;32mI (88671) CAM_STREAM: Capture requested[0m
+[0;32mI (88772) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (88772) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (88841) CAM_STREAM: JPEG conversion successful: 15821 bytes[0m
+[0;32mI (88865) CAM_STREAM: Capture sent: 15821 bytes (JPEG)[0m
+[0;32mI (89077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (91500) CAM_STREAM: Capture requested[0m
+[0;32mI (91600) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (91600) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (91672) CAM_STREAM: JPEG conversion successful: 16369 bytes[0m
+[0;33mW (91682) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (91683) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (91688) CAM_STREAM: Capture requested[0m
+[0;32mI (91788) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (91788) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (91856) CAM_STREAM: JPEG conversion successful: 13671 bytes[0m
+[0;33mW (91871) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (91872) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (91874) CAM_STREAM: Capture requested[0m
+[0;32mI (91975) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (91975) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (92045) CAM_STREAM: JPEG conversion successful: 17693 bytes[0m
+[0;32mI (92111) CAM_STREAM: Capture sent: 17693 bytes (JPEG)[0m
+[0;32mI (92167) CAM_STREAM: Capture requested[0m
+[0;32mI (92267) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (92267) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (92335) CAM_STREAM: JPEG conversion successful: 14334 bytes[0m
+[0;32mI (92385) CAM_STREAM: Capture sent: 14334 bytes (JPEG)[0m
+[0;32mI (92744) CAM_STREAM: Capture requested[0m
+[0;32mI (92845) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (92845) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (92916) CAM_STREAM: JPEG conversion successful: 17303 bytes[0m
+[0;32mI (92992) CAM_STREAM: Capture sent: 17303 bytes (JPEG)[0m
+[0;32mI (93190) CAM_STREAM: Capture requested[0m
+[0;32mI (93290) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (93290) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (93361) CAM_STREAM: JPEG conversion successful: 18696 bytes[0m
+[0;32mI (93436) CAM_STREAM: Capture sent: 18696 bytes (JPEG)[0m
+[0;32mI (93767) CAM_STREAM: Capture requested[0m
+[0;32mI (93867) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (93867) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (93935) CAM_STREAM: JPEG conversion successful: 13137 bytes[0m
+[0;32mI (93993) CAM_STREAM: Capture sent: 13137 bytes (JPEG)[0m
+[0;32mI (94081) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (94174) CAM_STREAM: Capture requested[0m
+[0;32mI (94274) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (94274) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (94342) CAM_STREAM: JPEG conversion successful: 13795 bytes[0m
+[0;32mI (94398) CAM_STREAM: Capture sent: 13795 bytes (JPEG)[0m
+[0;32mI (94654) CAM_STREAM: Capture requested[0m
+[0;32mI (94754) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (94754) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (94823) CAM_STREAM: JPEG conversion successful: 16251 bytes[0m
+[0;32mI (94853) CAM_STREAM: Capture sent: 16251 bytes (JPEG)[0m
+[0;32mI (95197) CAM_STREAM: Capture requested[0m
+[0;32mI (95297) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (95297) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (95366) CAM_STREAM: JPEG conversion successful: 15751 bytes[0m
+[0;32mI (95387) CAM_STREAM: Capture sent: 15751 bytes (JPEG)[0m
+[0;32mI (95710) CAM_STREAM: Capture requested[0m
+[0;32mI (95810) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (95810) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (95886) CAM_STREAM: JPEG conversion successful: 16335 bytes[0m
+[0;32mI (95900) CAM_STREAM: Capture sent: 16335 bytes (JPEG)[0m
+[0;32mI (96223) CAM_STREAM: Capture requested[0m
+[0;32mI (96323) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (96323) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (96400) CAM_STREAM: JPEG conversion successful: 15782 bytes[0m
+[0;32mI (96493) CAM_STREAM: Capture sent: 15782 bytes (JPEG)[0m
+[0;32mI (96732) CAM_STREAM: Capture requested[0m
+[0;32mI (96833) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (96833) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (96907) CAM_STREAM: JPEG conversion successful: 16054 bytes[0m
+[0;32mI (96923) CAM_STREAM: Capture sent: 16054 bytes (JPEG)[0m
+[0;32mI (97247) CAM_STREAM: Capture requested[0m
+[0;32mI (97347) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (97347) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (97424) CAM_STREAM: JPEG conversion successful: 15610 bytes[0m
+[0;32mI (97458) CAM_STREAM: Capture sent: 15610 bytes (JPEG)[0m
+[0;32mI (97759) CAM_STREAM: Capture requested[0m
+[0;32mI (97859) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (97859) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (97937) CAM_STREAM: JPEG conversion successful: 16495 bytes[0m
+[0;32mI (97996) CAM_STREAM: Capture sent: 16495 bytes (JPEG)[0m
+[0;32mI (98270) CAM_STREAM: Capture requested[0m
+[0;32mI (98370) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (98370) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (98445) CAM_STREAM: JPEG conversion successful: 12960 bytes[0m
+[0;32mI (98461) CAM_STREAM: Capture sent: 12960 bytes (JPEG)[0m
+[0;32mI (98527) WARDEN: Inference | DSP=5ms NN=3020ms POST=0ms | FIRE=0.59 | SMOKE=0.00[0m
+[0;32mI (98732) CAM_STREAM: Capture requested[0m
+[0;32mI (98833) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (98833) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (98901) CAM_STREAM: JPEG conversion successful: 11455 bytes[0m
+[0;32mI (98949) CAM_STREAM: Capture sent: 11455 bytes (JPEG)[0m
+[0;32mI (99077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (101540) CAM_STREAM: Capture requested[0m
+[0;32mI (101640) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (101640) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (101710) CAM_STREAM: JPEG conversion successful: 12568 bytes[0m
+[0;33mW (101730) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (101730) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (101732) CAM_STREAM: Capture requested[0m
+[0;32mI (101834) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (101834) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (101902) CAM_STREAM: JPEG conversion successful: 12137 bytes[0m
+[0;33mW (101908) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (101908) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (101910) CAM_STREAM: Capture requested[0m
+[0;32mI (102011) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (102011) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (102078) CAM_STREAM: JPEG conversion successful: 12688 bytes[0m
+[0;33mW (102089) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (102089) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (102091) CAM_STREAM: Capture requested[0m
+[0;32mI (102192) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (102192) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (102260) CAM_STREAM: JPEG conversion successful: 13047 bytes[0m
+[0;33mW (102272) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (102272) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (102275) CAM_STREAM: Capture requested[0m
+[0;32mI (102376) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (102376) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (102444) CAM_STREAM: JPEG conversion successful: 13713 bytes[0m
+[0;33mW (102453) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (102453) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (102456) CAM_STREAM: Capture requested[0m
+[0;32mI (102556) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (102556) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (102624) CAM_STREAM: JPEG conversion successful: 13506 bytes[0m
+[0;33mW (102908) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (102909) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (102911) CAM_STREAM: Capture requested[0m
+[0;32mI (103012) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (103012) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (103081) CAM_STREAM: JPEG conversion successful: 13961 bytes[0m
+[0;33mW (103097) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (103098) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (103102) CAM_STREAM: Capture requested[0m
+[0;32mI (103202) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (103202) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (103270) CAM_STREAM: JPEG conversion successful: 12410 bytes[0m
+[0;33mW (103292) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (103292) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (103295) CAM_STREAM: Capture requested[0m
+[0;32mI (103395) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (103395) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (103463) CAM_STREAM: JPEG conversion successful: 12701 bytes[0m
+[0;32mI (103479) CAM_STREAM: Capture sent: 12701 bytes (JPEG)[0m
+[0;32mI (103699) CAM_STREAM: Capture requested[0m
+[0;32mI (103799) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (103799) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (103863) CAM_STREAM: JPEG conversion successful: 6935 bytes[0m
+[0;32mI (103875) CAM_STREAM: Capture sent: 6935 bytes (JPEG)[0m
+[0;32mI (104077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (104534) CAM_STREAM: Capture requested[0m
+[0;32mI (104634) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (104634) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (104699) CAM_STREAM: JPEG conversion successful: 5935 bytes[0m
+[0;33mW (104742) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (104743) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (104766) CAM_STREAM: Capture requested[0m
+[0;32mI (104866) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (104866) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (104930) CAM_STREAM: JPEG conversion successful: 5775 bytes[0m
+[0;32mI (104951) CAM_STREAM: Capture sent: 5775 bytes (JPEG)[0m
+[0;32mI (105236) CAM_STREAM: Capture requested[0m
+[0;32mI (105336) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (105336) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (105400) CAM_STREAM: JPEG conversion successful: 6726 bytes[0m
+[0;32mI (105418) CAM_STREAM: Capture sent: 6726 bytes (JPEG)[0m
+[0;32mI (105793) CAM_STREAM: Capture requested[0m
+[0;32mI (105893) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (105893) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (105961) CAM_STREAM: JPEG conversion successful: 11365 bytes[0m
+[0;32mI (105983) CAM_STREAM: Capture sent: 11365 bytes (JPEG)[0m
+[0;32mI (106260) CAM_STREAM: Capture requested[0m
+[0;32mI (106360) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (106360) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (106426) CAM_STREAM: JPEG conversion successful: 11065 bytes[0m
+[0;32mI (106482) CAM_STREAM: Capture sent: 11065 bytes (JPEG)[0m
+[0;32mI (106666) CAM_STREAM: Capture requested[0m
+[0;32mI (106766) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (106766) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (106839) CAM_STREAM: JPEG conversion successful: 23826 bytes[0m
+[0;32mI (106952) CAM_STREAM: Capture sent: 23826 bytes (JPEG)[0m
+[0;32mI (107178) CAM_STREAM: Capture requested[0m
+[0;32mI (107278) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (107278) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (107345) CAM_STREAM: JPEG conversion successful: 13113 bytes[0m
+[0;32mI (107403) CAM_STREAM: Capture sent: 13113 bytes (JPEG)[0m
+[0;32mI (107654) CAM_STREAM: Capture requested[0m
+[0;32mI (107754) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (107754) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (107827) CAM_STREAM: JPEG conversion successful: 22007 bytes[0m
+[0;32mI (107871) CAM_STREAM: Capture sent: 22007 bytes (JPEG)[0m
+[0;32mI (108204) CAM_STREAM: Capture requested[0m
+[0;32mI (108304) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (108304) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (108377) CAM_STREAM: JPEG conversion successful: 23649 bytes[0m
+[0;32mI (108462) CAM_STREAM: Capture sent: 23649 bytes (JPEG)[0m
+[0;32mI (108650) CAM_STREAM: Capture requested[0m
+[0;32mI (108751) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (108751) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (108827) CAM_STREAM: JPEG conversion successful: 15573 bytes[0m
+[0;32mI (109078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (109146) CAM_STREAM: Capture sent: 15573 bytes (JPEG)[0m
+[0;32mI (109169) CAM_STREAM: Capture requested[0m
+[0;32mI (109269) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (109269) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (109345) CAM_STREAM: JPEG conversion successful: 15456 bytes[0m
+[0;32mI (109365) CAM_STREAM: Capture sent: 15456 bytes (JPEG)[0m
+[0;32mI (109740) CAM_STREAM: Capture requested[0m
+[0;32mI (109841) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (109841) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (109914) CAM_STREAM: JPEG conversion successful: 10819 bytes[0m
+[0;32mI (109926) CAM_STREAM: Capture sent: 10819 bytes (JPEG)[0m
+[0;32mI (110261) CAM_STREAM: Capture requested[0m
+[0;32mI (110362) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (110362) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (110440) CAM_STREAM: JPEG conversion successful: 17722 bytes[0m
+[0;32mI (110506) CAM_STREAM: Capture sent: 17722 bytes (JPEG)[0m
+[0;32mI (110664) CAM_STREAM: Capture requested[0m
+[0;32mI (110765) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (110765) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (110838) CAM_STREAM: JPEG conversion successful: 12787 bytes[0m
+[0;32mI (110863) CAM_STREAM: Capture sent: 12787 bytes (JPEG)[0m
+[0;32mI (111174) CAM_STREAM: Capture requested[0m
+[0;32mI (111274) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (111274) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (111352) CAM_STREAM: JPEG conversion successful: 18073 bytes[0m
+[0;32mI (111404) CAM_STREAM: Capture sent: 18073 bytes (JPEG)[0m
+[0;32mI (111565) WARDEN: Inference | DSP=5ms NN=3023ms POST=0ms | FIRE=0.00 | SMOKE=0.00[0m
+[0;32mI (111650) CAM_STREAM: Capture requested[0m
+[0;32mI (111750) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (111750) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (111823) CAM_STREAM: JPEG conversion successful: 23957 bytes[0m
+[0;32mI (112091) CAM_STREAM: Capture sent: 23957 bytes (JPEG)[0m
+[0;32mI (112204) CAM_STREAM: Capture requested[0m
+[0;32mI (112304) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (112304) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (112377) CAM_STREAM: JPEG conversion successful: 23146 bytes[0m
+[0;32mI (112428) CAM_STREAM: Capture sent: 23146 bytes (JPEG)[0m
+[0;32mI (112713) CAM_STREAM: Capture requested[0m
+[0;32mI (112814) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (112814) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (112886) CAM_STREAM: JPEG conversion successful: 22726 bytes[0m
+[0;32mI (112944) CAM_STREAM: Capture sent: 22726 bytes (JPEG)[0m
+[0;32mI (113151) CAM_STREAM: Capture requested[0m
+[0;32mI (113251) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (113251) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (113323) CAM_STREAM: JPEG conversion successful: 21080 bytes[0m
+[0;32mI (113391) CAM_STREAM: Capture sent: 21080 bytes (JPEG)[0m
+[0;32mI (113657) CAM_STREAM: Capture requested[0m
+[0;32mI (113757) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (113757) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (113830) CAM_STREAM: JPEG conversion successful: 24125 bytes[0m
+[0;32mI (113887) CAM_STREAM: Capture sent: 24125 bytes (JPEG)[0m
+[0;32mI (114078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (114577) CAM_STREAM: Capture requested[0m
+[0;32mI (114678) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (114678) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (114749) CAM_STREAM: JPEG conversion successful: 17727 bytes[0m
+[0;33mW (114758) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (114759) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (114762) CAM_STREAM: Capture requested[0m
+[0;32mI (114862) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (114862) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (114933) CAM_STREAM: JPEG conversion successful: 16150 bytes[0m
+[0;32mI (115032) CAM_STREAM: Capture sent: 16150 bytes (JPEG)[0m
+[0;32mI (115200) CAM_STREAM: Capture requested[0m
+[0;32mI (115300) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (115300) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (115369) CAM_STREAM: JPEG conversion successful: 14834 bytes[0m
+[0;32mI (115407) CAM_STREAM: Capture sent: 14834 bytes (JPEG)[0m
+[0;32mI (115683) CAM_STREAM: Capture requested[0m
+[0;32mI (115783) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (115783) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (115849) CAM_STREAM: JPEG conversion successful: 11085 bytes[0m
+[0;32mI (115901) CAM_STREAM: Capture sent: 11085 bytes (JPEG)[0m
+[0;32mI (116192) CAM_STREAM: Capture requested[0m
+[0;32mI (116292) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (116292) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (116358) CAM_STREAM: JPEG conversion successful: 11340 bytes[0m
+[0;32mI (116376) CAM_STREAM: Capture sent: 11340 bytes (JPEG)[0m
+[0;32mI (116701) CAM_STREAM: Capture requested[0m
+[0;32mI (116802) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (116802) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (116869) CAM_STREAM: JPEG conversion successful: 12268 bytes[0m
+[0;32mI (116896) CAM_STREAM: Capture sent: 12268 bytes (JPEG)[0m
+[0;32mI (117214) CAM_STREAM: Capture requested[0m
+[0;32mI (117314) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (117314) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (117382) CAM_STREAM: JPEG conversion successful: 14004 bytes[0m
+[0;32mI (117405) CAM_STREAM: Capture sent: 14004 bytes (JPEG)[0m
+[0;32mI (117649) CAM_STREAM: Capture requested[0m
+[0;32mI (117750) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (117750) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (117818) CAM_STREAM: JPEG conversion successful: 14514 bytes[0m
+[0;32mI (117847) CAM_STREAM: Capture sent: 14514 bytes (JPEG)[0m
+[0;32mI (118269) CAM_STREAM: Capture requested[0m
+[0;32mI (118370) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (118370) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (118439) CAM_STREAM: JPEG conversion successful: 14645 bytes[0m
+[0;32mI (118457) CAM_STREAM: Capture sent: 14645 bytes (JPEG)[0m
+[0;32mI (118749) CAM_STREAM: Capture requested[0m
+[0;32mI (118850) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (118850) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (118919) CAM_STREAM: JPEG conversion successful: 15071 bytes[0m
+[0;32mI (118941) CAM_STREAM: Capture sent: 15071 bytes (JPEG)[0m
+[0;32mI (119078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (119260) CAM_STREAM: Capture requested[0m
+[0;32mI (119361) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (119361) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (119430) CAM_STREAM: JPEG conversion successful: 14992 bytes[0m
+[0;32mI (119460) CAM_STREAM: Capture sent: 14992 bytes (JPEG)[0m
+[0;32mI (119672) CAM_STREAM: Capture requested[0m
+[0;32mI (119772) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (119772) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (119840) CAM_STREAM: JPEG conversion successful: 15206 bytes[0m
+[0;32mI (119864) CAM_STREAM: Capture sent: 15206 bytes (JPEG)[0m
+[0;32mI (120191) CAM_STREAM: Capture requested[0m
+[0;32mI (120292) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (120292) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (120361) CAM_STREAM: JPEG conversion successful: 15217 bytes[0m
+[0;32mI (120379) CAM_STREAM: Capture sent: 15217 bytes (JPEG)[0m
+[0;32mI (120696) CAM_STREAM: Capture requested[0m
+[0;32mI (120797) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (120797) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (120865) CAM_STREAM: JPEG conversion successful: 14768 bytes[0m
+[0;32mI (120923) CAM_STREAM: Capture sent: 14768 bytes (JPEG)[0m
+[0;32mI (121209) CAM_STREAM: Capture requested[0m
+[0;32mI (121309) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (121309) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (121377) CAM_STREAM: JPEG conversion successful: 15120 bytes[0m
+[0;32mI (121452) CAM_STREAM: Capture sent: 15120 bytes (JPEG)[0m
+[0;32mI (121655) CAM_STREAM: Capture requested[0m
+[0;32mI (121756) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (121756) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (121831) CAM_STREAM: JPEG conversion successful: 15393 bytes[0m
+[0;32mI (121886) CAM_STREAM: Capture sent: 15393 bytes (JPEG)[0m
+[0;32mI (122232) CAM_STREAM: Capture requested[0m
+[0;32mI (122332) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (122332) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (122408) CAM_STREAM: JPEG conversion successful: 15530 bytes[0m
+[0;32mI (122458) CAM_STREAM: Capture sent: 15530 bytes (JPEG)[0m
+[0;32mI (122651) CAM_STREAM: Capture requested[0m
+[0;32mI (122751) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (122751) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (122826) CAM_STREAM: JPEG conversion successful: 15501 bytes[0m
+[0;32mI (122853) CAM_STREAM: Capture sent: 15501 bytes (JPEG)[0m
+[0;32mI (123257) CAM_STREAM: Capture requested[0m
+[0;32mI (123357) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (123357) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (123432) CAM_STREAM: JPEG conversion successful: 15548 bytes[0m
+[0;32mI (123450) CAM_STREAM: Capture sent: 15548 bytes (JPEG)[0m
+[0;32mI (123665) CAM_STREAM: Capture requested[0m
+[0;32mI (123765) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (123765) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (123841) CAM_STREAM: JPEG conversion successful: 15492 bytes[0m
+[0;32mI (123909) CAM_STREAM: Capture sent: 15492 bytes (JPEG)[0m
+[0;32mI (124078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (124589) WARDEN: Inference | DSP=5ms NN=3008ms POST=0ms | FIRE=0.84 | SMOKE=0.00[0m
+[0;32mI (124635) CAM_STREAM: Capture requested[0m
+[0;32mI (124735) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (124735) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (124806) CAM_STREAM: JPEG conversion successful: 15404 bytes[0m
+[0;33mW (124843) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (124843) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (124847) CAM_STREAM: Capture requested[0m
+[0;32mI (124947) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (124947) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (125017) CAM_STREAM: JPEG conversion successful: 15259 bytes[0m
+[0;32mI (125061) CAM_STREAM: Capture sent: 15259 bytes (JPEG)[0m
+[0;32mI (125154) CAM_STREAM: Capture requested[0m
+[0;32mI (125254) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (125254) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (125324) CAM_STREAM: JPEG conversion successful: 15341 bytes[0m
+[0;32mI (125484) CAM_STREAM: Capture sent: 15341 bytes (JPEG)[0m
+[0;32mI (129085) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (130600) CAM_STREAM: Capture requested[0m
+[0;32mI (130701) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (130701) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (130770) CAM_STREAM: JPEG conversion successful: 15296 bytes[0m
+[0;33mW (130783) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (130784) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (134079) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (137543) WARDEN: Inference | DSP=5ms NN=2938ms POST=0ms | FIRE=0.83 | SMOKE=0.66[0m
+[0;32mI (137555) CAM_STREAM: Capture requested[0m
+[0;32mI (137655) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (137655) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (137727) CAM_STREAM: JPEG conversion successful: 15349 bytes[0m
+[0;33mW (138030) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (138031) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (138034) CAM_STREAM: Capture requested[0m
+[0;32mI (138134) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (138134) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (138204) CAM_STREAM: JPEG conversion successful: 15071 bytes[0m
+[0;32mI (138345) CAM_STREAM: Capture sent: 15071 bytes (JPEG)[0m
+[0;32mI (139089) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (144087) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (149077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (150498) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.00 | SMOKE=0.82[0m
+[0;32mI (154081) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (159079) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (163453) WARDEN: Inference | DSP=5ms NN=2938ms POST=0ms | FIRE=0.00 | SMOKE=0.82[0m
+[0;32mI (163454) WARDEN: TX -> SMOKE | seq=1 | fire=0.00 | smoke=0.82[0m
+[0;33mW (163455) SWARM_LINK: Swarm: broadcasting FIRE_ALERT state=2 fire=0.0% smoke=82.0%[0m
+[0;32mI (163517) WARDEN: ESP-NOW [00:70:07:7E:D8:14] -> FAIL[0m
+[0;32mI (163518) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (164082) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (169099) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (174081) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (176416) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.00 | SMOKE=0.82[0m
+[0;32mI (176418) WARDEN: TX -> SMOKE | seq=2 | fire=0.00 | smoke=0.82[0m
+[0;33mW (176419) SWARM_LINK: Swarm: broadcasting FIRE_ALERT state=2 fire=0.0% smoke=82.4%[0m
+[0;32mI (176477) WARDEN: ESP-NOW [00:70:07:7E:D8:14] -> FAIL[0m
+[0;32mI (176478) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (179078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (184079) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (189081) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (189380) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.83 | SMOKE=0.00[0m
+[0;32mI (194058) SWARM_LINK: Swarm: WAKE from node 1[0m
+[0;32mI (194059) WARDEN: Swarm: WAKE received -> scout delay armed (5 minutes)[0m
+[0;32mI (194087) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (199081) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (202334) WARDEN: Inference | DSP=5ms NN=2937ms POST=0ms | FIRE=0.95 | SMOKE=0.00[0m
+[0;32mI (204083) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (209077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (214077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (215288) WARDEN: Inference | DSP=5ms NN=2939ms POST=0ms | FIRE=0.95 | SMOKE=0.00[0m
+[0;32mI (215290) WARDEN: TX -> FIRE | seq=3 | fire=0.95 | smoke=0.00[0m
+[0;33mW (215291) SWARM_LINK: Swarm: broadcasting FIRE_ALERT state=1 fire=95.3% smoke=0.0%[0m
+[0;32mI (215351) WARDEN: ESP-NOW [00:70:07:7E:D8:14] -> FAIL[0m
+[0;32mI (215353) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (219084) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (224078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (228255) WARDEN: Inference | DSP=5ms NN=2940ms POST=0ms | FIRE=0.93 | SMOKE=0.00[0m
+[0;32mI (228256) WARDEN: TX -> FIRE | seq=4 | fire=0.93 | smoke=0.00[0m
+[0;33mW (228257) SWARM_LINK: Swarm: broadcasting FIRE_ALERT state=1 fire=93.4% smoke=0.0%[0m
+[0;32mI (228340) WARDEN: ESP-NOW [00:70:07:7E:D8:14] -> FAIL[0m
+[0;32mI (228342) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (229079) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (234077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (235900) CAM_STREAM: Capture requested[0m
+[0;32mI (236000) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (236000) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (236070) CAM_STREAM: JPEG conversion successful: 17449 bytes[0m
+[0;32mI (236109) CAM_STREAM: Capture sent: 17449 bytes (JPEG)[0m
+[0;32mI (236334) CAM_STREAM: Capture requested[0m
+[0;32mI (236434) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (236434) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (236502) CAM_STREAM: JPEG conversion successful: 13080 bytes[0m
+[0;32mI (236522) CAM_STREAM: Capture sent: 13080 bytes (JPEG)[0m
+[0;32mI (236921) CAM_STREAM: Capture requested[0m
+[0;32mI (237021) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (237021) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (237087) CAM_STREAM: JPEG conversion successful: 11492 bytes[0m
+[0;32mI (237114) CAM_STREAM: Capture sent: 11492 bytes (JPEG)[0m
+[0;32mI (237334) CAM_STREAM: Capture requested[0m
+[0;32mI (237434) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (237434) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (237501) CAM_STREAM: JPEG conversion successful: 11155 bytes[0m
+[0;32mI (237642) CAM_STREAM: Capture sent: 11155 bytes (JPEG)[0m
+[0;32mI (237840) CAM_STREAM: Capture requested[0m
+[0;32mI (237941) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (237941) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (238007) CAM_STREAM: JPEG conversion successful: 10736 bytes[0m
+[0;32mI (238032) CAM_STREAM: Capture sent: 10736 bytes (JPEG)[0m
+[0;32mI (238351) CAM_STREAM: Capture requested[0m
+[0;32mI (238452) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (238452) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (238523) CAM_STREAM: JPEG conversion successful: 8104 bytes[0m
+[0;32mI (238548) CAM_STREAM: Capture sent: 8104 bytes (JPEG)[0m
+[0;32mI (238865) CAM_STREAM: Capture requested[0m
+[0;32mI (238965) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (238965) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (239040) CAM_STREAM: JPEG conversion successful: 13606 bytes[0m
+[0;32mI (239075) CAM_STREAM: Capture sent: 13606 bytes (JPEG)[0m
+[0;32mI (239077) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (239379) CAM_STREAM: Capture requested[0m
+[0;32mI (239480) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (239480) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (239555) CAM_STREAM: JPEG conversion successful: 15221 bytes[0m
+[0;32mI (239591) CAM_STREAM: Capture sent: 15221 bytes (JPEG)[0m
+[0;32mI (239837) CAM_STREAM: Capture requested[0m
+[0;32mI (239938) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (239938) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (240011) CAM_STREAM: JPEG conversion successful: 12287 bytes[0m
+[0;32mI (240031) CAM_STREAM: Capture sent: 12287 bytes (JPEG)[0m
+[0;32mI (240400) CAM_STREAM: Capture requested[0m
+[0;32mI (240501) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (240501) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (240576) CAM_STREAM: JPEG conversion successful: 16749 bytes[0m
+[0;32mI (240694) CAM_STREAM: Capture sent: 16749 bytes (JPEG)[0m
+[0;32mI (240939) CAM_STREAM: Capture requested[0m
+[0;32mI (241039) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (241039) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (241117) CAM_STREAM: JPEG conversion successful: 19655 bytes[0m
+[0;32mI (241143) CAM_STREAM: Capture sent: 19655 bytes (JPEG)[0m
+[0;32mI (241299) WARDEN: Inference | DSP=5ms NN=3019ms POST=0ms | FIRE=0.00 | SMOKE=0.57[0m
+[0;32mI (241342) CAM_STREAM: Capture requested[0m
+[0;32mI (241443) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (241443) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (241516) CAM_STREAM: JPEG conversion successful: 18898 bytes[0m
+[0;32mI (241567) CAM_STREAM: Capture sent: 18898 bytes (JPEG)[0m
+[0;32mI (241937) CAM_STREAM: Capture requested[0m
+[0;32mI (242037) CAM_STREAM: Frame acquired: 153600 bytes, format: 0[0m
+[0;32mI (242037) CAM_STREAM: Converting RGB565 to JPEG...[0m
+[0;32mI (242109) CAM_STREAM: JPEG conversion successful: 21207 bytes[0m
+[0;32mI (242152) CAM_STREAM: Capture sent: 21207 bytes (JPEG)[0m
+[0;32mI (244078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m
+[0;32mI (249078) WARDEN: ESP-NOW [FF:FF:FF:FF:FF:FF] -> SUCCESS[0m

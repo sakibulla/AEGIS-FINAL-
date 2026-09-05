@@ -1,0 +1,71 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_slave\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_slave/build/partition_table/partition-table.bin E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_slave/build/AEGIS_SWARM_SLAVE.bin"
+AEGIS_SWARM_SLAVE.bin binary size 0xaeff0 bytes. Smallest app partition is 0x100000 bytes. 0x51010 bytes (32%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_slave\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_slave/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6610 bytes. 0x9f0 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\Espressif\frameworks\esp-idf-v5.5.5\components\esptool_py && E:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif/frameworks/esp-idf-v5.5.5 -D SERIAL_TOOL=E:/Espressif/python_env/idf5.5_py3.10_env/Scripts/python.exe;;E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_slave/build -P E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 AEGIS_SWARM_SLAVE.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.12.0
+Serial port COM10
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 00:70:07:26:b5:b4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000befff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26128 bytes to 16493...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007577... (100 %)
+Wrote 26128 bytes (16493 compressed) at 0x00001000 in 0.7 seconds (effective 278.8 kbit/s)...
+Hash of data verified.
+Compressed 716784 bytes to 462039...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c178... (6 %)
+Writing at 0x000244c2... (10 %)
+Writing at 0x0002e9e6... (13 %)
+Writing at 0x000343dc... (17 %)
+Writing at 0x0003a34b... (20 %)
+Writing at 0x0004007e... (24 %)
+Writing at 0x000460d3... (27 %)
+Writing at 0x0004bc42... (31 %)
+Writing at 0x00051ee4... (34 %)
+Writing at 0x00057506... (37 %)
+Writing at 0x0005ca1c... (41 %)
+Writing at 0x00062472... (44 %)
+Writing at 0x00067f60... (48 %)
+Writing at 0x0006d6a0... (51 %)
+Writing at 0x00073183... (55 %)
+Writing at 0x00079183... (58 %)
+Writing at 0x0007e9b9... (62 %)
+Writing at 0x000844aa... (65 %)
+Writing at 0x0008a1bf... (68 %)
+Writing at 0x0008fd09... (72 %)
+Writing at 0x00095aa8... (75 %)
+Writing at 0x0009b4eb... (79 %)
+Writing at 0x000a0e6f... (82 %)
+Writing at 0x000a6afd... (86 %)
+Writing at 0x000aca51... (89 %)
+Writing at 0x000b280b... (93 %)
+Writing at 0x000b83b5... (96 %)
+Writing at 0x000bd89c... (100 %)
+Wrote 716784 bytes (462039 compressed) at 0x00010000 in 11.4 seconds (effective 502.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 545.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

@@ -1,0 +1,391 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (237) esp_image: segment 1: paddr=000c87a4 vaddr=3fc99f00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048c26
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=b877ch (755580) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=000c87a4 vaddr=3fc99f00 size=07874h ( 30836) load[0m
+[0;32mI (244) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=b66f8h (747256) map[0m
+[0;32mI (383) esp_image: segment 3: paddr=00186720 vaddr=3fca1774 size=00a58h (  2648) load[0m
+[0;32mI (384) esp_image: segment 4: paddr=00187180 vaddr=40374000 size=15e38h ( 89656) load[0m
+[0;32mI (407) esp_image: segment 5: paddr=0019cfc0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (427) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (427) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (428) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (429) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (434) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (438) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (442) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (447) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (452) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (456) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (462) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (466) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (471) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (474) esp_psram: Speed: 80MHz[0m
+[0;32mI (477) cpu_start: Multicore app[0m
+[0;32mI (893) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (901) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (902) cpu_start: Pro cpu start user code[0m
+[0;32mI (902) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (903) app_init: Application information:[0m
+[0;32mI (907) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (912) app_init: App version:      1[0m
+[0;32mI (915) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (920) app_init: ELF file SHA256:  f6af53877...[0m
+[0;32mI (925) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (928) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (932) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (936) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (940) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (946) heap_init: At 3FCA9EF8 len 0003F818 (254 KiB): RAM[0m
+[0;32mI (952) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (957) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (962) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (969) spi_flash: detected chip: gd[0m
+[0;32mI (972) spi_flash: flash io: dio[0m
+[0;32mI (975) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (981) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (999) main_task: Started on CPU0[0m
+[0;32mI (999) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1000) main_task: Calling app_main()[0m
+[0;32mI (1003) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1010) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1016) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1023) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1030) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1058) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1060) pp: pp rom version: e7ae62f[0m
+[0;32mI (1060) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1062) wifi:wifi driver task: 3fcb9530, prio:23, stack:6656, core=0[0m
+[0;32mI (1076) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1076) wifi:wifi certification version: v7.0[0m
+[0;32mI (1076) wifi:config NVS flash: enabled[0m
+[0;32mI (1078) wifi:config nano formatting: disabled[0m
+[0;32mI (1082) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1087) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1092) wifi:Init management short buffer num: 32[0m
+[0;32mI (1096) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1100) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1104) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1108) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1112) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1117) wifi_init: rx ba win: 6[0m
+[0;32mI (1119) wifi_init: accept mbox: 6[0m
+[0;32mI (1122) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1125) wifi_init: udp mbox: 6[0m
+[0;32mI (1128) wifi_init: tcp mbox: 6[0m
+[0;32mI (1131) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1134) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1138) wifi_init: tcp mss: 1440[0m
+[0;32mI (1141) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1145) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1148) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1153) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1198) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1198) wifi:enable tsf[0m
+[0;32mI (1200) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1202) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (1203) wifi:sta is connecting, return error[0m
+[0;32mI (1209) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1214) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1220) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (1228) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1228) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1228) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1228) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1251) main_task: Returned from app_main()[0m
+[0;32mI (1255) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1275) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1290) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1290) wifi:security: WPA2-PSK, phy: bgn, rssi: -23, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1297) wifi:pm start, type: 0[0m
+
+[0;32mI (1298) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1306) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1362) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1362) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1728) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2337) esp_netif_handlers: sta ip: 10.75.11.50, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (2337) AEGIS_PATHFINDER: Connected to WiFi! IP: 10.75.11.50[0m
+[0;32mI (2339) AEGIS_PATHFINDER: Wi-Fi AP Connected on Channel: 6 (RSSI: -23 dBm)[0m
+[0;32mI (2346) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2350) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (2369) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2599) AEGIS_PATHFINDER: Backend Health Check: ONLINE[0m
+[0;32mI (2734) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (2734) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;33mW (2738) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (8746) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (9246) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (15246) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (15746) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (21746) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (22246) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (28247) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (28747) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (34748) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (35248) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (35248) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (36252) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [2/10] from Slave...[0m
+[0;33mW (36252) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (42257) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (42757) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (48757) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (49257) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (55258) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (55758) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (61759) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (62259) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (68260) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (68760) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (68760) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (69764) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [3/10] from Slave...[0m
+[0;33mW (69764) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (75769) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (76269) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (82269) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (82769) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (88770) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (89270) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (95270) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (95770) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (101770) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (102270) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (102270) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (103274) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [4/10] from Slave...[0m
+[0;33mW (103274) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (109279) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (109779) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (115780) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (116280) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (122281) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (122781) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (128781) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (129281) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (135281) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (135781) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (135781) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (136785) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [5/10] from Slave...[0m
+[0;33mW (136786) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (142790) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (143290) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (149290) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (149790) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (155790) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (156290) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (162291) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (162791) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (168791) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (169291) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (169291) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (170295) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [6/10] from Slave...[0m
+[0;33mW (170296) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (176300) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (176800) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (182800) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (183300) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (189300) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (189800) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (195801) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (196301) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (202302) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (202802) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (202802) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (203806) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [7/10] from Slave...[0m
+[0;33mW (203807) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (209811) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (210311) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (216312) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (216812) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (222812) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (223312) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (229313) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (229813) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (231755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (231755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (234757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (234757) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (235813) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (236313) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (236313) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (237317) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [8/10] from Slave...[0m
+[0;33mW (237318) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (237756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (237756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (240756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (240756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (243322) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (243757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (243757) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (243822) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (246755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (246755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (249756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (249756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (249823) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (250323) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (252758) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (252758) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (255756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (255756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (256324) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (256824) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (258755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (258755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (261754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (261754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (262825) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (263325) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (264754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (264754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (267756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (267756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (269325) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (269825) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (269825) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (270755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (270755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (270829) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [9/10] from Slave...[0m
+[0;33mW (270830) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (273754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (273754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (276756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (276756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (276834) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (277334) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (279754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (279754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (282756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (282756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (283335) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (283835) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (285753) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (285753) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (288754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (288754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (289835) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (290335) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (291760) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (291760) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (294755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (294755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (296336) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (296836) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (297759) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (297759) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (300754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (300754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (302836) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (303336) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (303337) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (303758) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (303758) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (304340) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [10/10] from Slave...[0m
+[0;33mW (304341) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (306754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (306754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (309757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (309757) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (310345) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (310845) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (312755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (312755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (315755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (315755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (316846) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (317346) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (318754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (318754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (321760) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (321760) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (323347) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (323848) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (324753) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (324753) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (327759) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (327759) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (329849) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (330350) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (330757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (330757) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (333756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (333756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (336350) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;33mW (336755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (336755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (336850) AEGIS_PATHFINDER: === PHASE 1 COMPLETE: BASELINE 2D GRID STORED ===[0m
+[0;32mI (336850) AEGIS_PATHFINDER: Executing 180-degree turnaround for Phase 2 Patrol...[0m
+[0;33mW (336854) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (338061) AEGIS_PATHFINDER: === PATROL CYCLE 1: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (338062) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (339757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (339757) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (342272) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (342272) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (344065) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (344788) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (344788) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (345066) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (347303) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (347303) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (349822) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (349822) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (351067) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (352068) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (352341) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (352341) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (354856) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (354856) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (357755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (357755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (358069) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (359070) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (360755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (360755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (363754) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (363754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (365071) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (366072) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (366758) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (366758) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (369757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (369757) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (372073) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (372755) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (372755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (373074) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (375756) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (375756) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (378761) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (378761) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (379075) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (380076) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (381757) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (38175

@@ -1,0 +1,1067 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\aegis_warden.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d00
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=caf68h (831336) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=000daf90 vaddr=3fc9db00 size=05088h ( 20616) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000e0020 vaddr=42000020 size=119a9ch (1153692) map[0m
+[0;32mI (470) esp_image: segment 3: paddr=001f9ac4 vaddr=3fca2b88 size=0589ch ( 22684) load[0m
+[0;32mI (475) esp_image: segment 4: paddr=001ff368 vaddr=40374000 size=19a64h (105060) load[0m
+[0;32mI (500) esp_image: segment 5: paddr=00218dd4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (522) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (522) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (524) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (529) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (533) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (537) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (542) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (547) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (551) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (556) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (561) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (565) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (569) esp_psram: Speed: 80MHz[0m
+[0;32mI (572) cpu_start: Multicore app[0m
+[0;32mI (987) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (996) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (996) cpu_start: Pro cpu start user code[0m
+[0;32mI (997) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (998) app_init: Application information:[0m
+[0;32mI (1002) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1007) app_init: App version:      1[0m
+[0;32mI (1010) app_init: Compile time:     Aug 16 2026 20:32:46[0m
+[0;32mI (1015) app_init: ELF file SHA256:  e95a6f018...[0m
+[0;32mI (1020) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1024) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1028) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1032) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1036) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1042) heap_init: At 3FCC0700 len 00029010 (164 KiB): RAM[0m
+[0;32mI (1047) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1052) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1058) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1065) spi_flash: detected chip: generic[0m
+[0;32mI (1068) spi_flash: flash io: dio[0m
+[0;33mW (1072) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1081) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1088) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1106) main_task: Started on CPU0[0m
+[0;32mI (1106) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1107) main_task: Calling app_main()[0m
+[0;32mI (1110) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1117) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1124) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1130) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1137) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1159) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1160) pp: pp rom version: e7ae62f[0m
+[0;32mI (1161) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1162) wifi:wifi driver task: 3fcd0608, prio:23, stack:6656, core=0[0m
+[0;32mI (1174) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1174) wifi:wifi certification version: v7.0[0m
+[0;32mI (1175) wifi:config NVS flash: enabled[0m
+[0;32mI (1179) wifi:config nano formatting: disabled[0m
+[0;32mI (1183) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1188) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1192) wifi:Init management short buffer num: 32[0m
+[0;32mI (1197) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1201) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1205) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1209) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1213) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1218) wifi_init: rx ba win: 6[0m
+[0;32mI (1220) wifi_init: accept mbox: 6[0m
+[0;32mI (1223) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1226) wifi_init: udp mbox: 6[0m
+[0;32mI (1229) wifi_init: tcp mbox: 6[0m
+[0;32mI (1232) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1235) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1238) wifi_init: tcp mss: 1440[0m
+[0;32mI (1241) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1245) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1249) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1254) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1301) wifi:mode : sta (e8:f6:0a:d7:91:60)[0m
+[0;32mI (1301) wifi:enable tsf[0m
+[0;32mI (1303) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1305) AEGIS_PATHFINDER: Pathfinder MAC: E8:F6:0A:D7:91:60[0m
+[0;32mI (1306) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1309) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (1316) LVGL: Starting LVGL task[0m
+[0;32mI (3715) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (6124) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (8534) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (470) esp_image: segment 3: paddr=001f9ac4 vaddr=3fca2b88 sizeI (992) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1000) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1001) cpu_start: Pro cpu start user code[0m
+[0;32mI (1001) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1003) app_init: Application information:[0m
+[0;32mI (1007) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1012) app_init: App version:      1[0m
+[0;32mI (1015) app_init: Compile time:     Aug 16 2026 20:32:46[0m
+[0;32mI (1020) app_init: ELF file SHA256:  e95a6f018...[0m
+[0;32mI (1025) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1029) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1033) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1037) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1041) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1047) heap_init: At 3FCC0700 len 00029010 (164 KiB): RAM[0m
+[0;32mI (1052) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1057) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1063) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1070) spi_flash: detected chip: generic[0m
+[0;32mI (1073) spi_flash: flash io: dio[0m
+[0;33mW (1077) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1086) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1093) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1111) main_task: Started on CPU0[0m
+[0;32mI (1111) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1112) main_task: Calling app_main()[0m
+[0;32mI (1115) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1122) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1129) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1135) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1142) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1164) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1165) pp: pp rom version: e7ae62f[0m
+[0;32mI (1166) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1167) wifi:wifi driver task: 3fcd0608, prio:23, stack:6656, core=0[0m
+[0;32mI (1179) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1179) wifi:wifi certification version: v7.0[0m
+[0;32mI (1180) wifi:config NVS flash: enabled[0m
+[0;32mI (1184) wifi:config nano formatting: disabled[0m
+[0;32mI (1188) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1193) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1197) wifi:Init management short buffer num: 32[0m
+[0;32mI (1202) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1206) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1210) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1214) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1218) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1223) wifi_init: rx ba win: 6[0m
+[0;32mI (1225) wifi_init: accept mbox: 6[0m
+[0;32mI (1228) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1231) wifi_init: udp mbox: 6[0m
+[0;32mI (1234) wifi_init: tcp mbox: 6[0m
+[0;32mI (1237) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1240) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1243) wifi_init: tcp mss: 1440[0m
+[0;32mI (1246) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1250) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1254) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1259) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1303) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1311) wifi:mode : sta (e8:f6:0a:d7:91:60)[0m
+[0;32mI (1312) wifi:enable tsf[0m
+[0;32mI (1313) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1315) AEGIS_PATHFINDER: Pathfinder MAC: E8:F6:0A:D7:91:60[0m
+[0;32mI (1318) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1321) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (1328) LVGL: Starting LVGL task[0m
+[0;32mI (1474) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (1484) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (1484) wifi:STA is scanning or connecting, or AP has connected with external STAs, cannot set channel[0m
+
+[0;32mI (1486) SWARM_LINK: Swarm link ready on channel 6 (Pathfinder)[0m
+[0;32mI (1527) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (1527) wifi:sta is connecting, return error[0m
+[0;32mI (1528) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1531) cam_hal: cam init ok[0m
+[0;32mI (1534) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1537) sccb: sccb_i2c_port=1[0m
+[0;32mI (1553) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1553) camera: Detected OV2640 camera[0m
+[0;32mI (1553) camera: Detected camera at address=0x30[0m
+[0;32mI (1635) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1636) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1636) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1645) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1655) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1661) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1667) cam_hal: cam config ok[0m
+[0;32mI (1669) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1748) AI_VISION_FAST: OV2640 / S3 Camera Hardware successfully initialized![0m
+[0;32mI (1750) WEB_STREAMER: Web Streamer active on Core 0 with /, /snapshot, /detections, and /control routes (no live /stream)[0m
+[0;32mI (1755) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1755) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1755) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1755) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1779) main_task: Returned from app_main()[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (2602) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2846) AI_VISION_FAST: [FRAME 1] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (2847) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (2850) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;32mI (3099) AI_VISION_FAST: [FRAME 2] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (3100) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (3354) AI_VISION_FAST: [FRAME 3] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (3607) AI_VISION_FAST: [FRAME 4] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (3608) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (3729) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (3869) AI_VISION_FAST: [FRAME 5] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (4125) AI_VISION_FAST: [FRAME 6] Inference complete in 244 ms | Detections: 2[0m
+[0;32mI (4126) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (4131) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (4395) AI_VISION_FAST: [FRAME 7] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (4396) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (4657) AI_VISION_FAST: [FRAME 8] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (4913) AI_VISION_FAST: [FRAME 9] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (4914) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (5176) AI_VISION_FAST: [FRAME 10] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (5430) AI_VISION_FAST: [FRAME 11] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (5431) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (5689) AI_VISION_FAST: [FRAME 12] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (5941) AI_VISION_FAST: [FRAME 13] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (5941) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (6148) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (6201) AI_VISION_FAST: [FRAME 14] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (6458) AI_VISION_FAST: [FRAME 15] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (6459) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (6737) AI_VISION_FAST: [FRAME 16] Inference complete in 260 ms | Detections: 1[0m
+[0;32mI (6738) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (7001) AI_VISION_FAST: [FRAME 17] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (7001) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (7262) AI_VISION_FAST: [FRAME 18] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (7262) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:1, y:0, w:93, h:94][0m
+[0;32mI (7522) AI_VISION_FAST: [FRAME 19] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (7523) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (7778) AI_VISION_FAST: [FRAME 20] Inference complete in 236 ms | Detections: 1[0m
+[0;32mI (7778) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (8037) AI_VISION_FAST: [FRAME 21] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (8037) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (8296) AI_VISION_FAST: [FRAME 22] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (8549) AI_VISION_FAST: [FRAME 23] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (8549) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (8564) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (8811) AI_VISION_FAST: [FRAME 24] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (8811) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (9071) AI_VISION_FAST: [FRAME 25] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (9327) AI_VISION_FAST: [FRAME 26] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (9327) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (9581) AI_VISION_FAST: [FRAME 27] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (9582) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (9837) AI_VISION_FAST: [FRAME 28] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (9838) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (9843) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (10095) AI_VISION_FAST: [FRAME 29] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (10349) AI_VISION_FAST: [FRAME 30] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (10603) AI_VISION_FAST: [FRAME 31] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (10858) AI_VISION_FAST: [FRAME 32] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (10983) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (11115) AI_VISION_FAST: [FRAME 33] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (11373) AI_VISION_FAST: [FRAME 34] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (11643) AI_VISION_FAST: [FRAME 35] Inference complete in 257 ms | Detections: 0[0m
+[0;32mI (11899) AI_VISION_FAST: [FRAME 36] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (12156) AI_VISION_FAST: [FRAME 37] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (12413) AI_VISION_FAST: [FRAME 38] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (12668) AI_VISION_FAST: [FRAME 39] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (12921) AI_VISION_FAST: [FRAME 40] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (13175) AI_VISION_FAST: [FRAME 41] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (13399) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (13430) AI_VISION_FAST: [FRAME 42] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (13687) AI_VISION_FAST: [FRAME 43] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (13939) AI_VISION_FAST: [FRAME 44] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (14194) AI_VISION_FAST: [FRAME 45] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (14451) AI_VISION_FAST: [FRAME 46] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (14707) AI_VISION_FAST: [FRAME 47] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (14962) AI_VISION_FAST: [FRAME 48] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (15215) AI_VISION_FAST: [FRAME 49] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15470) AI_VISION_FAST: [FRAME 50] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (15724) AI_VISION_FAST: [FRAME 51] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (15815) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (15982) AI_VISION_FAST: [FRAME 52] Inference complete in 244 ms | Detections: 0[0m
+[0;33mW (15982) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (16235) AI_VISION_FAST: [FRAME 53] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (16495) AI_VISION_FAST: [FRAME 54] Inference complete in 246 ms | Detections: 0[0m
+[0;33mW (16496) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (16756) AI_VISION_FAST: [FRAME 55] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (17011) AI_VISION_FAST: [FRAME 56] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (17265) AI_VISION_FAST: [FRAME 57] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (17519) AI_VISION_FAST: [FRAME 58] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (17773) AI_VISION_FAST: [FRAME 59] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (17773) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18032) AI_VISION_FAST: [FRAME 60] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (18231) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (18291) AI_VISION_FAST: [FRAME 61] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (18291) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18553) AI_VISION_FAST: [FRAME 62] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (18553) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18815) AI_VISION_FAST: [FRAME 63] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (18815) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (19075) AI_VISION_FAST: [FRAME 64] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (19332) AI_VISION_FAST: [FRAME 65] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (19588) AI_VISION_FAST: [FRAME 66] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (19841) AI_VISION_FAST: [FRAME 67] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (20095) AI_VISION_FAST: [FRAME 68] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (20096) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (20352) AI_VISION_FAST: [FRAME 69] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (20605) AI_VISION_FAST: [FRAME 70] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (20606) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (20649) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (20869) AI_VISION_FAST: [FRAME 71] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (20870) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (21131) AI_VISION_FAST: [FRAME 72] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (21132) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (21395) AI_VISION_FAST: [FRAME 73] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (21396) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (21664) AI_VISION_FAST: [FRAME 74] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (21665) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (21925) AI_VISION_FAST: [FRAME 75] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (21925) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (22186) AI_VISION_FAST: [FRAME 76] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (22186) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (22447) AI_VISION_FAST: [FRAME 77] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (22447) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (22707) AI_VISION_FAST: [FRAME 78] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (22708) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (22713) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (22967) AI_VISION_FAST: [FRAME 79] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (22967) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (23065) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (23228) AI_VISION_FAST: [FRAME 80] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (23229) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (23234) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (23489) AI_VISION_FAST: [FRAME 81] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (23490) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (23753) AI_VISION_FAST: [FRAME 82] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (23754) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (24017) AI_VISION_FAST: [FRAME 83] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (24017) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (24280) AI_VISION_FAST: [FRAME 84] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (24281) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (24543) AI_VISION_FAST: [FRAME 85] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (24543) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (24803) AI_VISION_FAST: [FRAME 86] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (24804) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (25062) AI_VISION_FAST: [FRAME 87] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (25063) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (25322) AI_VISION_FAST: [FRAME 88] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (25482) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (25578) AI_VISION_FAST: [FRAME 89] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (25834) AI_VISION_FAST: [FRAME 90] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (26091) AI_VISION_FAST: [FRAME 91] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (26092) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (26354) AI_VISION_FAST: [FRAME 92] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (26622) AI_VISION_FAST: [FRAME 93] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (26879) AI_VISION_FAST: [FRAME 94] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (27133) AI_VISION_FAST: [FRAME 95] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (27133) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (27394) AI_VISION_FAST: [FRAME 96] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (27394) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (27653) AI_VISION_FAST: [FRAME 97] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (27897) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (27907) AI_VISION_FAST: [FRAME 98] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (28160) AI_VISION_FAST: [FRAME 99] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (28409) AI_VISION_FAST: [FRAME 100] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (28662) AI_VISION_FAST: [FRAME 101] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (28662) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (28920) AI_VISION_FAST: [FRAME 102] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (28921) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (29179) AI_VISION_FAST: [FRAME 103] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (29179) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (29438) AI_VISION_FAST: [FRAME 104] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (29438) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;33mW (29444) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (29695) AI_VISION_FAST: [FRAME 105] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (29696) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (29954) AI_VISION_FAST: [FRAME 106] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (29954) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (29960) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (30213) AI_VISION_FAST: [FRAME 107] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (30465) AI_VISION_FAST: [FRAME 108] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (30718) AI_VISION_FAST: [FRAME 109] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (30968) AI_VISION_FAST: [FRAME 110] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (31220) AI_VISION_FAST: [FRAME 111] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (31474) AI_VISION_FAST: [FRAME 112] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (31744) AI_VISION_FAST: [FRAME 113] Inference complete in 255 ms | Detections: 0[0m
+[0;32mI (31998) AI_VISION_FAST: [FRAME 114] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (32247) AI_VISION_FAST: [FRAME 115] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (32500) AI_VISION_FAST: [FRAME 116] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (32753) AI_VISION_FAST: [FRAME 117] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (33009) AI_VISION_FAST: [FRAME 118] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (33266) AI_VISION_FAST: [FRAME 119] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (33522) AI_VISION_FAST: [FRAME 120] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (33777) AI_VISION_FAST: [FRAME 121] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (34035) AI_VISION_FAST: [FRAME 122] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (34290) AI_VISION_FAST: [FRAME 123] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (34544) AI_VISION_FAST: [FRAME 124] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (34798) AI_VISION_FAST: [FRAME 125] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (35050) AI_VISION_FAST: [FRAME 126] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (35304) AI_VISION_FAST: [FRAME 127] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (35316) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (35563) AI_VISION_FAST: [FRAME 128] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (35819) AI_VISION_FAST: [FRAME 129] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (36075) AI_VISION_FAST: [FRAME 130] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (36076) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (36329) AI_VISION_FAST: [FRAME 131] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (36593) AI_VISION_FAST: [FRAME 132] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (36594) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (36599) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (36606) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (36854) AI_VISION_FAST: [FRAME 133] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (36855) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (37118) AI_VISION_FAST: [FRAME 134] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (37368) AI_VISION_FAST: [FRAME 135] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (37369) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (37625) AI_VISION_FAST: [FRAME 136] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (37625) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (37732) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (37887) AI_VISION_FAST: [FRAME 137] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (37888) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [2/10] from Slave...[0m
+[0;33mW (37891) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (38144) AI_VISION_FAST: [FRAME 138] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (38145) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (38406) AI_VISION_FAST: [FRAME 139] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (38663) AI_VISION_FAST: [FRAME 140] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (38664) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (38925) AI_VISION_FAST: [FRAME 141] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (39183) AI_VISION_FAST: [FRAME 142] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (39437) AI_VISION_FAST: [FRAME 143] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (39687) AI_VISION_FAST: [FRAME 144] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (39942) AI_VISION_FAST: [FRAME 145] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (40149) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (40199) AI_VISION_FAST: [FRAME 146] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (40456) AI_VISION_FAST: [FRAME 147] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (40457) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (40720) AI_VISION_FAST: [FRAME 148] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (40721) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (40984) AI_VISION_FAST: [FRAME 149] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (41242) AI_VISION_FAST: [FRAME 150] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (41242) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (41511) AI_VISION_FAST: [FRAME 151] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (41766) AI_VISION_FAST: [FRAME 152] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (41767) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (42024) AI_VISION_FAST: [FRAME 153] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (42277) AI_VISION_FAST: [FRAME 154] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42531) AI_VISION_FAST: [FRAME 155] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (42532) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (42567) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (42796) AI_VISION_FAST: [FRAME 156] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (42796) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (43058) AI_VISION_FAST: [FRAME 157] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (43317) AI_VISION_FAST: [FRAME 158] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (43573) AI_VISION_FAST: [FRAME 159] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (43830) AI_VISION_FAST: [FRAME 160] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (44085) AI_VISION_FAST: [FRAME 161] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (44340) AI_VISION_FAST: [FRAME 162] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (44341) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (44596) AI_VISION_FAST: [FRAME 163] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (44850) AI_VISION_FAST: [FRAME 164] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (44851) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (44986) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (45109) AI_VISION_FAST: [FRAME 165] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (45109) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (45371) AI_VISION_FAST: [FRAME 166] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (45628) AI_VISION_FAST: [FRAME 167] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (45884) AI_VISION_FAST: [FRAME 168] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (46139) AI_VISION_FAST: [FRAME 169] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (46140) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (46401) AI_VISION_FAST: [FRAME 170] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (46664) AI_VISION_FAST: [FRAME 171] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (46918) AI_VISION_FAST: [FRAME 172] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (46918) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (47175) AI_VISION_FAST: [FRAME 173] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (47405) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (47433) AI_VISION_FAST: [FRAME 174] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (47433) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (47695) AI_VISION_FAST: [FRAME 175] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (47695) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (47957) AI_VISION_FAST: [FRAME 176] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (48216) AI_VISION_FAST: [FRAME 177] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (48472) AI_VISION_FAST: [FRAME 178] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (48727) AI_VISION_FAST: [FRAME 179] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (48982) AI_VISION_FAST: [FRAME 180] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (48983) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (49243) AI_VISION_FAST: [FRAME 181] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (49499) AI_VISION_FAST: [FRAME 182] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (49500) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (49759) AI_VISION_FAST: [FRAME 183] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49820) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (50016) AI_VISION_FAST: [FRAME 184] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (50273) AI_VISION_FAST: [FRAME 185] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (50529) AI_VISION_FAST: [FRAME 186] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (50784) AI_VISION_FAST: [FRAME 187] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (50785) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (51047) AI_VISION_FAST: [FRAME 188] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (51047) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (51303) AI_VISION_FAST: [FRAME 189] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (51566) AI_VISION_FAST: [FRAME 190] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (51567) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (51573) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (51825) AI_VISION_FAST: [FRAME 191] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (52080) AI_VISION_FAST: [FRAME 192] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (52080) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (52239) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (52343) AI_VISION_FAST: [FRAME 193] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (52344) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (52607) AI_VISION_FAST: [FRAME 194] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (52864) AI_VISION_FAST: [FRAME 195] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (53123) AI_VISION_FAST: [FRAME 196] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (53123) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (53386) AI_VISION_FAST: [FRAME 197] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (53387) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (53647) AI_VISION_FAST: [FRAME 198] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (53901) AI_VISION_FAST: [FRAME 199] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (53902) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (54161) AI_VISION_FAST: [FRAME 200] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (54416) AI_VISION_FAST: [FRAME 201] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (54416) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (54656) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (54679) AI_VISION_FAST: [FRAME 202] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (54680) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (54941) AI_VISION_FAST: [FRAME 203] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (54942) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (55203) AI_VISION_FAST: [FRAME 204] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (55458) AI_VISION_FAST: [FRAME 205] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (55459) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (55720) AI_VISION_FAST: [FRAME 206] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (55721) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (55983) AI_VISION_FAST: [FRAME 207] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (55984) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (56239) AI_VISION_FAST: [FRAME 208] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (56495) AI_VISION_FAST: [FRAME 209] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (56495) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (56755) AI_VISION_FAST: [FRAME 210] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (56756) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (57014) AI_VISION_FAST: [FRAME 211] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (57074) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (57272) AI_VISION_FAST: [FRAME 212] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (57530) AI_VISION_FAST: [FRAME 213] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (57530) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (57791) AI_VISION_FAST: [FRAME 214] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (57791) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (58048) AI_VISION_FAST: [FRAME 215] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (58049) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (58312) AI_VISION_FAST: [FRAME 216] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (58312) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (58566) AI_VISION_FAST: [FRAME 217] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (58821) AI_VISION_FAST: [FRAME 218] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (58821) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (59080) AI_VISION_FAST: [FRAME 219] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (59080) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (59340) AI_VISION_FAST: [FRAME 220] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (59340) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (59489) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (59601) AI_VISION_FAST: [FRAME 221] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (59855) AI_VISION_FAST: [FRAME 222] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (59855) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (60114) AI_VISION_FAST: [FRAME 223] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (60115) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (60373) AI_VISION_FAST: [FRAME 224] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (60374) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (60633) AI_VISION_FAST: [FRAME 225] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (60886) AI_VISION_FAST: [FRAME 226] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (61139) AI_VISION_FAST: [FRAME 227] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (61393) AI_VISION_FAST: [FRAME 228] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (61394) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (61661) AI_VISION_FAST: [FRAME 229] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (61914) AI_VISION_FAST: [FRAME 230] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (62168) AI_VISION_FAST: [FRAME 231] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (62422) AI_VISION_FAST: [FRAME 232] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62676) AI_VISION_FAST: [FRAME 233] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62929) AI_VISION_FAST: [FRAME 234] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (62929) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (63188) AI_VISION_FAST: [FRAME 235] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (63441) AI_VISION_FAST: [FRAME 236] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (63441) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (63701) AI_VISION_FAST: [FRAME 237] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (63701) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (63960) AI_VISION_FAST: [FRAME 238] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (64213) AI_VISION_FAST: [FRAME 239] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (64213) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (64472) AI_VISION_FAST: [FRAME 240] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (64473) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (64479) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (64738) AI_VISION_FAST: [FRAME 241] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (64738) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (65000) AI_VISION_FAST: [FRAME 242] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (65001) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (65006) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (65264) AI_VISION_FAST: [FRAME 243] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (65264) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (65527) AI_VISION_FAST: [FRAME 244] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (65527) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (65790) AI_VISION_FAST: [FRAME 245] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (65791) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66052) AI_VISION_FAST: [FRAME 246] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (66052) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66314) AI_VISION_FAST: [FRAME 247] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (66314) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66583) AI_VISION_FAST: [FRAME 248] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (66584) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66843) AI_VISION_FAST: [FRAME 249] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (66844) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66910) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (67108) AI_VISION_FAST: [FRAME 250] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (67108) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (67370) AI_VISION_FAST: [FRAME 251] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (67370) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (67632) AI_VISION_FAST: [FRAME 252] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (67633) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (67893) AI_VISION_FAST: [FRAME 253] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (67893) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (68156) AI_VISION_FAST: [FRAME 254] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (68156) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (68417) AI_VISION_FAST: [FRAME 255] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (68418) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (68677) AI_VISION_FAST: [FRAME 256] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (68678) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (68936) AI_VISION_FAST: [FRAME 257] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (68937) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69194) AI_VISION_FAST: [FRAME 258] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (69194) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69328) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (69457) AI_VISION_FAST: [FRAME 259] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (69457) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69719) AI_VISION_FAST: [FRAME 260] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (69719) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69981) AI_VISION_FAST: [FRAME 261] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (69981) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (70241) AI_VISION_FAST: [FRAME 262] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (70241) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (70503) AI_VISION_FAST: [FRAME 263] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (70503) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (70764) AI_VISION_FAST: [FRAME 264] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (70765) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (71024) AI_VISION_FAST: [FRAME 265] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (71024) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (71030) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (71283) AI_VISION_FAST: [FRAME 266] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (71284) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (71555) AI_VISION_FAST: [FRAME 267] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (71556) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (71561) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (71568) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (71743) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (71814) AI_VISION_FAST: [FRAME 268] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (71820) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (72086) AI_VISION_FAST: [FRAME 269] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (72087) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (72349) AI_VISION_FAST: [FRAME 270] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (72350) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (72610) AI_VISION_FAST: [FRAME 271] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (72611) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (72871) AI_VISION_FAST: [FRAME 272] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (72871) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 98.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (72877) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [3/10] from Slave...[0m
+[0;33mW (72884) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (73129) AI_VISION_FAST: [FRAME 273] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (73131) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (73394) AI_VISION_FAST: [FRAME 274] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (73394) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (73655) AI_VISION_FAST: [FRAME 275] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (73655) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (73912) AI_VISION_FAST: [FRAME 276] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (74160) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (74166) AI_VISION_FAST: [FRAME 277] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (74167) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (74431) AI_VISION_FAST: [FRAME 278] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (74432) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (74693) AI_VISION_FAST: [FRAME 279] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (74693) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (74956) AI_VISION_FAST: [FRAME 280] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (74957) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (75220) AI_VISION_FAST: [FRAME 281] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (75478) AI_VISION_FAST: [FRAME 282] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (75732) AI_VISION_FAST: [FRAME 283] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (75987) AI_VISION_FAST: [FRAME 284] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (76242) AI_VISION_FAST: [FRAME 285] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (76502) AI_VISION_FAST: [FRAME 286] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (76578) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (76760) AI_VISION_FAST: [FRAME 287] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (76761) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (77023) AI_VISION_FAST: [FRAME 288] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (77023) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (77285) AI_VISION_FAST: [FRAME 289] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (77544) AI_VISION_FAST: [FRAME 290] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (77544) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (77802) AI_VISION_FAST: [FRAME 291] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (77803) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (78064) AI_VISION_FAST: [FRAME 292] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (78064) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (78324) AI_VISION_FAST: [FRAME 293] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (78325) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (78583) AI_VISION_FAST: [FRAME 294] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (78583) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (78840) AI_VISION_FAST: [FRAME 295] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (78994) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (79095) AI_VISION_FAST: [FRAME 296] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (79095) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 94.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (79356) AI_VISION_FAST: [FRAME 297] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (79357) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (79362) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (79619) AI_VISION_FAST: [FRAME 298] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (79619) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (79881) AI_VISION_FAST: [FRAME 299] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (79881) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;33mW (79887) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (80143) AI_VISION_FAST: [FRAME 300] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (80144) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (80404) AI_VISION_FAST: [FRAME 301] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (80405) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (80662) AI_VISION_FAST: [FRAME 302] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (80916) AI_VISION_FAST: [FRAME 303] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (80916) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (81175) AI_VISION_FAST: [FRAME 304] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (81176) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (81412) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (81437) AI_VISION_FAST: [FRAME 305] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (81438) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (81717) AI_VISION_FAST: [FRAME 306] Inference complete in 261 ms | Detections: 0[0m
+[0;32mI (81972) AI_VISION_FAST: [FRAME 307] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (81972) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (82231) AI_VISION_FAST: [FRAME 308] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (82232) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (82496) AI_VISION_FAST: [FRAME 309] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (82496) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.8% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (82758) AI_VISION_FAST: [FRAME 310] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (82759) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 96.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (83017) AI_VISION_FAST: [FRAME 311] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (83018) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (83279) AI_VISION_FAST: [FRAME 312] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (83279) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (83539) AI_VISION_FAST: [FRAME 313] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (83540) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (83798) AI_VISION_FAST: [FRAME 314] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (83799) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (83828) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (84062) AI_VISION_FAST: [FRAME 315] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (84062) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (84323) AI_VISION_FAST: [FRAME 316] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (84581) AI_VISION_FAST: [FRAME 317] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (84581) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (84844) AI_VISION_FAST: [FRAME 318] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (85099) AI_VISION_FAST: [FRAME 319] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (85099) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (85359) AI_VISION_FAST: [FRAME 320] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (85360) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (85618) AI_VISION_FAST: [FRAME 321] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (85619) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (85877) AI_VISION_FAST: [FRAME 322] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (86130) AI_VISION_FAST: [FRAME 323] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (86130) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (86245) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (86389) AI_VISION_FAST: [FRAME 324] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (86657) AI_VISION_FAST: [FRAME 325] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (86657) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (86663) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (86918) AI_VISION_FAST: [FRAME 326] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (86918) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (87180) AI_VISION_FAST: [FRAME 327] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (87181) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (87442) AI_VISION_FAST: [FRAME 328] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (87442) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (87703) AI_VISION_FAST: [FRAME 329] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (87957) AI_VISION_FAST: [FRAME 330] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (87958) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (88217) AI_VISION_FAST: [FRAME 331] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (88217) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (88477) AI_VISION_FAST: [FRAME 332] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (88477) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (88661) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (88739) AI_VISION_FAST: [FRAME 333] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (88739) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (89002) AI_VISION_FAST: [FRAME 334] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (89002) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (89261) AI_VISION_FAST: [FRAME 335] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (89261) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (89519) AI_VISION_FAST: [FRAME 336] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (89520) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (89782) AI_VISION_FAST: [FRAME 337] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (89782) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (90043) AI_VISION_FAST: [FRAME 338] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (90043) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (90302) AI_VISION_FAST: [FRAME 339] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (90557) AI_VISION_FAST: [FRAME 340] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (90557) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90816) AI_VISION_FAST: [FRAME 341] Inference complete in 240 ms | Detections: 2[0m
+[0;32mI (90817) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90822) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;33mW (91077) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (91086) AI_VISION_FAST: [FRAME 342] Inference complete in 241 ms | Detections: 2[0m
+[0;32mI (91087) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 62.7% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (91092) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (91354) AI_VISION_FAST: [FRAME 343] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (91354) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:93, h:94][0m
+[0;32mI (91625) AI_VISION_FAST: [FRAME 344] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (91626) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (91882) AI_VISION_FAST: [FRAME 345] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (92134) AI_VISION_FAST: [FRAME 346] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (92135) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (92394) AI_VISION_FAST: [FRAME 347] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (92394) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (92653) AI_VISION_FAST: [FRAME 348] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (92906) AI_VISION_FAST: [FRAME 349] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (92907) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (92913) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (93166) AI_VISION_FAST: [FRAME 350] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (93167) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (93426) AI_VISION_FAST: [FRAME 351] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (93427) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (93432) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (93686) AI_VISION_FAST: [FRAME 352] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (93687) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (93946) AI_VISION_FAST: [FRAME 353] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (93947) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (94205) AI_VISION_FAST: [FRAME 354] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (94205) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (94463) AI_VISION_FAST: [FRAME 355] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (94463) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (94722) AI_VISION_FAST: [FRAME 356] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (94722) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (94980) AI_VISION_FAST: [FRAME 357] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (94981) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (95240) AI_VISION_FAST: [FRAME 358] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (95240) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (95499) AI_VISION_FAST: [FRAME 359] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (95500) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (95759) AI_VISION_FAST: [FRAME 360] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (95759) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (96019) AI_VISION_FAST: [FRAME 361] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (96019) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (96281) AI_VISION_FAST: [FRAME 362] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (96281) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (96557) AI_VISION_FAST: [FRAME 363] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (96558) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (96820) AI_VISION_FAST: [FRAME 364] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (96821) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (97082) AI_VISION_FAST: [FRAME 365] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (97083) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (97344) AI_VISION_FAST: [FRAME 366] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (97345) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (97605) AI_VISION_FAST: [FRAME 367] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (97605) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (97866) AI_VISION_FAST: [FRAME 368] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (97867) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (98126) AI_VISION_FAST: [FRAME 369] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (98127) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (98383) AI_VISION_FAST: [FRAME 370] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (98384) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (98494) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (98645) AI_VISION_FAST: [FRAME 371] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (98646) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (98907) AI_VISION_FAST: [FRAME 372] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (98908) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (99166) AI_VISION_FAST: [FRAME 373] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (99167) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (99426) AI_VISION_FAST: [FRAME 374] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (99427) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (99440) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (99683) AI_VISION_FAST: [FRAME 375] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (99684) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (99988) AI_VISION_FAST: [FRAME 376] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (99988) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (99994) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (100249) AI_VISION_FAST: [FRAME 377] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (100249) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (100510) AI_VISION_FAST: [FRAME 378] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (100511) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (100770) AI_VISION_FAST: [FRAME 379] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (100771) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (100911) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (101034) AI_VISION_FAST: [FRAME 380] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (101035) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (101298) AI_VISION_FAST: [FRAME 381] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (101298) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (101570) AI_VISION_FAST: [FRAME 382] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (101570) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (101832) AI_VISION_FAST: [FRAME 383] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (101833) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (102095) AI_VISION_FAST: [FRAME 384] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (102096) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (102359) AI_VISION_FAST: [FRAME 385] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (102359) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 97.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (102619) AI_VISION_FAST: [FRAME 386] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (102872) AI_VISION_FAST: [FRAME 387] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (103126) AI_VISION_FAST: [FRAME 388] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (103329) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (103383) AI_VISION_FAST: [FRAME 389] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (103640) AI_VISION_FAST: [FRAME 390] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (103641) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (103902) AI_VISION_FAST: [FRAME 391] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (103903) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (104165) AI_VISION_FAST: [FRAME 392] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (104166) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (104430) AI_VISION_FAST: [FRAME 393] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (104430) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (104693) AI_VISION_FAST: [FRAME 394] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (104694) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (104953) AI_VISION_FAST: [FRAME 395] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (105207) AI_VISION_FAST: [FRAME 396] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (105462) AI_VISION_FAST: [FRAME 397] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (105715) AI_VISION_FAST: [FRAME 398] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (105745) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (105976) AI_VISION_FAST: [FRAME 399] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (106231) AI_VISION_FAST: [FRAME 400] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (106232) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (106487) AI_VISION_FAST: [FRAME 401] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (106488) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (106753) AI_VISION_FAST: [FRAME 402] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (106754) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (106760) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (106766) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (107016) AI_VISION_FAST: [FRAME 403] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (107017) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (107281) AI_VISION_FAST: [FRAME 404] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (107535) AI_VISION_FAST: [FRAME 405] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (107535) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (107794) AI_VISION_FAST: [FRAME 406] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (107795) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (108054) AI_VISION_FAST: [FRAME 407] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (108055) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (108061) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [4/10] from Slave...[0m
+[0;33mW (108069) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (108161) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (108318) AI_VISION_FAST: [FRAME 408] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (108581) AI_VISION_FAST: [FRAME 409] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (108836) AI_VISION_FAST: [FRAME 410] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (108837) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (109100) AI_VISION_FAST: [FRAME 411] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (109101) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 95.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (109363) AI_VISION_FAST: [FRAME 412] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (109364) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (109624) AI_VISION_FAST: [FRAME 413] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (109876) AI_VISION_FAST: [FRAME 414] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (109876) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 92.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110136) AI_VISION_FAST: [FRAME 415] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (110389) AI_VISION_FAST: [FRAME 416] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (110390) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110577) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (110650) AI_VISION_FAST: [FRAME 417] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (110651) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110914) AI_VISION_FAST: [FRAME 418] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (110914) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111177) AI_VISION_FAST: [FRAME 419] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (111177) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111440) AI_VISION_FAST: [FRAME 420] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (111440) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111722) AI_VISION_FAST: [FRAME 421] Inference complete in 262 ms | Detections: 1[0m
+[0;32mI (111722) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111978) AI_VISION_FAST: [FRAME 422] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (112233) AI_VISION_FAST: [FRAME 423] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (112487) AI_VISION_FAST: [FRAME 424] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (112488) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (112747) AI_VISION_FAST: [FRAME 425] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (112748) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (112993) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (113008) AI_VISION_FAST: [FRAME 426] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (113262) AI_VISION_FAST: [FRAME 427] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (113263) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (113526) AI_VISION_FAST: [FRAME 428] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (113526) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (113787) AI_VISION_FAST: [FRAME 429] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (113788) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (114051) AI_VISION_FAST: [FRAME 430] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (114051) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (114314) AI_VISION_FAST: [FRAME 431] Inference complete in 244 ms | Detections: 0[0m
+[0;33mW (114319) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (114568) AI_VISION_FAST: [FRAME 432] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (114824) AI_VISION_FAST: [FRAME 433] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (114824) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (115078) AI_VISION_FAST: [FRAME 434] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (115333) AI_VISION_FAST: [FRAME 435] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (115333) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (115409) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (115596) AI_VISION_FAST: [FRAME 436] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (115596) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (115859) AI_VISION_FAST: [FRAME 437] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (116115) AI_VISION_FAST: [FRAME 438] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (116373) AI_VISION_FAST: [FRAME 439] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (116374) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (116649) AI_VISION_FAST: [FRAME 440] Inference complete in 256 ms | Detections: 0[0m
+[0;32mI (116904) AI_VISION_FAST: [FRAME 441] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (117157) AI_VISION_FAST: [FRAME 442] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (117158) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (117415) AI_VISION_FAST: [FRAME 443] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (117416) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 93.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (117673) AI_VISION_FAST: [FRAME 444] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (117673) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117826) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (117934) AI_VISION_FAST: [FRAME 445] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (118193) AI_VISION_FAST: [FRAME 446] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (118193) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (118455) AI_VISION_FAST: [FRAME 447] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (118456) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (118715) AI_VISION_FAST: [FRAME 448] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (118715) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (118976) AI_VISION_FAST: [FRAME 449] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (118976) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (119237) AI_VISION_FAST: [FRAME 450] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (119238) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (119495) AI_VISION_FAST: [FRAME 451] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (119496) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (119756) AI_VISION_FAST: [FRAME 452] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (119757) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (120017) AI_VISION_FAST: [FRAME 453] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (120017) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (120245) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (120279) AI_VISION_FAST: [FRAME 454] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (120279) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (120542) AI_VISION_FAST: [FRAME 455] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (120797) AI_VISION_FAST: [FRAME 456] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (121055) AI_VISION_FAST: [FRAME 457] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (121056) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (121062) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (121318) AI_VISION_FAST: [FRAME 458] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (121318) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (121584) AI_VISION_FAST: [FRAME 459] Inference complete in 247 ms | Detections: 0[0m
+[0;33mW (121585) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (121898) AI_VISION_FAST: [FRAME 460] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (122151) AI_VISION_FAST: [FRAME 461] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (122152) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (122410) AI_VISION_FAST: [FRAME 462] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (122661) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (122661) AI_VISION_FAST: [FRAME 463] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (122915) AI_VISION_FAST: [FRAME 464] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (122915) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (123174) AI_VISION_FAST: [FRAME 465] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (123427) AI_VISION_FAST: [FRAME 466] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (123428) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (123686) AI_VISION_FAST: [FRAME 467] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (123687) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (123946) AI_VISION_FAST: [FRAME 468] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (123946) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 89.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (124203) AI_VISION_FAST: [FRAME 469] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (124456) AI_VISION_FAST: [FRAME 470] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (124457) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (124715) AI_VISION_FAST: [FRAME 471] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (124716) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (124973) AI_VISION_FAST: [FRAME 472] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (124974) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (125233) AI_VISION_FAST: [FRAME 473] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (125233) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (125492) AI_VISION_FAST: [FRAME 474] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (125492) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 91.6% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (125750) AI_VISION_FAST: [FRAME 475] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (125751) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (126008) AI_VISION_FAST: [FRAME 476] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (126009) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:96, h:94][0m

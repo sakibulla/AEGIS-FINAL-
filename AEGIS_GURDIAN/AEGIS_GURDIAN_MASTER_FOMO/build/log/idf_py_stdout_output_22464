@@ -1,0 +1,945 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd9a0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c1c0020 size=1b56b4h (1791668) map[0m
+[0;32mI (426) esp_image: segment 1: paddr=001c56dc vaddr=3fc9e400 size=0a52ch ( 42284) load[0m
+[0;32mI (435) esp_image: segment 2: paddr=001cfc10 vaddr=40374000 size=00408h (  1032) load[0m
+[0;32mI (436) esp_image: segment 3: paddr=001d0020 vaddr=42000020 size=1bc6a8h (1820328) map[0m
+[0;32mI (771) esp_image: segment 4: paddr=0038c6d0 vaddr=40374408 size=19efch (106236) load[0m
+[0;32mI (796) esp_image: segment 5: paddr=003a65d4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (808) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (808) boot: Disabling RNG early entropy source...[0m
+[0;32mI (818) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (818) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (818) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (820) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (825) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (829) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (833) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (838) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (843) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (847) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (852) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (857) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (860) esp_psram: Speed: 40MHz[0m
+[0;32mI (863) cpu_start: Multicore app[0m
+[0;32mI (1597) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1605) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1606) cpu_start: Pro cpu start user code[0m
+[0;32mI (1606) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1608) app_init: Application information:[0m
+[0;32mI (1612) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1617) app_init: App version:      1[0m
+[0;32mI (1621) app_init: Compile time:     Aug 15 2026 16:13:17[0m
+[0;32mI (1626) app_init: ELF file SHA256:  92c8bf943...[0m
+[0;32mI (1630) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1634) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1638) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1642) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1646) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1652) heap_init: At 3FCAECC0 len 0003AA50 (234 KiB): RAM[0m
+[0;32mI (1658) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1663) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1668) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1674) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1681) spi_flash: detected chip: generic[0m
+[0;32mI (1684) spi_flash: flash io: dio[0m
+[0;32mI (1688) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1694) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1701) main_task: Started on CPU0[0m
+[0;32mI (1701) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1711) main_task: Calling app_main()[0m
+[0;32mI (1711) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1721) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1721) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1751) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (1751) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1751) cam_hal: cam init ok[0m
+[0;32mI (1751) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1751) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1761) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1761) camera: Detected OV2640 camera[0m
+[0;32mI (1761) camera: Detected camera at address=0x30[0m
+[0;32mI (1841) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1841) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 30[0m
+[0;32mI (1841) cam_hal: Allocating 30720 Byte frame buffer in PSRAM[0m
+[0;32mI (1851) cam_hal: Allocating 30720 Byte frame buffer in PSRAM[0m
+[0;32mI (1851) cam_hal: Allocating 30720 Byte frame buffer in PSRAM[0m
+[0;32mI (1861) cam_hal: cam config ok[0m
+[0;32mI (1861) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (1931) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker not at pos 0
+[0;32mI (1991) AEGIS_GUARDIAN: Camera OK: HVGA 480x320 (Optimized for streaming)[0m
+[0;32mI (2451) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (2451) pp: pp rom version: e7ae62f[0m
+[0;32mI (2461) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (2471) wifi:wifi driver task: 3fcc5164, prio:23, stack:6656, core=0[0m
+[0;32mI (2481) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (2481) wifi:wifi certification version: v7.0[0m
+[0;32mI (2481) wifi:config NVS flash: enabled[0m
+[0;32mI (2481) wifi:config nano formatting: disabled[0m
+[0;32mI (2481) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (2491) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (2491) wifi:Init management short buffer num: 32[0m
+[0;32mI (2501) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (2501) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (2501) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (2511) wifi:Init static rx buffer num: 10[0m
+[0;32mI (2511) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (2521) wifi_init: rx ba win: 6[0m
+[0;32mI (2521) wifi_init: accept mbox: 6[0m
+[0;32mI (2521) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2521) wifi_init: udp mbox: 6[0m
+[0;32mI (2531) wifi_init: tcp mbox: 6[0m
+[0;32mI (2531) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2531) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2541) wifi_init: tcp mss: 1440[0m
+[0;32mI (2541) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2541) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2551) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (2591) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (2591) wifi:enable tsf[0m
+[0;32mI (2591) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (2601) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (2601) wifi:sta is connecting, return error[0m
+[0;32mI (2601) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (2611) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 6[0m
+[0;32mI (2611) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2621) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2621) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2631) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (2631) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (2631) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;32mI (2641) AEGIS_GUARDIAN: HTTP stream active on Core 0 (/stream, /snapshot)[0m
+[0;32mI (2671) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2701) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2731) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (2751) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (2941) AEGIS_GUARDIAN: Face task started CPU1[0m
+[0;33mW (3011) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (3061) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (3061) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (3421) AEGIS_GUARDIAN: Face AI OK[0m
+[0;32mI (3441) AEGIS_GUARDIAN: Object AI task CPU1[0m
+[0;32mI (3441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (3441) AEGIS_GUARDIAN: Object model input: 96x96[0m
+[0;32mI (3441) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (3461) main_task: Returned from app_main()[0m
+[0;32mI (3731) AEGIS_GUARDIAN: Voice activation task started. Listening for: Hi ESP[0m
+[0;32mI (3731) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (3731) MODEL_LOADER: The storage free size is 20992 KB[0m
+[0;32mI (3731) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (3741) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (3741) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (3801) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (3801) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (3811) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (3811) VOICE: Voice system ready[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;33mW (3821) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (3831) VOICE: Listening for: Hi ESP[0m
+[0;32mI (3831) VOICE: Voice activation started[0m
+[0;32mI (5061) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5101) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5141) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5221) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (5221) wifi:security: WPA2-PSK, phy: bgn, rssi: -47, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (5231) wifi:pm start, type: 0[0m
+
+[0;32mI (5231) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5241) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5261) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (5261) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;33mW (5831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (6281) esp_netif_handlers: sta ip: 10.75.11.110, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (6281) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.75.11.110[0m
+[0;32mI (6281) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -48 dBm)[0m
+[0;32mI (6281) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;32mI (6441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (6501) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;33mW (7831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (9441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (9831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (11831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (12441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (13831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (14301) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (14301) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (14301) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (14301) AEGIS_GUARDIAN: Backend GET / failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (15441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (15831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (16921) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3752935,"psram":3738272},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_15s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (17311) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (17311) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3744735,"psram":3738472},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_15s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (17561) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (17571) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3746099,"psram":3738472},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_15s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (17831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (18441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (19831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (21441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (21831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (23831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (24441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (25631) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (25631) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (25631) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3740323,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_23s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (25831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (27441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (27831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (29831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (30441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (31831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (33441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (33561) wifi:m f null[0m
+
+[1;31mE (33681) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (33681) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (33681) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (33681) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (33691) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3739315,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_32s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (33831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (35831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (36441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (37831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (39441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (39831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (41741) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (41741) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (41741) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (41741) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (41751) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3739315,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_40s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (41831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (42441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (43831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (45441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (45831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (47831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (48441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (49791) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (49791) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (49791) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49791) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (49801) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3739991,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_48s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (49831) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (51441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (51841) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (53841) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (54441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (55841) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (57441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (57841) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (57841) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (57841) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (57841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (57841) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (57851) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3739315,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_56s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (59851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (60441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (61851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (63441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (63851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (65851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (65901) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (65901) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (65901) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65901) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (65911) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3739315,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_64s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (66441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (67851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (69441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (69851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (71851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (72441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (73851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (73951) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (73951) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (73951) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (73951) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (73961) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3740323,"psram":3733468},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_72s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (75441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (75851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (77851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (78041) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;33mW (78041) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (78041) AEGIS_GUARDIAN: 🎥 Stream requested - PAUSING AI inference[0m
+[0;32mI (78441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (79851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (81441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (81851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (82001) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (82001) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (82001) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82001) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (82011) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3732823,"psram":3727308},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_80s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (82041) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (82051) transport_base: Failed to open a new connection: 32770[0m
+[0;33mW (82051) wifi:m f null[0m
+
+[1;31mE (82061) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82061) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (82071) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3730543,"psram":3727308},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_80s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (83851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (84441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (85851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (87441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (87851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (89851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (90441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (91851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (92111) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (92111) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (92111) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3730791,"psram":3726904},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_90s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (93441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (93851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (95851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (96441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (97851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (99441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (99851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (100161) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (100161) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (100161) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (100161) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (100171) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3730807,"psram":3726904},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_98s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (101851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (102041) wifi:m f null[0m
+
+[0;32mI (102441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (103851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (105441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (105851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (107851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (108221) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (108221) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (108221) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (108221) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (108231) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3730807,"psram":3726904},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_106s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (108441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (109851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (111441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (111851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (113851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (114441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (115851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (116281) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (116281) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (116281) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (116281) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (116291) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3731139,"psram":3726904},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_114s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (117441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (117851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (119851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (120441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (121851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (123441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (123851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (124341) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (124341) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (124341) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (124341) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (124351) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3731471,"psram":3726904},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_122s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (125851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (126441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (127851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (129441) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (129851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (131851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (132401) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (132401) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (132401) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (132401) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (132411) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3731491,"psram":3726904},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_130s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (132451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (133851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (135451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (135851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (137851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (138451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (139041) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;32mI (139041) AEGIS_GUARDIAN: 🔥 Stream ended after 1 frames - AI inference RESUMED[0m
+[0;33mW (139041) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (139051) AEGIS_GUARDIAN: 🎥 Stream requested - PAUSING AI inference[0m
+[0;33mW (139851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (141451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (141851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (143851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (144451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (145851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (147201) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (147201) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (147201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3729955,"psram":3718692},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_145s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (147451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (147851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (149851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (150451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (151851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (153451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (153851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (155851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (156281) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (156281) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (156281) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3732815,"psram":3723120},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_154s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (156451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (157851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (159451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (159851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (161851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (162451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (163851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (165391) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (165391) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (165391) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3730707,"psram":3723120},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_163s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (165451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (165851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (167851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (168451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (169851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (171451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (171851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (173441) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (173441) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (173441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (173441) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (173451) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3730707,"psram":3723120},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_171s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (173851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (174451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (175851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (177451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (177851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (179851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (180451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (181851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (183451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (183851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (185851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (186451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (186661) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (186661) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (186661) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728931,"psram":3721580},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_184s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (187851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (189451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (189851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (191851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (192451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (193851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (194711) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (194711) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (194711) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (194711) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (194721) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728931,"psram":3721580},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_193s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (195451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (195851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (197851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (198451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (199851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (200041) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;32mI (200041) AEGIS_GUARDIAN: 🔥 Stream ended after 1 frames - AI inference RESUMED[0m
+[0;33mW (200041) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (201451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (201851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (203851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (204451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (205851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (207451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (207571) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (207571) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (207571) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722795,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_205s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (207851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (209071) wifi:m f null[0m
+
+[0;33mW (209851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (210451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (211851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (213451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (213851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (215621) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (215621) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (215621) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (215621) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (215631) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722795,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_213s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (215851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (216451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (217851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (218041) wifi:m f null[0m
+
+[0;32mI (219451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (219851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (221851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (222451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (223851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (225451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (225851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (227571) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (227571) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (227571) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722795,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_225s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (227851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (228451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (229851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (231451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (231851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (233851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (234451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (235621) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (235621) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (235621) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (235621) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (235631) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722795,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_233s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (235851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (237451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (237851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (239851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (240451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (241851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (243451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (243681) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (243681) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (243681) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (243681) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (243691) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722795,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_242s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (243851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (245851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (246451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (247851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (249451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (249851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (251741) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (251741) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (251741) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (251741) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (251751) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722795,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_250s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (251851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (252451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (253851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (255451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (255851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (257851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (258451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (259801) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (259801) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (259801) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (259801) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (259811) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3723131,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_258s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (259851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (260541) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;33mW (260541) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (260541) AEGIS_GUARDIAN: 🎥 Stream requested - PAUSING AI inference[0m
+[0;32mI (261451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (261851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (263851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (264451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (265851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (267451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (267851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (267861) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (267861) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (267861) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (267861) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (267871) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3722779,"psram":3716124},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_266s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (269851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (270451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (271851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (273451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (273541) wifi:m f null[0m
+
+[0;33mW (273851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (275851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (276451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (277851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (279451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (279851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (281581) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (281581) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (281581) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3720887,"psram":3714584},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_279s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (281851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (282451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (283851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (285451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (285851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (287851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (288451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (289631) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (289631) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (289631) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (289631) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (289641) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3721235,"psram":3714584},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_287s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (289851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (291451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (291851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (293851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (294451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (295851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (297451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (297691) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (297691) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (297691) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (297691) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (297701) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3720879,"psram":3714584},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_296s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (297851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (299851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (300451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (301851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (303451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (303851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (305751) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (305751) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (305751) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (305751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (305761) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3721223,"psram":3714584},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_304s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (305851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (306451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (307851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (309451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (309851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (311851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (312451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (313811) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (313811) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (313811) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (313811) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (313821) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728363,"psram":3720744},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_312s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (313851) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (315451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (315861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (317861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (318451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (319861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (321041) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;32mI (321041) AEGIS_GUARDIAN: 🔥 Stream ended after 1 frames - AI inference RESUMED[0m
+[0;33mW (321041) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (321051) AEGIS_GUARDIAN: 🎥 Stream requested - PAUSING AI inference[0m
+[0;32mI (321451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (321861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (321871) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (321871) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (321871) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (321871) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (321881) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_320s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (323861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (324451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (325861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (327451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (327861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (329861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (329931) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (329931) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (329931) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (329931) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (329941) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_328s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (330451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (331861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (333451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (333861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (335861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (336451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (337861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (337991) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (337991) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (337991) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (337991) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (338001) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_336s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (339451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (339861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (341861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (342451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (343861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (345451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (345861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (346051) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (346051) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (346051) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (346051) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (346061) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_344s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (347861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (348451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (349861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (351451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (351861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (353861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (354111) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (354111) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (354111) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (354111) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (354121) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_352s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (354451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (355861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (357451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (357861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (359861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (360451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (361861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (362171) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (362171) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (362171) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (362171) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (362181) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_360s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (363451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (363861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (365861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (366451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (367861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (369451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (369861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (370231) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (370231) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (370231) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (370231) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (370241) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_368s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (371861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (372451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (373861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (375451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (375861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (377861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (378291) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (378291) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (378291) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (378291) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (378301) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3728951,"psram":3720936},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_376s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (378451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (379861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (381451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (381861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (382041) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;32mI (382041) AEGIS_GUARDIAN: 🔥 Stream ended after 1 frames - AI inference RESUMED[0m
+[0;33mW (382041) httpd_uri: httpd_uri: uri handler execution failed[0m
+[1;31mE (382041) httpd: httpd_accept_conn: error in accept (128)[0m
+[0;33mW (382051) httpd: httpd_server: error accepting new connection[0m
+[0;33mW (383861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (384451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (385861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (386351) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (386351) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (386351) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (386351) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (386361) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_384s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (387451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (387861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (389861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (390451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (391861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (393451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (393861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (394411) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (394411) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (394411) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (394411) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (394421) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_392s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (395861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (396451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (397861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (399451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (399861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (401861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (402451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (402471) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (402471) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (402471) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (402471) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (402481) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_400s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (403861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (405451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (405861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (407861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (408451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (409861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (410531) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (410531) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (410531) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (410531) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (410541) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_408s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (411451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (411861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (413861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (414451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (415861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (417451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (417861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (418591) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (418591) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (418591) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (418591) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (418601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_416s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (419861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (420451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (421861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (423451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (423861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (425861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (426451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (426651) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (426651) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (426651) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (426651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (426661) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_424s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (427861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (429451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (429861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (431861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (432451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (433861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (434711) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (434711) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (434711) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (434711) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (434721) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733059,"psram":3724400},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_433s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (435451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (435861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (437861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (438451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (439861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (441451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (441861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (442541) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;33mW (442541) httpd_uri: httpd_uri: uri handler execution failed[0m
+[1;31mE (442771) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (442771) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (442771) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (442771) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (442781) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3733279,"psram":3724200},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_441s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (443861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (444451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (445861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (447451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (447861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (449861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (450451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (450831) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (450831) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (450831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (450831) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (450841) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741059,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_449s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (451861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (453451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (453861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (455861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (456451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (457861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (458891) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (458891) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (458891) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (458891) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (458901) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_457s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (459451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (459861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (461861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (462451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (463861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (465451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (465861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (466951) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (466951) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (466951) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (466951) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (466961) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_465s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (467861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (468451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (469861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (471451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (471861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (473861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (474451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (475011) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (475011) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (475011) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (475011) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (475021) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_473s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (475861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (477451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (477861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (479861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (480451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (481861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (483071) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (483071) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (483071) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (483071) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (483081) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_481s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (483451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (483861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (485861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (486451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (487861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (489451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (489861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (491131) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (491131) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (491131) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (491131) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (491141) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_489s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (491861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (492451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (493861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (495451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (495861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (497861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (498451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (499191) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (499191) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (499191) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (499191) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (499201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741071,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_497s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (499861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (501451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (501861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (503861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (504451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (505861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (507251) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (507251) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (507251) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (507251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (507261) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741059,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_505s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (507451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (507861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (509861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (510451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (511861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (513451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (513861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[1;31mE (515311) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (515311) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (515311) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (515311) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (515321) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_513s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (515861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (516451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (517861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (519451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (519861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;33mW (521861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m
+[0;32mI (522451) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (523371) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (523371) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (523371) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (523371) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (523381) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3741331,"psram":3731900},"wifi_rssi":-48,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_521s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (523861) AFE: Ringbuffer of AFE is empty, Please use feed() to write data[0m

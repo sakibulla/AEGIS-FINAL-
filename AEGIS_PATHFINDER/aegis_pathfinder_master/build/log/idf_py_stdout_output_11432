@@ -1,0 +1,1081 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (240) esp_image: segment 1: paddr=000cc81c vaddr=3fc9a400 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400450f4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=bc7f4h (772084) map[0m
+[0;32mI (240) esp_image: segment 1: paddr=000cc81c vaddr=3fc9a400 size=037fch ( 14332) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=c71d8h (815576) map[0m
+[0;32mI (395) esp_image: segment 3: paddr=00197200 vaddr=3fc9dbfc size=06f58h ( 28504) load[0m
+[0;32mI (401) esp_image: segment 4: paddr=0019e160 vaddr=40374000 size=16374h ( 90996) load[0m
+[0;32mI (423) esp_image: segment 5: paddr=001b44dc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (433) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (433) boot: Disabling RNG early entropy source...[0m
+[0;32mI (443) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (444) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (444) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (446) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (450) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (454) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (458) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (463) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (468) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (473) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (478) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (482) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (487) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (490) esp_psram: Speed: 80MHz[0m
+[0;32mI (493) cpu_start: Multicore app[0m
+[0;32mI (909) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (917) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (918) cpu_start: Pro cpu start user code[0m
+[0;32mI (918) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (920) app_init: Application information:[0m
+[0;32mI (923) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (928) app_init: App version:      1[0m
+[0;32mI (931) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (937) app_init: ELF file SHA256:  704f89ddd...[0m
+[0;32mI (941) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (945) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (949) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (952) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (956) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (963) heap_init: At 3FCAD128 len 0003C5E8 (241 KiB): RAM[0m
+[0;32mI (968) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (973) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (978) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (985) spi_flash: detected chip: gd[0m
+[0;32mI (988) spi_flash: flash io: dio[0m
+[0;32mI (991) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (997) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1015) main_task: Started on CPU0[0m
+[0;32mI (1015) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1016) main_task: Calling app_main()[0m
+[0;32mI (1019) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1026) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1033) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1039) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1046) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1074) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1076) pp: pp rom version: e7ae62f[0m
+[0;32mI (1076) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1078) wifi:wifi driver task: 3fcbc760, prio:23, stack:6656, core=0[0m
+[0;32mI (1092) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1092) wifi:wifi certification version: v7.0[0m
+[0;32mI (1093) wifi:config NVS flash: enabled[0m
+[0;32mI (1094) wifi:config nano formatting: disabled[0m
+[0;32mI (1099) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1104) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1108) wifi:Init management short buffer num: 32[0m
+[0;32mI (1112) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1116) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1120) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1125) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1128) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1133) wifi_init: rx ba win: 6[0m
+[0;32mI (1135) wifi_init: accept mbox: 6[0m
+[0;32mI (1138) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1142) wifi_init: udp mbox: 6[0m
+[0;32mI (1144) wifi_init: tcp mbox: 6[0m
+[0;32mI (1147) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1151) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1154) wifi_init: tcp mss: 1440[0m
+[0;32mI (1157) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1161) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1164) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1169) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1209) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1210) wifi:enable tsf[0m
+[0;32mI (1211) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1213) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1214) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (1220) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1226) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1231) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (1235) wifi:sta is connecting, return error[0m
+[0;32mI (1239) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (1242) cam_hal: cam init ok[0m
+[0;32mI (1245) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (1248) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (1264) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1266) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1266) camera: Detected OV2640 camera[0m
+[0;32mI (1266) camera: Detected camera at address=0x30[0m
+[0;32mI (1286) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1300) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1301) wifi:security: WPA2-PSK, phy: bgn, rssi: -14, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1307) wifi:pm start, type: 0[0m
+
+[0;32mI (1308) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1316) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1331) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1332) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1383) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1384) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1384) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1393) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1403) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1409) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1415) cam_hal: cam config ok[0m
+[0;32mI (1417) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1490) AI_VISION_FAST: OV2640 / S3 Camera Hardware successfully initialized![0m
+[0;32mI (1492) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (1496) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1496) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1497) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1497) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1520) main_task: Returned from app_main()[0m
+[0;32mI (2139) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2351) esp_netif_handlers: sta ip: 10.75.11.50, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (2352) AEGIS_PATHFINDER: Connected to WiFi! IP: 10.75.11.50[0m
+[0;32mI (2354) AEGIS_PATHFINDER: Wi-Fi AP Connected on Channel: 6 (RSSI: -14 dBm)[0m
+[0;32mI (2361) ESPNOW: esp now already init![0m
+[0;32mI (2364) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (2388) AI_VISION_FAST: [FRAME 1] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (2391) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2641) AI_VISION_FAST: [FRAME 2] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (2893) AI_VISION_FAST: [FRAME 3] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (3146) AI_VISION_FAST: [FRAME 4] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (3398) AI_VISION_FAST: [FRAME 5] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (3652) AI_VISION_FAST: [FRAME 6] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (3653) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (3656) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;32mI (3906) AI_VISION_FAST: [FRAME 7] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (3907) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (4160) AI_VISION_FAST: [FRAME 8] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (4412) AI_VISION_FAST: [FRAME 9] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (4666) AI_VISION_FAST: [FRAME 10] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (4917) AI_VISION_FAST: [FRAME 11] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (5172) AI_VISION_FAST: [FRAME 12] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (5426) AI_VISION_FAST: [FRAME 13] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (5679) AI_VISION_FAST: [FRAME 14] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (5931) AI_VISION_FAST: [FRAME 15] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (6185) AI_VISION_FAST: [FRAME 16] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (6436) AI_VISION_FAST: [FRAME 17] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (6690) AI_VISION_FAST: [FRAME 18] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (6945) AI_VISION_FAST: [FRAME 19] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (7198) AI_VISION_FAST: [FRAME 20] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (7395) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (7395) AEGIS_PATHFINDER: Backend GET / failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (7457) AI_VISION_FAST: [FRAME 21] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (7711) AI_VISION_FAST: [FRAME 22] Inference complete in 239 ms | Detections: 0[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (7975) AI_VISION_FAST: [FRAME 23] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (8239) AI_VISION_FAST: [FRAME 24] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (8502) AI_VISION_FAST: [FRAME 25] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (8770) AI_VISION_FAST: [FRAME 26] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (9028) AI_VISION_FAST: [FRAME 27] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (9282) AI_VISION_FAST: [FRAME 28] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (9536) AI_VISION_FAST: [FRAME 29] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (9790) AI_VISION_FAST: [FRAME 30] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (10044) AI_VISION_FAST: [FRAME 31] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (10045) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (10299) AI_VISION_FAST: [FRAME 32] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (10559) AI_VISION_FAST: [FRAME 33] Inference complete in 247 ms | Detections: 0[0m
+[0;33mW (10560) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (10818) AI_VISION_FAST: [FRAME 34] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (11071) AI_VISION_FAST: [FRAME 35] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (11324) AI_VISION_FAST: [FRAME 36] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (11578) AI_VISION_FAST: [FRAME 37] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (11832) AI_VISION_FAST: [FRAME 38] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (12087) AI_VISION_FAST: [FRAME 39] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (12340) AI_VISION_FAST: [FRAME 40] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (12592) AI_VISION_FAST: [FRAME 41] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (12883) AI_VISION_FAST: [FRAME 42] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (13274) AI_VISION_FAST: [FRAME 43] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (13680) AI_VISION_FAST: [FRAME 44] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (14078) AI_VISION_FAST: [FRAME 45] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (14473) AI_VISION_FAST: [FRAME 46] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (15026) AI_VISION_FAST: [FRAME 47] Inference complete in 270 ms | Detections: 0[0m
+[0;32mI (15351) AI_VISION_FAST: [FRAME 48] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (15672) AI_VISION_FAST: [FRAME 49] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (15994) AI_VISION_FAST: [FRAME 50] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (16308) AI_VISION_FAST: [FRAME 51] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (16643) AI_VISION_FAST: [FRAME 52] Inference complete in 287 ms | Detections: 0[0m
+[0;33mW (16645) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (17047) AI_VISION_FAST: [FRAME 53] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (17354) AI_VISION_FAST: [FRAME 54] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (17355) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (17749) AI_VISION_FAST: [FRAME 55] Inference complete in 274 ms | Detections: 1[0m
+[0;32mI (17750) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18316) AI_VISION_FAST: [FRAME 56] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (18718) AI_VISION_FAST: [FRAME 57] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (19268) AI_VISION_FAST: [FRAME 58] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (19757) AI_VISION_FAST: [FRAME 60] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (20154) AI_VISION_FAST: [FRAME 61] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (20549) AI_VISION_FAST: [FRAME 62] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (20951) AI_VISION_FAST: [FRAME 63] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (21353) AI_VISION_FAST: [FRAME 64] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (21907) AI_VISION_FAST: [FRAME 65] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (22309) AI_VISION_FAST: [FRAME 66] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (22713) AI_VISION_FAST: [FRAME 67] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (23112) AI_VISION_FAST: [FRAME 68] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (23512) AI_VISION_FAST: [FRAME 69] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (23512) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (23913) AI_VISION_FAST: [FRAME 70] Inference complete in 280 ms | Detections: 0[0m
+[0;33mW (24014) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (24313) AI_VISION_FAST: [FRAME 71] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (24709) AI_VISION_FAST: [FRAME 72] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (25109) AI_VISION_FAST: [FRAME 73] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (25510) AI_VISION_FAST: [FRAME 74] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (26072) AI_VISION_FAST: [FRAME 75] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (26470) AI_VISION_FAST: [FRAME 76] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (26868) AI_VISION_FAST: [FRAME 77] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (27271) AI_VISION_FAST: [FRAME 78] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (27670) AI_VISION_FAST: [FRAME 79] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (28069) AI_VISION_FAST: [FRAME 80] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (28469) AI_VISION_FAST: [FRAME 81] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (28875) AI_VISION_FAST: [FRAME 82] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (29269) AI_VISION_FAST: [FRAME 83] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (29670) AI_VISION_FAST: [FRAME 84] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (30068) AI_VISION_FAST: [FRAME 85] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (30068) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (30469) AI_VISION_FAST: [FRAME 86] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (30570) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (30872) AI_VISION_FAST: [FRAME 87] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (31268) AI_VISION_FAST: [FRAME 88] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (31668) AI_VISION_FAST: [FRAME 89] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (32072) AI_VISION_FAST: [FRAME 90] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (32465) AI_VISION_FAST: [FRAME 91] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (32868) AI_VISION_FAST: [FRAME 92] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (33264) AI_VISION_FAST: [FRAME 93] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (33666) AI_VISION_FAST: [FRAME 94] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (34069) AI_VISION_FAST: [FRAME 95] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (34622) AI_VISION_FAST: [FRAME 96] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (35181) AI_VISION_FAST: [FRAME 97] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (35664) AI_VISION_FAST: [FRAME 99] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (35983) AI_VISION_FAST: [FRAME 100] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (36542) AI_VISION_FAST: [FRAME 101] Inference complete in 274 ms | Detections: 0[0m
+[0;33mW (36571) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (36947) AI_VISION_FAST: [FRAME 102] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (37345) AI_VISION_FAST: [FRAME 103] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (37346) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (37348) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (37745) AI_VISION_FAST: [FRAME 104] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (38148) AI_VISION_FAST: [FRAME 105] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (38546) AI_VISION_FAST: [FRAME 106] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (38546) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [2/10] from Slave...[0m
+[0;33mW (38550) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (38944) AI_VISION_FAST: [FRAME 107] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (39346) AI_VISION_FAST: [FRAME 108] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (39725) AI_VISION_FAST: [FRAME 109] Inference complete in 258 ms | Detections: 0[0m
+[0;32mI (40145) AI_VISION_FAST: [FRAME 111] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (40543) AI_VISION_FAST: [FRAME 112] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (40948) AI_VISION_FAST: [FRAME 113] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (41347) AI_VISION_FAST: [FRAME 114] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (41742) AI_VISION_FAST: [FRAME 115] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (42145) AI_VISION_FAST: [FRAME 116] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (42543) AI_VISION_FAST: [FRAME 117] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (43101) AI_VISION_FAST: [FRAME 118] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (43503) AI_VISION_FAST: [FRAME 119] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (43906) AI_VISION_FAST: [FRAME 120] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (44307) AI_VISION_FAST: [FRAME 121] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (44703) AI_VISION_FAST: [FRAME 122] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (44704) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (45264) AI_VISION_FAST: [FRAME 125] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (45265) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (45661) AI_VISION_FAST: [FRAME 126] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (46061) AI_VISION_FAST: [FRAME 127] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (46464) AI_VISION_FAST: [FRAME 128] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (46863) AI_VISION_FAST: [FRAME 129] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (47270) AI_VISION_FAST: [FRAME 130] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (47660) AI_VISION_FAST: [FRAME 131] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (48062) AI_VISION_FAST: [FRAME 132] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (48460) AI_VISION_FAST: [FRAME 133] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (48858) AI_VISION_FAST: [FRAME 134] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (49261) AI_VISION_FAST: [FRAME 135] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (49660) AI_VISION_FAST: [FRAME 136] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (50064) AI_VISION_FAST: [FRAME 137] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (50619) AI_VISION_FAST: [FRAME 140] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (51019) AI_VISION_FAST: [FRAME 141] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (51420) AI_VISION_FAST: [FRAME 142] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (51421) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (51820) AI_VISION_FAST: [FRAME 143] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (51923) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (52379) AI_VISION_FAST: [FRAME 144] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (52779) AI_VISION_FAST: [FRAME 145] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (53191) AI_VISION_FAST: [FRAME 146] Inference complete in 290 ms | Detections: 0[0m
+[0;32mI (53581) AI_VISION_FAST: [FRAME 147] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (53979) AI_VISION_FAST: [FRAME 148] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (54380) AI_VISION_FAST: [FRAME 149] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (54774) AI_VISION_FAST: [FRAME 150] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (55177) AI_VISION_FAST: [FRAME 151] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (55577) AI_VISION_FAST: [FRAME 152] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (55979) AI_VISION_FAST: [FRAME 153] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (56386) AI_VISION_FAST: [FRAME 154] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (56776) AI_VISION_FAST: [FRAME 155] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (57178) AI_VISION_FAST: [FRAME 156] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (57739) AI_VISION_FAST: [FRAME 159] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (58136) AI_VISION_FAST: [FRAME 160] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (58136) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (58535) AI_VISION_FAST: [FRAME 161] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (58638) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (58937) AI_VISION_FAST: [FRAME 162] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (59300) AI_VISION_FAST: [FRAME 163] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (59816) AI_VISION_FAST: [FRAME 165] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (60215) AI_VISION_FAST: [FRAME 166] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (60613) AI_VISION_FAST: [FRAME 167] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (61017) AI_VISION_FAST: [FRAME 168] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (61377) AI_VISION_FAST: [FRAME 169] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (61892) AI_VISION_FAST: [FRAME 170] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (62449) AI_VISION_FAST: [FRAME 171] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (62934) AI_VISION_FAST: [FRAME 173] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (63335) AI_VISION_FAST: [FRAME 174] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (63736) AI_VISION_FAST: [FRAME 175] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (64136) AI_VISION_FAST: [FRAME 176] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (64537) AI_VISION_FAST: [FRAME 177] Inference complete in 281 ms | Detections: 0[0m
+[0;33mW (64639) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (64935) AI_VISION_FAST: [FRAME 178] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (65335) AI_VISION_FAST: [FRAME 179] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (65335) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (65735) AI_VISION_FAST: [FRAME 180] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (66291) AI_VISION_FAST: [FRAME 181] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (66693) AI_VISION_FAST: [FRAME 182] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (67251) AI_VISION_FAST: [FRAME 185] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (67653) AI_VISION_FAST: [FRAME 186] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (68060) AI_VISION_FAST: [FRAME 187] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (68454) AI_VISION_FAST: [FRAME 188] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (68850) AI_VISION_FAST: [FRAME 189] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (69411) AI_VISION_FAST: [FRAME 190] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (69812) AI_VISION_FAST: [FRAME 191] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (70212) AI_VISION_FAST: [FRAME 192] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (70613) AI_VISION_FAST: [FRAME 193] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (71008) AI_VISION_FAST: [FRAME 194] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (71571) AI_VISION_FAST: [FRAME 197] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (71571) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (71969) AI_VISION_FAST: [FRAME 198] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (72073) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (72074) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (72371) AI_VISION_FAST: [FRAME 199] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (72771) AI_VISION_FAST: [FRAME 200] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (73172) AI_VISION_FAST: [FRAME 201] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (73172) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [3/10] from Slave...[0m
+[0;33mW (73176) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (73572) AI_VISION_FAST: [FRAME 202] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (74130) AI_VISION_FAST: [FRAME 203] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (74531) AI_VISION_FAST: [FRAME 204] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (74930) AI_VISION_FAST: [FRAME 205] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (75330) AI_VISION_FAST: [FRAME 206] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (75888) AI_VISION_FAST: [FRAME 207] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (76291) AI_VISION_FAST: [FRAME 208] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (76687) AI_VISION_FAST: [FRAME 209] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (77250) AI_VISION_FAST: [FRAME 210] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (77657) AI_VISION_FAST: [FRAME 211] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (78050) AI_VISION_FAST: [FRAME 212] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (78449) AI_VISION_FAST: [FRAME 213] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (78849) AI_VISION_FAST: [FRAME 214] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (79209) AI_VISION_FAST: [FRAME 215] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (79210) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (79728) AI_VISION_FAST: [FRAME 217] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (79728) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (80128) AI_VISION_FAST: [FRAME 218] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (80534) AI_VISION_FAST: [FRAME 219] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (80925) AI_VISION_FAST: [FRAME 220] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (81327) AI_VISION_FAST: [FRAME 221] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (81726) AI_VISION_FAST: [FRAME 222] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (82128) AI_VISION_FAST: [FRAME 223] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (82525) AI_VISION_FAST: [FRAME 224] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (83084) AI_VISION_FAST: [FRAME 225] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (83491) AI_VISION_FAST: [FRAME 226] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (83886) AI_VISION_FAST: [FRAME 227] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (84443) AI_VISION_FAST: [FRAME 228] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (84809) AI_VISION_FAST: [FRAME 229] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (85164) AI_VISION_FAST: [FRAME 230] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (85564) AI_VISION_FAST: [FRAME 231] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (85968) AI_VISION_FAST: [FRAME 232] Inference complete in 280 ms | Detections: 0[0m
+[0;33mW (85969) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (86372) AI_VISION_FAST: [FRAME 233] Inference complete in 284 ms | Detections: 0[0m
+[0;33mW (86471) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (86922) AI_VISION_FAST: [FRAME 234] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (87322) AI_VISION_FAST: [FRAME 235] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (87882) AI_VISION_FAST: [FRAME 236] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (88285) AI_VISION_FAST: [FRAME 237] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (88841) AI_VISION_FAST: [FRAME 238] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (89244) AI_VISION_FAST: [FRAME 239] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (89653) AI_VISION_FAST: [FRAME 240] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (90045) AI_VISION_FAST: [FRAME 241] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (90441) AI_VISION_FAST: [FRAME 242] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (90842) AI_VISION_FAST: [FRAME 243] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (91241) AI_VISION_FAST: [FRAME 244] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (91641) AI_VISION_FAST: [FRAME 245] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (92042) AI_VISION_FAST: [FRAME 246] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (92608) AI_VISION_FAST: [FRAME 247] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (92608) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (92992) AI_VISION_FAST: [FRAME 248] Inference complete in 267 ms | Detections: 0[0m
+[0;32mI (93321) AI_VISION_FAST: [FRAME 249] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (93322) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (93723) AI_VISION_FAST: [FRAME 250] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (94124) AI_VISION_FAST: [FRAME 251] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (94521) AI_VISION_FAST: [FRAME 252] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (94923) AI_VISION_FAST: [FRAME 253] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (95323) AI_VISION_FAST: [FRAME 254] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (95726) AI_VISION_FAST: [FRAME 255] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (96124) AI_VISION_FAST: [FRAME 256] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (96521) AI_VISION_FAST: [FRAME 257] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (96923) AI_VISION_FAST: [FRAME 258] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (97322) AI_VISION_FAST: [FRAME 259] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (97720) AI_VISION_FAST: [FRAME 260] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (98443) AI_VISION_FAST: [FRAME 263] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (98845) AI_VISION_FAST: [FRAME 264] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (99396) AI_VISION_FAST: [FRAME 265] Inference complete in 273 ms | Detections: 0[0m
+[0;33mW (99396) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (99800) AI_VISION_FAST: [FRAME 266] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (99898) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (100201) AI_VISION_FAST: [FRAME 267] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (100601) AI_VISION_FAST: [FRAME 268] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (100999) AI_VISION_FAST: [FRAME 269] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (101402) AI_VISION_FAST: [FRAME 270] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (101955) AI_VISION_FAST: [FRAME 271] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (102357) AI_VISION_FAST: [FRAME 272] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (102918) AI_VISION_FAST: [FRAME 273] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (103314) AI_VISION_FAST: [FRAME 274] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (103880) AI_VISION_FAST: [FRAME 277] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (104277) AI_VISION_FAST: [FRAME 278] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (104680) AI_VISION_FAST: [FRAME 279] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (105075) AI_VISION_FAST: [FRAME 280] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (105479) AI_VISION_FAST: [FRAME 281] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (105878) AI_VISION_FAST: [FRAME 282] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (105899) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (106277) AI_VISION_FAST: [FRAME 283] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (106675) AI_VISION_FAST: [FRAME 284] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (106676) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (106679) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (107077) AI_VISION_FAST: [FRAME 285] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (107651) AI_VISION_FAST: [FRAME 286] Inference complete in 291 ms | Detections: 0[0m
+[0;32mI (107687) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [4/10] from Slave...[0m
+[0;33mW (107688) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (108194) AI_VISION_FAST: [FRAME 287] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (108596) AI_VISION_FAST: [FRAME 288] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (108993) AI_VISION_FAST: [FRAME 289] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (109398) AI_VISION_FAST: [FRAME 290] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (109797) AI_VISION_FAST: [FRAME 291] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (110195) AI_VISION_FAST: [FRAME 292] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (110759) AI_VISION_FAST: [FRAME 293] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (111314) AI_VISION_FAST: [FRAME 296] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (111710) AI_VISION_FAST: [FRAME 297] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (112114) AI_VISION_FAST: [FRAME 298] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (112516) AI_VISION_FAST: [FRAME 299] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (112916) AI_VISION_FAST: [FRAME 300] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (113313) AI_VISION_FAST: [FRAME 301] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (113879) AI_VISION_FAST: [FRAME 302] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (113880) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (114274) AI_VISION_FAST: [FRAME 303] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (114382) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (114675) AI_VISION_FAST: [FRAME 304] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (115234) AI_VISION_FAST: [FRAME 305] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (115633) AI_VISION_FAST: [FRAME 306] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (116035) AI_VISION_FAST: [FRAME 307] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (116597) AI_VISION_FAST: [FRAME 308] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (116994) AI_VISION_FAST: [FRAME 309] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (117393) AI_VISION_FAST: [FRAME 310] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (117790) AI_VISION_FAST: [FRAME 311] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (118350) AI_VISION_FAST: [FRAME 312] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (118751) AI_VISION_FAST: [FRAME 313] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (119152) AI_VISION_FAST: [FRAME 314] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (119558) AI_VISION_FAST: [FRAME 315] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (119960) AI_VISION_FAST: [FRAME 316] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (120349) AI_VISION_FAST: [FRAME 317] Inference complete in 274 ms | Detections: 0[0m
+[0;33mW (120382) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (120753) AI_VISION_FAST: [FRAME 318] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (121151) AI_VISION_FAST: [FRAME 319] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (121152) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (121550) AI_VISION_FAST: [FRAME 320] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (121952) AI_VISION_FAST: [FRAME 321] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (122351) AI_VISION_FAST: [FRAME 322] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (122722) AI_VISION_FAST: [FRAME 323] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (123071) AI_VISION_FAST: [FRAME 324] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (123628) AI_VISION_FAST: [FRAME 325] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (124028) AI_VISION_FAST: [FRAME 326] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (124352) AI_VISION_FAST: [FRAME 327] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (124749) AI_VISION_FAST: [FRAME 328] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (125148) AI_VISION_FAST: [FRAME 329] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (125555) AI_VISION_FAST: [FRAME 330] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (125950) AI_VISION_FAST: [FRAME 331] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (126349) AI_VISION_FAST: [FRAME 332] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (126746) AI_VISION_FAST: [FRAME 333] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (127305) AI_VISION_FAST: [FRAME 334] Inference complete in 273 ms | Detections: 0[0m
+[0;33mW (127305) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (127709) AI_VISION_FAST: [FRAME 335] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (127808) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (128108) AI_VISION_FAST: [FRAME 336] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (128505) AI_VISION_FAST: [FRAME 337] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (129069) AI_VISION_FAST: [FRAME 340] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (129468) AI_VISION_FAST: [FRAME 341] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (129867) AI_VISION_FAST: [FRAME 342] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (130267) AI_VISION_FAST: [FRAME 343] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (130666) AI_VISION_FAST: [FRAME 344] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (131226) AI_VISION_FAST: [FRAME 345] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (131629) AI_VISION_FAST: [FRAME 346] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (132033) AI_VISION_FAST: [FRAME 347] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (132428) AI_VISION_FAST: [FRAME 348] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (132826) AI_VISION_FAST: [FRAME 349] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (133225) AI_VISION_FAST: [FRAME 350] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (133627) AI_VISION_FAST: [FRAME 351] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (134025) AI_VISION_FAST: [FRAME 352] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (134026) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (134425) AI_VISION_FAST: [FRAME 353] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (134528) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (134835) AI_VISION_FAST: [FRAME 354] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (135227) AI_VISION_FAST: [FRAME 355] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (135782) AI_VISION_FAST: [FRAME 356] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (136582) AI_VISION_FAST: [FRAME 359] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (136986) AI_VISION_FAST: [FRAME 360] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (137384) AI_VISION_FAST: [FRAME 361] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (137790) AI_VISION_FAST: [FRAME 362] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (138194) AI_VISION_FAST: [FRAME 363] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (138584) AI_VISION_FAST: [FRAME 364] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (138985) AI_VISION_FAST: [FRAME 365] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (139383) AI_VISION_FAST: [FRAME 366] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (139785) AI_VISION_FAST: [FRAME 367] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (140341) AI_VISION_FAST: [FRAME 368] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (140745) AI_VISION_FAST: [FRAME 369] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (140746) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (141154) AI_VISION_FAST: [FRAME 370] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (141248) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (141249) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (141542) AI_VISION_FAST: [FRAME 371] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (141942) AI_VISION_FAST: [FRAME 372] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (142500) AI_VISION_FAST: [FRAME 373] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (142501) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [5/10] from Slave...[0m
+[0;33mW (142504) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (142901) AI_VISION_FAST: [FRAME 374] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (143306) AI_VISION_FAST: [FRAME 375] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (143702) AI_VISION_FAST: [FRAME 376] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (144107) AI_VISION_FAST: [FRAME 377] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (144503) AI_VISION_FAST: [FRAME 378] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (144903) AI_VISION_FAST: [FRAME 379] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (145303) AI_VISION_FAST: [FRAME 380] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (145700) AI_VISION_FAST: [FRAME 381] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (146103) AI_VISION_FAST: [FRAME 382] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (146660) AI_VISION_FAST: [FRAME 385] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (147219) AI_VISION_FAST: [FRAME 388] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (147622) AI_VISION_FAST: [FRAME 389] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (148021) AI_VISION_FAST: [FRAME 390] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (148422) AI_VISION_FAST: [FRAME 391] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (148512) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (148978) AI_VISION_FAST: [FRAME 394] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (149012) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (149698) AI_VISION_FAST: [FRAME 397] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (150107) AI_VISION_FAST: [FRAME 398] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (150500) AI_VISION_FAST: [FRAME 399] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (150898) AI_VISION_FAST: [FRAME 400] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (151304) AI_VISION_FAST: [FRAME 401] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (151856) AI_VISION_FAST: [FRAME 402] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (152257) AI_VISION_FAST: [FRAME 403] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (152659) AI_VISION_FAST: [FRAME 404] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (153060) AI_VISION_FAST: [FRAME 405] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (153616) AI_VISION_FAST: [FRAME 406] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (154017) AI_VISION_FAST: [FRAME 407] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (154335) AI_VISION_FAST: [FRAME 408] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (154736) AI_VISION_FAST: [FRAME 409] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (155137) AI_VISION_FAST: [FRAME 410] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (155137) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (155538) AI_VISION_FAST: [FRAME 411] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (155639) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (155934) AI_VISION_FAST: [FRAME 412] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (156260) AI_VISION_FAST: [FRAME 413] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (156657) AI_VISION_FAST: [FRAME 414] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (157056) AI_VISION_FAST: [FRAME 415] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (157456) AI_VISION_FAST: [FRAME 416] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (157858) AI_VISION_FAST: [FRAME 417] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (158258) AI_VISION_FAST: [FRAME 418] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (158657) AI_VISION_FAST: [FRAME 419] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (159065) AI_VISION_FAST: [FRAME 420] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (159455) AI_VISION_FAST: [FRAME 421] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (160015) AI_VISION_FAST: [FRAME 422] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (160418) AI_VISION_FAST: [FRAME 423] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (160819) AI_VISION_FAST: [FRAME 424] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (161217) AI_VISION_FAST: [FRAME 425] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (161614) AI_VISION_FAST: [FRAME 426] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (161640) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (162019) AI_VISION_FAST: [FRAME 427] Inference complete in 281 ms | Detections: 0[0m
+[0;33mW (162140) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (162573) AI_VISION_FAST: [FRAME 428] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (162973) AI_VISION_FAST: [FRAME 429] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (163372) AI_VISION_FAST: [FRAME 430] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (163776) AI_VISION_FAST: [FRAME 431] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (164174) AI_VISION_FAST: [FRAME 432] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (164575) AI_VISION_FAST: [FRAME 433] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (165142) AI_VISION_FAST: [FRAME 434] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (165535) AI_VISION_FAST: [FRAME 435] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (165932) AI_VISION_FAST: [FRAME 436] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (166316) AI_VISION_FAST: [FRAME 437] Inference complete in 260 ms | Detections: 0[0m
+[0;32mI (166814) AI_VISION_FAST: [FRAME 439] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (167369) AI_VISION_FAST: [FRAME 440] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (167852) AI_VISION_FAST: [FRAME 442] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (168257) AI_VISION_FAST: [FRAME 443] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (168258) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (168652) AI_VISION_FAST: [FRAME 444] Inference complete in 277 ms | Detections: 0[0m
+W (168760) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)
+[0;32mI (169052) AI_VISION_FAST: [FRAME 445] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (169450) AI_VISION_FAST: [FRAME 446] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (169849) AI_VISION_FAST: [FRAME 447] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (170250) AI_VISION_FAST: [FRAME 448] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (170651) AI_VISION_FAST: [FRAME 449] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (171058) AI_VISION_FAST: [FRAME 450] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (171451) AI_VISION_FAST: [FRAME 451] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (171851) AI_VISION_FAST: [FRAME 452] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (172251) AI_VISION_FAST: [FRAME 453] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (172650) AI_VISION_FAST: [FRAME 454] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (173049) AI_VISION_FAST: [FRAME 455] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (173450) AI_VISION_FAST: [FRAME 456] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (173850) AI_VISION_FAST: [FRAME 457] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (174412) AI_VISION_FAST: [FRAME 458] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (174791) AI_VISION_FAST: [FRAME 459] Inference complete in 258 ms | Detections: 0[0m
+[0;33mW (174792) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (175208) AI_VISION_FAST: [FRAME 461] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (175294) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (175295) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (175608) AI_VISION_FAST: [FRAME 462] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (176007) AI_VISION_FAST: [FRAME 463] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (176410) AI_VISION_FAST: [FRAME 464] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (176411) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [6/10] from Slave...[0m
+[0;33mW (176414) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (176806) AI_VISION_FAST: [FRAME 465] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (177217) AI_VISION_FAST: [FRAME 466] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (177610) AI_VISION_FAST: [FRAME 467] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (178006) AI_VISION_FAST: [FRAME 468] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (178409) AI_VISION_FAST: [FRAME 469] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (178809) AI_VISION_FAST: [FRAME 470] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (179208) AI_VISION_FAST: [FRAME 471] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (179606) AI_VISION_FAST: [FRAME 472] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (180008) AI_VISION_FAST: [FRAME 473] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (180414) AI_VISION_FAST: [FRAME 474] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (180806) AI_VISION_FAST: [FRAME 475] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (181205) AI_VISION_FAST: [FRAME 476] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (181606) AI_VISION_FAST: [FRAME 477] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (182162) AI_VISION_FAST: [FRAME 478] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (182565) AI_VISION_FAST: [FRAME 479] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (182566) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (182969) AI_VISION_FAST: [FRAME 480] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (183068) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (183528) AI_VISION_FAST: [FRAME 481] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (184083) AI_VISION_FAST: [FRAME 482] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (184641) AI_VISION_FAST: [FRAME 483] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (185283) AI_VISION_FAST: [FRAME 485] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (185683) AI_VISION_FAST: [FRAME 486] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (186085) AI_VISION_FAST: [FRAME 487] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (186613) AI_VISION_FAST: [FRAME 490] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (186964) AI_VISION_FAST: [FRAME 491] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (187364) AI_VISION_FAST: [FRAME 492] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (187765) AI_VISION_FAST: [FRAME 493] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (188164) AI_VISION_FAST: [FRAME 494] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (188565) AI_VISION_FAST: [FRAME 495] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (188966) AI_VISION_FAST: [FRAME 496] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (189069) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (189375) AI_VISION_FAST: [FRAME 497] Inference complete in 288 ms | Detections: 0[0m
+[0;33mW (189569) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (189923) AI_VISION_FAST: [FRAME 500] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (190324) AI_VISION_FAST: [FRAME 501] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (190722) AI_VISION_FAST: [FRAME 502] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (191121) AI_VISION_FAST: [FRAME 503] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (191680) AI_VISION_FAST: [FRAME 506] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (192080) AI_VISION_FAST: [FRAME 507] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (192489) AI_VISION_FAST: [FRAME 508] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (192882) AI_VISION_FAST: [FRAME 509] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (193284) AI_VISION_FAST: [FRAME 510] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (193681) AI_VISION_FAST: [FRAME 511] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (194244) AI_VISION_FAST: [FRAME 514] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (194639) AI_VISION_FAST: [FRAME 515] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (195043) AI_VISION_FAST: [FRAME 516] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (195446) AI_VISION_FAST: [FRAME 517] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (195842) AI_VISION_FAST: [FRAME 518] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (195842) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (196241) AI_VISION_FAST: [FRAME 519] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (196344) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (196640) AI_VISION_FAST: [FRAME 520] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (197042) AI_VISION_FAST: [FRAME 521] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (197442) AI_VISION_FAST: [FRAME 522] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (197839) AI_VISION_FAST: [FRAME 523] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (198244) AI_VISION_FAST: [FRAME 524] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (198645) AI_VISION_FAST: [FRAME 525] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (199039) AI_VISION_FAST: [FRAME 526] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (199441) AI_VISION_FAST: [FRAME 527] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (199841) AI_VISION_FAST: [FRAME 528] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (200239) AI_VISION_FAST: [FRAME 529] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (200636) AI_VISION_FAST: [FRAME 530] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (200960) AI_VISION_FAST: [FRAME 531] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (201365) AI_VISION_FAST: [FRAME 532] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (201759) AI_VISION_FAST: [FRAME 533] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (202161) AI_VISION_FAST: [FRAME 534] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (202560) AI_VISION_FAST: [FRAME 535] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (202561) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (202960) AI_VISION_FAST: [FRAME 536] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (203063) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (203356) AI_VISION_FAST: [FRAME 537] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (203756) AI_VISION_FAST: [FRAME 538] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (204161) AI_VISION_FAST: [FRAME 539] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (204562) AI_VISION_FAST: [FRAME 540] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (205115) AI_VISION_FAST: [FRAME 541] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (205516) AI_VISION_FAST: [FRAME 542] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (205916) AI_VISION_FAST: [FRAME 543] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (206319) AI_VISION_FAST: [FRAME 544] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (206717) AI_VISION_FAST: [FRAME 545] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (207115) AI_VISION_FAST: [FRAME 546] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (207531) AI_VISION_FAST: [FRAME 547] Inference complete in 291 ms | Detections: 0[0m
+[0;32mI (208073) AI_VISION_FAST: [FRAME 548] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (208474) AI_VISION_FAST: [FRAME 549] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (208874) AI_VISION_FAST: [FRAME 550] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (209274) AI_VISION_FAST: [FRAME 551] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (209275) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (209677) AI_VISION_FAST: [FRAME 552] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (209777) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (209778) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (210077) AI_VISION_FAST: [FRAME 553] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (210451) AI_VISION_FAST: [FRAME 554] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (210797) AI_VISION_FAST: [FRAME 555] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (210798) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [7/10] from Slave...[0m
+[0;33mW (210802) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (211194) AI_VISION_FAST: [FRAME 556] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (211595) AI_VISION_FAST: [FRAME 557] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (211994) AI_VISION_FAST: [FRAME 558] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (212392) AI_VISION_FAST: [FRAME 559] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (212794) AI_VISION_FAST: [FRAME 560] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (213194) AI_VISION_FAST: [FRAME 561] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (213605) AI_VISION_FAST: [FRAME 562] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (213991) AI_VISION_FAST: [FRAME 563] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (214396) AI_VISION_FAST: [FRAME 564] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (214794) AI_VISION_FAST: [FRAME 565] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (215194) AI_VISION_FAST: [FRAME 566] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (215752) AI_VISION_FAST: [FRAME 567] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (216152) AI_VISION_FAST: [FRAME 568] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (216568) AI_VISION_FAST: [FRAME 569] Inference complete in 292 ms | Detections: 0[0m
+[0;33mW (216810) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (217114) AI_VISION_FAST: [FRAME 572] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (217514) AI_VISION_FAST: [FRAME 573] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (217515) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (217913) AI_VISION_FAST: [FRAME 574] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (218312) AI_VISION_FAST: [FRAME 575] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (218710) AI_VISION_FAST: [FRAME 576] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (219113) AI_VISION_FAST: [FRAME 577] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (219515) AI_VISION_FAST: [FRAME 578] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (219920) AI_VISION_FAST: [FRAME 579] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (220310) AI_VISION_FAST: [FRAME 580] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (220713) AI_VISION_FAST: [FRAME 581] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (221113) AI_VISION_FAST: [FRAME 582] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (221510) AI_VISION_FAST: [FRAME 583] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (221913) AI_VISION_FAST: [FRAME 584] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (222315) AI_VISION_FAST: [FRAME 585] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (222672) AI_VISION_FAST: [FRAME 586] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (222991) AI_VISION_FAST: [FRAME 587] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (223350) AI_VISION_FAST: [FRAME 588] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (223750) AI_VISION_FAST: [FRAME 589] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (223751) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (224146) AI_VISION_FAST: [FRAME 590] Inference complete in 273 ms | Detections: 0[0m
+[0;33mW (224253) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (224550) AI_VISION_FAST: [FRAME 591] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (224949) AI_VISION_FAST: [FRAME 592] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (225352) AI_VISION_FAST: [FRAME 593] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (225753) AI_VISION_FAST: [FRAME 594] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (226148) AI_VISION_FAST: [FRAME 595] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (226707) AI_VISION_FAST: [FRAME 596] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (227109) AI_VISION_FAST: [FRAME 597] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (227508) AI_VISION_FAST: [FRAME 598] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (227910) AI_VISION_FAST: [FRAME 599] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (228308) AI_VISION_FAST: [FRAME 600] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (228708) AI_VISION_FAST: [FRAME 601] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (229110) AI_VISION_FAST: [FRAME 602] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (229667) AI_VISION_FAST: [FRAME 605] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (230067) AI_VISION_FAST: [FRAME 606] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (230467) AI_VISION_FAST: [FRAME 607] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (230468) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (230865) AI_VISION_FAST: [FRAME 608] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (230970) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (231269) AI_VISION_FAST: [FRAME 609] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (231672) AI_VISION_FAST: [FRAME 610] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (232067) AI_VISION_FAST: [FRAME 611] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (232465) AI_VISION_FAST: [FRAME 612] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (232864) AI_VISION_FAST: [FRAME 613] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (233268) AI_VISION_FAST: [FRAME 614] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (233666) AI_VISION_FAST: [FRAME 615] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (234064) AI_VISION_FAST: [FRAME 616] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (234470) AI_VISION_FAST: [FRAME 617] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (234868) AI_VISION_FAST: [FRAME 618] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (235265) AI_VISION_FAST: [FRAME 619] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (235667) AI_VISION_FAST: [FRAME 620] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (236065) AI_VISION_FAST: [FRAME 621] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (236620) AI_VISION_FAST: [FRAME 622] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (237023) AI_VISION_FAST: [FRAME 623] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (237023) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (237424) AI_VISION_FAST: [FRAME 624] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (237525) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (237830) AI_VISION_FAST: [FRAME 625] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (238228) AI_VISION_FAST: [FRAME 626] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (238626) AI_VISION_FAST: [FRAME 627] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (239025) AI_VISION_FAST: [FRAME 628] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (239424) AI_VISION_FAST: [FRAME 629] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (239822) AI_VISION_FAST: [FRAME 630] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (240223) AI_VISION_FAST: [FRAME 631] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (240628) AI_VISION_FAST: [FRAME 632] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (241025) AI_VISION_FAST: [FRAME 633] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (241425) AI_VISION_FAST: [FRAME 634] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (241822) AI_VISION_FAST: [FRAME 635] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (242225) AI_VISION_FAST: [FRAME 636] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (242622) AI_VISION_FAST: [FRAME 637] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (243022) AI_VISION_FAST: [FRAME 638] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (243424) AI_VISION_FAST: [FRAME 639] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (243526) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (243790) AI_VISION_FAST: [FRAME 640] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (244299) AI_VISION_FAST: [FRAME 641] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (244299) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (244302) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (244700) AI_VISION_FAST: [FRAME 642] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (245102) AI_VISION_FAST: [FRAME 643] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (245501) AI_VISION_FAST: [FRAME 644] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (245502) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [8/10] from Slave...[0m
+[0;33mW (245506) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (245900) AI_VISION_FAST: [FRAME 645] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (246303) AI_VISION_FAST: [FRAME 646] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (246708) AI_VISION_FAST: [FRAME 647] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (247105) AI_VISION_FAST: [FRAME 648] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (247658) AI_VISION_FAST: [FRAME 651] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (248061) AI_VISION_FAST: [FRAME 652] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (248461) AI_VISION_FAST: [FRAME 653] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (248858) AI_VISION_FAST: [FRAME 654] Inference complete in 275 ms | Detections: 0[0m
+cam_hal: EV-VSYNC-OVF - 100 additional misses
+[0;32mI (249417) AI_VISION_FAST: [FRAME 655] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (249828) AI_VISION_FAST: [FRAME 656] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (250377) AI_VISION_FAST: [FRAME 659] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (250777) AI_VISION_FAST: [FRAME 660] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (251175) AI_VISION_FAST: [FRAME 661] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (251577) AI_VISION_FAST: [FRAME 662] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (251578) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (251980) AI_VISION_FAST: [FRAME 663] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (252080) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (252377) AI_VISION_FAST: [FRAME 664] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (252781) AI_VISION_FAST: [FRAME 665] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (253334) AI_VISION_FAST: [FRAME 666] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (253818) AI_VISION_FAST: [FRAME 668] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (254376) AI_VISION_FAST: [FRAME 669] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (254779) AI_VISION_FAST: [FRAME 670] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (255171) AI_VISION_FAST: [FRAME 671] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (255498) AI_VISION_FAST: [FRAME 672] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (255904) AI_VISION_FAST: [FRAME 673] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (256295) AI_VISION_FAST: [FRAME 674] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (256697) AI_VISION_FAST: [FRAME 675] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (257094) AI_VISION_FAST: [FRAME 676] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (257498) AI_VISION_FAST: [FRAME 677] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (257898) AI_VISION_FAST: [FRAME 678] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (258295) AI_VISION_FAST: [FRAME 679] Inference complete in 276 ms | Detections: 0[0m
+[0;33mW (258296) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (258701) AI_VISION_FAST: [FRAME 680] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (258798) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (259098) AI_VISION_FAST: [FRAME 681] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (259497) AI_VISION_FAST: [FRAME 682] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (259896) AI_VISION_FAST: [FRAME 683] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (260296) AI_VISION_FAST: [FRAME 684] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (260696) AI_VISION_FAST: [FRAME 685] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (261094) AI_VISION_FAST: [FRAME 686] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (261491) AI_VISION_FAST: [FRAME 687] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (261905) AI_VISION_FAST: [FRAME 688] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (262294) AI_VISION_FAST: [FRAME 689] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (262696) AI_VISION_FAST: [FRAME 690] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (263092) AI_VISION_FAST: [FRAME 691] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (263493) AI_VISION_FAST: [FRAME 692] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (264054) AI_VISION_FAST: [FRAME 693] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (264451) AI_VISION_FAST: [FRAME 694] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (264858) AI_VISION_FAST: [FRAME 695] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (264859) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (265258) AI_VISION_FAST: [FRAME 696] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (265361) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (265654) AI_VISION_FAST: [FRAME 697] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (266053) AI_VISION_FAST: [FRAME 698] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (266611) AI_VISION_FAST: [FRAME 699] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (267014) AI_VISION_FAST: [FRAME 700] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (267414) AI_VISION_FAST: [FRAME 701] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (267818) AI_VISION_FAST: [FRAME 702] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (268369) AI_VISION_FAST: [FRAME 703] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (268770) AI_VISION_FAST: [FRAME 704] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (269169) AI_VISION_FAST: [FRAME 705] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (269730) AI_VISION_FAST: [FRAME 708] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (270132) AI_VISION_FAST: [FRAME 709] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (270491) AI_VISION_FAST: [FRAME 710] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (270852) AI_VISION_FAST: [FRAME 711] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (271257) AI_VISION_FAST: [FRAME 712] Inference complete in 283 ms | Detections: 0[0m
+[0;33mW (271362) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (271649) AI_VISION_FAST: [FRAME 713] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (271862) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (272210) AI_VISION_FAST: [FRAME 714] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (272609) AI_VISION_FAST: [FRAME 715] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (273003) AI_VISION_FAST: [FRAME 716] Inference complete in 270 ms | Detections: 0[0m
+[0;32mI (273330) AI_VISION_FAST: [FRAME 717] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (273731) AI_VISION_FAST: [FRAME 718] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (274293) AI_VISION_FAST: [FRAME 719] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (274689) AI_VISION_FAST: [FRAME 720] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (275091) AI_VISION_FAST: [FRAME 721] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (275489) AI_VISION_FAST: [FRAME 722] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (275888) AI_VISION_FAST: [FRAME 723] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (276286) AI_VISION_FAST: [FRAME 724] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (276687) AI_VISION_FAST: [FRAME 725] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (277101) AI_VISION_FAST: [FRAME 726] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (277488) AI_VISION_FAST: [FRAME 727] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (277887) AI_VISION_FAST: [FRAME 728] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (277887) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (278290) AI_VISION_FAST: [FRAME 729] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (278389) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (278390) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (278690) AI_VISION_FAST: [FRAME 730] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (279088) AI_VISION_FAST: [FRAME 731] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (279487) AI_VISION_FAST: [FRAME 732] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (279488) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [9/10] from Slave...[0m
+[0;33mW (279492) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (279891) AI_VISION_FAST: [FRAME 733] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (280291) AI_VISION_FAST: [FRAME 734] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (280687) AI_VISION_FAST: [FRAME 735] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (281049) AI_VISION_FAST: [FRAME 736] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (281406) AI_VISION_FAST: [FRAME 737] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (281807) AI_VISION_FAST: [FRAME 738] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (282207) AI_VISION_FAST: [FRAME 739] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (282762) AI_VISION_FAST: [FRAME 740] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (283172) AI_VISION_FAST: [FRAME 741] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (283564) AI_VISION_FAST: [FRAME 742] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (283964) AI_VISION_FAST: [FRAME 743] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (284366) AI_VISION_FAST: [FRAME 744] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (284765) AI_VISION_FAST: [FRAME 745] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (285163) AI_VISION_FAST: [FRAME 746] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (285565) AI_VISION_FAST: [FRAME 747] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (285565) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (285967) AI_VISION_FAST: [FRAME 748] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (286067) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (286333) AI_VISION_FAST: [FRAME 749] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (286841) AI_VISION_FAST: [FRAME 750] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (287323) AI_VISION_FAST: [FRAME 752] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (287723) AI_VISION_FAST: [FRAME 753] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (288124) AI_VISION_FAST: [FRAME 754] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (288522) AI_VISION_FAST: [FRAME 755] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (288923) AI_VISION_FAST: [FRAME 756] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (289333) AI_VISION_FAST: [FRAME 757] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (289724) AI_VISION_FAST: [FRAME 758] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (290125) AI_VISION_FAST: [FRAME 759] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (290521) AI_VISION_FAST: [FRAME 760] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (290926) AI_VISION_FAST: [FRAME 761] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (291324) AI_VISION_FAST: [FRAME 762] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (291723) AI_VISION_FAST: [FRAME 763] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (292288) AI_VISION_FAST: [FRAME 764] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (292288) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (292685) AI_VISION_FAST: [FRAME 765] Inference complete in 280 ms | Detections: 0[0m
+[0;33mW (292790) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (293083) AI_VISION_FAST: [FRAME 766] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (293481) AI_VISION_FAST: [FRAME 767] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (294042) AI_VISION_FAST: [FRAME 768] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (294442) AI_VISION_FAST: [FRAME 769] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (294843) AI_VISION_FAST: [FRAME 770] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (295252) AI_VISION_FAST: [FRAME 771] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (295641) AI_VISION_FAST: [FRAME 772] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (296041) AI_VISION_FAST: [FRAME 773] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (296602) AI_VISION_FAST: [FRAME 776] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (297001) AI_VISION_FAST: [FRAME 777] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (297401) AI_VISION_FAST: [FRAME 778] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (297800) AI_VISION_FAST: [FRAME 779] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (298212) AI_VISION_FAST: [FRAME 780] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (298599) AI_VISION_FAST: [FRAME 781] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (298998) AI_VISION_FAST: [FRAME 782] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (298999) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (299398) AI_VISION_FAST: [FRAME 783] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (299501) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (299801) AI_VISION_FAST: [FRAME 784] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (300201) AI_VISION_FAST: [FRAME 785] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (300599) AI_VISION_FAST: [FRAME 786] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (301000) AI_VISION_FAST: [FRAME 787] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (301557) AI_VISION_FAST: [FRAME 788] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (301956) AI_VISION_FAST: [FRAME 789] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (302359) AI_VISION_FAST: [FRAME 790] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (302761) AI_VISION_FAST: [FRAME 791] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (303163) AI_VISION_FAST: [FRAME 792] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (303561) AI_VISION_FAST: [FRAME 793] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (304123) AI_VISION_FAST: [FRAME 794] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (304518) AI_VISION_FAST: [FRAME 795] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (304918) AI_VISION_FAST: [FRAME 796] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (305317) AI_VISION_FAST: [FRAME 797] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (305715) AI_VISION_FAST: [FRAME 798] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (305716) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (306118) AI_VISION_FAST: [FRAME 799] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (306218) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (306522) AI_VISION_FAST: [FRAME 800] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (306916) AI_VISION_FAST: [FRAME 801] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (307323) AI_VISION_FAST: [FRAME 802] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (307718) AI_VISION_FAST: [FRAME 803] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (308116) AI_VISION_FAST: [FRAME 804] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (308516) AI_VISION_FAST: [FRAME 805] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (308916) AI_VISION_FAST: [FRAME 806] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (309318) AI_VISION_FAST: [FRAME 807] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (309711) AI_VISION_FAST: [FRAME 808] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (310042) AI_VISION_FAST: [FRAME 809] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (310442) AI_VISION_FAST: [FRAME 810] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (310835) AI_VISION_FAST: [FRAME 811] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (311237) AI_VISION_FAST: [FRAME 812] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (311635) AI_VISION_FAST: [FRAME 813] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (312030) AI_VISION_FAST: [FRAME 814] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (312432) AI_VISION_FAST: [FRAME 815] Inference complete in 275 ms | Detections: 0[0m
+[0;33mW (312433) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (312835) AI_VISION_FAST: [FRAME 816] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (312935) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (312936) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (313397) AI_VISION_FAST: [FRAME 817] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (313796) AI_VISION_FAST: [FRAME 818] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (314195) AI_VISION_FAST: [FRAME 819] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (314196) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [10/10] from Slave...[0m
+[0;33mW (314200) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (314595) AI_VISION_FAST: [FRAME 820] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (314996) AI_VISION_FAST: [FRAME 821] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (315392) AI_VISION_FAST: [FRAME 822] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (315795) AI_VISION_FAST: [FRAME 823] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (316203) AI_VISION_FAST: [FRAME 824] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (316591) AI_VISION_FAST: [FRAME 825] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (316992) AI_VISION_FAST: [FRAME 826] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (317395) AI_VISION_FAST: [FRAME 827] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (317792) AI_VISION_FAST: [FRAME 828] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (318194) AI_VISION_FAST: [FRAME 829] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (318592) AI_VISION_FAST: [FRAME 830] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (318994) AI_VISION_FAST: [FRAME 831] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (319556) AI_VISION_FAST: [FRAME 832] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (319953) AI_VISION_FAST: [FRAME 833] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (320351) AI_VISION_FAST: [FRAME 834] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (320352) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (320751) AI_VISION_FAST: [FRAME 835] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (320854) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (321152) AI_VISION_FAST: [FRAME 836] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (321553) AI_VISION_FAST: [FRAME 837] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (321950) AI_VISION_FAST: [FRAME 838] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (322359) AI_VISION_FAST: [FRAME 839] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (322750) AI_VISION_FAST: [FRAME 840] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (323148) AI_VISION_FAST: [FRAME 841] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (323549) AI_VISION_FAST: [FRAME 842] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (323948) AI_VISION_FAST: [FRAME 843] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (324349) AI_VISION_FAST: [FRAME 844] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (324749) AI_VISION_FAST: [FRAME 845] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (325154) AI_VISION_FAST: [FRAME 846] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (325556) AI_VISION_FAST: [FRAME 847] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (325949) AI_VISION_FAST: [FRAME 848] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (326506) AI_VISION_FAST: [FRAME 849] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (326911) AI_VISION_FAST: [FRAME 850] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (326912) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (327310) AI_VISION_FAST: [FRAME 851] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (327414) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (327708) AI_VISION_FAST: [FRAME 852] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (328106) AI_VISION_FAST: [FRAME 853] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (328677) AI_VISION_FAST

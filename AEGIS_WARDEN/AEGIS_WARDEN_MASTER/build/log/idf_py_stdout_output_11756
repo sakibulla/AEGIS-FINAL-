@@ -1,0 +1,41 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/warden_main.cpp.obj
+In file included from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp:36:
+E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/model-parameters/model_metadata.h:114:2: warning: #warning 'EI_CLASSFIER_OBJECT_DETECTION_COUNT' is used for the guaranteed minimum number of objects detected. To get all objects during inference use 'bounding_boxes_count' from the 'ei_impulse_result_t' struct instead. [-Wcpp]
+  114 | #warning 'EI_CLASSFIER_OBJECT_DETECTION_COUNT' is used for the guaranteed minimum number of objects detected. To get all objects during inference use 'bounding_boxes_count' from the 'ei_impulse_result_t' struct instead.
+      |  ^~~~~~~
+In file included from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/micro/micro_mutable_op_resolver.h:22,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/micro/all_ops_resolver.h:19,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/classifier/inferencing_engines/tflite_helper.h:52,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/classifier/inferencing_engines/tflite_eon.h:44,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/classifier/ei_run_classifier.h:63,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp:37:
+E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_pair.h:60,
+                 from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_algobase.h:64,
+                 from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/specfun.h:43,
+                 from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/cmath:3898,
+                 from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/math.h:36,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp:3:
+E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable aegis_warden.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/build/aegis_warden.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/build/partition_table/partition-table.bin E:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/build/aegis_warden.bin"
+aegis_warden.bin binary size 0x1762b0 bytes. Smallest app partition is 0x300000 bytes. 0x189d50 bytes (51%) free.

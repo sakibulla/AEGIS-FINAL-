@@ -1,0 +1,219 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\aegis_warden.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_WARDEN\AEGIS_WARDEN_MASTER\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40390950: [0;33mesp_flash_read[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/esp_flash_api.c[0m[0m:[1;31m945[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m--- 0x4207436b: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- (inlined by) [0;33mtask_wdt_isr[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037b8b1: [0;33m_xt_lowint1[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1264[0m
+[0m--- 0x4202f102: [0;33mlv_inv_area[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_refr.c[0m[0m:[1;31m286[0m
+[0m--- 0x4202a76d: [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1632[0m
+[0m--- (inlined by) [0;33minvalidate_area_core[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1615[0m
+[0m--- (inlined by) [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1328[0m
+[0m--- 0x4202a833: [0;33mobj_invalidate_area_internal[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1323[0m
+[0m--- (inlined by) [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1111[0m
+[0m--- 0x4202a848: [0;33mlv_obj_invalidate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/core/lv_obj_pos.c[0m[0m:[1;31m1097[0m
+[0m--- 0x4202fdab: [0;33mupdate_resolution[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1392[0m
+[0m--- 0x420303f3: [0;33mlv_display_set_rotation[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/lvgl__lvgl/src/display/lv_display.c[0m[0m:[1;31m1002[0m
+[0m--- 0x42017dd5: [0;33mbsp_display_rotate[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/managed_components/espressif__esp32_s3_eye/esp32_s3_eye.c[0m[0m:[1;31m396[0m
+[0m--- 0x4200f543: [0;33mapp_main[0m[0m at [0;32mE:/AEGIS_GUARDIAN_FOMO/AEGIS_WARDEN/AEGIS_WARDEN_MASTER/main/warden_main.cpp[0m[0m:[1;31m2046[0m
+[0m--- 0x42112baf: [0;33mmain_task[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/app_startup.c[0m[0m:[1;31m215[0m
+[0m

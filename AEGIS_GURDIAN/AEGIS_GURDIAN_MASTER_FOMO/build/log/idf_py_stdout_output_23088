@@ -1,0 +1,293 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (438) esp_image: segment 1: paddr=001d4ea4 vaddr=3fca1f00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e3ae
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c210020 size=1c4e7ch (1855100) map[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4ea4 vaddr=3fca1f00 size=0a79ch ( 42908) load[0m
+[0;32mI (447) esp_image: segment 2: paddr=001df648 vaddr=40374000 size=009d0h (  2512) load[0m
+[0;32mI (448) esp_image: segment 3: paddr=001e0020 vaddr=42000020 size=2049e8h (2116072) map[0m
+[0;32mI (837) esp_image: segment 4: paddr=003e4a10 vaddr=403749d0 size=1d51ch (120092) load[0m
+[0;32mI (865) esp_image: segment 5: paddr=00401f34 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (878) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (878) boot: Disabling RNG early entropy source...[0m
+[0;32mI (888) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (888) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (889) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (891) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (895) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (899) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (903) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (908) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (913) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (918) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (923) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (927) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (931) esp_psram: Speed: 40MHz[0m
+[0;32mI (934) cpu_start: Multicore app[0m
+[0;32mI (1667) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1676) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1677) cpu_start: Pro cpu start user code[0m
+[0;32mI (1677) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1678) app_init: Application information:[0m
+[0;32mI (1682) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1687) app_init: App version:      1[0m
+[0;32mI (1691) app_init: Compile time:     Aug 16 2026 20:19:58[0m
+[0;32mI (1696) app_init: ELF file SHA256:  e10c0fae3...[0m
+[0;32mI (1700) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1704) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1708) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1712) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1716) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1723) heap_init: At 3FCC2720 len 00026FF0 (155 KiB): RAM[0m
+[0;32mI (1728) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1733) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1738) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1744) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1752) spi_flash: detected chip: generic[0m
+[0;32mI (1754) spi_flash: flash io: dio[0m
+[0;33mW (1758) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1768) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1774) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1781) main_task: Started on CPU0[0m
+[0;32mI (1781) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1791) main_task: Calling app_main()[0m
+[0;32mI (1791) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1801) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1801) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1831) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1831) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1831) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1831) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1841) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1891) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1891) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1901) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1901) VOICE: Voice system ready[0m
+[0;32mI (1911) VOICE: Voice feed task started[0m
+[0;32mI (1911) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1921) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1921) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1931) VOICE: Listening for: Hi ESP[0m
+[0;32mI (4141) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (4141) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (4141) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (4141) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (4151) cam_hal: cam init ok[0m
+[0;32mI (4151) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (4151) sccb: sccb_i2c_port=1[0m
+[0;32mI (4171) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (4171) camera: Detected OV2640 camera[0m
+[0;32mI (4171) camera: Detected camera at address=0x30[0m
+[0;32mI (4251) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (4251) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (4251) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (4261) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (4261) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (4271) cam_hal: cam config ok[0m
+[0;32mI (4271) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (4351) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker mcam_hal: EV-EOF-OVF
+issing
+[0;32mI (4411) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;32mI (4521) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (4531) pp: pp rom version: e7ae62f[0m
+[0;32mI (4531) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (4541) wifi:wifi driver task: 3fce2288, prio:23, stack:6656, core=0[0m
+[0;32mI (4551) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (4551) wifi:wifi certification version: v7.0[0m
+[0;32mI (4551) wifi:config NVS flash: enabled[0m
+[0;32mI (4551) wifi:config nano formatting: disabled[0m
+[0;32mI (4551) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (4561) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (4561) wifi:Init management short buffer num: 32[0m
+[0;32mI (4571) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (4571) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (4571) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (4581) wifi:Init static rx buffer num: 10[0m
+[0;32mI (4581) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (4591) wifi_init: rx ba win: 6[0m
+[0;32mI (4591) wifi_init: accept mbox: 6[0m
+[0;32mI (4591) wifi_init: tcpip mbox: 32[0m
+[0;32mI (4591) wifi_init: udp mbox: 6[0m
+[0;32mI (4601) wifi_init: tcp mbox: 6[0m
+[0;32mI (4601) wifi_init: tcp tx win: 5760[0m
+[0;32mI (4601) wifi_init: tcp rx win: 5760[0m
+[0;32mI (4611) wifi_init: tcp mss: 1440[0m
+[0;32mI (4611) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (4611) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (4621) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (4661) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (4681) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (4691) wifi:enable tsf[0m
+[0;32mI (4691) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4691) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (4691) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 1[0m
+[0;32mI (4701) ESPNOW_MASTER: Guardian MAC: E8:F6:0A:D6:C8:E8[0m
+[0;32mI (4701) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (4701) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (4711) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (4711) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;32mI (4721) LVGL: Starting LVGL task[0m
+[0;32mI (4871) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (4961) SWARM_DISPLAY: Swarm display ready[0m
+[0;32mI (4961) SWARM_LINK: Swarm link ready on channel 6 (Guardian)[0m
+[0;32mI (4961) SWARM_LINK: Swarm: broadcasting WAKE[0m
+[0;32mI (4961) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[0;32mI (4961) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (4971) AEGIS_GUARDIAN: HTTP server active (snapshot-only, no live /stream)[0m
+[0;32mI (5281) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;33mW (5331) wifi:m f probe req l=0[0m
+
+[0;33mW (5391) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (5461) wifi:m f probe req l=0[0m
+
+[0;33mW (5471) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (5471) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (5581) wifi:m f probe req l=0[0m
+
+[0;32mI (5611) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (5611) wifi:m f deauth reason:3[0m
+
+[0;33mW (5611) wifi:m f auth[0m
+
+ESP_ERROR_CHECK failed: esp_err_t 0x101 (ESP_ERR_NO_MEM) at 0x42174d7d
+file: "/IDF/components/esp_timer/src/ets_timer_legacy.c" line 58
+func: ets_timer_setfn
+expression: esp_timer_create(&create_args, (esp_timer_handle_t*) & (ptimer->timer_arg))
+
+abort() was called at PC 0x40381937 on core 0
+
+
+Backtrace: 0x40381979:0x3fce1ba0 0x40381941:0x3fce1bc0 0x4038b48d:0x3fce1be0 0x40381937:0x3fce1c50 0x42174d7d:0x3fce1c80 0x4219ad29:0x3fce1cc0 0x42165d2e:0x3fce1ce0 0x421676d5:0x3fce1d60 0x4216128e:0x3fce1d80 0x421619b7:0x3fce1dd0 0x42161ef2:0x3fce1e10 0x4215b2f9:0x3fce1e40 0x4215eb64:0x3fce1e60 0x4215c33a:0x3fce1e80 0x4215f2bd:0x3fce1ea0 0x42160c2f:0x3fce1ec0 0x4215c275:0x3fce1ee0 0x4218d01b:0x3fce1f10 0x42162655:0x3fce1f30 0x42162815:0x3fce1fa0 0x42154d55:0x3fce1ff0 0x42155213:0x3fce2030 0x42152547:0x3fce2070 0x42152569:0x3fce2090 0x4215f56d:0x3fce20b0 0x4215f7ab:0x3fce20d0 0x4038c595:0x3fce20f0 0x40382755:0x3fce2120
+
+
+
+
+ELF file SHA256: e10c0fae3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40381b19
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (81) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c210020 size=1c4e7ch (1855100) map[0m
+[0;32mI (437) esp_image: segment 1: paddr=001d4ea4 vaddr=3fca1f00 size=0a79ch ( 42908) load[0m
+[0;32mI (447) esp_image: segment 2: paddr=001df648 vaddr=40374000 size=009d0h (  2512) load[0m
+[0;32mI (448) esp_image: segment 3: paddr=001e0020 vaddr=42000020 size=2049e8h (2116072) map[0m
+[0;32mI (837) esp_image: segment 4: paddr=003e4a10 vaddr=403749d0 size=1d51ch (120092) load[0m
+[0;32mI (864) esp_image: segment 5: paddr=00401f34 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (877) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (877) boot: Disabling RNG early entropy source...[0m
+[0;32mI (888) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (888) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (888) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (890) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (894) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (899) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (903) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (908) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (912) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (917) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (922) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (926) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (930) esp_psram: Speed: 40MHz[0m
+[0;32mI (933) cpu_start: Multicore app[0m
+[0;32mI (1667) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1675) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1676) cpu_start: Pro cpu start user code[0m
+[0;32mI (1676) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1678) app_init: Application information:[0m
+[0;32mI (1682) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1687) app_init: App version:      1[0m
+[0;32mI (1690) app_init: Compile time:     Aug 16 2026 20:19:58[0m
+[0;32mI (1696) app_init: ELF file SHA256:  e10c0fae3...[0m
+[0;32mI (1700) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1704) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1708) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1712) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1716) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1722) heap_init: At 3FCC2720 len 00026FF0 (155 KiB): RAM[0m
+[0;32mI (1727) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1733) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1738) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1744) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1751) spi_flash: detected chip: generic[0m
+[0;32mI (1754) spi_flash: flash io: dio[0m
+[0;33mW (1757) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1767) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1773) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1780) main_task: Started on CPU0[0m
+[0;32mI (1780) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1790) main_task: Calling app_main()[0m
+[0;32mI (1790) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1800) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1800) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1830) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1830) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1830) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1830) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1840) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1890) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1890) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1900) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1900) VOICE: Voice system ready[0m
+[0;32mI (1910) VOICE: Voice feed task started[0m
+[0;32mI (1910) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1910) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1920) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1930) VOICE: Listening for: Hi ESP[0m

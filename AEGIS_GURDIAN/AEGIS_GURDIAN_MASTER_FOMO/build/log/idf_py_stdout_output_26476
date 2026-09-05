@@ -1,0 +1,589 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd9a0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c210020 size=1c4fcch (1855436) map[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 size=0a79ch ( 42908) load[0m
+[0;32mI (447) esp_image: segment 2: paddr=001df798 vaddr=40374000 size=00880h (  2176) load[0m
+[0;32mI (448) esp_image: segment 3: paddr=001e0020 vaddr=42000020 size=204de8h (2117096) map[0m
+[0;32mI (837) esp_image: segment 4: paddr=003e4e10 vaddr=40374880 size=1d7a0h (120736) load[0m
+[0;32mI (865) esp_image: segment 5: paddr=004025b8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (878) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (878) boot: Disabling RNG early entropy source...[0m
+[0;32mI (889) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (889) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (889) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (891) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (895) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (900) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (904) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (909) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (913) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (918) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (923) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (927) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (931) esp_psram: Speed: 40MHz[0m
+[0;32mI (934) cpu_start: Multicore app[0m
+[0;32mI (1668) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1676) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1677) cpu_start: Pro cpu start user code[0m
+[0;32mI (1677) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1679) app_init: Application information:[0m
+[0;32mI (1683) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1688) app_init: App version:      1[0m
+[0;32mI (1691) app_init: Compile time:     Aug 18 2026 14:56:47[0m
+[0;32mI (1696) app_init: ELF file SHA256:  1487c12b4...[0m
+[0;32mI (1701) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1705) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1709) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1713) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1723) heap_init: At 3FCC2928 len 00026DE8 (155 KiB): RAM[0m
+[0;32mI (1728) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1734) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1739) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1744) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1752) spi_flash: detected chip: generic[0m
+[0;32mI (1755) spi_flash: flash io: dio[0m
+[0;33mW (1758) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1768) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1774) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1781) main_task: Started on CPU0[0m
+[0;32mI (1781) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1791) main_task: Calling app_main()[0m
+[0;32mI (1791) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1801) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1801) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1831) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1831) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1831) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1831) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1841) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1891) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1891) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1901) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1911) VOICE: Voice system ready[0m
+[0;32mI (1911) VOICE: Voice feed task started[0m
+[0;32mI (1911) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1921) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1921) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1931) VOICE: Listening for: Hi ESP[0m
+[0;32mI (4341) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (4341) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (4341) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (4341) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (4341) cam_hal: cam init ok[0m
+[0;32mI (4341) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (4351) sccb: sccb_i2c_port=1[0m
+[0;32mI (4361) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (4361) camera: Detected OV2640 camera[0m
+[0;32mI (4361) camera: Detected camera at address=0x30[0m
+[0;32mI (4441) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (4441) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (4441) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (4451) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (4451) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (4461) cam_hal: cam config ok[0m
+[0;32mI (4461) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (4541) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker mcam_hal: EV-EOF-OVF
+issing
+[0;32mI (4611) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;33mW (4611) AEGIS_GUARDIAN: [HEAP] after init_camera        free_internal=139967 largest_internal=65536 free_total=8144623 free_psram=8004656[0m
+[0;32mI (4781) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (4791) pp: pp rom version: e7ae62f[0m
+[0;32mI (4791) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (4801) wifi:wifi driver task: 3fce116c, prio:23, stack:6656, core=0[0m
+[0;32mI (4811) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (4811) wifi:wifi certification version: v7.0[0m
+[0;32mI (4811) wifi:config NVS flash: enabled[0m
+[0;32mI (4811) wifi:config nano formatting: disabled[0m
+[0;32mI (4811) wifi:Init data frame dynamic rx buffer num: 16[0m
+[0;32mI (4821) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (4821) wifi:Init management short buffer num: 32[0m
+[0;32mI (4831) wifi:Init static tx buffer num: 16[0m
+[0;32mI (4831) wifi:Init tx cache buffer num: 16[0m
+[0;32mI (4831) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (4841) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (4841) wifi:Init static rx buffer num: 6[0m
+[0;32mI (4851) wifi:Init dynamic rx buffer num: 16[0m
+[0;32mI (4851) wifi_init: rx ba win: 6[0m
+[0;32mI (4851) wifi_init: accept mbox: 6[0m
+[0;32mI (4861) wifi_init: tcpip mbox: 32[0m
+[0;32mI (4861) wifi_init: udp mbox: 6[0m
+[0;32mI (4861) wifi_init: tcp mbox: 6[0m
+[0;32mI (4861) wifi_init: tcp tx win: 5760[0m
+[0;32mI (4871) wifi_init: tcp rx win: 5760[0m
+[0;32mI (4871) wifi_init: tcp mss: 1440[0m
+[0;32mI (4871) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (4881) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (4881) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (4891) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (4931) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (4931) wifi:enable tsf[0m
+[0;32mI (4941) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (4941) AEGIS_GUARDIAN: [HEAP] after wifi_init/start    free_internal=65155 largest_internal=31744 free_total=8029591 free_psram=7964436[0m
+[0;32mI (4941) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (4951) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 1[0m
+[0;32mI (4951) ESPNOW_MASTER: Guardian MAC: E8:F6:0A:D6:C8:E8[0m
+[0;32mI (4961) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (4961) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (4971) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (4971) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;33mW (4981) AEGIS_GUARDIAN: [HEAP] after espnow_master_init free_internal=65031 largest_internal=31744 free_total=8029415 free_psram=7964384[0m
+[0;32mI (4991) LVGL: Starting LVGL task[0m
+[0;32mI (5171) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (5261) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (5261) AEGIS_GUARDIAN: [HEAP] after display init       free_internal=57163 largest_internal=31744 free_total=8013827 free_psram=7956664[0m
+[0;32mI (5361) SWARM_LINK: Swarm link ready on channel 6 (Guardian)[0m
+[0;32mI (5361) SWARM_LINK: Swarm: broadcasting WAKE[0m
+[0;33mW (5371) AEGIS_GUARDIAN: [HEAP] after swarm_link_init    free_internal=57127 largest_internal=31744 free_total=8013695 free_psram=7956568[0m
+[0;32mI (5371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (5381) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[0;33mW (5381) AEGIS_GUARDIAN: [HEAP] just before esp_wifi_connect free_internal=57127 largest_internal=31744 free_total=8013695 free_psram=7956568[0m
+[0;32mI (5401) AEGIS_GUARDIAN: HTTP server active (snapshot-only, no live /stream)[0m
+[0;32mI (7811) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (10231) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (10371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (11401) AEGIS_GUARDIAN: [HEAP] before face_task creation free_internal=47695 largest_internal=31744 free_total=8001375 free_psram=7953680[0m
+[0;32mI (11401) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;32mI (11901) AEGIS_GUARDIAN: Object AI task CPU1[0m
+[0;32mI (11901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (11901) AEGIS_GUARDIAN: Object model input: 96x96[0m
+[0;32mI (11901) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (11911) main_task: Returned from app_main()[0m
+[0;32mI (12641) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (15061) AEGIS_GUARDIAN: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (15371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (16901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (17471) AEGIS_GUARDIAN: Retry connecting to WiFi (5/10)...[0m
+[0;33mW (19521) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (19591) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (19601) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (19891) wifi:m f probe req l=0[0m
+
+[0;32mI (19891) AEGIS_GUARDIAN: Retry connecting to WiFi (6/10)...[0m
+[0;33mW (20011) wifi:m f probe req l=0[0m
+
+[0;33mW (20131) wifi:m f probe req l=0[0m
+
+[0;32mI (20151) AEGIS_GUARDIAN: Face AI OK[0m
+[0;33mW (20151) AEGIS_GUARDIAN: [HEAP] after face models loaded free_internal=5623 largest_internal=2944 free_total=4446715 free_psram=4441092[0m
+[0;32mI (20161) AEGIS_GUARDIAN: Owner loaded: ID=0[0m
+[0;32mI (20381) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (22301) AEGIS_GUARDIAN: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (24721) AEGIS_GUARDIAN: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (25371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (27131) AEGIS_GUARDIAN: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (29551) AEGIS_GUARDIAN: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (30371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (31961) AEGIS_GUARDIAN: WiFi reconnect limit reached, will retry shortly[0m
+[0;32mI (35371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (38961) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (39371) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (40371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (41791) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (43971) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (44201) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (45371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (46621) AEGIS_GUARDIAN: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (49031) AEGIS_GUARDIAN: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (49551) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (50371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (51451) AEGIS_GUARDIAN: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (53861) AEGIS_GUARDIAN: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (54551) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (55371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (56281) AEGIS_GUARDIAN: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (58691) AEGIS_GUARDIAN: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (59551) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (60371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (61111) AEGIS_GUARDIAN: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (61121) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (61141) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (61161) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (61191) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (61191) wifi:security: WPA2-PSK, phy: bgn, rssi: -45, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (61201) wifi:pm start, type: 0[0m
+
+[0;32mI (61201) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (61211) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (61291) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (61291) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (62241) esp_netif_handlers: sta ip: 10.122.202.110, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (62241) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.122.202.110[0m
+[0;32mI (62241) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -45 dBm)[0m
+[0;32mI (62251) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;32mI (64551) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (65371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (66751) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (66751) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (66751) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (66751) AEGIS_GUARDIAN: Backend GET / failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (69571) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (69941) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (69981) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario OK (HTTP 200)[0m
+[0;32mI (69991) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3510119,"psram":3505392},"wifi_rssi":-45,"ip_address":"10.122.202.110","timestamp":"uptime_68s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (70021) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (70021) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (70031) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70031) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (70041) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3510239,"psram":3505512},"wifi_rssi":-45,"ip_address":"10.122.202.110","timestamp":"uptime_68s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (70071) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (70081) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (70081) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70091) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (70101) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3510239,"psram":3505512},"wifi_rssi":-45,"ip_address":"10.122.202.110","timestamp":"uptime_68s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (70131) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (70141) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (70141) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70151) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (70371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (74941) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (74941) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3508267,"psram":3503660},"wifi_rssi":-45,"ip_address":"10.122.202.110","timestamp":"uptime_73s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (75241) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (75371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (80371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (84381) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (84381) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (84391) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (84391) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (84511) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (84511) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (85371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (86001) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (86001) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;33mW (88451) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (88531) AEGIS_GUARDIAN: No object detected[0m
+[1;31mE (88541) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (88541) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (88541) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[1;31mE (88561) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (88581) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (88581) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (88591) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (88601) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[1;31mE (88641) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (88721) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (88831) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (88841) AEGIS_GUARDIAN: Backend POST /api/v1/incidents/report OK (HTTP 200)[0m
+[0;32mI (88841) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (88861) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (88861) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (88871) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (88871) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (88881) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (88901) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (88911) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (88911) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (88921) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (88941) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (88941) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"ALERT","battery_pct":88,"system_info":{"free_heap":3509359,"psram":3505088},"wifi_rssi":-45,"ip_address":"10.122.202.110","timestamp":"uptime_87s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (88971) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (88981) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (88981) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (88991) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (89061) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (89611) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (89611) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (89611) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (89671) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (89671) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (90371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (95031) wifi:state: run -> init (0x1c0)[0m
+[0;32mI (95041) wifi:pm stop, total sleep time: 0 us / 33833949 us[0m
+
+[0;32mI (95041) wifi:<ba-del>idx:0, tid:0[0m
+[0;33mW (95041) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (95041) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (95081) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (95101) wifi:state: auth -> init (0x3c0)[0m
+[0;32mI (95101) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (95371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (96351) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (96361) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (96361) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (96361) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (96451) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (96461) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (97441) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (98451) wifi:state: auth -> init (0x200)[0m
+[0;32mI (98461) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[0;33mW (100291) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (100371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (100441) AEGIS_GUARDIAN: No object detected[0m
+[1;31mE (100491) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (100491) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (10.122.202.110)[0m
+[0;32mI (100501) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (100521) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (100541) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;33mW (100561) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[0;32mI (100581) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (100631) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (100631) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (100741) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (100841) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (100881) AEGIS_GUARDIAN: Retry connecting to WiFi (4/10)...[0m
+[1;31mE (100981) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (100981) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (101081) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (101211) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (101761) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (101761) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (101771) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (101801) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (101801) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (103291) AEGIS_GUARDIAN: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (105381) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (105711) AEGIS_GUARDIAN: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (108121) AEGIS_GUARDIAN: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (110371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (110541) AEGIS_GUARDIAN: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (112951) AEGIS_GUARDIAN: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (115371) AEGIS_GUARDIAN: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (115401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (117781) AEGIS_GUARDIAN: WiFi reconnect limit reached, will retry shortly[0m
+[0;32mI (120371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (125201) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (125371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (127621) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (130031) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (130371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (132471) AEGIS_GUARDIAN: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (134881) AEGIS_GUARDIAN: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (134961) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (134981) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (135011) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (135021) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (135021) wifi:security: WPA2-PSK, phy: bgn, rssi: -22, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (135031) wifi:pm start, type: 0[0m
+
+[0;32mI (135031) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (135041) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (135061) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (135061) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (135371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (136081) esp_netif_handlers: sta ip: 10.122.202.110, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (136081) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.122.202.110[0m
+[0;32mI (136081) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -36 dBm)[0m
+[0;32mI (136091) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;32mI (136181) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:5, winSize:64[0m
+[0;32mI (140371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (141391) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (141391) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (141391) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (141391) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (141541) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (141541) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (145371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (145471) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (145591) AEGIS_GUARDIAN: No object detected[0m
+[1;31mE (145611) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (145641) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (145641) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (145641) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (145761) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (145881) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (145991) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (146461) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (146461) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (146471) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (146931) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (147061) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (147061) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (150381) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (150671) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (151281) AEGIS_GUARDIAN: No object detected[0m
+[0;32mI (152411) wifi:state: run -> init (0x1c0)[0m
+[0;32mI (152431) wifi:pm stop, total sleep time: 0 us / 17393481 us[0m
+
+[0;32mI (152431) wifi:<ba-del>idx:0, tid:0[0m
+[0;33mW (152431) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;33mW (152431) wifi:m f probe req l=0[0m
+
+[0;32mI (152431) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (152471) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (152481) wifi:m f auth[0m
+
+[0;32mI (152481) wifi:state: auth -> init (0x3c0)[0m
+[0;33mW (152481) wifi:m f probe req l=0[0m
+
+[0;32mI (152481) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;33mW (152571) wifi:m f probe req l=0[0m
+
+[0;33mW (152691) wifi:m f probe req l=0[0m
+
+[0;33mW (152811) wifi:m f probe req l=0[0m
+
+[0;33mW (152931) wifi:m f probe req l=0[0m
+
+[0;33mW (153061) wifi:m f probe req l=0[0m
+
+[0;33mW (153181) wifi:m f probe req l=0[0m
+
+[0;33mW (153301) wifi:m f probe req l=0[0m
+
+[0;33mW (153421) wifi:m f probe req l=0[0m
+
+[0;33mW (153541) wifi:m f probe req l=0[0m
+
+[0;33mW (153661) wifi:m f probe req l=0[0m
+
+[0;32mI (154381) AEGIS_GUARDIAN: No object detected[0m
+[0;32mI (154871) wifi:state: init -> auth (0xb0)[0m
+[0;33mW (154881) wifi:m f auth[0m
+
+[0;33mW (154961) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[1;31mE (154981) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (154981) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 2[0m
+[0;32mI (154981) AEGIS_GUARDIAN: Backend GET / OK (HTTP 200)[0m
+[0;32mI (154981) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (10.122.202.110)[0m
+[0;32mI (154991) AEGIS_GUARDIAN: Backend Health Check: {"status":"online","system":"A.E.G.I.S. Backend active","video_stream_url":"/api/v1/video/stream/Guardian","video_viewer_url":"/video"}[0m
+[0;32mI (155011) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"ALERT","battery_pct":88,"system_info":{"free_heap":3509603,"psram":3505328},"wifi_rssi":-36,"ip_address":"10.122.202.110","timestamp":"uptime_153s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (155051) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;33mW (155071) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[1;31mE (155091) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (155091) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (155111) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (155131) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"ALERT","battery_pct":88,"system_info":{"free_heap":3509603,"psram":3505328},"wifi_rssi":-36,"ip_address":"10.122.202.110","timestamp":"uptime_153s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (155161) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (155181) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (155371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (155191) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (155461) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (155691) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (155881) wifi:state: auth -> init (0x200)[0m
+[0;32mI (155891) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[1;31mE (155971) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (156121) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (158301) AEGIS_GUARDIAN: Retry connecting to WiFi (4/10)...[0m
+[0;33mW (159151) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (160221) AEGIS_GUARDIAN: No object detected[0m
+[0;32mI (160381) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (160721) AEGIS_GUARDIAN: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (163141) AEGIS_GUARDIAN: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (163361) AEGIS_GUARDIAN: No object detected[0m
+[0;33mW (163511) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[1;31mE (163541) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (163601) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (163601) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (10.122.202.110)[0m
+[0;32mI (163601) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (163631) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (163701) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (163821) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (163841) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (163981) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (164531) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (164531) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (164531) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (164581) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (164581) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (165401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (165551) AEGIS_GUARDIAN: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (167971) AEGIS_GUARDIAN: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (170411) AEGIS_GUARDIAN: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (170421) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (172821) AEGIS_GUARDIAN: Retry connecting to WiFi (10/10)...[0m
+[0;33mW (175241) AEGIS_GUARDIAN: WiFi reconnect limit reached, will retry shortly[0m
+[0;32mI (175371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (177821) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (177821) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (177831) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (177831) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (177911) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (177911) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (180371) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 sizeI (842) esp_image: segment 4: paddr=003e4e10 vaddr=40374880 size=1d7a0h (120736) load[0m
+[0;32mI (870) esp_image: segment 5: paddr=004025b8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (883) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (883) boot: Disabling RNG early entropy source...[0m
+[0;32mI (894) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (894) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (894) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (896) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (900) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (905) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (909) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (914) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (919) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (923) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (928) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (932) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (936) esp_psram: Speed: 40MHz[0m
+[0;32mI (939) cpu_start: Multicore app[0m
+[0;32mI (1673) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1681) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1682) cpu_start: Pro cpu start user code[0m
+[0;32mI (1682) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1684) app_init: Application information:[0m
+[0;32mI (1688) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1693) app_init: App version:      1[0m
+[0;32mI (1696) app_init: Compile time:     Aug 18 2026 14:56:47[0m
+[0;32mI (1702) app_init: ELF file SHA256:  1487c12b4...[0m
+[0;32mI (1706) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1710) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1714) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1718) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1722) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1728) heap_init: At 3FCC2928 len 00026DE8 (155 KiB): RAM[0m
+[0;32mI (1733) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1739) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1744) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1750) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1757) spi_flash: detected chip: generic[0m
+[0;32mI (1760) spi_flash: flash io: dio[0m
+[0;33mW (1763) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1773) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1779) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1786) main_task: Started on CPU0[0m
+[0;32mI (1786) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1796) main_task: Calling app_main()[0m
+[0;32mI (1796) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1806) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1806) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1836) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1836) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1836) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1836) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1846) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1896) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1896) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1906) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1916) VOICE: Voice system ready[0m
+[0;32mI (1916) VOICE: Voice feed task started[0m
+[0;32mI (1916) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1926) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1926) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1936) VOICE: Listening for: Hi ESP[0m

@@ -1,0 +1,570 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd964
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c210020 size=1c4fcch (1855436) map[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 size=0a79ch ( 42908) load[0m
+[0;32mI (447) esp_image: segment 2: paddr=001df798 vaddr=40374000 size=00880h (  2176) load[0m
+[0;32mI (448) esp_image: segment 3: paddr=001e0020 vaddr=42000020 size=204df8h (2117112) map[0m
+[0;32mI (837) esp_image: segment 4: paddr=003e4e20 vaddr=40374880 size=1d7a0h (120736) load[0m
+[0;32mI (865) esp_image: segment 5: paddr=004025c8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (878) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (878) boot: Disabling RNG early entropy source...[0m
+[0;32mI (889) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (889) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (889) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (891) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (895) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (900) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (904) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (909) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (913) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (918) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (923) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (927) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (931) esp_psram: Speed: 40MHz[0m
+[0;32mI (934) cpu_start: Multicore app[0m
+[0;32mI (1668) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1676) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1677) cpu_start: Pro cpu start user code[0m
+[0;32mI (1677) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1679) app_init: Application information:[0m
+[0;32mI (1683) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1688) app_init: App version:      1[0m
+[0;32mI (1691) app_init: Compile time:     Aug 18 2026 15:32:31[0m
+[0;32mI (1696) app_init: ELF file SHA256:  a21f336e7...[0m
+[0;32mI (1701) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1705) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1709) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1713) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1723) heap_init: At 3FCC2A90 len 00026C80 (155 KiB): RAM[0m
+[0;32mI (1728) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1734) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1739) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1744) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1752) spi_flash: detected chip: generic[0m
+[0;32mI (1755) spi_flash: flash io: dio[0m
+[0;33mW (1758) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1768) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1774) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1781) main_task: Started on CPU0[0m
+[0;32mI (1781) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1791) main_task: Calling app_main()[0m
+[0;32mI (1791) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1801) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1801) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1831) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1831) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1831) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1831) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1841) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1891) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1891) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1901) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1911) VOICE: Voice system ready[0m
+[0;32mI (1911) VOICE: Voice feed task started[0m
+[0;32mI (1911) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1921) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1921) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1931) VOICE: Listening for: Hi ESP[0m
+[0;32mI (3381) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (3381) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (3381) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (3381) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (3381) cam_hal: cam init ok[0m
+[0;32mI (3381) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (3391) sccb: sccb_i2c_port=1[0m
+[0;32mI (3401) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (3401) camera: Detected OV2640 camera[0m
+[0;32mI (3401) camera: Detected camera at address=0x30[0m
+[0;32mI (3481) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (3481) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (3481) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3491) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3501) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3501) cam_hal: cam config ok[0m
+[0;32mI (3501) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (3581) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker mcam_hal: EV-EOF-OVF
+issing
+[0;32mI (3651) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;33mW (3651) AEGIS_GUARDIAN: [HEAP] after init_camera        free_internal=139607 largest_internal=65536 free_total=8144263 free_psram=8004656[0m
+[0;32mI (3821) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (3831) pp: pp rom version: e7ae62f[0m
+[0;32mI (3831) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (3841) wifi:wifi driver task: 3fce12cc, prio:23, stack:6656, core=0[0m
+[0;32mI (3851) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (3851) wifi:wifi certification version: v7.0[0m
+[0;32mI (3851) wifi:config NVS flash: enabled[0m
+[0;32mI (3851) wifi:config nano formatting: disabled[0m
+[0;32mI (3851) wifi:Init data frame dynamic rx buffer num: 16[0m
+[0;32mI (3861) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3861) wifi:Init management short buffer num: 32[0m
+[0;32mI (3871) wifi:Init static tx buffer num: 16[0m
+[0;32mI (3871) wifi:Init tx cache buffer num: 16[0m
+[0;32mI (3871) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (3881) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3881) wifi:Init static rx buffer num: 6[0m
+[0;32mI (3891) wifi:Init dynamic rx buffer num: 16[0m
+[0;32mI (3891) wifi_init: rx ba win: 6[0m
+[0;32mI (3891) wifi_init: accept mbox: 6[0m
+[0;32mI (3901) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3901) wifi_init: udp mbox: 6[0m
+[0;32mI (3901) wifi_init: tcp mbox: 6[0m
+[0;32mI (3901) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3911) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3911) wifi_init: tcp mss: 1440[0m
+[0;32mI (3911) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (3921) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3921) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3931) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (4001) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (4001) wifi:enable tsf[0m
+[0;32mI (4001) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (4001) AEGIS_GUARDIAN: [HEAP] after wifi_init/start    free_internal=64799 largest_internal=31744 free_total=8029235 free_psram=7964436[0m
+[0;32mI (4011) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (4021) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 1[0m
+[0;32mI (4021) ESPNOW_MASTER: Guardian MAC: E8:F6:0A:D6:C8:E8[0m
+[0;32mI (4031) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (4031) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (4031) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (4041) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;33mW (4041) AEGIS_GUARDIAN: [HEAP] after espnow_master_init free_internal=64675 largest_internal=31744 free_total=8029059 free_psram=7964384[0m
+[0;32mI (4061) LVGL: Starting LVGL task[0m
+[0;32mI (4251) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (4391) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (4391) AEGIS_GUARDIAN: [HEAP] after display init       free_internal=56803 largest_internal=31744 free_total=8013467 free_psram=7956664[0m
+[0;32mI (4401) SWARM_LINK: Swarm link ready on channel 6 (Guardian)[0m
+[0;32mI (4401) SWARM_LINK: Swarm: broadcasting WAKE[0m
+[0;33mW (4411) AEGIS_GUARDIAN: [HEAP] after swarm_link_init    free_internal=56767 largest_internal=31744 free_total=8013335 free_psram=7956568[0m
+[0;32mI (4411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (4421) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[0;33mW (4431) AEGIS_GUARDIAN: [HEAP] just before esp_wifi_connect free_internal=56767 largest_internal=31744 free_total=8013335 free_psram=7956568[0m
+[0;32mI (4441) AEGIS_GUARDIAN: HTTP server active (snapshot-only, no live /stream)[0m
+[0;32mI (4461) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4521) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4551) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4571) wifi:connected with A34, aid = 2, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (4571) wifi:security: WPA2-PSK, phy: bgn, rssi: -37, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (4581) wifi:pm start, type: 0[0m
+
+[0;32mI (4581) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4591) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4601) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4611) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5661) esp_netif_handlers: sta ip: 10.122.202.110, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (5661) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.122.202.110[0m
+[0;32mI (5661) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -38 dBm)[0m
+[0;32mI (5671) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;33mW (5681) AEGIS_GUARDIAN: [HEAP] before face_task creation free_internal=44547 largest_internal=31744 free_total=7997399 free_psram=7952852[0m
+[0;32mI (5681) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;32mI (5731) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (5951) AEGIS_GUARDIAN: Backend GET / OK (HTTP 200)[0m
+[0;32mI (5951) AEGIS_GUARDIAN: Backend Health Check: {"status":"online","system":"A.E.G.I.S. Backend active","video_stream_url":"/api/v1/video/stream/Guardian","video_viewer_url":"/video"}[0m
+[0;32mI (6151) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario OK (HTTP 200)[0m
+[0;32mI (6151) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":7982463,"psram":7952740},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_4s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (6191) AEGIS_GUARDIAN: Object AI task CPU1[0m
+[0;32mI (6191) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (6191) AEGIS_GUARDIAN: Object model input: 96x96[0m
+[0;32mI (6191) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (6201) main_task: Returned from app_main()[0m
+[0;32mI (6471) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (6471) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":7003907,"psram":6970528},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_4s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (6961) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;33mW (7801) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (7881) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (7881) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (8421) AEGIS_GUARDIAN: Face AI OK[0m
+[0;33mW (8421) AEGIS_GUARDIAN: [HEAP] after face models loaded free_internal=5315 largest_internal=1472 free_total=4444587 free_psram=4439272[0m
+[0;32mI (8431) AEGIS_GUARDIAN: Owner loaded: ID=0[0m
+[0;32mI (9411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (11391) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (11401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509795,"psram":3504924},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_9s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (11431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (11441) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (11441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (11451) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (14411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (16401) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (16401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509395,"psram":3504636},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_14s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (16431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (16441) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (16441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (16451) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (19421) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (21401) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (21401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509395,"psram":3504636},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_19s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (21431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (21441) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (21441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (21451) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (24411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (26401) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (26401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509395,"psram":3504636},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_24s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (26991) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (26991) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (26991) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (27001) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (29401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (31781) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (31791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509395,"psram":3504636},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_30s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (31821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (31831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (31831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (31841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (34401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (36791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (36791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509395,"psram":3504636},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_35s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (36821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (36831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (36831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (36841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (39401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (44401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (47531) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (47531) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (47531) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (47531) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (47641) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (47641) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (49401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (51391) AEGIS_GUARDIAN: No object detected[0m
+[0;33mW (51721) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[1;31mE (51811) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (51821) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (51821) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (51841) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (51851) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (51851) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51861) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (51871) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[1;31mE (51881) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (51891) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (51891) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (51901) AEGIS_GUARDIAN: Backend POST /api/v1/incidents/report failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (52381) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (51991) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (52381) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (52401) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (52401) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (52411) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52421) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (52421) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (52441) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (52451) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (52451) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52461) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (52471) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"ALERT","battery_pct":88,"system_info":{"free_heap":3508851,"psram":3504564},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_50s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (52921) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (52631) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (52941) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (52951) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (52961) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (52961) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (53391) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 2[0m
+[0;32mI (53631) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (53631) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (53631) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (53751) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (53761) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (54401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (59401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (59941) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (59941) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (59961) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (59971) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (59971) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59981) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (59991) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[1;31mE (60011) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (60011) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (60021) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60021) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (60601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509035,"psram":3504564},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_58s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (60621) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (60631) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (60631) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60641) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (64401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (65391) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (65401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_63s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (65431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (65441) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (65441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65451) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (69401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (70401) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (70401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_68s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (70431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (70441) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (70441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (70451) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (74401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (75401) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (75401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_73s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (75431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (75441) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (75441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (75451) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (79411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (80401) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (80401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_78s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (80981) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (80981) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (80991) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (80991) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (84401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (85791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (85791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_84s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (85831) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (85831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (85841) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (85841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (89401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (90791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (90791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_89s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (90821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (90831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (90831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (90841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (94411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (95791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (95791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_94s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (95821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (95831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (95831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (95841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (99401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (100791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (100791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_99s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (100821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (101391) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (101391) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (101401) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (104421) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (106191) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (106201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_104s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (106231) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (106241) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (106241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (106251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (109401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (111201) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (111201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_109s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (111231) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (111241) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (111241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (111251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (114401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (116201) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (116201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_114s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (116231) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (116241) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (116241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (116251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (119411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (121201) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (121201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509043,"psram":3504572},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_119s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (121791) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (121801) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (121801) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (121801) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (124401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (126591) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (126601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509487,"psram":3505016},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_124s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (126631) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (126641) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (126641) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (126651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (129411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (131601) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (131601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_129s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (131631) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (131641) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (131641) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (131651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (134401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (136601) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (136601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_134s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (136631) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (136641) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (136641) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (136651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (139401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (141601) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (141601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_139s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (142191) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (142201) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (142201) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (142201) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (144401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (146991) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (147001) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_145s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (147031) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (147031) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (147041) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (147051) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (149401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (151991) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (151991) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_150s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (152021) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (152031) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (152031) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (152041) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (154401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (156991) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (156991) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_155s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (157021) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (157031) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (157031) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (157041) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (159401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (161991) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (161991) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_160s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (162021) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (162591) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (162591) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (162591) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (164401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (167391) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (167401) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_165s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (167431) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (167431) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (167441) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (167441) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (169401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (172391) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (172391) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_170s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (172421) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (172431) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (172431) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (172441) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (174401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (177391) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (177391) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_175s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (177421) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (177431) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (177431) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (177441) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (179401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (182391) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (182391) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_180s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (182421) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (183001) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (183001) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (183001) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (184411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (187791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (187791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_186s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (187831) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (187831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (187841) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (187841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (189401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (192791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (192791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_191s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (192821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (192831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (192831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (192841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (194401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (197791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (197791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_196s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (197821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (197831) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (197831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (197841) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (199401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (202791) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (202791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_201s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (202821) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (203391) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (203391) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (203391) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (204411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (208191) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (208201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_206s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (208231) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (208241) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (208241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (208251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (209401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (213201) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (213201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_211s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (213231) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (213241) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (213241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (213251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (214411) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (218201) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (218201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_216s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (218231) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (218241) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (218241) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (218251) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (219421) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (223201) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (223201) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_221s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (223801) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (223801) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (223801) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (223811) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (224401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (228591) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (228601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_226s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (228631) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (228641) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (228641) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (228651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (229401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (233601) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (233601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_231s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (233631) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (233641) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (233641) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (233651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (234401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (238601) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (238601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_236s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (238631) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (238641) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (238641) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (238651) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (239401) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (243601) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (243601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3509911,"psram":3505440},"wifi_rssi":-38,"ip_address":"10.122.202.110","timestamp":"uptime_241s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (244201) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[1;31mE (244201) transport_base: Failed to open a new connection: 32770[0m
+[1;31mE (244201) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (244211) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (244411) ESPNOW_MASTER: Send Status: SUCCESS[0m

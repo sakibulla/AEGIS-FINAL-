@@ -1,0 +1,606 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f6f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c210020 size=1c4fcch (1855436) map[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 size=0a79ch ( 42908) load[0m
+[0;32mI (447) esp_image: segment 2: paddr=001df798 vaddr=40374000 size=00880h (  2176) load[0m
+[0;32mI (448) esp_image: segment 3: paddr=001e0020 vaddr=42000020 size=204de8h (2117096) map[0m
+[0;32mI (837) esp_image: segment 4: paddr=003e4e10 vaddr=40374880 size=1d7a0h (120736) load[0m
+[0;32mI (865) esp_image: segment 5: paddr=004025b8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (878) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (878) boot: Disabling RNG early entropy source...[0m
+[0;32mI (889) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (889) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (889) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (891) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (895) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (900) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (904) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (909) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (913) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (918) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (923) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (927) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (931) esp_psram: Speed: 40MHz[0m
+[0;32mI (934) cpu_start: Multicore app[0m
+[0;32mI (1668) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1676) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1677) cpu_start: Pro cpu start user code[0m
+[0;32mI (1677) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1679) app_init: Application information:[0m
+[0;32mI (1683) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1688) app_init: App version:      1[0m
+[0;32mI (1691) app_init: Compile time:     Aug 18 2026 14:56:47[0m
+[0;32mI (1696) app_init: ELF file SHA256:  30f24ffef...[0m
+[0;32mI (1701) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1705) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1709) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1713) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1717) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1723) heap_init: At 3FCC2928 len 00026DE8 (155 KiB): RAM[0m
+[0;32mI (1728) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1734) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1739) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1744) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1752) spi_flash: detected chip: generic[0m
+[0;32mI (1755) spi_flash: flash io: dio[0m
+[0;33mW (1758) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1768) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1774) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1781) main_task: Started on CPU0[0m
+[0;32mI (1781) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1791) main_task: Calling app_main()[0m
+[0;32mI (1791) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1801) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1801) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1831) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1831) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1831) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1831) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1841) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1891) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1891) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1901) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1911) VOICE: Voice system ready[0m
+[0;32mI (1911) VOICE: Voice feed task started[0m
+[0;32mI (1911) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1921) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1921) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1931) VOICE: Listening for: Hi ESP[0m
+[0;32mI (3381) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (3381) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (3381) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (3381) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (3381) cam_hal: cam init ok[0m
+[0;32mI (3381) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (3391) sccb: sccb_i2c_port=1[0m
+[0;32mI (3401) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (3401) camera: Detected OV2640 camera[0m
+[0;32mI (3401) camera: Detected camera at address=0x30[0m
+[0;32mI (3481) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (3481) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (3481) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3491) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3491) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3501) cam_hal: cam config ok[0m
+[0;32mI (3501) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (3581) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker micam_hal: EV-EOF-OVF
+ssing
+[0;32mI (3651) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;33mW (3651) AEGIS_GUARDIAN: [HEAP] after init_camera        free_internal=139967 largest_internal=65536 free_total=8144623 free_psram=8004656[0m
+[0;32mI (3821) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (3831) pp: pp rom version: e7ae62f[0m
+[0;32mI (3831) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (3841) wifi:wifi driver task: 3fce116c, prio:23, stack:6656, core=0[0m
+[0;32mI (3851) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (3851) wifi:wifi certification version: v7.0[0m
+[0;32mI (3851) wifi:config NVS flash: enabled[0m
+[0;32mI (3851) wifi:config nano formatting: disabled[0m
+[0;32mI (3851) wifi:Init data frame dynamic rx buffer num: 16[0m
+[0;32mI (3861) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (3861) wifi:Init management short buffer num: 32[0m
+[0;32mI (3871) wifi:Init static tx buffer num: 16[0m
+[0;32mI (3871) wifi:Init tx cache buffer num: 16[0m
+[0;32mI (3871) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (3881) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (3881) wifi:Init static rx buffer num: 6[0m
+[0;32mI (3891) wifi:Init dynamic rx buffer num: 16[0m
+[0;32mI (3891) wifi_init: rx ba win: 6[0m
+[0;32mI (3891) wifi_init: accept mbox: 6[0m
+[0;32mI (3901) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3901) wifi_init: udp mbox: 6[0m
+[0;32mI (3901) wifi_init: tcp mbox: 6[0m
+[0;32mI (3901) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3911) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3911) wifi_init: tcp mss: 1440[0m
+[0;32mI (3911) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (3921) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3921) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (3931) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (3981) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (3981) wifi:enable tsf[0m
+[0;32mI (3981) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (3981) AEGIS_GUARDIAN: [HEAP] after wifi_init/start    free_internal=65155 largest_internal=31744 free_total=8029591 free_psram=7964436[0m
+[0;32mI (3991) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (4001) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 1[0m
+[0;32mI (4001) ESPNOW_MASTER: Guardian MAC: E8:F6:0A:D6:C8:E8[0m
+[0;32mI (4011) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (4011) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (4011) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (4021) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;33mW (4021) AEGIS_GUARDIAN: [HEAP] after espnow_master_init free_internal=65031 largest_internal=31744 free_total=8029415 free_psram=7964384[0m
+[0;32mI (4041) LVGL: Starting LVGL task[0m
+[0;32mI (4231) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (4261) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (4261) AEGIS_GUARDIAN: [HEAP] after display init       free_internal=62031 largest_internal=31744 free_total=8013891 free_psram=7951860[0m
+[0;32mI (4271) SWARM_LINK: Swarm link ready on channel 6 (Guardian)[0m
+[0;32mI (4271) SWARM_LINK: Swarm: broadcasting WAKE[0m
+[0;33mW (4291) AEGIS_GUARDIAN: [HEAP] after swarm_link_init    free_internal=57127 largest_internal=31744 free_total=8008891 free_psram=7951764[0m
+[0;32mI (4291) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (4301) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[0;33mW (4301) AEGIS_GUARDIAN: [HEAP] just before esp_wifi_connect free_internal=57127 largest_internal=31744 free_total=8008891 free_psram=7951764[0m
+[0;32mI (4331) AEGIS_GUARDIAN: HTTP server active (snapshot-only, no live /stream)[0m
+[0;32mI (4331) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4371) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4391) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4411) wifi:connected with A34, aid = 2, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (4411) wifi:security: WPA2-PSK, phy: bgn, rssi: -43, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (4421) wifi:pm start, type: 0[0m
+
+[0;32mI (4421) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4431) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4531) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4531) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5471) esp_netif_handlers: sta ip: 10.122.202.110, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (5471) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.122.202.110[0m
+[0;32mI (5471) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -46 dBm)[0m
+[0;32mI (5481) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;33mW (5491) AEGIS_GUARDIAN: [HEAP] before face_task creation free_internal=44907 largest_internal=31744 free_total=7992375 free_psram=7947468[0m
+[0;32mI (5491) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;32mI (5521) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (5741) AEGIS_GUARDIAN: Backend GET / OK (HTTP 200)[0m
+[0;32mI (5741) AEGIS_GUARDIAN: Backend Health Check: {"status":"online","system":"A.E.G.I.S. Backend active","video_stream_url":"/api/v1/video/stream/Guardian","video_viewer_url":"/video"}[0m
+[0;32mI (5791) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario OK (HTTP 200)[0m
+[0;32mI (5791) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":7977443,"psram":7947352},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_4s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (5991) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (6001) AEGIS_GUARDIAN: Object AI task CPU1[0m
+[0;32mI (6001) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (6001) AEGIS_GUARDIAN: Object model input: 96x96[0m
+[0;32mI (6011) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":6990631,"psram":6961660},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_4s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (6001) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (6051) main_task: Returned from app_main()[0m
+[0;32mI (6231) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;33mW (7621) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (7691) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (7701) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (8251) AEGIS_GUARDIAN: Face AI OK[0m
+[0;33mW (8251) AEGIS_GUARDIAN: [HEAP] after face models loaded free_internal=5491 largest_internal=2048 free_total=4439623 free_psram=4434132[0m
+[0;32mI (8251) AEGIS_GUARDIAN: Owner loaded: ID=0[0m
+[0;32mI (9271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (11241) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (11241) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3507695,"psram":3499488},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_9s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (11491) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (14271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (17611) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (17611) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3507403,"psram":3499228},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_15s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (18441) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (19271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (24271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (26861) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (26861) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (26861) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;33mW (26871) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (27081) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (27091) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (27111) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (27111) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (27121) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[1;31mE (27221) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (27341) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (27341) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (29271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (29281) spi_master: setup_dma_priv_buffer(1214): Failed to allocate priv TX buffer[0m
+[1;31mE (29281) lcd_panel.io.spi: panel_io_spi_tx_color(405): spi transmit (queue) color failed[0m
+[1;31mE (29291) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed[0m
+[0;33mW (29941) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (30591) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (30591) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (30601) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;33mW (30601) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[0;32mI (30771) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (30791) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (30791) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (34271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (37901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (38221) AEGIS_GUARDIAN: Backend POST /api/v1/incidents/report OK (HTTP 200)[0m
+[0;32mI (38221) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (39271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (40561) AEGIS_GUARDIAN: No object detected[0m
+[0;32mI (40591) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (40601) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3507727,"psram":3498224},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_38s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (41331) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (41341) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (41481) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (41491) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (42541) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (42551) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Clear","confidence":100,"is_threat":false,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (42811) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (42821) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3506883,"psram":3497376},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_41s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (42901) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (42991) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (43001) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3506667,"psram":3497164},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_41s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (43721) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (44271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (48531) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.122.202.110)[0m
+[0;32mI (48531) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":3506575,"psram":3497072},"wifi_rssi":-46,"ip_address":"10.122.202.110","timestamp":"uptime_46s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (48751) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (49271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (50261) wifi:state: run -> init (0x1c0)[0m
+[0;32mI (50281) wifi:pm stop, total sleep time: 0 us / 45856359 us[0m
+
+[0;32mI (50281) wifi:<ba-del>idx:0, tid:0[0m
+[0;33mW (50281) httpd_txrx: httpd_sock_err: error in recv : 113[0m
+[0;32mI (50281) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (50301) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (50311) wifi:state: auth -> init (0x2c0)[0m
+[0;32mI (50311) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (52731) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (53531) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (10.122.202.110)[0m
+[0;32mI (54271) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (438) esp_image: segment 1: paddr=001d4ff4 vaddr=3fca2100 sizeI (1673) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1681) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1682) cpu_start: Pro cpu start user code[0m
+[0;32mI (1682) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1684) app_init: Application information:[0m
+[0;32mI (1687) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1693) app_init: App version:      1[0m
+[0;32mI (1696) app_init: Compile time:     Aug 18 2026 14:56:47[0m
+[0;32mI (1701) app_init: ELF file SHA256:  30f24ffef...[0m
+[0;32mI (1706) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1710) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1714) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1718) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1722) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1728) heap_init: At 3FCC2928 len 00026DE8 (155 KiB): RAM[0m
+[0;32mI (1733) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1738) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1744) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1749) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1757) spi_flash: detected chip: generic[0m
+[0;32mI (1760) spi_flash: flash io: dio[0m
+[0;33mW (1763) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1773) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1779) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1786) main_task: Started on CPU0[0m
+[0;32mI (1786) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1796) main_task: Calling app_main()[0m
+[0;32mI (1796) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1806) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1806) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1836) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1836) MODEL_LOADER: The storage free size is 20608 KB[0m
+[0;32mI (1836) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1836) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1846) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1896) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1896) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1906) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1916) VOICE: Voice system ready[0m
+[0;32mI (1916) VOICE: Voice feed task started[0m
+[0;32mI (1916) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1926) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1926) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1936) VOICE: Listening for: Hi ESP[0m
+[0;32mI (3666) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (3666) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (3666) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (3666) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (3676) cam_hal: cam init ok[0m
+[0;32mI (3676) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (3676) sccb: sccb_i2c_port=1[0m
+[0;32mI (3696) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (3696) camera: Detected OV2640 camera[0m
+[0;32mI (3696) camera: Detected camera at address=0x30[0m
+[0;32mI (3776) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (3776) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (3776) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3786) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3786) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (3796) cam_hal: cam config ok[0m
+[0;32mI (3796) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (3876) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker mcam_hal: EV-EOF-OVF
+issing
+[0;32mI (3946) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;33mW (3946) AEGIS_GUARDIAN: [HEAP] after init_camera        free_internal=139967 largest_internal=65536 free_total=8144623 free_psram=8004656[0m
+[0;32mI (4126) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (4126) pp: pp rom version: e7ae62f[0m
+[0;32mI (4126) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (4136) wifi:wifi driver task: 3fce116c, prio:23, stack:6656, core=0[0m
+[0;32mI (4146) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (4146) wifi:wifi certification version: v7.0[0m
+[0;32mI (4146) wifi:config NVS flash: enabled[0m
+[0;32mI (4146) wifi:config nano formatting: disabled[0m
+[0;32mI (4146) wifi:Init data frame dynamic rx buffer num: 16[0m
+[0;32mI (4156) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (4156) wifi:Init management short buffer num: 32[0m
+[0;32mI (4166) wifi:Init static tx buffer num: 16[0m
+[0;32mI (4166) wifi:Init tx cache buffer num: 16[0m
+[0;32mI (4166) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (4176) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (4176) wifi:Init static rx buffer num: 6[0m
+[0;32mI (4176) wifi:Init dynamic rx buffer num: 16[0m
+[0;32mI (4186) wifi_init: rx ba win: 6[0m
+[0;32mI (4186) wifi_init: accept mbox: 6[0m
+[0;32mI (4196) wifi_init: tcpip mbox: 32[0m
+[0;32mI (4196) wifi_init: udp mbox: 6[0m
+[0;32mI (4196) wifi_init: tcp mbox: 6[0m
+[0;32mI (4196) wifi_init: tcp tx win: 5760[0m
+[0;32mI (4206) wifi_init: tcp rx win: 5760[0m
+[0;32mI (4206) wifi_init: tcp mss: 1440[0m
+[0;32mI (4206) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (4216) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (4216) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (4226) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (4286) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (4286) wifi:enable tsf[0m
+[0;32mI (4286) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;33mW (4296) AEGIS_GUARDIAN: [HEAP] after wifi_init/start    free_internal=65155 largest_internal=31744 free_total=8029591 free_psram=7964436[0m
+[0;32mI (4296) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (4306) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 1[0m
+[0;32mI (4306) ESPNOW_MASTER: Guardian MAC: E8:F6:0A:D6:C8:E8[0m
+[0;32mI (4316) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (4316) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (4316) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (4326) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;33mW (4326) AEGIS_GUARDIAN: [HEAP] after espnow_master_init free_internal=65031 largest_internal=31744 free_total=8029415 free_psram=7964384[0m
+[0;32mI (4346) LVGL: Starting LVGL task[0m
+[0;32mI (4536) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (4636) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (4636) AEGIS_GUARDIAN: [HEAP] after display init       free_internal=57163 largest_internal=31744 free_total=8009023 free_psram=7951860[0m
+[0;32mI (4636) SWARM_LINK: Swarm link ready on channel 6 (Guardian)[0m
+[0;32mI (4646) SWARM_LINK: Swarm: broadcasting WAKE[0m
+[0;33mW (4646) AEGIS_GUARDIAN: [HEAP] after swarm_link_init    free_internal=57127 largest_internal=31744 free_total=8008891 free_psram=7951764[0m
+[0;32mI (4646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (4686) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[0;33mW (4686) AEGIS_GUARDIAN: [HEAP] just before esp_wifi_connect free_internal=57127 largest_internal=31744 free_total=8008891 free_psram=7951764[0m
+[0;32mI (4706) AEGIS_GUARDIAN: HTTP server active (snapshot-only, no live /stream)[0m
+[0;32mI (7116) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (9526) AEGIS_GUARDIAN: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (9646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (10706) AEGIS_GUARDIAN: [HEAP] before face_task creation free_internal=50951 largest_internal=31744 free_total=7999819 free_psram=7948868[0m
+[0;32mI (10706) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;32mI (11206) AEGIS_GUARDIAN: Object AI task CPU1[0m
+[0;32mI (11206) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (11206) AEGIS_GUARDIAN: Object model input: 96x96[0m
+[0;32mI (11206) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (11216) main_task: Returned from app_main()[0m
+[0;32mI (11946) AEGIS_GUARDIAN: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (14356) AEGIS_GUARDIAN: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (14646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (16206) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (16776) AEGIS_GUARDIAN: Retry connecting to WiFi (5/10)...[0m
+[0;33mW (18816) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (18896) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (18896) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;33mW (19186) wifi:m f probe req l=0[0m
+
+[0;32mI (19186) AEGIS_GUARDIAN: Retry connecting to WiFi (6/10)...[0m
+[0;33mW (19306) wifi:m f probe req l=0[0m
+
+[0;33mW (19426) wifi:m f probe req l=0[0m
+
+[0;32mI (19456) AEGIS_GUARDIAN: Face AI OK[0m
+[0;33mW (19456) AEGIS_GUARDIAN: [HEAP] after face models loaded free_internal=8263 largest_internal=1728 free_total=4445067 free_psram=4436804[0m
+[0;32mI (19456) AEGIS_GUARDIAN: Owner loaded: ID=0[0m
+[0;32mI (19646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (19646) spi_master: setup_dma_priv_buffer(1214): Failed to allocate priv TX buffer[0m
+[1;31mE (19646) lcd_panel.io.spi: panel_io_spi_tx_color(405): spi transmit (queue) color failed[0m
+[1;31mE (19656) lcd_panel.st7789: panel_st7789_draw_bitmap(229): io tx color failed[0m
+[0;33mW (21236) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21266) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21306) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21336) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21366) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21396) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21426) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21456) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21486) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21516) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21566) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21596) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21626) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21656) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21686) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21716) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (21746) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;32mI (21776) AEGIS_GUARDIAN: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (24186) AEGIS_GUARDIAN: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (24646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (25996) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (25996) ESPNOW_MASTER: Sending command: 2[0m
+[0;33mW (25996) AEGIS_GUARDIAN: SECURITY ALERT: INTRUDER[0m
+[0;32mI (25996) AEGIS_GUARDIAN: Security=INTRUDER | OwnerID=0 | Enrolled=YES | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (26036) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;33mW (26196) SWARM_LINK: Swarm: broadcasting SECURITY_ALERT (Intruder, 0.0%)[0m
+[0;32mI (26196) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[1;31mE (26196) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[1;31mE (26316) JPEG: esp_jpeg_decode(114): Error in decoding JPEG image! 6[0m
+[0;32mI (26966) AEGIS_GUARDIAN: Retry connecting to WiFi (9/10)...[0m
+[0;33mW (28606) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (29376) AEGIS_GUARDIAN: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (29646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (30756) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;33mW (31256) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31286) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31316) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31346) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31396) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31416) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31446) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31476) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31506) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31536) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31566) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31596) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31646) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31676) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31706) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31736) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31766) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31796) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31826) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31866) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31896) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31926) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31956) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (31986) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (32016) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (32046) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (32076) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (32086) AEGIS_GUARDIAN: WiFi reconnect limit reached, will retry shortly[0m
+[0;33mW (33206) AEGIS_GUARDIAN: UNKNOWN FACE -> INTRUDER[0m
+[0;32mI (33866) ESPNOW_MASTER: Sending command: 0[0m
+[0;32mI (33866) AEGIS_GUARDIAN: SYSTEM NORMAL[0m
+[0;32mI (25996) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;33mW (33886) AEGIS_GUARDIAN: Reporting Incident to Backend: {"bot_id":"Guardian","type":"INTRUDER","message":"Unauthorized intruder detected in protected perimeter","severity":"CRITICAL"}[0m
+[0;32mI (33906) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":0,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (33906) ESPNOW_MASTER: Send Status: FAIL[0m
+[0;32mI (33926) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (33966) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (33996) AEGIS_GUARDIAN: Ingesting Vision Telemetry: {"bot_id":"Guardian","kind":"vision_detection","payload":{"label":"Intruder","confidence":90,"is_threat":true,"owner_id":null,"bbox":{"x":0,"y":0,"w":0,"h":0}}}[0m
+[0;32mI (34066) SWARM_LINK: Swarm: broadcasting ALL_CLEAR[0m
+[0;32mI (34066) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;32mI (34646) ESPNOW_MASTER: Send Status: SUCCESS[0m
+[0;33mW (36256) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36286) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36306) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36346) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36376) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36406) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36446) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36476) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36506) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36536) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36566) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36596) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36626) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36666) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36696) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36726) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36766) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36786) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36826) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36856) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36886) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36926) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36956) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (36986) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37016) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37046) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37076) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37106) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37146) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37186) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37216) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37246) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37266) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37306) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37326) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37356) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37406) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37436) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37466) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37496) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37526) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37556) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37586) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37626) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37666) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37686) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37726) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37746) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37786) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37806) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37846) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37886) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37916) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37946) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (37976) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38006) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38036) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38066) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38106) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38136) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38166) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38206) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38226) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38266) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38296) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38326) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38366) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38396) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38426) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38456) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38486) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38516) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38546) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38586) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38626) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38656) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38686) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38706) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38736) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38766) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38796) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38846) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38876) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38916) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38936) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38966) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (38996) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39036) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39066) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39106) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39136) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39166) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39196) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39226) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39256) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m
+[0;33mW (39286) AFE: Ringbuffer of AFE(FEED) is full, Please use fetch() to read data to avoid data loss or overwriting[0m

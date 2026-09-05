@@ -1,0 +1,658 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (486) MSPI TESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=bc55ch (771420) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=000cc584 vaddr=3fc9a400 size=03a94h ( 14996) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=c6d58h (814424) map[0m
+[0;32mI (395) esp_image: segment 3: paddr=00196d80 vaddr=3fc9de94 size=06cb0h ( 27824) load[0m
+[0;32mI (401) esp_image: segment 4: paddr=0019da38 vaddr=40374000 size=16374h ( 90996) load[0m
+[0;32mI (422) esp_image: segment 5: paddr=001b3db4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (433) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (433) boot: Disabling RNG early entropy source...[0m
+[0;32mI (443) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (443) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (444) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (446) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (450) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (454) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (458) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (463) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (468) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (473) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (478) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (482) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (487) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (490) esp_psram: Speed: 80MHz[0m
+[0;32mI (493) cpu_start: Multicore app[0m
+[0;32mI (909) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (917) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (918) cpu_start: Pro cpu start user code[0m
+[0;32mI (918) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (919) app_init: Application information:[0m
+[0;32mI (923) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (928) app_init: App version:      1[0m
+[0;32mI (931) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (936) app_init: ELF file SHA256:  db3e5fed4...[0m
+[0;32mI (941) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (945) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (948) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (952) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (956) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (962) heap_init: At 3FCAD120 len 0003C5F0 (241 KiB): RAM[0m
+[0;32mI (968) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (973) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (978) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (985) spi_flash: detected chip: gd[0m
+[0;32mI (988) spi_flash: flash io: dio[0m
+[0;32mI (991) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (997) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1015) main_task: Started on CPU0[0m
+[0;32mI (1015) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1016) main_task: Calling app_main()[0m
+[0;32mI (1037) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1039) pp: pp rom version: e7ae62f[0m
+[0;32mI (1040) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1045) wifi:wifi driver task: 3fceeacc, prio:23, stack:6656, core=0[0m
+[0;32mI (1059) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1059) wifi:wifi certification version: v7.0[0m
+[0;32mI (1059) wifi:config NVS flash: enabled[0m
+[0;32mI (1061) wifi:config nano formatting: disabled[0m
+[0;32mI (1065) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1070) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1074) wifi:Init management short buffer num: 32[0m
+[0;32mI (1079) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1083) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1087) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1091) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1095) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1100) wifi_init: rx ba win: 6[0m
+[0;32mI (1102) wifi_init: accept mbox: 6[0m
+[0;32mI (1105) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1108) wifi_init: udp mbox: 6[0m
+[0;32mI (1111) wifi_init: tcp mbox: 6[0m
+[0;32mI (1114) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1117) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1121) wifi_init: tcp mss: 1440[0m
+[0;32mI (1124) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1128) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1131) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1136) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1144) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1189) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1189) wifi:enable tsf[0m
+[0;32mI (1191) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1193) AEGIS_MASTER_MAIN: Connecting to Wi-Fi SSID: A34 (Waiting up to 10s)...[0m
+[0;32mI (1199) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1203) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1241) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1265) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1284) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1284) wifi:security: WPA2-PSK, phy: bgn, rssi: -27, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1291) wifi:pm start, type: 0[0m
+
+[0;32mI (1292) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1300) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1332) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1333) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2338) esp_netif_handlers: sta ip: 10.75.11.50, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (2338) AEGIS_MASTER_MAIN: Wi-Fi Connected! IP: 10.75.11.50[0m
+[0;32mI (2340) AEGIS_MASTER_MAIN: ==================================================[0m
+[0;32mI (2347) AEGIS_MASTER_MAIN: Wi-Fi Router Connected! Local IP: 10.75.11.50 | Active Channel: 6[0m
+[0;32mI (2355) AEGIS_MASTER_MAIN: AEGIS Central Backend Server: http://10.75.11.83:8000[0m
+[0;32mI (2363) AEGIS_MASTER_MAIN: HTTP Backend Telemetry Ingest: ENABLED[0m
+[0;32mI (2368) AEGIS_MASTER_MAIN: ==================================================[0m
+[0;32mI (2376) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (2378) cam_hal: cam init ok[0m
+[0;32mI (2381) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (2384) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (2400) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2401) camera: Detected OV2640 camera[0m
+[0;32mI (2401) camera: Detected camera at address=0x30[0m
+[0;32mI (2476) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2476) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2477) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2486) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2496) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2502) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2507) cam_hal: cam config ok[0m
+[0;32mI (2510) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (2583) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2584) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (2584) AEGIS_MASTER_MAIN: Pathfinder Slave Peer (00:70:07:26:B5:B4) registered on Channel 6.[0m
+[0;32mI (2593) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (2601) AEGIS_MASTER_MAIN: Backend Telemetry & Heartbeat Task started on Core 0...[0m
+[0;32mI (2608) AEGIS_MASTER_MAIN: Pathfinder Swarm State Machine starting on Core 0...[0m
+[0;32mI (2615) main_task: Returned from app_main()[0m
+[0;32mI (3056) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (3451) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (3794) AI_VISION_FAST: [FRAME 1] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (4192) AI_VISION_FAST: [FRAME 2] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (4594) AI_VISION_FAST: [FRAME 3] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (4595) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (4995) AI_VISION_FAST: [FRAME 4] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (4996) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (5395) AI_VISION_FAST: [FRAME 5] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (5395) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (5798) AI_VISION_FAST: [FRAME 6] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (6189) AI_VISION_FAST: [FRAME 7] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (6593) AI_VISION_FAST: [FRAME 8] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (6993) AI_VISION_FAST: [FRAME 9] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (7392) AI_VISION_FAST: [FRAME 10] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (7680) AEGIS_MASTER_MAIN: Executing Snapshot 1/10...[0m
+[0;32mI (7784) AI_VISION_FAST: [FRAME 11] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (8110) AI_VISION_FAST: [FRAME 12] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (8507) AI_VISION_FAST: [FRAME 13] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (8918) AI_VISION_FAST: [FRAME 14] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (9317) AI_VISION_FAST: [FRAME 15] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (9710) AI_VISION_FAST: [FRAME 16] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (10111) AI_VISION_FAST: [FRAME 17] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (10509) AI_VISION_FAST: [FRAME 18] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (10910) AI_VISION_FAST: [FRAME 19] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (11198) AEGIS_MASTER_MAIN: Snapshot 1/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (11199) AEGIS_MASTER_MAIN: Executing Snapshot 2/10...[0m
+[0;32mI (11314) AI_VISION_FAST: [FRAME 20] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (11709) AI_VISION_FAST: [FRAME 21] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (12115) AI_VISION_FAST: [FRAME 22] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (12516) AI_VISION_FAST: [FRAME 23] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (12908) AI_VISION_FAST: [FRAME 24] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (13306) AI_VISION_FAST: [FRAME 25] Inference complete in 276 ms | Detections: 0[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (13789) AI_VISION_FAST: [FRAME 26] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (14190) AI_VISION_FAST: [FRAME 27] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (14587) AI_VISION_FAST: [FRAME 28] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (14705) AEGIS_MASTER_MAIN: Snapshot 2/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (14705) AEGIS_MASTER_MAIN: Executing Snapshot 3/10...[0m
+[0;32mI (14990) AI_VISION_FAST: [FRAME 29] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (15392) AI_VISION_FAST: [FRAME 30] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (15794) AI_VISION_FAST: [FRAME 31] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (16189) AI_VISION_FAST: [FRAME 32] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (16746) AI_VISION_FAST: [FRAME 33] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (17147) AI_VISION_FAST: [FRAME 34] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (17547) AI_VISION_FAST: [FRAME 35] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (17949) AI_VISION_FAST: [FRAME 36] Inference complete in 280 ms | Detections: 0[0m
+[0;33mW (18235) AEGIS_MASTER_MAIN: Snapshot 3/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (18236) AEGIS_MASTER_MAIN: Executing Snapshot 4/10...[0m
+[0;32mI (18341) AI_VISION_FAST: [FRAME 37] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (18674) AI_VISION_FAST: [FRAME 38] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (19077) AI_VISION_FAST: [FRAME 39] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (19466) AI_VISION_FAST: [FRAME 40] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (19790) AI_VISION_FAST: [FRAME 41] Inference complete in 282 ms | Detections: 1[0m
+[0;32mI (19791) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (20185) AI_VISION_FAST: [FRAME 42] Inference complete in 276 ms | Detections: 1[0m
+[0;32mI (20185) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 90.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (20586) AI_VISION_FAST: [FRAME 43] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (20984) AI_VISION_FAST: [FRAME 44] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (21390) AI_VISION_FAST: [FRAME 45] Inference complete in 282 ms | Detections: 0[0m
+[0;33mW (21767) AEGIS_MASTER_MAIN: Snapshot 4/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (21768) AEGIS_MASTER_MAIN: Executing Snapshot 5/10...[0m
+[0;32mI (21783) AI_VISION_FAST: [FRAME 46] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (22111) AI_VISION_FAST: [FRAME 47] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (22508) AI_VISION_FAST: [FRAME 48] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (22904) AI_VISION_FAST: [FRAME 49] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (23306) AI_VISION_FAST: [FRAME 50] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (23709) AI_VISION_FAST: [FRAME 51] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (24109) AI_VISION_FAST: [FRAME 52] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (24506) AI_VISION_FAST: [FRAME 53] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (24904) AI_VISION_FAST: [FRAME 54] Inference complete in 278 ms | Detections: 0[0m
+[0;33mW (25294) AEGIS_MASTER_MAIN: Snapshot 5/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (25295) AEGIS_MASTER_MAIN: Executing Snapshot 6/10...[0m
+[0;32mI (25310) AI_VISION_FAST: [FRAME 55] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (25624) AI_VISION_FAST: [FRAME 56] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (26019) AI_VISION_FAST: [FRAME 57] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (26344) AI_VISION_FAST: [FRAME 58] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (26744) AI_VISION_FAST: [FRAME 59] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (27145) AI_VISION_FAST: [FRAME 60] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (27543) AI_VISION_FAST: [FRAME 61] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (27944) AI_VISION_FAST: [FRAME 62] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (28344) AI_VISION_FAST: [FRAME 63] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (28881) AEGIS_MASTER_MAIN: Snapshot 6/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (28882) AEGIS_MASTER_MAIN: Executing Snapshot 7/10...[0m
+[0;32mI (28900) AI_VISION_FAST: [FRAME 64] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (29303) AI_VISION_FAST: [FRAME 65] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (29701) AI_VISION_FAST: [FRAME 66] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (30100) AI_VISION_FAST: [FRAME 67] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (30501) AI_VISION_FAST: [FRAME 68] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (30903) AI_VISION_FAST: [FRAME 69] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (31302) AI_VISION_FAST: [FRAME 70] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (31707) AI_VISION_FAST: [FRAME 71] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (32100) AI_VISION_FAST: [FRAME 72] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (32390) AEGIS_MASTER_MAIN: Snapshot 7/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (32391) AEGIS_MASTER_MAIN: Executing Snapshot 8/10...[0m
+[0;32mI (32505) AI_VISION_FAST: [FRAME 73] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (32902) AI_VISION_FAST: [FRAME 74] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (33297) AI_VISION_FAST: [FRAME 75] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (33699) AI_VISION_FAST: [FRAME 76] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (34102) AI_VISION_FAST: [FRAME 77] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (34497) AI_VISION_FAST: [FRAME 78] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (35075) AI_VISION_FAST: [FRAME 81] Inference complete in 293 ms | Detections: 0[0m
+[0;32mI (35462) AI_VISION_FAST: [FRAME 82] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (35858) AI_VISION_FAST: [FRAME 83] Inference complete in 277 ms | Detections: 0[0m
+[0;33mW (35896) AEGIS_MASTER_MAIN: Snapshot 8/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (35896) AEGIS_MASTER_MAIN: Executing Snapshot 9/10...[0m
+[0;32mI (36260) AI_VISION_FAST: [FRAME 84] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (36663) AI_VISION_FAST: [FRAME 85] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (37061) AI_VISION_FAST: [FRAME 86] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (37459) AI_VISION_FAST: [FRAME 87] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (37859) AI_VISION_FAST: [FRAME 88] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (38270) AI_VISION_FAST: [FRAME 89] Inference complete in 290 ms | Detections: 0[0m
+[0;32mI (38644) AI_VISION_FAST: [FRAME 90] Inference complete in 264 ms | Detections: 0[0m
+[0;32mI (39134) AI_VISION_FAST: [FRAME 91] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (39442) AI_VISION_FAST: [FRAME 92] Inference complete in 262 ms | Detections: 0[0m
+[0;33mW (39468) AEGIS_MASTER_MAIN: Snapshot 9/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (39468) AEGIS_MASTER_MAIN: Executing Snapshot 10/10...[0m
+[0;32mI (39699) AI_VISION_FAST: [FRAME 93] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (39952) AI_VISION_FAST: [FRAME 94] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40206) AI_VISION_FAST: [FRAME 95] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40460) AI_VISION_FAST: [FRAME 96] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40715) AI_VISION_FAST: [FRAME 97] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (41223) AI_VISION_FAST: [FRAME 99] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (41480) AI_VISION_FAST: [FRAME 100] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (41733) AI_VISION_FAST: [FRAME 101] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (41989) AI_VISION_FAST: [FRAME 102] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (42244) AI_VISION_FAST: [FRAME 103] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (42498) AI_VISION_FAST: [FRAME 104] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (42752) AI_VISION_FAST: [FRAME 105] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (42973) AEGIS_MASTER_MAIN: Snapshot 10/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (42973) AEGIS_MASTER_MAIN: Phase 1 Initial Mapping Complete. Entering Phase 2 Patrol Loop...[0m
+[0;32mI (43011) AI_VISION_FAST: [FRAME 106] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (43266) AI_VISION_FAST: [FRAME 107] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (43520) AI_VISION_FAST: [FRAME 108] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (43775) AI_VISION_FAST: [FRAME 109] Inference complete in 242 ms | Detections: 0[0m
+[1;31mE (43875) esp-tls: [sock=58] select() timeout[0m
+[1;31mE (43875) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (43876) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (43878) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (44032) AI_VISION_FAST: [FRAME 110] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (44286) AI_VISION_FAST: [FRAME 111] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44539) AI_VISION_FAST: [FRAME 112] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44792) AI_VISION_FAST: [FRAME 113] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45047) AI_VISION_FAST: [FRAME 114] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45302) AI_VISION_FAST: [FRAME 115] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (45556) AI_VISION_FAST: [FRAME 116] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45811) AI_VISION_FAST: [FRAME 117] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (46064) AI_VISION_FAST: [FRAME 118] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (46319) AI_VISION_FAST: [FRAME 119] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (46572) AI_VISION_FAST: [FRAME 120] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (46828) AI_VISION_FAST: [FRAME 121] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (47083) AI_VISION_FAST: [FRAME 122] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (47338) AI_VISION_FAST: [FRAME 123] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (47592) AI_VISION_FAST: [FRAME 124] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (47848) AI_VISION_FAST: [FRAME 125] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (48102) AI_VISION_FAST: [FRAME 126] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (48358) AI_VISION_FAST: [FRAME 127] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (48611) AI_VISION_FAST: [FRAME 128] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (48867) AI_VISION_FAST: [FRAME 129] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (49122) AI_VISION_FAST: [FRAME 130] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (49376) AI_VISION_FAST: [FRAME 131] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (49392) esp-tls: [sock=58] select() timeout[0m
+[1;31mE (49393) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (49393) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (49396) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (49632) AI_VISION_FAST: [FRAME 132] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (49805) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;33mW (49806) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (49889) AI_VISION_FAST: [FRAME 133] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (50143) AI_VISION_FAST: [FRAME 134] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (50398) AI_VISION_FAST: [FRAME 135] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (50649) AI_VISION_FAST: [FRAME 136] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (50904) AI_VISION_FAST: [FRAME 137] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (51158) AI_VISION_FAST: [FRAME 138] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (51414) AI_VISION_FAST: [FRAME 139] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (51667) AI_VISION_FAST: [FRAME 140] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (51922) AI_VISION_FAST: [FRAME 141] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (52178) AI_VISION_FAST: [FRAME 142] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (52436) AI_VISION_FAST: [FRAME 143] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (52690) AI_VISION_FAST: [FRAME 144] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (52946) AI_VISION_FAST: [FRAME 145] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (53203) AI_VISION_FAST: [FRAME 146] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (53458) AI_VISION_FAST: [FRAME 147] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (53712) AI_VISION_FAST: [FRAME 148] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (53967) AI_VISION_FAST: [FRAME 149] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (54222) AI_VISION_FAST: [FRAME 150] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (54476) AI_VISION_FAST: [FRAME 151] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (54730) AI_VISION_FAST: [FRAME 152] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (54910) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (54910) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (54911) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54913) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (54987) AI_VISION_FAST: [FRAME 153] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (55242) AI_VISION_FAST: [FRAME 154] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (55497) AI_VISION_FAST: [FRAME 155] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (55749) AI_VISION_FAST: [FRAME 156] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (56004) AI_VISION_FAST: [FRAME 157] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (56259) AI_VISION_FAST: [FRAME 158] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (56514) AI_VISION_FAST: [FRAME 159] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (56769) AI_VISION_FAST: [FRAME 160] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (57023) AI_VISION_FAST: [FRAME 161] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (57278) AI_VISION_FAST: [FRAME 162] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (57532) AI_VISION_FAST: [FRAME 163] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (57786) AI_VISION_FAST: [FRAME 164] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (58042) AI_VISION_FAST: [FRAME 165] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (58298) AI_VISION_FAST: [FRAME 166] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (58553) AI_VISION_FAST: [FRAME 167] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (58809) AI_VISION_FAST: [FRAME 168] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (59064) AI_VISION_FAST: [FRAME 169] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (59318) AI_VISION_FAST: [FRAME 170] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (59572) AI_VISION_FAST: [FRAME 171] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (59828) AI_VISION_FAST: [FRAME 172] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (60082) AI_VISION_FAST: [FRAME 173] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (60337) AI_VISION_FAST: [FRAME 174] Inference complete in 242 ms | Detections: 0[0m
+[1;31mE (60427) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (60428) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (60429) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (60431) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (60594) AI_VISION_FAST: [FRAME 175] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (60850) AI_VISION_FAST: [FRAME 176] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (61105) AI_VISION_FAST: [FRAME 177] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (61361) AI_VISION_FAST: [FRAME 178] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (61615) AI_VISION_FAST: [FRAME 179] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (61869) AI_VISION_FAST: [FRAME 180] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62124) AI_VISION_FAST: [FRAME 181] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62379) AI_VISION_FAST: [FRAME 182] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62633) AI_VISION_FAST: [FRAME 183] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62884) AI_VISION_FAST: [FRAME 184] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (63141) AI_VISION_FAST: [FRAME 185] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (63398) AI_VISION_FAST: [FRAME 186] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (63656) AI_VISION_FAST: [FRAME 187] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (63910) AI_VISION_FAST: [FRAME 188] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (64165) AI_VISION_FAST: [FRAME 189] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (64421) AI_VISION_FAST: [FRAME 190] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (64675) AI_VISION_FAST: [FRAME 191] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (64929) AI_VISION_FAST: [FRAME 192] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (65184) AI_VISION_FAST: [FRAME 193] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (65439) AI_VISION_FAST: [FRAME 194] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (65696) AI_VISION_FAST: [FRAME 195] Inference complete in 242 ms | Detections: 0[0m
+[1;31mE (65945) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (65946) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (65947) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (65949) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (65951) AI_VISION_FAST: [FRAME 196] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (66219) AI_VISION_FAST: [FRAME 197] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (66475) AI_VISION_FAST: [FRAME 198] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (66730) AI_VISION_FAST: [FRAME 199] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (66985) AI_VISION_FAST: [FRAME 200] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (67240) AI_VISION_FAST: [FRAME 201] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (67495) AI_VISION_FAST: [FRAME 202] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (67749) AI_VISION_FAST: [FRAME 203] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (68001) AI_VISION_FAST: [FRAME 204] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (68255) AI_VISION_FAST: [FRAME 205] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (68508) AI_VISION_FAST: [FRAME 206] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (68762) AI_VISION_FAST: [FRAME 207] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (69021) AI_VISION_FAST: [FRAME 208] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (69275) AI_VISION_FAST: [FRAME 209] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (69530) AI_VISION_FAST: [FRAME 210] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (69784) AI_VISION_FAST: [FRAME 211] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (70039) AI_VISION_FAST: [FRAME 212] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (70293) AI_VISION_FAST: [FRAME 213] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (70548) AI_VISION_FAST: [FRAME 214] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (70802) AI_VISION_FAST: [FRAME 215] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (71057) AI_VISION_FAST: [FRAME 216] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (71312) AI_VISION_FAST: [FRAME 217] Inference complete in 242 ms | Detections: 0[0m
+[1;31mE (71463) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (71464) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (71464) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (71467) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (71567) AI_VISION_FAST: [FRAME 218] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (71821) AI_VISION_FAST: [FRAME 219] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (72075) AI_VISION_FAST: [FRAME 220] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (72331) AI_VISION_FAST: [FRAME 221] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (72584) AI_VISION_FAST: [FRAME 222] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (72840) AI_VISION_FAST: [FRAME 223] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (73094) AI_VISION_FAST: [FRAME 224] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (73349) AI_VISION_FAST: [FRAME 225] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (73603) AI_VISION_FAST: [FRAME 226] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (73858) AI_VISION_FAST: [FRAME 227] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (74112) AI_VISION_FAST: [FRAME 228] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (74365) AI_VISION_FAST: [FRAME 229] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (74622) AI_VISION_FAST: [FRAME 230] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (74877) AI_VISION_FAST: [FRAME 231] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (75130) AI_VISION_FAST: [FRAME 232] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (75385) AI_VISION_FAST: [FRAME 233] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (75638) AI_VISION_FAST: [FRAME 234] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (75893) AI_VISION_FAST: [FRAME 235] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (76146) AI_VISION_FAST: [FRAME 236] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (76399) AI_VISION_FAST: [FRAME 237] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (76654) AI_VISION_FAST: [FRAME 238] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (76910) AI_VISION_FAST: [FRAME 239] Inference complete in 242 ms | Detections: 0[0m
+[1;31mE (76980) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (76980) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (76981) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (76983) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (77164) AI_VISION_FAST: [FRAME 240] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (77418) AI_VISION_FAST: [FRAME 241] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (77672) AI_VISION_FAST: [FRAME 242] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (77928) AI_VISION_FAST: [FRAME 243] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (78183) AI_VISION_FAST: [FRAME 244] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (78438) AI_VISION_FAST: [FRAME 245] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (78691) AI_VISION_FAST: [FRAME 246] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (78947) AI_VISION_FAST: [FRAME 247] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (79202) AI_VISION_FAST: [FRAME 248] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (79456) AI_VISION_FAST: [FRAME 249] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (79710) AI_VISION_FAST: [FRAME 250] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (79964) AI_VISION_FAST: [FRAME 251] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (80224) AI_VISION_FAST: [FRAME 252] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (80478) AI_VISION_FAST: [FRAME 253] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (80733) AI_VISION_FAST: [FRAME 254] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (80988) AI_VISION_FAST: [FRAME 255] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (81241) AI_VISION_FAST: [FRAME 256] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (81496) AI_VISION_FAST: [FRAME 257] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (81750) AI_VISION_FAST: [FRAME 258] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (82003) AI_VISION_FAST: [FRAME 259] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (82257) AI_VISION_FAST: [FRAME 260] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (82497) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (82497) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (82498) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (82500) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (82513) AI_VISION_FAST: [FRAME 261] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (82770) AI_VISION_FAST: [FRAME 262] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (83025) AI_VISION_FAST: [FRAME 263] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (83280) AI_VISION_FAST: [FRAME 264] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (83534) AI_VISION_FAST: [FRAME 265] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (83789) AI_VISION_FAST: [FRAME 266] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (84042) AI_VISION_FAST: [FRAME 267] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (84297) AI_VISION_FAST: [FRAME 268] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (84552) AI_VISION_FAST: [FRAME 269] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (84806) AI_VISION_FAST: [FRAME 270] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (85060) AI_VISION_FAST: [FRAME 271] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (85316) AI_VISION_FAST: [FRAME 272] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (85572) AI_VISION_FAST: [FRAME 273] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (85827) AI_VISION_FAST: [FRAME 274] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (86081) AI_VISION_FAST: [FRAME 275] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (86337) AI_VISION_FAST: [FRAME 276] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (86591) AI_VISION_FAST: [FRAME 277] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (86847) AI_VISION_FAST: [FRAME 278] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (87102) AI_VISION_FAST: [FRAME 279] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (87356) AI_VISION_FAST: [FRAME 280] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (87611) AI_VISION_FAST: [FRAME 281] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (87866) AI_VISION_FAST: [FRAME 282] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (88014) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (88015) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (88015) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (88017) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (88122) AI_VISION_FAST: [FRAME 283] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (88377) AI_VISION_FAST: [FRAME 284] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (88631) AI_VISION_FAST: [FRAME 285] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (88886) AI_VISION_FAST: [FRAME 286] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (89141) AI_VISION_FAST: [FRAME 287] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (89397) AI_VISION_FAST: [FRAME 288] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (89652) AI_VISION_FAST: [FRAME 289] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (89906) AI_VISION_FAST: [FRAME 290] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (90161) AI_VISION_FAST: [FRAME 291] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (90417) AI_VISION_FAST: [FRAME 292] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (90671) AI_VISION_FAST: [FRAME 293] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (90925) AI_VISION_FAST: [FRAME 294] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (91181) AI_VISION_FAST: [FRAME 295] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (91436) AI_VISION_FAST: [FRAME 296] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (91691) AI_VISION_FAST: [FRAME 297] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (91945) AI_VISION_FAST: [FRAME 298] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (92198) AI_VISION_FAST: [FRAME 299] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (92452) AI_VISION_FAST: [FRAME 300] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (92708) AI_VISION_FAST: [FRAME 301] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (92963) AI_VISION_FAST: [FRAME 302] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (93219) AI_VISION_FAST: [FRAME 303] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (93473) AI_VISION_FAST: [FRAME 304] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (93531) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (93532) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (93532) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (93534) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (93731) AI_VISION_FAST: [FRAME 305] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (93984) AI_VISION_FAST: [FRAME 306] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (94240) AI_VISION_FAST: [FRAME 307] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (94494) AI_VISION_FAST: [FRAME 308] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (94748) AI_VISION_FAST: [FRAME 309] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (95003) AI_VISION_FAST: [FRAME 310] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (95259) AI_VISION_FAST: [FRAME 311] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (95515) AI_VISION_FAST: [FRAME 312] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (95769) AI_VISION_FAST: [FRAME 313] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (96023) AI_VISION_FAST: [FRAME 314] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (96276) AI_VISION_FAST: [FRAME 315] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (96527) AI_VISION_FAST: [FRAME 316] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (96785) AI_VISION_FAST: [FRAME 317] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (97039) AI_VISION_FAST: [FRAME 318] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (97294) AI_VISION_FAST: [FRAME 319] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (97549) AI_VISION_FAST: [FRAME 320] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (97802) AI_VISION_FAST: [FRAME 321] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (98057) AI_VISION_FAST: [FRAME 322] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (98313) AI_VISION_FAST: [FRAME 323] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (98568) AI_VISION_FAST: [FRAME 324] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (98822) AI_VISION_FAST: [FRAME 325] Inference complete in 240 ms | Detections: 0[0m
+[1;31mE (99049) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (99050) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (99050) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (99053) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (99076) AI_VISION_FAST: [FRAME 326] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (99332) AI_VISION_FAST: [FRAME 327] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (99586) AI_VISION_FAST: [FRAME 328] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (99840) AI_VISION_FAST: [FRAME 329] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (100094) AI_VISION_FAST: [FRAME 330] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (100350) AI_VISION_FAST: [FRAME 331] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (100605) AI_VISION_FAST: [FRAME 332] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (100860) AI_VISION_FAST: [FRAME 333] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (101114) AI_VISION_FAST: [FRAME 334] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (101368) AI_VISION_FAST: [FRAME 335] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (101622) AI_VISION_FAST: [FRAME 336] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (101876) AI_VISION_FAST: [FRAME 337] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (102132) AI_VISION_FAST: [FRAME 338] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (102387) AI_VISION_FAST: [FRAME 339] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (102641) AI_VISION_FAST: [FRAME 340] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (102894) AI_VISION_FAST: [FRAME 341] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (103148) AI_VISION_FAST: [FRAME 342] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (103403) AI_VISION_FAST: [FRAME 343] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (103657) AI_VISION_FAST: [FRAME 344] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (103911) AI_VISION_FAST: [FRAME 345] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (104167) AI_VISION_FAST: [FRAME 346] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (104422) AI_VISION_FAST: [FRAME 347] Inference complete in 242 ms | Detections: 0[0m
+[1;31mE (104566) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (104566) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (104567) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (104571) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (104678) AI_VISION_FAST: [FRAME 348] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (104933) AI_VISION_FAST: [FRAME 349] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (105189) AI_VISION_FAST: [FRAME 350] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (105444) AI_VISION_FAST: [FRAME 351] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (105703) AI_VISION_FAST: [FRAME 352] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (105957) AI_VISION_FAST: [FRAME 353] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (106214) AI_VISION_FAST: [FRAME 354] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (106468) AI_VISION_FAST: [FRAME 355] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (106723) AI_VISION_FAST: [FRAME 356] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (106977) AI_VISION_FAST: [FRAME 357] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (107231) AI_VISION_FAST: [FRAME 358] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (107485) AI_VISION_FAST: [FRAME 359] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (107741) AI_VISION_FAST: [FRAME 360] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (107995) AI_VISION_FAST: [FRAME 361] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (108249) AI_VISION_FAST: [FRAME 362] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (108504) AI_VISION_FAST: [FRAME 363] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (108758) AI_VISION_FAST: [FRAME 364] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (109013) AI_VISION_FAST: [FRAME 365] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (109269) AI_VISION_FAST: [FRAME 366] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (109523) AI_VISION_FAST: [FRAME 367] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (109778) AI_VISION_FAST: [FRAME 368] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (110032) AI_VISION_FAST: [FRAME 369] Inference complete in 240 ms | Detections: 0[0m
+[1;31mE (110083) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (110084) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (110084) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (110087) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (110291) AI_VISION_FAST: [FRAME 370] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (110544) AI_VISION_FAST: [FRAME 371] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (110800) AI_VISION_FAST: [FRAME 372] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (111055) AI_VISION_FAST: [FRAME 373] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (111310) AI_VISION_FAST: [FRAME 374] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (111563) AI_VISION_FAST: [FRAME 375] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (111818) AI_VISION_FAST: [FRAME 376] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (112073) AI_VISION_FAST: [FRAME 377] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (112329) AI_VISION_FAST: [FRAME 378] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (112583) AI_VISION_FAST: [FRAME 379] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (112836) AI_VISION_FAST: [FRAME 380] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (113092) AI_VISION_FAST: [FRAME 381] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (113347) AI_VISION_FAST: [FRAME 382] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (113601) AI_VISION_FAST: [FRAME 383] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (113856) AI_VISION_FAST: [FRAME 384] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (114111) AI_VISION_FAST: [FRAME 385] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (114366) AI_VISION_FAST: [FRAME 386] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (114620) AI_VISION_FAST: [FRAME 387] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (114875) AI_VISION_FAST: [FRAME 388] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (115130) AI_VISION_FAST: [FRAME 389] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (115383) AI_VISION_FAST: [FRAME 390] Inference complete in 240 ms | Detections: 0[0m
+[1;31mE (115599) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (115600) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (115600) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (115603) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (115642) AI_VISION_FAST: [FRAME 391] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (115897) AI_VISION_FAST: [FRAME 392] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (116153) AI_VISION_FAST: [FRAME 393] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (116408) AI_VISION_FAST: [FRAME 394] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (116663) AI_VISION_FAST: [FRAME 395] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (116916) AI_VISION_FAST: [FRAME 396] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (117171) AI_VISION_FAST: [FRAME 397] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (117426) AI_VISION_FAST: [FRAME 398] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (117680) AI_VISION_FAST: [FRAME 399] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (117934) AI_VISION_FAST: [FRAME 400] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (118187) AI_VISION_FAST: [FRAME 401] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (118442) AI_VISION_FAST: [FRAME 402] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (118699) AI_VISION_FAST: [FRAME 403] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (118953) AI_VISION_FAST: [FRAME 404] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (119206) AI_VISION_FAST: [FRAME 405] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (119460) AI_VISION_FAST: [FRAME 406] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (119715) AI_VISION_FAST: [FRAME 407] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (119970) AI_VISION_FAST: [FRAME 408] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (120224) AI_VISION_FAST: [FRAME 409] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (120478) AI_VISION_FAST: [FRAME 410] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (120733) AI_VISION_FAST: [FRAME 411] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (120986) AI_VISION_FAST: [FRAME 412] Inference complete in 238 ms | Detections: 0[0m
+[1;31mE (121115) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (121117) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (121117) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (121119) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (121244) AI_VISION_FAST: [FRAME 413] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (121499) AI_VISION_FAST: [FRAME 414] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (121753) AI_VISION_FAST: [FRAME 415] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (122008) AI_VISION_FAST: [FRAME 416] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (122264) AI_VISION_FAST: [FRAME 417] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (122519) AI_VISION_FAST: [FRAME 418] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI 

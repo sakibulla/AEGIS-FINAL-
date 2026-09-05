@@ -1,0 +1,96 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490eb
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c1c0020 size=1b52e4h (1790692) map[0m
+[0;32mI (426) esp_image: segment 1: paddr=001c530c vaddr=3fc9e400 size=0a52ch ( 42284) load[0m
+[0;32mI (435) esp_image: segment 2: paddr=001cf840 vaddr=40374000 size=007d8h (  2008) load[0m
+[0;32mI (436) esp_image: segment 3: paddr=001d0020 vaddr=42000020 size=1bc13ch (1818940) map[0m
+[0;32mI (771) esp_image: segment 4: paddr=0038c164 vaddr=403747d8 size=19b2ch (105260) load[0m
+[0;32mI (795) esp_image: segment 5: paddr=003a5c98 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (807) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (807) boot: Disabling RNG early entropy source...[0m
+[0;32mI (817) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (817) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (818) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (820) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (824) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (828) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (832) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (837) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (842) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (847) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (852) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (856) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (860) esp_psram: Speed: 40MHz[0m
+[0;32mI (863) cpu_start: Multicore app[0m
+[0;32mI (1597) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1605) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1606) cpu_start: Pro cpu start user code[0m
+[0;32mI (1606) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1607) app_init: Application information:[0m
+[0;32mI (1611) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1617) app_init: App version:      1[0m
+[0;32mI (1620) app_init: Compile time:     Aug 15 2026 16:13:17[0m
+[0;32mI (1625) app_init: ELF file SHA256:  180f1a41c...[0m
+[0;32mI (1630) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1633) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1637) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1641) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1645) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1652) heap_init: At 3FCAECC0 len 0003AA50 (234 KiB): RAM[0m
+[0;32mI (1657) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1662) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1667) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1673) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1681) spi_flash: detected chip: generic[0m
+[0;32mI (1683) spi_flash: flash io: dio[0m
+[0;32mI (1687) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1693) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1700) main_task: Started on CPU0[0m
+[0;32mI (1700) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1710) main_task: Calling app_main()[0m
+[0;32mI (1710) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1720) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1720) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1750) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1750) MODEL_LOADER: The storage free size is 20992 KB[0m
+[0;32mI (1750) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1750) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1760) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1810) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1810) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1820) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1820) VOICE: Voice system ready[0m
+[0;32mI (1830) VOICE: Voice feed task started[0m
+[0;32mI (1830) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1830) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1840) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1850) VOICE: Listening for: Hi ESP[0m

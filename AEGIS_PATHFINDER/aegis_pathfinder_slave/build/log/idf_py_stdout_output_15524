@@ -1,0 +1,215 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_slave\build\AEGIS_SWARM_SLAVE.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_slave\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15836
+ho 0 tail 12 room 4
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (29) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Aug 16 2026 14:41:02[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=184e0h ( 99552) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00028508 vaddr=3ffb0000 size=0434ch ( 17228) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=0002c85c vaddr=40080000 size=037bch ( 14268) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=7ab24h (502564) map[0m
+[0;32mI (307) esp_image: segment 4: paddr=000aab4c vaddr=400837bc size=1444ch ( 83020) load[0m
+[0;32mI (339) esp_image: segment 5: paddr=000befa0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (351) boot: Loaded app from partition at offset 0x10000[0m
+I (351) boot: Disabling RNG early entropy source...
+[0;32mI (362) cpu_start: Multicore app[0m
+[0;32mI (370) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (371) cpu_start: Pro cpu start user code[0m
+[0;32mI (371) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (372) app_init: Application information:[0m
+[0;32mI (376) app_init: Project name:     AEGIS_SWARM_SLAVE[0m
+[0;32mI (381) app_init: App version:      1[0m
+[0;32mI (384) app_init: Compile time:     Aug 16 2026 14:40:24[0m
+[0;32mI (389) app_init: ELF file SHA256:  055d81fc4...[0m
+[0;32mI (394) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (398) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (401) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (405) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (409) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (416) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (421) heap_init: At 3FFB8730 len 000278D0 (158 KiB): DRAM[0m
+[0;32mI (426) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (431) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (437) heap_init: At 40097C08 len 000083F8 (32 KiB): IRAM[0m
+[0;33mW (443) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (455) spi_flash: detected chip: generic[0m
+[0;32mI (459) spi_flash: flash io: dio[0m
+[0;32mI (462) main_task: Started on CPU0[0m
+[0;32mI (464) main_task: Calling app_main()[0m
+[0;32mI (467) AEGIS_SWARM_SLAVE: Booting A.E.G.I.S. Swarm Slave Node...[0m
+[0;32mI (475) MOTOR_CTRL: TB6612 Motor Controller active with 180° Sweep Navigation.[0m
+[0;32mI (501) SERVO_SWEEP: Servo Driver online on GPIO 15.[0m
+[0;32mI (502) HC_SR04: HC-SR04 Ultrasonic Driver online on TRIG:21 ECHO:22.[0m
+[0;32mI (512) wifi:wifi driver task: 3ffbf920, prio:23, stack:6656, core=0[0m
+[0;32mI (517) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (517) wifi:wifi certification version: v7.0[0m
+[0;32mI (518) wifi:config NVS flash: enabled[0m
+[0;32mI (519) wifi:config nano formatting: disabled[0m
+[0;32mI (523) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (528) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (532) wifi:Init management short buffer num: 32[0m
+[0;32mI (536) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (540) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (544) wifi:Init static rx buffer num: 10[0m
+[0;32mI (548) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (553) wifi_init: rx ba win: 6[0m
+[0;32mI (555) wifi_init: accept mbox: 6[0m
+[0;32mI (558) wifi_init: tcpip mbox: 32[0m
+[0;32mI (561) wifi_init: udp mbox: 6[0m
+[0;32mI (563) wifi_init: tcp mbox: 6[0m
+[0;32mI (566) wifi_init: tcp tx win: 5760[0m
+[0;32mI (569) wifi_init: tcp rx win: 5760[0m
+[0;32mI (573) wifi_init: tcp mss: 1440[0m
+[0;32mI (576) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (579) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (662) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (676) wifi:mode : sta (00:70:07:26:b5:b4)[0m
+[0;32mI (676) wifi:enable tsf[0m
+[0;32mI (679) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (681) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (681) ESPNOW_SLAVE: ESP-NOW Pathfinder Slave active on Wi-Fi Channel 6[0m
+[0;32mI (685) AEGIS_SWARM_SLAVE: Swarm Slave fully operational. Awaiting Master commands.[0m
+[0;32mI (1369) ESPNOW_SLAVE: Registered Master Peer: E8:F6:0A:D7:91:60[0m
+[0;33mW (4247) MOTOR_CTRL: OBSTACLE DETECTED! Stopping and sweeping for clear path...[0m
+[0;32mI (4248) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (4387) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (4507) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (4627) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (4747) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (4867) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (4987) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (5107) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (5107) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[1;31mE (6568) MOTOR_CTRL: EMERGENCY BRAKE: Obstacle mid-step! Rerouting...[0m
+[0;32mI (6568) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (6689) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (6809) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (6929) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (7049) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (7169) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (7289) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (7409) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (7409) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[0;32mI (8850) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (10940) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;32mI (18991) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (21081) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;32mI (25502) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (27592) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;32mI (53042) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (55132) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;33mW (55409) MOTOR_CTRL: OBSTACLE DETECTED! Stopping and sweeping for clear path...[0m
+[0;32mI (55409) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (55549) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (55669) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (55789) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (55909) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (56029) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (56149) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (56269) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (56269) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[1;31mE (57731) MOTOR_CTRL: EMERGENCY BRAKE: Obstacle mid-step! Rerouting...[0m
+[0;32mI (57731) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (57852) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (57972) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (58092) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (58212) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (58332) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (58452) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (58572) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (58572) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[0;32mI (97305) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (99395) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;33mW (99660) MOTOR_CTRL: OBSTACLE DETECTED! Stopping and sweeping for clear path...[0m
+[0;32mI (99660) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (99800) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (99920) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (100040) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (100160) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (100280) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (100400) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (100520) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (100520) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[1;31mE (101982) MOTOR_CTRL: EMERGENCY BRAKE: Obstacle mid-step! Rerouting...[0m
+[0;32mI (101982) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (102103) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (102223) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (102343) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (102463) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (102583) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (102703) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (102823) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (102823) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[0;32mI (104265) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (106355) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;33mW (106671) MOTOR_CTRL: OBSTACLE DETECTED! Stopping and sweeping for clear path...[0m
+[0;32mI (106672) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (106811) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (106931) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (107051) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (107171) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (107291) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (107411) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (107531) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (107531) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[1;31mE (108993) MOTOR_CTRL: EMERGENCY BRAKE: Obstacle mid-step! Rerouting...[0m
+[0;32mI (108993) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (109114) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (109234) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (109354) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (109474) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (109594) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (109714) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (109834) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (109834) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[0;32mI (120963) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (123053) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;32mI (127687) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (129777) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;32mI (131569) ESPNOW_SLAVE: Executing 19-point Mapping Sweep for Master...[0m
+[0;32mI (133659) ESPNOW_SLAVE: Mapping sweep complete. Broadcasted packet to Master.[0m
+[0;33mW (137861) MOTOR_CTRL: OBSTACLE DETECTED! Stopping and sweeping for clear path...[0m
+[0;32mI (137861) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (138001) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (138121) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (138241) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (138361) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (138481) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (138601) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (138721) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (138721) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[1;31mE (140183) MOTOR_CTRL: EMERGENCY BRAKE: Obstacle mid-step! Rerouting...[0m
+[0;32mI (140183) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (140304) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m
+[0;32mI (140424) MOTOR_CTRL:  ├─ Angle  30° | Measured Clearance: 0 mm[0m
+[0;32mI (140544) MOTOR_CTRL:  ├─ Angle  60° | Measured Clearance: 0 mm[0m
+[0;32mI (140664) MOTOR_CTRL:  ├─ Angle  90° | Measured Clearance: 0 mm[0m
+[0;32mI (140784) MOTOR_CTRL:  ├─ Angle 120° | Measured Clearance: 0 mm[0m
+[0;32mI (140904) MOTOR_CTRL:  ├─ Angle 150° | Measured Clearance: 0 mm[0m
+[0;32mI (141024) MOTOR_CTRL:  ├─ Angle 180° | Measured Clearance: 0 mm[0m
+[0;33mW (141024) MOTOR_CTRL: All sectors blocked (<20cm)! Executing 180° turn-around.[0m
+[0;33mW (145213) MOTOR_CTRL: OBSTACLE DETECTED! Stopping and sweeping for clear path...[0m
+[0;32mI (145213) MOTOR_CTRL: Starting 180° Servo Obstacle Avoidance Sweep...[0m
+[0;32mI (145352) MOTOR_CTRL:  ├─ Angle   0° | Measured Clearance: 0 mm[0m

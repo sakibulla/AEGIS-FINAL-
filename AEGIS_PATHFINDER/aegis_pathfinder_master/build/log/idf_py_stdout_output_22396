@@ -1,0 +1,380 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (239) esp_image: segment 1: paddr=000cb2ec vaddr=3fc9a400 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008f0f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=bb2c4h (766660) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=000cb2ec vaddr=3fc9a400 size=04d2ch ( 19756) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=c4760h (804704) map[0m
+[0;32mI (393) esp_image: segment 3: paddr=00194788 vaddr=3fc9f12c size=059e8h ( 23016) load[0m
+[0;32mI (398) esp_image: segment 4: paddr=0019a178 vaddr=40374000 size=1630ch ( 90892) load[0m
+[0;32mI (420) esp_image: segment 5: paddr=001b048c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (430) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (430) boot: Disabling RNG early entropy source...[0m
+[0;32mI (440) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (440) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (441) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (443) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (447) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (451) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (455) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (460) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (465) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (470) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (475) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (479) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (484) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (487) esp_psram: Speed: 80MHz[0m
+[0;32mI (490) cpu_start: Multicore app[0m
+[0;32mI (906) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (914) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (915) cpu_start: Pro cpu start user code[0m
+[0;32mI (915) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (916) app_init: Application information:[0m
+[0;32mI (920) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (925) app_init: App version:      1[0m
+[0;32mI (928) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (933) app_init: ELF file SHA256:  54678dfa8...[0m
+[0;32mI (938) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (942) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (945) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (949) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (953) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (960) heap_init: At 3FCAB198 len 0003E578 (249 KiB): RAM[0m
+[0;32mI (965) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (970) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (975) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (982) spi_flash: detected chip: gd[0m
+[0;32mI (985) spi_flash: flash io: dio[0m
+[0;32mI (988) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (994) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1012) main_task: Started on CPU0[0m
+[0;32mI (1012) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1013) main_task: Calling app_main()[0m
+[0;32mI (1029) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1031) pp: pp rom version: e7ae62f[0m
+[0;32mI (1032) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1037) wifi:wifi driver task: 3fceeacc, prio:23, stack:6656, core=0[0m
+[0;32mI (1048) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1048) wifi:wifi certification version: v7.0[0m
+[0;32mI (1049) wifi:config NVS flash: enabled[0m
+[0;32mI (1053) wifi:config nano formatting: disabled[0m
+[0;32mI (1057) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1062) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1066) wifi:Init management short buffer num: 32[0m
+[0;32mI (1071) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1075) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1079) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1083) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1087) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1092) wifi_init: rx ba win: 6[0m
+[0;32mI (1094) wifi_init: accept mbox: 6[0m
+[0;32mI (1097) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1100) wifi_init: udp mbox: 6[0m
+[0;32mI (1103) wifi_init: tcp mbox: 6[0m
+[0;32mI (1106) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1109) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1113) wifi_init: tcp mss: 1440[0m
+[0;32mI (1116) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1120) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1123) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1128) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1193) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;33mW (1194) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (1230) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(2)[0m
+[0;32mI (1241) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1242) wifi:enable tsf[0m
+[0;32mI (1243) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1245) AEGIS_MASTER_MAIN: Connecting to Wi-Fi SSID: Zahid (Waiting up to 10s)...[0m
+[0;33mW (11248) AEGIS_MASTER_MAIN: Router not reachable within 10s. Disabling auto-reconnect & locking standalone ESP-NOW to Channel 9.[0m
+[0;32mI (11350) AEGIS_MASTER_MAIN: Home Channel permanently locked to 9[0m
+[0;32mI (11350) s3 ll_cam: DMA Channel=0[0m
+[0;32mI (11351) cam_hal: cam init ok[0m
+[0;32mI (11351) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (11354) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (11370) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (11371) camera: Detected OV2640 camera[0m
+[0;32mI (11371) camera: Detected camera at address=0x30[0m
+[0;32mI (11446) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (11446) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (11446) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (11456) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (11466) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (11472) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (11478) cam_hal: cam config ok[0m
+[0;32mI (11481) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (11554) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (11554) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (11555) AEGIS_MASTER_MAIN: Pathfinder Slave Peer (00:70:07:26:B5:B4) registered on Channel 9.[0m
+[0;32mI (11563) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /detections, and /control routes[0m
+[0;32mI (11571) AEGIS_MASTER_MAIN: Pathfinder Swarm State Machine starting on Core 0...[0m
+[0;32mI (11578) main_task: Returned from app_main()[0m
+[0;32mI (12261) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (12503) AI_VISION_FAST: [FRAME 1] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (12504) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (12762) AI_VISION_FAST: [FRAME 2] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (12762) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (13019) AI_VISION_FAST: [FRAME 3] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (13271) AI_VISION_FAST: [FRAME 4] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (13523) AI_VISION_FAST: [FRAME 5] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (13777) AI_VISION_FAST: [FRAME 6] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (14028) AI_VISION_FAST: [FRAME 7] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (14281) AI_VISION_FAST: [FRAME 8] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (14534) AI_VISION_FAST: [FRAME 9] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (14535) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (14793) AI_VISION_FAST: [FRAME 10] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (14793) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (15050) AI_VISION_FAST: [FRAME 11] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (15050) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (15307) AI_VISION_FAST: [FRAME 12] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (15308) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (15565) AI_VISION_FAST: [FRAME 13] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (15817) AI_VISION_FAST: [FRAME 14] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (16069) AI_VISION_FAST: [FRAME 15] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (16322) AI_VISION_FAST: [FRAME 16] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (16323) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:1, w:94, h:93][0m
+[0;32mI (16578) AEGIS_MASTER_MAIN: Executing Snapshot 1/10...[0m
+[0;32mI (16582) AI_VISION_FAST: [FRAME 17] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (16582) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16841) AI_VISION_FAST: [FRAME 18] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (17094) AI_VISION_FAST: [FRAME 19] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (17094) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (17352) AI_VISION_FAST: [FRAME 20] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (17353) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (17610) AI_VISION_FAST: [FRAME 21] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (17863) AI_VISION_FAST: [FRAME 22] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (17863) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18122) AI_VISION_FAST: [FRAME 23] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (18122) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (18379) AI_VISION_FAST: [FRAME 24] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (18632) AI_VISION_FAST: [FRAME 25] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (18632) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18889) AI_VISION_FAST: [FRAME 26] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (19142) AI_VISION_FAST: [FRAME 27] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (19396) AI_VISION_FAST: [FRAME 28] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (19397) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (19654) AI_VISION_FAST: [FRAME 29] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (19906) AI_VISION_FAST: [FRAME 30] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (20079) AEGIS_MASTER_MAIN: Snapshot 1/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (20079) AEGIS_MASTER_MAIN: Executing Snapshot 2/10...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (20158) AI_VISION_FAST: [FRAME 31] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (20158) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (20414) AI_VISION_FAST: [FRAME 32] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (20667) AI_VISION_FAST: [FRAME 33] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (20920) AI_VISION_FAST: [FRAME 34] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (21172) AI_VISION_FAST: [FRAME 35] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (21424) AI_VISION_FAST: [FRAME 36] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (21678) AI_VISION_FAST: [FRAME 37] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (21678) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (21937) AI_VISION_FAST: [FRAME 38] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (22189) AI_VISION_FAST: [FRAME 39] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (22442) AI_VISION_FAST: [FRAME 40] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (22443) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (22700) AI_VISION_FAST: [FRAME 41] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (22953) AI_VISION_FAST: [FRAME 42] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (23205) AI_VISION_FAST: [FRAME 43] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (23458) AI_VISION_FAST: [FRAME 44] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (23458) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 89.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (23584) AEGIS_MASTER_MAIN: Snapshot 2/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (23584) AEGIS_MASTER_MAIN: Executing Snapshot 3/10...[0m
+[0;32mI (23718) AI_VISION_FAST: [FRAME 45] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (23971) AI_VISION_FAST: [FRAME 46] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (24223) AI_VISION_FAST: [FRAME 47] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (24473) AI_VISION_FAST: [FRAME 48] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (24726) AI_VISION_FAST: [FRAME 49] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (24978) AI_VISION_FAST: [FRAME 50] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (24978) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:1, w:94, h:95][0m
+[0;32mI (25236) AI_VISION_FAST: [FRAME 51] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (25487) AI_VISION_FAST: [FRAME 52] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (25739) AI_VISION_FAST: [FRAME 53] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (25991) AI_VISION_FAST: [FRAME 54] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (26244) AI_VISION_FAST: [FRAME 55] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (26244) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (26503) AI_VISION_FAST: [FRAME 56] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (26756) AI_VISION_FAST: [FRAME 57] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (26756) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (27014) AI_VISION_FAST: [FRAME 58] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (27015) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (27090) AEGIS_MASTER_MAIN: Snapshot 3/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (27090) AEGIS_MASTER_MAIN: Executing Snapshot 4/10...[0m
+[0;32mI (27272) AI_VISION_FAST: [FRAME 59] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (27525) AI_VISION_FAST: [FRAME 60] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (27525) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (27782) AI_VISION_FAST: [FRAME 61] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (28035) AI_VISION_FAST: [FRAME 62] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (28288) AI_VISION_FAST: [FRAME 63] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (28541) AI_VISION_FAST: [FRAME 64] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (28794) AI_VISION_FAST: [FRAME 65] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (29048) AI_VISION_FAST: [FRAME 66] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (29301) AI_VISION_FAST: [FRAME 67] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (29553) AI_VISION_FAST: [FRAME 68] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (29806) AI_VISION_FAST: [FRAME 69] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (30057) AI_VISION_FAST: [FRAME 70] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (30058) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (30314) AI_VISION_FAST: [FRAME 71] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (30314) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (30572) AI_VISION_FAST: [FRAME 72] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (30572) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (30595) AEGIS_MASTER_MAIN: Snapshot 4/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (30595) AEGIS_MASTER_MAIN: Executing Snapshot 5/10...[0m
+[0;32mI (30833) AI_VISION_FAST: [FRAME 73] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (30833) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (31092) AI_VISION_FAST: [FRAME 74] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (31093) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (31349) AI_VISION_FAST: [FRAME 75] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (31602) AI_VISION_FAST: [FRAME 76] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (31854) AI_VISION_FAST: [FRAME 77] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (32107) AI_VISION_FAST: [FRAME 78] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (32360) AI_VISION_FAST: [FRAME 79] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (32613) AI_VISION_FAST: [FRAME 80] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (32866) AI_VISION_FAST: [FRAME 81] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (32866) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (33124) AI_VISION_FAST: [FRAME 82] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (33376) AI_VISION_FAST: [FRAME 83] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (33630) AI_VISION_FAST: [FRAME 84] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (33882) AI_VISION_FAST: [FRAME 85] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (34100) AEGIS_MASTER_MAIN: Snapshot 5/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (34100) AEGIS_MASTER_MAIN: Executing Snapshot 6/10...[0m
+[0;32mI (34136) AI_VISION_FAST: [FRAME 86] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (34388) AI_VISION_FAST: [FRAME 87] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (34641) AI_VISION_FAST: [FRAME 88] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (34894) AI_VISION_FAST: [FRAME 89] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (34894) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (35152) AI_VISION_FAST: [FRAME 90] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (35405) AI_VISION_FAST: [FRAME 91] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (35658) AI_VISION_FAST: [FRAME 92] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (35912) AI_VISION_FAST: [FRAME 93] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (36165) AI_VISION_FAST: [FRAME 94] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (36165) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (36422) AI_VISION_FAST: [FRAME 95] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (36674) AI_VISION_FAST: [FRAME 96] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (36926) AI_VISION_FAST: [FRAME 97] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (37179) AI_VISION_FAST: [FRAME 98] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (37428) AI_VISION_FAST: [FRAME 99] Inference complete in 236 ms | Detections: 0[0m
+[0;33mW (37605) AEGIS_MASTER_MAIN: Snapshot 6/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (37605) AEGIS_MASTER_MAIN: Executing Snapshot 7/10...[0m
+[0;32mI (37684) AI_VISION_FAST: [FRAME 100] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (37936) AI_VISION_FAST: [FRAME 101] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (38189) AI_VISION_FAST: [FRAME 102] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (38443) AI_VISION_FAST: [FRAME 103] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (38696) AI_VISION_FAST: [FRAME 104] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (38948) AI_VISION_FAST: [FRAME 105] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (39200) AI_VISION_FAST: [FRAME 106] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (39452) AI_VISION_FAST: [FRAME 107] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (39705) AI_VISION_FAST: [FRAME 108] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (39959) AI_VISION_FAST: [FRAME 109] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40211) AI_VISION_FAST: [FRAME 110] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (40465) AI_VISION_FAST: [FRAME 111] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (40718) AI_VISION_FAST: [FRAME 112] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40972) AI_VISION_FAST: [FRAME 113] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (41110) AEGIS_MASTER_MAIN: Snapshot 7/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (41111) AEGIS_MASTER_MAIN: Executing Snapshot 8/10...[0m
+[0;32mI (41227) AI_VISION_FAST: [FRAME 114] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (41481) AI_VISION_FAST: [FRAME 115] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (41733) AI_VISION_FAST: [FRAME 116] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (41985) AI_VISION_FAST: [FRAME 117] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (42238) AI_VISION_FAST: [FRAME 118] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42491) AI_VISION_FAST: [FRAME 119] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42744) AI_VISION_FAST: [FRAME 120] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42996) AI_VISION_FAST: [FRAME 121] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (43250) AI_VISION_FAST: [FRAME 122] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (43503) AI_VISION_FAST: [FRAME 123] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (43757) AI_VISION_FAST: [FRAME 124] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44009) AI_VISION_FAST: [FRAME 125] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44263) AI_VISION_FAST: [FRAME 126] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44516) AI_VISION_FAST: [FRAME 127] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (44615) AEGIS_MASTER_MAIN: Snapshot 8/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (44615) AEGIS_MASTER_MAIN: Executing Snapshot 9/10...[0m
+[0;32mI (44771) AI_VISION_FAST: [FRAME 128] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (45024) AI_VISION_FAST: [FRAME 129] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45276) AI_VISION_FAST: [FRAME 130] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (45530) AI_VISION_FAST: [FRAME 131] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45783) AI_VISION_FAST: [FRAME 132] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (46036) AI_VISION_FAST: [FRAME 133] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (46289) AI_VISION_FAST: [FRAME 134] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (46542) AI_VISION_FAST: [FRAME 135] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (46794) AI_VISION_FAST: [FRAME 136] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (47048) AI_VISION_FAST: [FRAME 137] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (47301) AI_VISION_FAST: [FRAME 138] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (47555) AI_VISION_FAST: [FRAME 139] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (47808) AI_VISION_FAST: [FRAME 140] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (48062) AI_VISION_FAST: [FRAME 141] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (48120) AEGIS_MASTER_MAIN: Snapshot 9/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (48120) AEGIS_MASTER_MAIN: Executing Snapshot 10/10...[0m
+[0;32mI (48316) AI_VISION_FAST: [FRAME 142] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (48569) AI_VISION_FAST: [FRAME 143] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (48822) AI_VISION_FAST: [FRAME 144] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (49075) AI_VISION_FAST: [FRAME 145] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49328) AI_VISION_FAST: [FRAME 146] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (49583) AI_VISION_FAST: [FRAME 147] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49835) AI_VISION_FAST: [FRAME 148] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (50089) AI_VISION_FAST: [FRAME 149] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (50341) AI_VISION_FAST: [FRAME 150] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (50595) AI_VISION_FAST: [FRAME 151] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (50847) AI_VISION_FAST: [FRAME 152] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (51101) AI_VISION_FAST: [FRAME 153] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (51354) AI_VISION_FAST: [FRAME 154] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (51607) AI_VISION_FAST: [FRAME 155] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (51625) AEGIS_MASTER_MAIN: Snapshot 10/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (51625) AEGIS_MASTER_MAIN: Phase 1 Initial Mapping Complete. Entering Phase 2 Patrol Loop...[0m
+[0;32mI (51863) AI_VISION_FAST: [FRAME 156] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (52115) AI_VISION_FAST: [FRAME 157] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (52367) AI_VISION_FAST: [FRAME 158] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (52621) AI_VISION_FAST: [FRAME 159] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (52874) AI_VISION_FAST: [FRAME 160] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (53127) AI_VISION_FAST: [FRAME 161] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (53380) AI_VISION_FAST: [FRAME 162] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (53633) AI_VISION_FAST: [FRAME 163] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (53886) AI_VISION_FAST: [FRAME 164] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (54140) AI_VISION_FAST: [FRAME 165] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (54393) AI_VISION_FAST: [FRAME 166] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (54646) AI_VISION_FAST: [FRAME 167] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (54899) AI_VISION_FAST: [FRAME 168] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (55153) AI_VISION_FAST: [FRAME 169] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (55405) AI_VISION_FAST: [FRAME 170] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (55658) AI_VISION_FAST: [FRAME 171] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (55911) AI_VISION_FAST: [FRAME 172] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (56165) AI_VISION_FAST: [FRAME 173] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (56418) AI_VISION_FAST: [FRAME 174] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (56671) AI_VISION_FAST: [FRAME 175] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (56924) AI_VISION_FAST: [FRAME 176] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (57178) AI_VISION_FAST: [FRAME 177] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (57430) AI_VISION_FAST: [FRAME 178] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (57684) AI_VISION_FAST: [FRAME 179] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (57938) AI_VISION_FAST: [FRAME 180] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (58191) AI_VISION_FAST: [FRAME 181] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (58443) AI_VISION_FAST: [FRAME 182] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (58697) AI_VISION_FAST: [FRAME 183] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (58951) AI_VISION_FAST: [FRAME 184] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (59203) AI_VISION_FAST: [FRAME 185] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (59457) AI_VISION_FAST: [FRAME 186] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (59710) AI_VISION_FAST: [FRAME 187] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (59963) AI_VISION_FAST: [FRAME 188] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (60216) AI_VISION_FAST: [FRAME 189] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (60469) AI_VISION_FAST: [FRAME 190] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (60723) AI_VISION_FAST: [FRAME 191] Inference complete in 240 ms | Detections: 0[0m

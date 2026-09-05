@@ -1,0 +1,409 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d0b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c1c0020 size=1b5274h (1790580) map[0m
+[0;32mI (426) esp_image: segment 1: paddr=001c529c vaddr=3fc9e400 size=0a52ch ( 42284) load[0m
+[0;32mI (435) esp_image: segment 2: paddr=001cf7d0 vaddr=40374000 size=00848h (  2120) load[0m
+[0;32mI (436) esp_image: segment 3: paddr=001d0020 vaddr=42000020 size=1bbee8h (1818344) map[0m
+[0;32mI (771) esp_image: segment 4: paddr=0038bf10 vaddr=40374848 size=19abch (105148) load[0m
+[0;32mI (795) esp_image: segment 5: paddr=003a59d4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (807) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (807) boot: Disabling RNG early entropy source...[0m
+[0;32mI (817) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (817) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (818) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (819) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (824) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (828) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (832) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (837) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (842) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (846) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (852) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (856) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (860) esp_psram: Speed: 40MHz[0m
+[0;32mI (863) cpu_start: Multicore app[0m
+[0;32mI (1596) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1605) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1606) cpu_start: Pro cpu start user code[0m
+[0;32mI (1606) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1607) app_init: Application information:[0m
+[0;32mI (1611) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1616) app_init: App version:      1[0m
+[0;32mI (1620) app_init: Compile time:     Aug 15 2026 16:13:17[0m
+[0;32mI (1625) app_init: ELF file SHA256:  05405d7dc...[0m
+[0;32mI (1629) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1633) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1637) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1641) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1645) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1652) heap_init: At 3FCAECC0 len 0003AA50 (234 KiB): RAM[0m
+[0;32mI (1657) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1662) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1667) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1673) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1680) spi_flash: detected chip: generic[0m
+[0;32mI (1683) spi_flash: flash io: dio[0m
+[0;32mI (1687) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1693) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1700) main_task: Started on CPU0[0m
+[0;32mI (1700) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1710) main_task: Calling app_main()[0m
+[0;32mI (1710) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1720) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1720) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1750) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1750) MODEL_LOADER: The storage free size is 20992 KB[0m
+[0;32mI (1750) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1750) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1760) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1810) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1810) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1820) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1820) VOICE: Voice system ready[0m
+[0;32mI (1830) VOICE: Voice feed task started[0m
+[0;32mI (1830) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1830) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1840) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1850) VOICE: Listening for: Hi ESP[0m
+[0;32mI (5020) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (5020) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (5020) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (5020) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (5030) cam_hal: cam init ok[0m
+[0;32mI (5030) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (5030) sccb-ng: sccb_i2c_port=1[0m
+[1;31mE (5050) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (5050) sccb-ng: SCCB_Read addr phase failed addr:0x21, reg:0x0a, ret:259[0m
+[0;32mI (5050) ov7725: Mismatch PID=0x0[0m
+[1;31mE (5050) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xff, data:0x01, ret:259[0m
+[1;31mE (5060) sccb-ng: SCCB_Read addr phase failed addr:0x21, reg:0x0a, ret:259[0m
+[0;32mI (5070) ov7760: Mismatch PID=0x0[0m
+[1;31mE (5070) sccb-ng: SCCB_Read addr phase failed addr:0x21, reg:0xf1, ret:259[0m
+[1;31mE (5080) sccb-ng: SCCB_Read addr phase failed addr:0x21, reg:0xf0, ret:259[0m
+[0;32mI (5080) gc032a: Mismatch PID=0x0[0m
+[1;31mE (5080) sccb-ng: SCCB_Write Failed addr:0x21, reg:0xfe, data:0x00, ret:259[0m
+[1;31mE (5090) sccb-ng: SCCB_Read addr phase failed addr:0x21, reg:0x00, ret:259[0m
+[0;32mI (5100) gc0308: Mismatch PID=0x0[0m
+[0;32mI (5100) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (5110) camera: Detected OV2640 camera[0m
+[0;32mI (5110) camera: Detected camera at address=0x30[0m
+[0;32mI (5180) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (5180) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (5180) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (5190) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (5200) cam_hal: cam config ok[0m
+[0;32mI (5200) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (5260) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing
+[0;32mI (5310) AEGIS_GUARDIAN: Camera OK: QVGA 320x240[0m
+[0;32mI (5420) pp: pp rom version: e7ae62f[0m
+[0;32mI (5420) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (5430) wifi:wifi driver task: 3fccbcb0, prio:23, stack:6656, core=0[0m
+[0;32mI (5440) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (5440) wifi:wifi certification version: v7.0[0m
+[0;32mI (5440) wifi:config NVS flash: enabled[0m
+[0;32mI (5440) wifi:config nano formatting: disabled[0m
+[0;32mI (5440) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (5450) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (5450) wifi:Init management short buffer num: 32[0m
+[0;32mI (5460) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (5460) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (5460) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (5470) wifi:Init static rx buffer num: 10[0m
+[0;32mI (5470) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (5480) wifi_init: rx ba win: 6[0m
+[0;32mI (5480) wifi_init: accept mbox: 6[0m
+[0;32mI (5480) wifi_init: tcpip mbox: 32[0m
+[0;32mI (5480) wifi_init: udp mbox: 6[0m
+[0;32mI (5490) wifi_init: tcp mbox: 6[0m
+[0;32mI (5490) wifi_init: tcp tx win: 5760[0m
+[0;32mI (5490) wifi_init: tcp rx win: 5760[0m
+[0;32mI (5500) wifi_init: tcp mss: 1440[0m
+[0;32mI (5500) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (5500) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (5510) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (5550) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (5550) wifi:enable tsf[0m
+[0;32mI (5560) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5560) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (5560) wifi:sta is connecting, return error[0m
+[0;32mI (5560) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (5570) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 6[0m
+[0;32mI (5570) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (5580) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (5580) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (5590) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;32mI (5590) AEGIS_GUARDIAN: HTTP stream active[0m
+[0;32mI (5590) AEGIS_GUARDIAN: Telemetry background task started CPU1[0m
+[0;32mI (5610) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5610) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (5650) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (5690) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (5730) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (5730) wifi:security: WPA2-PSK, phy: bgn, rssi: -35, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (5730) wifi:pm start, type: 0[0m
+
+[0;32mI (5730) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (5740) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (5750) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (5760) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (5890) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;33mW (5970) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (6030) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (6030) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (6460) AEGIS_GUARDIAN: Face AI OK[0m
+[0;32mI (6820) esp_netif_handlers: sta ip: 10.75.11.110, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (6820) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -36 dBm)[0m
+[0;32mI (6820) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;32mI (6820) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.75.11.110[0m
+[0;32mI (6880) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (7370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (7370) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (7380) main_task: Returned from app_main()[0m
+[1;31mE (8350) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (8350) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (8350) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (8360) AEGIS_GUARDIAN: Backend GET / failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (9880) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (9880) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (9880) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (9890) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (9900) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":5493287,"psram":5461704},"wifi_rssi":-36,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_8s","wake_word_triggered":true,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[1;31mE (11440) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (11440) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (11440) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (11440) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (11450) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":5493287,"psram":5461704},"wifi_rssi":-36,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_9s","wake_word_triggered":true,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (12370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[1;31mE (13010) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (13010) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (13010) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (13010) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (17370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (22370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (27440) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (32440) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (37520) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (42530) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (47530) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (52720) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (57720) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (62730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (67730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (72730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (77730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (82730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (87730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (92730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (97730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (102730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;33mW (105290) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (105290) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (107730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (112730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (117730) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (122870) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (127880) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (132880) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (137880) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (142880) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (148070) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (426) esp_image: segment 1: paddr=001c529c vaddr=3fc9e400 sizeI (776) esp_image: segment 4: paddr=0038bf10 vaddr=40374848 size=19abch (105148) load[0m
+[0;32mI (800) esp_image: segment 5: paddr=003a59d4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (812) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (812) boot: Disabling RNG early entropy source...[0m
+[0;32mI (822) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (822) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (823) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (825) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (829) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (833) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (837) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (842) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (847) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (852) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (857) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (861) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (865) esp_psram: Speed: 40MHz[0m
+[0;32mI (868) cpu_start: Multicore app[0m
+[0;32mI (1601) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1610) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1611) cpu_start: Pro cpu start user code[0m
+[0;32mI (1611) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1612) app_init: Application information:[0m
+[0;32mI (1616) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1621) app_init: App version:      1[0m
+[0;32mI (1625) app_init: Compile time:     Aug 15 2026 16:13:17[0m
+[0;32mI (1630) app_init: ELF file SHA256:  05405d7dc...[0m
+[0;32mI (1635) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1638) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1642) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1646) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1650) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1657) heap_init: At 3FCAECC0 len 0003AA50 (234 KiB): RAM[0m
+[0;32mI (1662) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1667) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1672) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1678) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1686) spi_flash: detected chip: generic[0m
+[0;32mI (1688) spi_flash: flash io: dio[0m
+[0;32mI (1692) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1698) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1705) main_task: Started on CPU0[0m
+[0;32mI (1705) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1715) main_task: Calling app_main()[0m
+[0;32mI (1715) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1725) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1725) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1755) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1755) MODEL_LOADER: The storage free size is 20992 KB[0m
+[0;32mI (1755) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1755) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1765) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1815) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1815) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1825) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1825) VOICE: Voice system ready[0m
+[0;32mI (1835) VOICE: Voice feed task started[0m
+[0;32mI (1835) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1835) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1845) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1855) VOICE: Listening for: Hi ESP[0m
+[0;32mI (3875) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (3875) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (3875) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (3875) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (3875) cam_hal: cam init ok[0m
+[0;32mI (3875) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (3885) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (3895) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (3895) camera: Detected OV2640 camera[0m
+[0;32mI (3895) camera: Detected camera at address=0x30[0m
+[0;32mI (3965) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (3965) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 15[0m
+[0;32mI (3965) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (3975) cam_hal: Allocating 15360 Byte frame buffer in PSRAM[0m
+[0;32mI (3985) cam_hal: cam config ok[0m
+[0;32mI (3985) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (4045) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing
+[0;32mI (4095) AEGIS_GUARDIAN: Camera OK: QVGA 320x240[0m
+[0;32mI (4205) pp: pp rom version: e7ae62f[0m
+[0;32mI (4205) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (4215) wifi:wifi driver task: 3fccbcb0, prio:23, stack:6656, core=0[0m
+[0;32mI (4225) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (4225) wifi:wifi certification version: v7.0[0m
+[0;32mI (4225) wifi:config NVS flash: enabled[0m
+[0;32mI (4225) wifi:config nano formatting: disabled[0m
+[0;32mI (4225) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (4235) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (4235) wifi:Init management short buffer num: 32[0m
+[0;32mI (4245) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (4245) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (4245) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (4255) wifi:Init static rx buffer num: 10[0m
+[0;32mI (4255) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (4265) wifi_init: rx ba win: 6[0m
+[0;32mI (4265) wifi_init: accept mbox: 6[0m
+[0;32mI (4265) wifi_init: tcpip mbox: 32[0m
+[0;32mI (4265) wifi_init: udp mbox: 6[0m
+[0;32mI (4275) wifi_init: tcp mbox: 6[0m
+[0;32mI (4275) wifi_init: tcp tx win: 5760[0m
+[0;32mI (4275) wifi_init: tcp rx win: 5760[0m
+[0;32mI (4285) wifi_init: tcp mss: 1440[0m
+[0;32mI (4285) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (4285) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (4295) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (4335) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (4335) wifi:enable tsf[0m
+[0;32mI (4345) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4345) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (4345) wifi:sta is connecting, return error[0m
+[0;32mI (4345) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (4355) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 6[0m
+[0;32mI (4355) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4365) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4375) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (4375) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (4375) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (4385) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;32mI (4385) AEGIS_GUARDIAN: Telemetry background task started CPU1[0m
+[0;32mI (4385) AEGIS_GUARDIAN: HTTP stream active[0m
+[0;32mI (4415) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4445) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4485) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (4485) wifi:security: WPA2-PSK, phy: bgn, rssi: -44, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (4495) wifi:pm start, type: 0[0m
+
+[0;32mI (4495) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4495) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (4505) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4515) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4695) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;33mW (4765) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (4825) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (4835) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (5255) AEGIS_GUARDIAN: Face AI OK[0m
+[0;32mI (5555) esp_netif_handlers: sta ip: 10.75.11.110, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (5555) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -44 dBm)[0m
+[0;32mI (5555) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;32mI (5555) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.75.11.110[0m
+[0;32mI (6155) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[0;32mI (6155) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (6165) main_task: Returned from app_main()[0m
+[1;31mE (7085) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (7085) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (7085) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (7085) AEGIS_GUARDIAN: Backend GET / failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (8605) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (8605) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (8605) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (8605) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (8615) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":5493479,"psram":5461760},"wifi_rssi":-44,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_6s","wake_word_triggered":true,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (9795) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[1;31mE (10165) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (10165) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (10165) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (10165) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (10175) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":5493415,"psram":5461760},"wifi_rssi":-44,"ip_address":"10.75.11.110","camera_port":80,"timestamp":"uptime_8s","wake_word_triggered":true,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (11155) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0%[0m
+[1;31mE (11725) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (11725) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (11725) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (11725) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m

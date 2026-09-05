@@ -1,0 +1,287 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\esp32s3_vision_project.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_GURDIAN\AEGIS_GURDIAN_MASTER_FOMO\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (426) esp_image: segment 1: paddr=001c530c vaddr=3fc9e400 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f44
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 15 2026 16:13:43[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00005000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000e000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00600000[0m
+[0;32mI (75) boot:  3 spiffs           Unknown data     01 82 00610000 001c0000[0m
+[0;32mI (82) boot:  4 model            Unknown data     01 40 007d0000 00030000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c1c0020 size=1b52e4h (1790692) map[0m
+[0;32mI (426) esp_image: segment 1: paddr=001c530c vaddr=3fc9e400 size=0a52ch ( 42284) load[0m
+[0;32mI (435) esp_image: segment 2: paddr=001cf840 vaddr=40374000 size=007d8h (  2008) load[0m
+[0;32mI (436) esp_image: segment 3: paddr=001d0020 vaddr=42000020 size=1bc13ch (1818940) map[0m
+[0;32mI (771) esp_image: segment 4: paddr=0038c164 vaddr=403747d8 size=19b2ch (105260) load[0m
+[0;32mI (795) esp_image: segment 5: paddr=003a5c98 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (807) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (807) boot: Disabling RNG early entropy source...[0m
+[0;32mI (817) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (817) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (818) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (820) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (824) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (828) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (832) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (837) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (842) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (847) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (852) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (856) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (860) esp_psram: Speed: 40MHz[0m
+[0;32mI (863) cpu_start: Multicore app[0m
+[0;32mI (1597) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1605) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1606) cpu_start: Pro cpu start user code[0m
+[0;32mI (1606) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1607) app_init: Application information:[0m
+[0;32mI (1611) app_init: Project name:     esp32s3_vision_project[0m
+[0;32mI (1617) app_init: App version:      1[0m
+[0;32mI (1620) app_init: Compile time:     Aug 15 2026 16:13:17[0m
+[0;32mI (1625) app_init: ELF file SHA256:  180f1a41c...[0m
+[0;32mI (1630) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1633) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1637) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1641) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1645) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1652) heap_init: At 3FCAECC0 len 0003AA50 (234 KiB): RAM[0m
+[0;32mI (1657) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1662) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1667) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1673) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1681) spi_flash: detected chip: generic[0m
+[0;32mI (1683) spi_flash: flash io: dio[0m
+[0;32mI (1687) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1693) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1700) main_task: Started on CPU0[0m
+[0;32mI (1700) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1710) main_task: Calling app_main()[0m
+[0;32mI (1710) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1720) AEGIS_GUARDIAN: AEGIS GUARDIAN MASTER START[0m
+[0;32mI (1720) AEGIS_GUARDIAN: ======================================[0m
+[0;32mI (1750) VOICE: Microphone ready (GPIO 41/42/2)[0m
+[0;32mI (1750) MODEL_LOADER: The storage free size is 20992 KB[0m
+[0;32mI (1750) MODEL_LOADER: The partition size is 192 KB[0m
+[0;32mI (1750) MODEL_LOADER: Successfully load srmodels[0m
+[0;32mI (1760) AFE_CONFIG: Set WakeNet Model: wn9s_hiesp[0m
+MC Quantized wakenet9s: wakenet9_tts2h12_Hi,ESP_3_0.630_0.635, tigger:v4, mode:0, p:0, (May 25 2026 15:51:01)
+[0;32mI (1810) AFE: AFE Version: (1MIC_V251128)[0m
+[0;32mI (1810) AFE: Input PCM Config: total 1 channels(1 microphone, 0 playback), sample rate:16000[0m
+[0;32mI (1820) AFE: AFE Pipeline: [input] -> |WakeNet(wn9s_hiesp,)| -> [output][0m
+[0;32mI (1820) VOICE: Voice system ready[0m
+[0;32mI (1830) VOICE: Voice feed task started[0m
+[0;32mI (1830) VOICE: Voice activation started[0m
+wakenet9_tts2h12_Hi,ESP_3_0.630_0.635 set threshold for 1 word: 0.400000
+[0;32mI (1830) AEGIS_GUARDIAN: WAITING FOR: Hi ESP[0m
+[0;33mW (1840) AFE: WakeNet 2 is not initialized![0m
+
+[0;32mI (1850) VOICE: Listening for: Hi ESP[0m
+[0;32mI (8580) VOICE: >>> HI ESP DETECTED <<<[0m
+[0;32mI (8580) AEGIS_GUARDIAN: Hi ESP -> AEGIS ACTIVATED[0m
+[0;32mI (8580) AEGIS_GUARDIAN: Initializing camera[0m
+[0;32mI (8580) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (8580) cam_hal: cam init ok[0m
+[0;32mI (8580) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (8590) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (8600) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (8600) camera: Detected OV2640 camera[0m
+[0;32mI (8600) camera: Detected camera at address=0x30[0m
+[0;32mI (8670) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (8670) cam_hal: buffer_size: 16384, half_buffer_size: 1024, node_buffer_size: 1024, node_cnt: 16, total_cnt: 60[0m
+[0;32mI (8680) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (8680) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (8690) cam_hal: Allocating 61440 Byte frame buffer in PSRAM[0m
+[0;32mI (8690) cam_hal: cam config ok[0m
+[0;32mI (8690) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+[0;32mI (8760) ov2640: Set PLL: clk_2x: 0, clk_div: 0, pclk_auto: 0, pclk_div: 8[0m
+cam_hal: NO-SOI - JPEG start marker missing
+cam_hal: NO-SOI - JPEG start marker missing
+[0;32mI (8830) AEGIS_GUARDIAN: Camera OK: VGA 640x480 (Optimized ISP)[0m
+[0;32mI (8940) AEGIS_GUARDIAN: Telemetry background task started CPU0[0m
+[0;32mI (8940) pp: pp rom version: e7ae62f[0m
+[0;32mI (8940) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (8950) wifi:wifi driver task: 3fccdea8, prio:23, stack:6656, core=0[0m
+[0;32mI (8960) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (8960) wifi:wifi certification version: v7.0[0m
+[0;32mI (8960) wifi:config NVS flash: enabled[0m
+[0;32mI (8960) wifi:config nano formatting: disabled[0m
+[0;32mI (8960) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (8970) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (8970) wifi:Init management short buffer num: 32[0m
+[0;32mI (8980) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (8980) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (8980) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (8990) wifi:Init static rx buffer num: 10[0m
+[0;32mI (8990) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (9000) wifi_init: rx ba win: 6[0m
+[0;32mI (9000) wifi_init: accept mbox: 6[0m
+[0;32mI (9000) wifi_init: tcpip mbox: 32[0m
+[0;32mI (9000) wifi_init: udp mbox: 6[0m
+[0;32mI (9010) wifi_init: tcp mbox: 6[0m
+[0;32mI (9010) wifi_init: tcp tx win: 5760[0m
+[0;32mI (9010) wifi_init: tcp rx win: 5760[0m
+[0;32mI (9020) wifi_init: tcp mss: 1440[0m
+[0;32mI (9020) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (9020) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (9030) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (9070) wifi:mode : sta (e8:f6:0a:d6:c8:e8)[0m
+[0;32mI (9070) wifi:enable tsf[0m
+[0;32mI (9080) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9080) AEGIS_GUARDIAN: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (9080) wifi:sta is connecting, return error[0m
+[0;32mI (9080) ESPNOW_MASTER: === Initializing ESP-NOW Master ===[0m
+[0;32mI (9090) ESPNOW_MASTER: Current Wi-Fi channel (home channel) = 6[0m
+[0;32mI (9090) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (9100) ESPNOW_MASTER: esp_now_init OK[0m
+[0;32mI (9100) ESPNOW_MASTER: Peer added on home channel[0m
+[0;32mI (9100) ESPNOW_MASTER: === ESP-NOW Master READY ===[0m
+[0;32mI (9110) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (9120) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (9130) AEGIS_GUARDIAN: HTTP stream active[0m
+[0;32mI (9250) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (9430) AEGIS_GUARDIAN: Face task started CPU0[0m
+[0;33mW (9510) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (9570) dl::Model: Minimize() will delete variables not used in model inference, which will make it impossible to test or debug the model.[0m
+[0;33mW (9580) FbsLoader: There is only one model in the flatbuffers, ignore the input model name![0m
+[0;32mI (10000) AEGIS_GUARDIAN: Face AI OK[0m
+[0;32mI (10250) wifi:state: assoc -> init (0x400)[0m
+[0;32mI (10260) AEGIS_GUARDIAN: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (11070) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTING... (0.0.0.0)[0m
+[0;32mI (11070) AEGIS_GUARDIAN: AEGIS GUARDIAN ACTIVE[0m
+[0;32mI (11070) main_task: Returned from app_main()[0m
+[0;32mI (12560) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (12660) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (12710) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (12940) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (12940) wifi:security: WPA2-PSK, phy: bgn, rssi: -40, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (12950) wifi:pm start, type: 0[0m
+
+[0;32mI (12950) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (12960) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (13030) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (13030) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (14030) esp_netif_handlers: sta ip: 10.75.11.110, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (14030) AEGIS_GUARDIAN: Connected to WiFi! IP: 10.75.11.110[0m
+[0;32mI (14030) AEGIS_GUARDIAN: Wi-Fi AP Connected on Channel: 6 (RSSI: -39 dBm)[0m
+[0;32mI (14030) ESPNOW_MASTER: ESP-NOW Peer updated to channel 6: ESP_OK[0m
+[0;32mI (14280) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (16560) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (18200) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (18200) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (18200) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (18200) AEGIS_GUARDIAN: Backend GET / failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (21570) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (22570) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (22570) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (22570) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (22570) AEGIS_GUARDIAN: Backend GET /api/v1/test/current-scenario failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (22580) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4638919,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_20s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (26570) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[1;31mE (26630) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (26630) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (26630) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (26630) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (26640) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4639123,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_24s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (27370) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (27380) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4638599,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_25s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (31570) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (33360) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (33360) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (33370) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4638395,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_31s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (36960) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (39990) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (39990) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4638395,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_38s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (41970) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (43450) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (43450) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4638175,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_41s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (45710) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (45710) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4637963,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_44s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (46970) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (48000) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (48000) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4637751,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_46s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (51970) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;33mW (54180) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (54180) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (54180) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4624803,"psram":4607884},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_52s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (55590) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (57360) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (57370) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4630151,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_55s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (57770) httpd_uri: httpd_uri: URI '/favicon.ico' not found[0m
+[0;33mW (57770) httpd_txrx: httpd_resp_send_err: 404 Not Found - Nothing matches the given URI[0m
+[0;32mI (59770) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (62370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (62370) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4636619,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_60s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (64570) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (67370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (67370) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4636407,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_65s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (69370) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (72370) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (72370) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4636195,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_70s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (73490) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (77760) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (77770) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635983,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_76s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (78970) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (82770) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (82770) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635771,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_81s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (87370) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (87370) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (87770) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (87770) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635559,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_86s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;33mW (92170) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (92170) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (92770) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (92770) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4634839,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_91s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (96970) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (98170) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (98170) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635443,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_96s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (98730) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (103170) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (103170) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635347,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_101s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (105920) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (108170) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (108170) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635347,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_106s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (109560) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (113170) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (113170) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635347,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_111s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (116170) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (118560) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (118570) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635347,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_116s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (120970) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (123570) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (123570) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635347,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_121s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (124570) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (128570) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (128570) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635347,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_126s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (130570) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (133570) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (133570) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4636175,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_131s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (134750) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (136200) wifi:[ADDBA]RX DELBA, reason:1, delete tid:0, initiator:0(recipient)[0m
+[0;32mI (136570) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (138960) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (138970) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635963,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_137s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (140710) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (143970) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (143970) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635751,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_142s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m
+[0;32mI (146170) AEGIS_GUARDIAN: Backend POST /api/v1/telemetry/ingest OK (HTTP 200)[0m
+[0;32mI (148970) AEGIS_GUARDIAN: Security=NO FACE | OwnerID=-1 | Enrolled=NO | Object=NONE | Label=NONE | Confidence=0.0% | WiFi=CONNECTED (10.75.11.110)[0m
+[0;32mI (148970) AEGIS_GUARDIAN: Ingesting Status Telemetry: {"bot_id":"Guardian","kind":"telemetry","payload":{"status":"PATROL","battery_pct":88,"system_info":{"free_heap":4635751,"psram":4607684},"wifi_rssi":-39,"ip_address":"10.75.11.110","timestamp":"uptime_147s","wake_word_triggered":false,"wake_word_label":"Hi ESP","first_aid_status":{"box_attached":true,"delivered":false}}}[0m

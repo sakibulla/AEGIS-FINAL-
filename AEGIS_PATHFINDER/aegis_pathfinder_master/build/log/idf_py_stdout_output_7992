@@ -1,0 +1,2771 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (246) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f59
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (246) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (257) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (520) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (522) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (526) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (544) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (549) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (554) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (558) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (563) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (566) esp_psram: Speed: 80MHz[0m
+[0;32mI (569) cpu_start: Multicore app[0m
+[0;32mI (985) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (993) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (994) cpu_start: Pro cpu start user code[0m
+[0;32mI (994) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1004) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1013) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1017) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1021) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1025) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1029) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1033) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1050) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1069) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (544) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (993) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1017) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (544) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (993) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1017) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (544) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (993) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1017) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (544) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (993) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1017) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=001fab88 vaddr=40374d0c size=1827ch ( 98940) load[0m
+[0;32mI (497) esp_image: segment 5: paddr=00212e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (519) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (519) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (521) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (530) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (534) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (539) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (548) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (553) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (562) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (568) cpu_start: Multicore app[0m
+[0;32mI (984) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (993) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (999) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1007) app_init: Compile time:     Aug 16 2026 17:08:39[0m
+[0;32mI (1012) app_init: ELF file SHA256:  c711c7406...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1024) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1039) heap_init: At 3FCC0350 len 000293C0 (164 KiB): RAM[0m
+[0;32mI (1044) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1049) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1055) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1062) spi_flash: detected chip: generic[0m
+[0;32mI (1065) spi_flash: flash io: dio[0m
+[1;31mE (1068) i2c: CONFLICT! driver_ng is not allowed to be used with this old driver[0m
+
+abort() was called at PC 0x42090fb8 on core 0
+
+
+Backtrace: 0x4037e139:0x3fceb210 0x4037e105:0x3fceb230 0x40386872:0x3fceb250 0x42090fb8:0x3fceb2c0 0x42003c02:0x3fceb2e0 0x4037524a:0x3fceb310 0x403ccbc4:0x3fceb340 0x403cd009:0x3fceb380 0x403c897d:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: c711c7406
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037e2c8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (68) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c49d8h (805336) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d4a00 vaddr=3fc9d000 size=0a904h ( 43268) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000df30c vaddr=40374000 size=00d0ch (  3340) load[0m
+[0;32mI (256) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=11ab60h (1157984) map[0m

@@ -1,0 +1,1764 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (239) esp_image: segment 1: paddr=000cc584 vaddr=3fc9a400 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f64
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0d0020 size=bc55ch (771420) map[0m
+[0;32mI (239) esp_image: segment 1: paddr=000cc584 vaddr=3fc9a400 size=03a94h ( 14996) load[0m
+[0;32mI (243) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=c6d58h (814424) map[0m
+[0;32mI (395) esp_image: segment 3: paddr=00196d80 vaddr=3fc9de94 size=06cb0h ( 27824) load[0m
+[0;32mI (401) esp_image: segment 4: paddr=0019da38 vaddr=40374000 size=16374h ( 90996) load[0m
+[0;32mI (422) esp_image: segment 5: paddr=001b3db4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (433) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (433) boot: Disabling RNG early entropy source...[0m
+[0;32mI (443) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (443) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (444) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (446) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (450) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (454) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (458) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (463) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (468) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (473) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (478) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (482) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (487) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (490) esp_psram: Speed: 80MHz[0m
+[0;32mI (493) cpu_start: Multicore app[0m
+[0;32mI (909) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (917) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (918) cpu_start: Pro cpu start user code[0m
+[0;32mI (918) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (919) app_init: Application information:[0m
+[0;32mI (923) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (928) app_init: App version:      1[0m
+[0;32mI (931) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (936) app_init: ELF file SHA256:  db3e5fed4...[0m
+[0;32mI (941) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (945) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (948) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (952) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (956) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (962) heap_init: At 3FCAD120 len 0003C5F0 (241 KiB): RAM[0m
+[0;32mI (968) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (973) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (978) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (985) spi_flash: detected chip: gd[0m
+[0;32mI (988) spi_flash: flash io: dio[0m
+[0;32mI (991) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (997) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1015) main_task: Started on CPU0[0m
+[0;32mI (1015) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1016) main_task: Calling app_main()[0m
+[0;32mI (1037) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1039) pp: pp rom version: e7ae62f[0m
+[0;32mI (1039) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1045) wifi:wifi driver task: 3fceeacc, prio:23, stack:6656, core=0[0m
+[0;32mI (1059) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1059) wifi:wifi certification version: v7.0[0m
+[0;32mI (1059) wifi:config NVS flash: enabled[0m
+[0;32mI (1061) wifi:config nano formatting: disabled[0m
+[0;32mI (1065) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1070) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1074) wifi:Init management short buffer num: 32[0m
+[0;32mI (1079) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1083) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1087) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1091) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1095) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1100) wifi_init: rx ba win: 6[0m
+[0;32mI (1102) wifi_init: accept mbox: 6[0m
+[0;32mI (1105) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1108) wifi_init: udp mbox: 6[0m
+[0;32mI (1111) wifi_init: tcp mbox: 6[0m
+[0;32mI (1114) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1117) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1121) wifi_init: tcp mss: 1440[0m
+[0;32mI (1124) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1127) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1131) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1135) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1144) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1187) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1187) wifi:enable tsf[0m
+[0;32mI (1189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1191) AEGIS_MASTER_MAIN: Connecting to Wi-Fi SSID: A34 (Waiting up to 10s)...[0m
+[0;32mI (1198) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1201) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1237) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1257) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1271) wifi:connected with A34, aid = 2, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1271) wifi:security: WPA2-PSK, phy: bgn, rssi: -13, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1278) wifi:pm start, type: 0[0m
+
+[0;32mI (1279) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1287) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1298) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1303) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2318) esp_netif_handlers: sta ip: 10.75.11.50, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (2318) AEGIS_MASTER_MAIN: Wi-Fi Connected! IP: 10.75.11.50[0m
+[0;32mI (2320) AEGIS_MASTER_MAIN: ==================================================[0m
+[0;32mI (2327) AEGIS_MASTER_MAIN: Wi-Fi Router Connected! Local IP: 10.75.11.50 | Active Channel: 6[0m
+[0;32mI (2335) AEGIS_MASTER_MAIN: AEGIS Central Backend Server: http://10.75.11.83:8000[0m
+[0;32mI (2343) AEGIS_MASTER_MAIN: HTTP Backend Telemetry Ingest: ENABLED[0m
+[0;32mI (2348) AEGIS_MASTER_MAIN: ==================================================[0m
+[0;32mI (2356) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (2358) cam_hal: cam init ok[0m
+[0;32mI (2361) sccb-ng: pin_sda 4 pin_scl 5[0m
+[0;32mI (2364) sccb-ng: sccb_i2c_port=1[0m
+[0;32mI (2380) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (2381) camera: Detected OV2640 camera[0m
+[0;32mI (2381) camera: Detected camera at address=0x30[0m
+[0;32mI (2457) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (2457) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (2457) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (2467) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (2477) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2482) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (2488) cam_hal: cam config ok[0m
+[0;32mI (2491) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (2564) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2564) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (2564) AEGIS_MASTER_MAIN: Pathfinder Slave Peer (00:70:07:26:B5:B4) registered on Channel 6.[0m
+[0;32mI (2573) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (2581) AEGIS_MASTER_MAIN: Backend Telemetry & Heartbeat Task started on Core 0...[0m
+[0;32mI (2588) AEGIS_MASTER_MAIN: Pathfinder Swarm State Machine starting on Core 0...[0m
+[0;32mI (2595) main_task: Returned from app_main()[0m
+[0;32mI (3061) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (3511) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (3852) AI_VISION_FAST: [FRAME 1] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (4251) AI_VISION_FAST: [FRAME 2] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (4650) AI_VISION_FAST: [FRAME 3] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (5053) AI_VISION_FAST: [FRAME 4] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (5054) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (5453) AI_VISION_FAST: [FRAME 5] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (5454) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (5863) AI_VISION_FAST: [FRAME 6] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (6251) AI_VISION_FAST: [FRAME 7] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (6652) AI_VISION_FAST: [FRAME 8] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (7053) AI_VISION_FAST: [FRAME 9] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (7053) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (7603) AI_VISION_FAST: [FRAME 10] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (7617) AEGIS_MASTER_MAIN: Executing Snapshot 1/10...[0m
+[0;32mI (7937) AI_VISION_FAST: [FRAME 11] Inference complete in 281 ms | Detections: 0[0m
+[0;33mW (8105) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (8105) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (8490) AI_VISION_FAST: [FRAME 12] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (8894) AI_VISION_FAST: [FRAME 13] Inference complete in 282 ms | Detections: 1[0m
+[0;32mI (8894) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (9292) AI_VISION_FAST: [FRAME 14] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (9698) AI_VISION_FAST: [FRAME 15] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (10097) AI_VISION_FAST: [FRAME 16] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (10493) AI_VISION_FAST: [FRAME 17] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (10893) AI_VISION_FAST: [FRAME 18] Inference complete in 281 ms | Detections: 1[0m
+[0;32mI (10894) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 90.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (11177) AEGIS_MASTER_MAIN: Snapshot 1/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (11178) AEGIS_MASTER_MAIN: Executing Snapshot 2/10...[0m
+[0;32mI (11296) AI_VISION_FAST: [FRAME 19] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (11689) AI_VISION_FAST: [FRAME 20] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (12090) AI_VISION_FAST: [FRAME 21] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (12090) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (12493) AI_VISION_FAST: [FRAME 22] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (12890) AI_VISION_FAST: [FRAME 23] Inference complete in 278 ms | Detections: 1[0m
+[0;32mI (12893) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (13291) AI_VISION_FAST: [FRAME 24] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (13291) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 96.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (13691) AI_VISION_FAST: [FRAME 25] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (13691) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (13798) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (13799) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (14103) AI_VISION_FAST: [FRAME 26] Inference complete in 292 ms | Detections: 1[0m
+[0;32mI (14104) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (14493) AI_VISION_FAST: [FRAME 27] Inference complete in 281 ms | Detections: 1[0m
+[0;32mI (14493) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (14683) AEGIS_MASTER_MAIN: Snapshot 2/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (14683) AEGIS_MASTER_MAIN: Executing Snapshot 3/10...[0m
+[0;32mI (14886) AI_VISION_FAST: [FRAME 28] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (15209) AI_VISION_FAST: [FRAME 29] Inference complete in 279 ms | Detections: 2[0m
+[0;32mI (15210) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (15215) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (15610) AI_VISION_FAST: [FRAME 30] Inference complete in 281 ms | Detections: 2[0m
+[0;32mI (15611) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (15616) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16011) AI_VISION_FAST: [FRAME 31] Inference complete in 281 ms | Detections: 1[0m
+[0;32mI (16011) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 97.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (16325) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (16325) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (16532) AI_VISION_FAST: [FRAME 32] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (16533) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (16602) httpd_txrx: httpd_sock_err: error in send : 104[0m
+[0;33mW (16602) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (16850) AI_VISION_FAST: [FRAME 33] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (16850) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (17110) AI_VISION_FAST: [FRAME 34] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (17110) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (17367) AI_VISION_FAST: [FRAME 35] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (17367) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (17625) AI_VISION_FAST: [FRAME 36] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (17888) AI_VISION_FAST: [FRAME 37] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (17888) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18148) AI_VISION_FAST: [FRAME 38] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (18279) AEGIS_MASTER_MAIN: Snapshot 3/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (18280) AEGIS_MASTER_MAIN: Executing Snapshot 4/10...[0m
+[0;32mI (18407) AI_VISION_FAST: [FRAME 39] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (18660) AI_VISION_FAST: [FRAME 40] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (18914) AI_VISION_FAST: [FRAME 41] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (19166) AI_VISION_FAST: [FRAME 42] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (19428) AI_VISION_FAST: [FRAME 43] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (19685) AI_VISION_FAST: [FRAME 44] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (19939) AI_VISION_FAST: [FRAME 45] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (20194) AI_VISION_FAST: [FRAME 46] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (20446) AI_VISION_FAST: [FRAME 47] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (20700) AI_VISION_FAST: [FRAME 48] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (20955) AI_VISION_FAST: [FRAME 49] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (21209) AI_VISION_FAST: [FRAME 50] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (21464) AI_VISION_FAST: [FRAME 51] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (21719) AI_VISION_FAST: [FRAME 52] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (21785) AEGIS_MASTER_MAIN: Snapshot 4/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (21785) AEGIS_MASTER_MAIN: Executing Snapshot 5/10...[0m
+[0;32mI (21973) AI_VISION_FAST: [FRAME 53] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (22227) AI_VISION_FAST: [FRAME 54] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (22478) AI_VISION_FAST: [FRAME 55] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (22740) AI_VISION_FAST: [FRAME 56] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (22998) AI_VISION_FAST: [FRAME 57] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (23252) AI_VISION_FAST: [FRAME 58] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (23507) AI_VISION_FAST: [FRAME 59] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (23761) AI_VISION_FAST: [FRAME 60] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (24015) AI_VISION_FAST: [FRAME 61] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (24271) AI_VISION_FAST: [FRAME 62] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (24522) AI_VISION_FAST: [FRAME 63] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (24777) AI_VISION_FAST: [FRAME 64] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (25032) AI_VISION_FAST: [FRAME 65] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (25287) AI_VISION_FAST: [FRAME 66] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (25290) AEGIS_MASTER_MAIN: Snapshot 5/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (25294) AEGIS_MASTER_MAIN: Executing Snapshot 6/10...[0m
+[0;32mI (25538) AI_VISION_FAST: [FRAME 67] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (25792) AI_VISION_FAST: [FRAME 68] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (26056) AI_VISION_FAST: [FRAME 69] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (26312) AI_VISION_FAST: [FRAME 70] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (26567) AI_VISION_FAST: [FRAME 71] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (26821) AI_VISION_FAST: [FRAME 72] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (27075) AI_VISION_FAST: [FRAME 73] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (27331) AI_VISION_FAST: [FRAME 74] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (27584) AI_VISION_FAST: [FRAME 75] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (27839) AI_VISION_FAST: [FRAME 76] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (28093) AI_VISION_FAST: [FRAME 77] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (28349) AI_VISION_FAST: [FRAME 78] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (28601) AI_VISION_FAST: [FRAME 79] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (28602) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (28851) AEGIS_MASTER_MAIN: Snapshot 6/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (28852) AEGIS_MASTER_MAIN: Executing Snapshot 7/10...[0m
+[0;32mI (28892) AI_VISION_FAST: [FRAME 80] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (29291) AI_VISION_FAST: [FRAME 81] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (29838) AI_VISION_FAST: [FRAME 82] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (30241) AI_VISION_FAST: [FRAME 83] Inference complete in 277 ms | Detections: 1[0m
+[0;32mI (30241) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (30641) AI_VISION_FAST: [FRAME 84] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (31040) AI_VISION_FAST: [FRAME 85] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (31441) AI_VISION_FAST: [FRAME 86] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (31842) AI_VISION_FAST: [FRAME 87] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (32241) AI_VISION_FAST: [FRAME 88] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (32433) AEGIS_MASTER_MAIN: Snapshot 7/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (32433) AEGIS_MASTER_MAIN: Executing Snapshot 8/10...[0m
+[0;32mI (32806) AI_VISION_FAST: [FRAME 89] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (33201) AI_VISION_FAST: [FRAME 90] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (33599) AI_VISION_FAST: [FRAME 91] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (34001) AI_VISION_FAST: [FRAME 92] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (34400) AI_VISION_FAST: [FRAME 93] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (34798) AI_VISION_FAST: [FRAME 94] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (35199) AI_VISION_FAST: [FRAME 95] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (35602) AI_VISION_FAST: [FRAME 96] Inference complete in 281 ms | Detections: 0[0m
+[0;33mW (35981) AEGIS_MASTER_MAIN: Snapshot 8/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (35982) AEGIS_MASTER_MAIN: Executing Snapshot 9/10...[0m
+[0;32mI (36003) AI_VISION_FAST: [FRAME 97] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (36399) AI_VISION_FAST: [FRAME 98] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (36796) AI_VISION_FAST: [FRAME 99] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (37199) AI_VISION_FAST: [FRAME 100] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (37603) AI_VISION_FAST: [FRAME 101] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (37998) AI_VISION_FAST: [FRAME 102] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (38398) AI_VISION_FAST: [FRAME 103] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (38959) AI_VISION_FAST: [FRAME 106] Inference complete in 279 ms | Detections: 0[0m
+[0;33mW (39501) AEGIS_MASTER_MAIN: Snapshot 9/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (39502) AEGIS_MASTER_MAIN: Executing Snapshot 10/10...[0m
+[0;32mI (39521) AI_VISION_FAST: [FRAME 107] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (39919) AI_VISION_FAST: [FRAME 108] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (40315) AI_VISION_FAST: [FRAME 109] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (40716) AI_VISION_FAST: [FRAME 110] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (41116) AI_VISION_FAST: [FRAME 111] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (41519) AI_VISION_FAST: [FRAME 112] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (41915) AI_VISION_FAST: [FRAME 113] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (42323) AI_VISION_FAST: [FRAME 114] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (42722) AI_VISION_FAST: [FRAME 115] Inference complete in 281 ms | Detections: 0[0m
+[0;33mW (43007) AEGIS_MASTER_MAIN: Snapshot 10/10 telemetry timeout (Standalone Mode or Slave Offline). Skipping movement step.[0m
+[0;32mI (43007) AEGIS_MASTER_MAIN: Phase 1 Initial Mapping Complete. Entering Phase 2 Patrol Loop...[0m
+[0;32mI (43122) AI_VISION_FAST: [FRAME 116] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (43516) AI_VISION_FAST: [FRAME 117] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (43915) AI_VISION_FAST: [FRAME 118] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (44317) AI_VISION_FAST: [FRAME 119] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (44716) AI_VISION_FAST: [FRAME 120] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (45116) AI_VISION_FAST: [FRAME 121] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (45515) AI_VISION_FAST: [FRAME 122] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (45921) AI_VISION_FAST: [FRAME 123] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (46316) AI_VISION_FAST: [FRAME 124] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (46873) AI_VISION_FAST: [FRAME 125] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (47276) AI_VISION_FAST: [FRAME 126] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (47673) AI_VISION_FAST: [FRAME 127] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (48075) AI_VISION_FAST: [FRAME 128] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (48475) AI_VISION_FAST: [FRAME 129] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (48878) AI_VISION_FAST: [FRAME 130] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (49281) AI_VISION_FAST: [FRAME 131] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (49671) AI_VISION_FAST: [FRAME 132] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (50074) AI_VISION_FAST: [FRAME 133] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (50474) AI_VISION_FAST: [FRAME 134] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (50874) AI_VISION_FAST: [FRAME 135] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (51434) AI_VISION_FAST: [FRAME 136] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (51833) AI_VISION_FAST: [FRAME 137] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (52236) AI_VISION_FAST: [FRAME 138] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (52632) AI_VISION_FAST: [FRAME 139] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (53032) AI_VISION_FAST: [FRAME 140] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (53354) AI_VISION_FAST: [FRAME 141] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (53752) AI_VISION_FAST: [FRAME 142] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (54149) AI_VISION_FAST: [FRAME 143] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (54555) AI_VISION_FAST: [FRAME 144] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (54953) AI_VISION_FAST: [FRAME 145] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (55358) AI_VISION_FAST: [FRAME 146] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (55756) AI_VISION_FAST: [FRAME 147] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (56153) AI_VISION_FAST: [FRAME 148] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (56552) AI_VISION_FAST: [FRAME 149] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (56950) AI_VISION_FAST: [FRAME 150] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (57352) AI_VISION_FAST: [FRAME 151] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (57752) AI_VISION_FAST: [FRAME 152] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (58153) AI_VISION_FAST: [FRAME 153] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (58551) AI_VISION_FAST: [FRAME 154] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (59108) AI_VISION_FAST: [FRAME 155] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (59510) AI_VISION_FAST: [FRAME 156] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (59912) AI_VISION_FAST: [FRAME 157] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (60309) AI_VISION_FAST: [FRAME 158] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (60710) AI_VISION_FAST: [FRAME 159] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (61108) AI_VISION_FAST: [FRAME 160] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (61509) AI_VISION_FAST: [FRAME 161] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (61911) AI_VISION_FAST: [FRAME 162] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (62313) AI_VISION_FAST: [FRAME 163] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (62626) AI_VISION_FAST: [FRAME 164] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (63026) AI_VISION_FAST: [FRAME 165] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (63431) AI_VISION_FAST: [FRAME 166] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (63828) AI_VISION_FAST: [FRAME 167] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (64224) AI_VISION_FAST: [FRAME 168] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (64627) AI_VISION_FAST: [FRAME 169] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (65027) AI_VISION_FAST: [FRAME 170] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (65596) AI_VISION_FAST: [FRAME 173] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (65991) AI_VISION_FAST: [FRAME 174] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (66386) AI_VISION_FAST: [FRAME 175] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (66787) AI_VISION_FAST: [FRAME 176] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (67189) AI_VISION_FAST: [FRAME 177] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (67589) AI_VISION_FAST: [FRAME 178] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (68143) AI_VISION_FAST: [FRAME 179] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (68555) AI_VISION_FAST: [FRAME 180] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (68948) AI_VISION_FAST: [FRAME 181] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (69348) AI_VISION_FAST: [FRAME 182] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (69746) AI_VISION_FAST: [FRAME 183] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (70145) AI_VISION_FAST: [FRAME 184] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (70548) AI_VISION_FAST: [FRAME 185] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (70945) AI_VISION_FAST: [FRAME 186] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (71507) AI_VISION_FAST: [FRAME 187] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (71912) AI_VISION_FAST: [FRAME 188] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (72304) AI_VISION_FAST: [FRAME 189] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (72706) AI_VISION_FAST: [FRAME 190] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (73106) AI_VISION_FAST: [FRAME 191] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (73506) AI_VISION_FAST: [FRAME 192] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (73904) AI_VISION_FAST: [FRAME 193] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (74304) AI_VISION_FAST: [FRAME 194] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (74703) AI_VISION_FAST: [FRAME 195] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (75116) AI_VISION_FAST: [FRAME 196] Inference complete in 290 ms | Detections: 0[0m
+[0;32mI (75504) AI_VISION_FAST: [FRAME 197] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (76060) AI_VISION_FAST: [FRAME 198] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (76463) AI_VISION_FAST: [FRAME 199] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (76861) AI_VISION_FAST: [FRAME 200] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (77262) AI_VISION_FAST: [FRAME 201] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (77665) AI_VISION_FAST: [FRAME 202] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (78063) AI_VISION_FAST: [FRAME 203] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (78468) AI_VISION_FAST: [FRAME 204] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (78862) AI_VISION_FAST: [FRAME 205] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (79263) AI_VISION_FAST: [FRAME 206] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (79662) AI_VISION_FAST: [FRAME 207] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (80061) AI_VISION_FAST: [FRAME 208] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (80463) AI_VISION_FAST: [FRAME 209] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (80861) AI_VISION_FAST: [FRAME 210] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (81261) AI_VISION_FAST: [FRAME 211] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (81668) AI_VISION_FAST: [FRAME 212] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (82062) AI_VISION_FAST: [FRAME 213] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (82460) AI_VISION_FAST: [FRAME 214] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (82860) AI_VISION_FAST: [FRAME 215] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (83261) AI_VISION_FAST: [FRAME 216] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (83664) AI_VISION_FAST: [FRAME 217] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (84061) AI_VISION_FAST: [FRAME 218] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (84461) AI_VISION_FAST: [FRAME 219] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (84865) AI_VISION_FAST: [FRAME 220] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (85262) AI_VISION_FAST: [FRAME 221] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (85659) AI_VISION_FAST: [FRAME 222] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (86065) AI_VISION_FAST: [FRAME 223] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (86459) AI_VISION_FAST: [FRAME 224] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (86860) AI_VISION_FAST: [FRAME 225] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (87259) AI_VISION_FAST: [FRAME 226] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (87660) AI_VISION_FAST: [FRAME 227] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (88065) AI_VISION_FAST: [FRAME 228] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (88462) AI_VISION_FAST: [FRAME 229] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (88857) AI_VISION_FAST: [FRAME 230] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (89257) AI_VISION_FAST: [FRAME 231] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (89657) AI_VISION_FAST: [FRAME 232] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (90218) AI_VISION_FAST: [FRAME 235] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (90615) AI_VISION_FAST: [FRAME 236] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (91016) AI_VISION_FAST: [FRAME 237] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (91588) AI_VISION_FAST: [FRAME 238] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (91976) AI_VISION_FAST: [FRAME 239] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (92379) AI_VISION_FAST: [FRAME 240] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (92776) AI_VISION_FAST: [FRAME 241] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (93177) AI_VISION_FAST: [FRAME 242] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (93578) AI_VISION_FAST: [FRAME 243] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (93975) AI_VISION_FAST: [FRAME 244] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (94374) AI_VISION_FAST: [FRAME 245] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (94784) AI_VISION_FAST: [FRAME 246] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (95338) AI_VISION_FAST: [FRAME 249] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (95737) AI_VISION_FAST: [FRAME 250] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (96137) AI_VISION_FAST: [FRAME 251] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (96696) AI_VISION_FAST: [FRAME 254] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (97097) AI_VISION_FAST: [FRAME 255] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (97496) AI_VISION_FAST: [FRAME 256] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (97899) AI_VISION_FAST: [FRAME 257] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (98302) AI_VISION_FAST: [FRAME 258] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (98692) AI_VISION_FAST: [FRAME 259] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (99093) AI_VISION_FAST: [FRAME 260] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (99496) AI_VISION_FAST: [FRAME 261] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (99897) AI_VISION_FAST: [FRAME 262] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (100293) AI_VISION_FAST: [FRAME 263] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (100691) AI_VISION_FAST: [FRAME 264] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (101095) AI_VISION_FAST: [FRAME 265] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (101494) AI_VISION_FAST: [FRAME 266] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (101894) AI_VISION_FAST: [FRAME 267] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (102292) AI_VISION_FAST: [FRAME 268] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (102851) AI_VISION_FAST: [FRAME 269] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (103252) AI_VISION_FAST: [FRAME 270] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (103656) AI_VISION_FAST: [FRAME 271] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (104051) AI_VISION_FAST: [FRAME 272] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (104454) AI_VISION_FAST: [FRAME 273] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (104850) AI_VISION_FAST: [FRAME 274] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (105252) AI_VISION_FAST: [FRAME 275] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (105808) AI_VISION_FAST: [FRAME 276] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (106217) AI_VISION_FAST: [FRAME 277] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (106612) AI_VISION_FAST: [FRAME 278] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (107012) AI_VISION_FAST: [FRAME 279] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (107413) AI_VISION_FAST: [FRAME 280] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (107826) AI_VISION_FAST: [FRAME 281] Inference complete in 294 ms | Detections: 0[0m
+[0;32mI (108369) AI_VISION_FAST: [FRAME 282] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (108929) AI_VISION_FAST: [FRAME 283] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (109326) AI_VISION_FAST: [FRAME 284] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (109646) AI_VISION_FAST: [FRAME 285] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (110051) AI_VISION_FAST: [FRAME 286] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (110448) AI_VISION_FAST: [FRAME 287] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (110856) AI_VISION_FAST: [FRAME 288] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (111250) AI_VISION_FAST: [FRAME 289] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (111648) AI_VISION_FAST: [FRAME 290] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (112207) AI_VISION_FAST: [FRAME 291] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (112609) AI_VISION_FAST: [FRAME 292] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (112972) AI_VISION_FAST: [FRAME 293] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (113333) AI_VISION_FAST: [FRAME 294] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (113732) AI_VISION_FAST: [FRAME 295] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (114128) AI_VISION_FAST: [FRAME 296] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (114532) AI_VISION_FAST: [FRAME 297] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (114928) AI_VISION_FAST: [FRAME 298] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (115328) AI_VISION_FAST: [FRAME 299] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (115729) AI_VISION_FAST: [FRAME 300] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (116285) AI_VISION_FAST: [FRAME 301] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (116688) AI_VISION_FAST: [FRAME 302] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (117088) AI_VISION_FAST: [FRAME 303] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (117492) AI_VISION_FAST: [FRAME 304] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (117888) AI_VISION_FAST: [FRAME 305] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (118287) AI_VISION_FAST: [FRAME 306] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (118686) AI_VISION_FAST: [FRAME 307] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (119089) AI_VISION_FAST: [FRAME 308] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (119486) AI_VISION_FAST: [FRAME 309] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (119886) AI_VISION_FAST: [FRAME 310] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (120286) AI_VISION_FAST: [FRAME 311] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (120690) AI_VISION_FAST: [FRAME 312] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (121093) AI_VISION_FAST: [FRAME 313] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (121645) AI_VISION_FAST: [FRAME 314] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (122046) AI_VISION_FAST: [FRAME 315] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (122445) AI_VISION_FAST: [FRAME 316] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (122844) AI_VISION_FAST: [FRAME 317] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (123245) AI_VISION_FAST: [FRAME 318] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (123642) AI_VISION_FAST: [FRAME 319] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (123970) AI_VISION_FAST: [FRAME 320] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (124366) AI_VISION_FAST: [FRAME 321] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (124766) AI_VISION_FAST: [FRAME 322] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (125164) AI_VISION_FAST: [FRAME 323] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (125565) AI_VISION_FAST: [FRAME 324] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (125966) AI_VISION_FAST: [FRAME 325] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (126368) AI_VISION_FAST: [FRAME 326] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (126763) AI_VISION_FAST: [FRAME 327] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (127169) AI_VISION_FAST: [FRAME 328] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (127570) AI_VISION_FAST: [FRAME 329] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (127961) AI_VISION_FAST: [FRAME 330] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (128519) AI_VISION_FAST: [FRAME 331] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (128925) AI_VISION_FAST: [FRAME 332] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (129323) AI_VISION_FAST: [FRAME 333] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (129720) AI_VISION_FAST: [FRAME 334] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (130121) AI_VISION_FAST: [FRAME 335] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (130528) AI_VISION_FAST: [FRAME 336] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (130923) AI_VISION_FAST: [FRAME 337] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (131479) AI_VISION_FAST: [FRAME 338] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (131883) AI_VISION_FAST: [FRAME 339] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (132283) AI_VISION_FAST: [FRAME 340] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (132681) AI_VISION_FAST: [FRAME 341] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (133081) AI_VISION_FAST: [FRAME 342] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (133483) AI_VISION_FAST: [FRAME 343] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (133897) AI_VISION_FAST: [FRAME 344] Inference complete in 295 ms | Detections: 0[0m
+[0;32mI (134283) AI_VISION_FAST: [FRAME 345] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (134680) AI_VISION_FAST: [FRAME 346] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (135080) AI_VISION_FAST: [FRAME 347] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (135480) AI_VISION_FAST: [FRAME 348] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (135880) AI_VISION_FAST: [FRAME 349] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (136273) AI_VISION_FAST: [FRAME 350] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (136599) AI_VISION_FAST: [FRAME 351] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (137005) AI_VISION_FAST: [FRAME 352] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (137399) AI_VISION_FAST: [FRAME 353] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (137800) AI_VISION_FAST: [FRAME 354] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (138199) AI_VISION_FAST: [FRAME 355] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (138599) AI_VISION_FAST: [FRAME 356] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (139159) AI_VISION_FAST: [FRAME 357] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (139559) AI_VISION_FAST: [FRAME 358] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (139958) AI_VISION_FAST: [FRAME 359] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (140372) AI_VISION_FAST: [FRAME 360] Inference complete in 293 ms | Detections: 0[0m
+[0;32mI (140916) AI_VISION_FAST: [FRAME 361] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (141319) AI_VISION_FAST: [FRAME 362] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (141717) AI_VISION_FAST: [FRAME 363] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (142117) AI_VISION_FAST: [FRAME 364] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (142513) AI_VISION_FAST: [FRAME 365] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (142916) AI_VISION_FAST: [FRAME 366] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (143482) AI_VISION_FAST: [FRAME 367] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (143881) AI_VISION_FAST: [FRAME 368] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (144277) AI_VISION_FAST: [FRAME 369] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (144675) AI_VISION_FAST: [FRAME 370] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (145076) AI_VISION_FAST: [FRAME 371] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (145476) AI_VISION_FAST: [FRAME 372] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (145875) AI_VISION_FAST: [FRAME 373] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (146276) AI_VISION_FAST: [FRAME 374] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (146680) AI_VISION_FAST: [FRAME 375] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (147083) AI_VISION_FAST: [FRAME 376] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (147474) AI_VISION_FAST: [FRAME 377] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (147876) AI_VISION_FAST: [FRAME 378] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (148275) AI_VISION_FAST: [FRAME 379] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (148675) AI_VISION_FAST: [FRAME 380] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (149075) AI_VISION_FAST: [FRAME 381] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (149473) AI_VISION_FAST: [FRAME 382] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (149877) AI_VISION_FAST: [FRAME 383] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (150280) AI_VISION_FAST: [FRAME 384] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (150675) AI_VISION_FAST: [FRAME 385] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (151075) AI_VISION_FAST: [FRAME 386] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (151476) AI_VISION_FAST: [FRAME 387] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (151873) AI_VISION_FAST: [FRAME 388] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (152276) AI_VISION_FAST: [FRAME 389] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (152672) AI_VISION_FAST: [FRAME 390] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (153239) AI_VISION_FAST: [FRAME 393] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (153633) AI_VISION_FAST: [FRAME 394] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (154035) AI_VISION_FAST: [FRAME 395] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (154430) AI_VISION_FAST: [FRAME 396] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (154831) AI_VISION_FAST: [FRAME 397] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (155233) AI_VISION_FAST: [FRAME 398] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (155633) AI_VISION_FAST: [FRAME 399] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (156187) AI_VISION_FAST: [FRAME 400] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (156515) AI_VISION_FAST: [FRAME 401] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (156911) AI_VISION_FAST: [FRAME 402] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (157310) AI_VISION_FAST: [FRAME 403] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (157868) AI_VISION_FAST: [FRAME 404] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (158272) AI_VISION_FAST: [FRAME 405] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (158667) AI_VISION_FAST: [FRAME 406] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (159073) AI_VISION_FAST: [FRAME 407] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (159470) AI_VISION_FAST: [FRAME 408] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (159890) AI_VISION_FAST: [FRAME 409] Inference complete in 297 ms | Detections: 0[0m
+[0;32mI (160273) AI_VISION_FAST: [FRAME 410] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (160668) AI_VISION_FAST: [FRAME 411] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (161071) AI_VISION_FAST: [FRAME 412] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (161627) AI_VISION_FAST: [FRAME 413] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (162028) AI_VISION_FAST: [FRAME 414] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (162429) AI_VISION_FAST: [FRAME 415] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (162827) AI_VISION_FAST: [FRAME 416] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (163388) AI_VISION_FAST: [FRAME 419] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (163787) AI_VISION_FAST: [FRAME 420] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (164110) AI_VISION_FAST: [FRAME 421] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (164508) AI_VISION_FAST: [FRAME 422] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (164909) AI_VISION_FAST: [FRAME 423] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (165306) AI_VISION_FAST: [FRAME 424] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (165709) AI_VISION_FAST: [FRAME 425] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (166115) AI_VISION_FAST: [FRAME 426] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (166510) AI_VISION_FAST: [FRAME 427] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (166906) AI_VISION_FAST: [FRAME 428] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (167307) AI_VISION_FAST: [FRAME 429] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (167705) AI_VISION_FAST: [FRAME 430] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (168107) AI_VISION_FAST: [FRAME 431] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (168507) AI_VISION_FAST: [FRAME 432] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (168909) AI_VISION_FAST: [FRAME 433] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (169467) AI_VISION_FAST: [FRAME 434] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (169869) AI_VISION_FAST: [FRAME 435] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (170264) AI_VISION_FAST: [FRAME 436] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (170627) AI_VISION_FAST: [FRAME 437] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (170986) AI_VISION_FAST: [FRAME 438] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (171548) AI_VISION_FAST: [FRAME 441] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (171946) AI_VISION_FAST: [FRAME 442] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (172345) AI_VISION_FAST: [FRAME 443] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (172752) AI_VISION_FAST: [FRAME 444] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (173143) AI_VISION_FAST: [FRAME 445] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (173548) AI_VISION_FAST: [FRAME 446] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (173942) AI_VISION_FAST: [FRAME 447] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (174263) AI_VISION_FAST: [FRAME 448] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (174662) AI_VISION_FAST: [FRAME 449] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (175227) AI_VISION_FAST: [FRAME 452] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (175623) AI_VISION_FAST: [FRAME 453] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (176030) AI_VISION_FAST: [FRAME 454] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (176425) AI_VISION_FAST: [FRAME 455] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (176822) AI_VISION_FAST: [FRAME 456] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (177224) AI_VISION_FAST: [FRAME 457] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (177625) AI_VISION_FAST: [FRAME 458] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (178022) AI_VISION_FAST: [FRAME 459] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (178421) AI_VISION_FAST: [FRAME 460] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (178979) AI_VISION_FAST: [FRAME 461] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (179399) AI_VISION_FAST: [FRAME 462] Inference complete in 296 ms | Detections: 0[0m
+[0;32mI (179781) AI_VISION_FAST: [FRAME 463] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (180181) AI_VISION_FAST: [FRAME 464] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (180581) AI_VISION_FAST: [FRAME 465] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (180984) AI_VISION_FAST: [FRAME 466] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (181536) AI_VISION_FAST: [FRAME 467] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (181942) AI_VISION_FAST: [FRAME 468] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (182340) AI_VISION_FAST: [FRAME 469] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (182745) AI_VISION_FAST: [FRAME 470] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (183139) AI_VISION_FAST: [FRAME 471] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (183539) AI_VISION_FAST: [FRAME 472] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (183938) AI_VISION_FAST: [FRAME 473] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (184258) AI_VISION_FAST: [FRAME 474] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (184657) AI_VISION_FAST: [FRAME 475] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (185064) AI_VISION_FAST: [FRAME 476] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (185461) AI_VISION_FAST: [FRAME 477] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (185871) AI_VISION_FAST: [FRAME 478] Inference complete in 290 ms | Detections: 0[0m
+[0;32mI (186261) AI_VISION_FAST: [FRAME 479] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (186654) AI_VISION_FAST: [FRAME 480] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (186980) AI_VISION_FAST: [FRAME 481] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (187375) AI_VISION_FAST: [FRAME 482] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (187698) AI_VISION_FAST: [FRAME 483] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (188098) AI_VISION_FAST: [FRAME 484] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (188497) AI_VISION_FAST: [FRAME 485] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (188902) AI_VISION_FAST: [FRAME 486] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (189301) AI_VISION_FAST: [FRAME 487] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (189697) AI_VISION_FAST: [FRAME 488] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (190096) AI_VISION_FAST: [FRAME 489] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (190498) AI_VISION_FAST: [FRAME 490] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (191059) AI_VISION_FAST: [FRAME 491] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (191456) AI_VISION_FAST: [FRAME 492] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (191858) AI_VISION_FAST: [FRAME 493] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (192422) AI_VISION_FAST: [FRAME 496] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (192816) AI_VISION_FAST: [FRAME 497] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (193215) AI_VISION_FAST: [FRAME 498] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (193616) AI_VISION_FAST: [FRAME 499] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (194017) AI_VISION_FAST: [FRAME 500] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (194337) AI_VISION_FAST: [FRAME 501] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (194734) AI_VISION_FAST: [FRAME 502] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (195135) AI_VISION_FAST: [FRAME 503] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (195542) AI_VISION_FAST: [FRAME 504] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (195939) AI_VISION_FAST: [FRAME 505] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (196335) AI_VISION_FAST: [FRAME 506] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (196733) AI_VISION_FAST: [FRAME 507] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (197135) AI_VISION_FAST: [FRAME 508] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (197535) AI_VISION_FAST: [FRAME 509] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (197936) AI_VISION_FAST: [FRAME 510] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (198332) AI_VISION_FAST: [FRAME 511] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (198738) AI_VISION_FAST: [FRAME 512] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (199141) AI_VISION_FAST: [FRAME 513] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (199534) AI_VISION_FAST: [FRAME 514] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (199935) AI_VISION_FAST: [FRAME 515] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (200334) AI_VISION_FAST: [FRAME 516] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (200736) AI_VISION_FAST: [FRAME 517] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (201135) AI_VISION_FAST: [FRAME 518] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (201534) AI_VISION_FAST: [FRAME 519] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (201934) AI_VISION_FAST: [FRAME 520] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (202341) AI_VISION_FAST: [FRAME 521] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (202733) AI_VISION_FAST: [FRAME 522] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (203134) AI_VISION_FAST: [FRAME 523] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (203690) AI_VISION_FAST: [FRAME 524] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (204091) AI_VISION_FAST: [FRAME 525] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (204412) AI_VISION_FAST: [FRAME 526] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (204812) AI_VISION_FAST: [FRAME 527] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (205210) AI_VISION_FAST: [FRAME 528] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (205622) AI_VISION_FAST: [FRAME 529] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (206012) AI_VISION_FAST: [FRAME 530] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (206412) AI_VISION_FAST: [FRAME 531] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (206811) AI_VISION_FAST: [FRAME 532] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (207211) AI_VISION_FAST: [FRAME 533] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (207610) AI_VISION_FAST: [FRAME 534] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (208008) AI_VISION_FAST: [FRAME 535] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (208411) AI_VISION_FAST: [FRAME 536] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (208976) AI_VISION_FAST: [FRAME 539] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (209369) AI_VISION_FAST: [FRAME 540] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (209770) AI_VISION_FAST: [FRAME 541] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (210329) AI_VISION_FAST: [FRAME 542] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (210729) AI_VISION_FAST: [FRAME 543] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (211135) AI_VISION_FAST: [FRAME 544] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (211530) AI_VISION_FAST: [FRAME 545] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (211934) AI_VISION_FAST: [FRAME 546] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (212336) AI_VISION_FAST: [FRAME 547] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (212728) AI_VISION_FAST: [FRAME 548] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (213129) AI_VISION_FAST: [FRAME 549] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (213529) AI_VISION_FAST: [FRAME 550] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (213925) AI_VISION_FAST: [FRAME 551] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (214334) AI_VISION_FAST: [FRAME 552] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (214729) AI_VISION_FAST: [FRAME 553] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (215129) AI_VISION_FAST: [FRAME 554] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (215491) AI_VISION_FAST: [FRAME 555] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (215847) AI_VISION_FAST: [FRAME 556] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (216247) AI_VISION_FAST: [FRAME 557] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (216646) AI_VISION_FAST: [FRAME 558] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (217045) AI_VISION_FAST: [FRAME 559] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (217445) AI_VISION_FAST: [FRAME 560] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (217847) AI_VISION_FAST: [FRAME 561] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (218248) AI_VISION_FAST: [FRAME 562] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (218652) AI_VISION_FAST: [FRAME 563] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (219046) AI_VISION_FAST: [FRAME 564] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (219448) AI_VISION_FAST: [FRAME 565] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (219845) AI_VISION_FAST: [FRAME 566] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (220247) AI_VISION_FAST: [FRAME 567] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (220645) AI_VISION_FAST: [FRAME 568] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (221047) AI_VISION_FAST: [FRAME 569] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (221444) AI_VISION_FAST: [FRAME 570] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (221855) AI_VISION_FAST: [FRAME 571] Inference complete in 288 ms | Detections: 0[0m
+[0;32mI (222403) AI_VISION_FAST: [FRAME 572] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (222804) AI_VISION_FAST: [FRAME 573] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (223203) AI_VISION_FAST: [FRAME 574] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (223605) AI_VISION_FAST: [FRAME 575] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (224004) AI_VISION_FAST: [FRAME 576] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (224409) AI_VISION_FAST: [FRAME 577] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (224807) AI_VISION_FAST: [FRAME 578] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (225207) AI_VISION_FAST: [FRAME 579] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (225605) AI_VISION_FAST: [FRAME 580] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (226003) AI_VISION_FAST: [FRAME 581] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (226404) AI_VISION_FAST: [FRAME 582] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (226797) AI_VISION_FAST: [FRAME 583] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (227123) AI_VISION_FAST: [FRAME 584] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (227521) AI_VISION_FAST: [FRAME 585] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (228083) AI_VISION_FAST: [FRAME 588] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (228485) AI_VISION_FAST: [FRAME 589] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (228882) AI_VISION_FAST: [FRAME 590] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (229285) AI_VISION_FAST: [FRAME 591] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (229682) AI_VISION_FAST: [FRAME 592] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (230082) AI_VISION_FAST: [FRAME 593] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (230481) AI_VISION_FAST: [FRAME 594] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (230879) AI_VISION_FAST: [FRAME 595] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (231281) AI_VISION_FAST: [FRAME 596] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (231685) AI_VISION_FAST: [FRAME 597] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (232074) AI_VISION_FAST: [FRAME 598] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (232399) AI_VISION_FAST: [FRAME 599] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (232799) AI_VISION_FAST: [FRAME 600] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (233198) AI_VISION_FAST: [FRAME 601] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (233598) AI_VISION_FAST: [FRAME 602] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (234002) AI_VISION_FAST: [FRAME 603] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (234401) AI_VISION_FAST: [FRAME 604] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (234810) AI_VISION_FAST: [FRAME 605] Inference complete in 287 ms | Detections: 0[0m
+[0;32mI (235199) AI_VISION_FAST: [FRAME 606] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (235597) AI_VISION_FAST: [FRAME 607] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (235999) AI_VISION_FAST: [FRAME 608] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (236398) AI_VISION_FAST: [FRAME 609] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (236963) AI_VISION_FAST: [FRAME 612] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (237359) AI_VISION_FAST: [FRAME 613] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (237759) AI_VISION_FAST: [FRAME 614] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (238326) AI_VISION_FAST: [FRAME 615] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (238717) AI_VISION_FAST: [FRAME 616] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (239120) AI_VISION_FAST: [FRAME 617] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (239518) AI_VISION_FAST: [FRAME 618] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (239918) AI_VISION_FAST: [FRAME 619] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (240317) AI_VISION_FAST: [FRAME 620] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (240718) AI_VISION_FAST: [FRAME 621] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (241121) AI_VISION_FAST: [FRAME 622] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (241521) AI_VISION_FAST: [FRAME 623] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (241919) AI_VISION_FAST: [FRAME 624] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (242317) AI_VISION_FAST: [FRAME 625] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (242718) AI_VISION_FAST: [FRAME 626] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (243114) AI_VISION_FAST: [FRAME 627] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (243516) AI_VISION_FAST: [FRAME 628] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (243922) AI_VISION_FAST: [FRAME 629] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (244310) AI_VISION_FAST: [FRAME 630] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (244647) AI_VISION_FAST: [FRAME 631] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (245037) AI_VISION_FAST: [FRAME 632] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (245435) AI_VISION_FAST: [FRAME 633] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (245836) AI_VISION_FAST: [FRAME 634] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (246234) AI_VISION_FAST: [FRAME 635] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (246635) AI_VISION_FAST: [FRAME 636] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (247037) AI_VISION_FAST: [FRAME 637] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (247434) AI_VISION_FAST: [FRAME 638] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (247844) AI_VISION_FAST: [FRAME 639] Inference complete in 288 ms | Detections: 0[0m
+[0;32mI (248237) AI_VISION_FAST: [FRAME 640] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (248635) AI_VISION_FAST: [FRAME 641] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (249032) AI_VISION_FAST: [FRAME 642] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (249435) AI_VISION_FAST: [FRAME 643] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (249834) AI_VISION_FAST: [FRAME 644] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (250392) AI_VISION_FAST: [FRAME 645] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (250792) AI_VISION_FAST: [FRAME 646] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (251361) AI_VISION_FAST: [FRAME 649] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (251753) AI_VISION_FAST: [FRAME 650] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (252153) AI_VISION_FAST: [FRAME 651] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (252552) AI_VISION_FAST: [FRAME 652] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (252952) AI_VISION_FAST: [FRAME 653] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (253511) AI_VISION_FAST: [FRAME 654] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (254073) AI_VISION_FAST: [FRAME 657] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (254470) AI_VISION_FAST: [FRAME 658] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (254792) AI_VISION_FAST: [FRAME 659] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (255192) AI_VISION_FAST: [FRAME 660] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (255591) AI_VISION_FAST: [FRAME 661] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (255990) AI_VISION_FAST: [FRAME 662] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (256372) AI_VISION_FAST: [FRAME 663] Inference complete in 258 ms | Detections: 0[0m
+[0;32mI (256790) AI_VISION_FAST: [FRAME 665] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (257196) AI_VISION_FAST: [FRAME 666] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (257601) AI_VISION_FAST: [FRAME 667] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (257990) AI_VISION_FAST: [FRAME 668] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (258394) AI_VISION_FAST: [FRAME 669] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (258790) AI_VISION_FAST: [FRAME 670] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (259188) AI_VISION_FAST: [FRAME 671] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (259592) AI_VISION_FAST: [FRAME 672] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (259992) AI_VISION_FAST: [FRAME 673] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (260391) AI_VISION_FAST: [FRAME 674] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (260759) AI_VISION_FAST: [FRAME 675] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (261115) AI_VISION_FAST: [FRAME 676] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (261509) AI_VISION_FAST: [FRAME 677] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (261910) AI_VISION_FAST: [FRAME 678] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (262308) AI_VISION_FAST: [FRAME 679] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (262709) AI_VISION_FAST: [FRAME 680] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (263111) AI_VISION_FAST: [FRAME 681] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (263508) AI_VISION_FAST: [FRAME 682] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (263914) AI_VISION_FAST: [FRAME 683] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (264313) AI_VISION_FAST: [FRAME 684] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (264711) AI_VISION_FAST: [FRAME 685] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (265110) AI_VISION_FAST: [FRAME 686] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (265507) AI_VISION_FAST: [FRAME 687] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (265907) AI_VISION_FAST: [FRAME 688] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (266307) AI_VISION_FAST: [FRAME 689] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (266705) AI_VISION_FAST: [FRAME 690] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (267100) AI_VISION_FAST: [FRAME 691] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (267433) AI_VISION_FAST: [FRAME 692] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (267824) AI_VISION_FAST: [FRAME 693] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (268224) AI_VISION_FAST: [FRAME 694] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (268628) AI_VISION_FAST: [FRAME 695] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (269026) AI_VISION_FAST: [FRAME 696] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (269424) AI_VISION_FAST: [FRAME 697] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (269826) AI_VISION_FAST: [FRAME 698] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (270225) AI_VISION_FAST: [FRAME 699] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (270598) AI_VISION_FAST: [FRAME 700] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (270946) AI_VISION_FAST: [FRAME 701] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (271346) AI_VISION_FAST: [FRAME 702] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (271744) AI_VISION_FAST: [FRAME 703] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (272147) AI_VISION_FAST: [FRAME 704] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (272545) AI_VISION_FAST: [FRAME 705] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (272944) AI_VISION_FAST: [FRAME 706] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (273346) AI_VISION_FAST: [FRAME 707] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (273750) AI_VISION_FAST: [FRAME 708] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (274304) AI_VISION_FAST: [FRAME 709] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (274704) AI_VISION_FAST: [FRAME 710] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (275103) AI_VISION_FAST: [FRAME 711] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (275503) AI_VISION_FAST: [FRAME 712] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (275901) AI_VISION_FAST: [FRAME 713] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (276302) AI_VISION_FAST: [FRAME 714] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (276701) AI_VISION_FAST: [FRAME 715] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (277123) AI_VISION_FAST: [FRAME 716] Inference complete in 297 ms | Detections: 0[0m
+[0;32mI (277505) AI_VISION_FAST: [FRAME 717] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (277903) AI_VISION_FAST: [FRAME 718] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (278301) AI_VISION_FAST: [FRAME 719] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (278703) AI_VISION_FAST: [FRAME 720] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (279103) AI_VISION_FAST: [FRAME 721] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (279501) AI_VISION_FAST: [FRAME 722] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (279901) AI_VISION_FAST: [FRAME 723] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (280306) AI_VISION_FAST: [FRAME 724] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (280704) AI_VISION_FAST: [FRAME 725] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (281101) AI_VISION_FAST: [FRAME 726] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (281501) AI_VISION_FAST: [FRAME 727] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (281902) AI_VISION_FAST: [FRAME 728] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (282301) AI_VISION_FAST: [FRAME 729] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (282703) AI_VISION_FAST: [FRAME 730] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (283261) AI_VISION_FAST: [FRAME 731] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (283667) AI_VISION_FAST: [FRAME 732] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (284061) AI_VISION_FAST: [FRAME 733] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (284460) AI_VISION_FAST: [FRAME 734] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (284857) AI_VISION_FAST: [FRAME 735] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (285260) AI_VISION_FAST: [FRAME 736] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (285656) AI_VISION_FAST: [FRAME 737] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (286060) AI_VISION_FAST: [FRAME 738] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (286456) AI_VISION_FAST: [FRAME 739] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (286870) AI_VISION_FAST: [FRAME 740] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (287264) AI_VISION_FAST: [FRAME 741] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (287660) AI_VISION_FAST: [FRAME 742] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (288216) AI_VISION_FAST: [FRAME 743] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (288617) AI_VISION_FAST: [FRAME 744] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (289019) AI_VISION_FAST: [FRAME 745] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (289424) AI_VISION_FAST: [FRAME 746] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (289820) AI_VISION_FAST: [FRAME 747] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (290223) AI_VISION_FAST: [FRAME 748] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (290622) AI_VISION_FAST: [FRAME 749] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (291018) AI_VISION_FAST: [FRAME 750] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (291413) AI_VISION_FAST: [FRAME 751] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (291816) AI_VISION_FAST: [FRAME 752] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (292180) AI_VISION_FAST: [FRAME 753] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (292536) AI_VISION_FAST: [FRAME 754] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (292935) AI_VISION_FAST: [FRAME 755] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (293342) AI_VISION_FAST: [FRAME 756] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (293740) AI_VISION_FAST: [FRAME 757] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (294137) AI_VISION_FAST: [FRAME 758] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (294533) AI_VISION_FAST: [FRAME 759] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (294857) AI_VISION_FAST: [FRAME 760] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (295253) AI_VISION_FAST: [FRAME 761] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (295657) AI_VISION_FAST: [FRAME 762] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (296054) AI_VISION_FAST: [FRAME 763] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (296459) AI_VISION_FAST: [FRAME 764] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (296867) AI_VISION_FAST: [FRAME 765] Inference complete in 290 ms | Detections: 0[0m
+[0;32mI (297257) AI_VISION_FAST: [FRAME 766] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (297656) AI_VISION_FAST: [FRAME 767] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (298213) AI_VISION_FAST: [FRAME 768] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (298614) AI_VISION_FAST: [FRAME 769] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (299014) AI_VISION_FAST: [FRAME 770] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (299415) AI_VISION_FAST: [FRAME 771] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (299813) AI_VISION_FAST: [FRAME 772] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (300221) AI_VISION_FAST: [FRAME 773] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (300614) AI_VISION_FAST: [FRAME 774] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (301174) AI_VISION_FAST: [FRAME 777] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (301575) AI_VISION_FAST: [FRAME 778] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (301975) AI_VISION_FAST: [FRAME 779] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (302374) AI_VISION_FAST: [FRAME 780] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (302774) AI_VISION_FAST: [FRAME 781] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (303177) AI_VISION_FAST: [FRAME 782] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (303579) AI_VISION_FAST: [FRAME 783] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (303973) AI_VISION_FAST: [FRAME 784] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (304533) AI_VISION_FAST: [FRAME 785] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (304936) AI_VISION_FAST: [FRAME 786] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (305333) AI_VISION_FAST: [FRAME 787] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (305334) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (305737) AI_VISION_FAST: [FRAME 788] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (306135) AI_VISION_FAST: [FRAME 789] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (306540) AI_VISION_FAST: [FRAME 790] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (306936) AI_VISION_FAST: [FRAME 791] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (307327) AI_VISION_FAST: [FRAME 792] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (307653) AI_VISION_FAST: [FRAME 793] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (308053) AI_VISION_FAST: [FRAME 794] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (308453) AI_VISION_FAST: [FRAME 795] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (308851) AI_VISION_FAST: [FRAME 796] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (309410) AI_VISION_FAST: [FRAME 799] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (309816) AI_VISION_FAST: [FRAME 800] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (310211) AI_VISION_FAST: [FRAME 801] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (310610) AI_VISION_FAST: [FRAME 802] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (311011) AI_VISION_FAST: [FRAME 803] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (311410) AI_VISION_FAST: [FRAME 804] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (311812) AI_VISION_FAST: [FRAME 805] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (312212) AI_VISION_FAST: [FRAME 806] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (312611) AI_VISION_FAST: [FRAME 807] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (313016) AI_VISION_FAST: [FRAME 808] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (313409) AI_VISION_FAST: [FRAME 809] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (313410) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (313804) AI_VISION_FAST: [FRAME 810] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (314208) AI_VISION_FAST: [FRAME 811] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (314607) AI_VISION_FAST: [FRAME 812] Inference complete in 277 ms | Detections: 1[0m
+[0;32mI (314607) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (315010) AI_VISION_FAST: [FRAME 813] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (315406) AI_VISION_FAST: [FRAME 814] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (315809) AI_VISION_FAST: [FRAME 815] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (316212) AI_VISION_FAST: [FRAME 816] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (316615) AI_VISION_FAST: [FRAME 817] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (317008) AI_VISION_FAST: [FRAME 818] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (317401) AI_VISION_FAST: [FRAME 819] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (317725) AI_VISION_FAST: [FRAME 820] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (318128) AI_VISION_FAST: [FRAME 821] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (318528) AI_VISION_FAST: [FRAME 822] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (318529) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (318926) AI_VISION_FAST: [FRAME 823] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (319494) AI_VISION_FAST: [FRAME 824] Inference complete in 286 ms | Detections: 1[0m
+[0;32mI (319494) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (319901) AI_VISION_FAST: [FRAME 825] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (320287) AI_VISION_FAST: [FRAME 826] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (320687) AI_VISION_FAST: [FRAME 827] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (321087) AI_VISION_FAST: [FRAME 828] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (321486) AI_VISION_FAST: [FRAME 829] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (321886) AI_VISION_FAST: [FRAME 830] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (322446) AI_VISION_FAST: [FRAME 833] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (322845) AI_VISION_FAST: [FRAME 834] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (323257) AI_VISION_FAST: [FRAME 835] Inference complete in 291 ms | Detections: 0[0m
+[0;32mI (323643) AI_VISION_FAST: [FRAME 836] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (324044) AI_VISION_FAST: [FRAME 837] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (324443) AI_VISION_FAST: [FRAME 838] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (324845) AI_VISION_FAST: [FRAME 839] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (325166) AI_VISION_FAST: [FRAME 840] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (325560) AI_VISION_FAST: [FRAME 841] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (325887) AI_VISION_FAST: [FRAME 842] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (326286) AI_VISION_FAST: [FRAME 843] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (326686) AI_VISION_FAST: [FRAME 844] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (327084) AI_VISION_FAST: [FRAME 845] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (327478) AI_VISION_FAST: [FRAME 846] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (327801) AI_VISION_FAST: [FRAME 847] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (328118) AI_VISION_FAST: [FRAME 848] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (328446) AI_VISION_FAST: [FRAME 849] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (328843) AI_VISION_FAST: [FRAME 850] Inference complete in 278 ms | Detections: 1[0m
+[0;32mI (328844) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (329244) AI_VISION_FAST: [FRAME 851] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (329649) AI_VISION_FAST: [FRAME 852] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (330200) AI_VISION_FAST: [FRAME 853] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (330603) AI_VISION_FAST: [FRAME 854] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (331004) AI_VISION_FAST: [FRAME 855] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (331402) AI_VISION_FAST: [FRAME 856] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (331800) AI_VISION_FAST: [FRAME 857] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (332202) AI_VISION_FAST: [FRAME 858] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (332601) AI_VISION_FAST: [FRAME 859] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (333166) AI_VISION_FAST: [FRAME 860] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (333562) AI_VISION_FAST: [FRAME 861] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (333959) AI_VISION_FAST: [FRAME 862] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (334363) AI_VISION_FAST: [FRAME 863] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (334759) AI_VISION_FAST: [FRAME 864] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (335163) AI_VISION_FAST: [FRAME 865] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (335560) AI_VISION_FAST: [FRAME 866] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (335956) AI_VISION_FAST: [FRAME 867] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (336289) AI_VISION_FAST: [FRAME 868] Inference complete in 288 ms | Detections: 0[0m
+[0;32mI (336680) AI_VISION_FAST: [FRAME 869] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (337079) AI_VISION_FAST: [FRAME 870] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (337478) AI_VISION_FAST: [FRAME 871] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (337797) AI_VISION_FAST: [FRAME 872] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (338202) AI_VISION_FAST: [FRAME 873] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (338593) AI_VISION_FAST: [FRAME 874] Inference complete in 273 ms | Detections: 0[0m
+[0;32mI (339077) AI_VISION_FAST: [FRAME 876] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (339482) AI_VISION_FAST: [FRAME 877] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (340036) AI_VISION_FAST: [FRAME 878] Inference complete in 277 ms | Detections: 1[0m
+[0;32mI (340037) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (340438) AI_VISION_FAST: [FRAME 879] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (340839) AI_VISION_FAST: [FRAME 880] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (341239) AI_VISION_FAST: [FRAME 881] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (341639) AI_VISION_FAST: [FRAME 882] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (342041) AI_VISION_FAST: [FRAME 883] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (342438) AI_VISION_FAST: [FRAME 884] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (342856) AI_VISION_FAST: [FRAME 885] Inference complete in 297 ms | Detections: 0[0m
+[0;32mI (343238) AI_VISION_FAST: [FRAME 886] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (343637) AI_VISION_FAST: [FRAME 887] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (344197) AI_VISION_FAST: [FRAME 888] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (344596) AI_VISION_FAST: [FRAME 889] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (344997) AI_VISION_FAST: [FRAME 890] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (345398) AI_VISION_FAST: [FRAME 891] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (345398) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (345796) AI_VISION_FAST: [FRAME 892] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (346202) AI_VISION_FAST: [FRAME 893] Inference complete in 284 ms | Detections: 1[0m
+[0;32mI (346202) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (346599) AI_VISION_FAST: [FRAME 894] Inference complete in 282 ms | Detections: 1[0m
+[0;32mI (346600) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (346998) AI_VISION_FAST: [FRAME 895] Inference complete in 281 ms | Detections: 1[0m
+[0;32mI (346999) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (347383) AI_VISION_FAST: [FRAME 896] Inference complete in 267 ms | Detections: 0[0m
+[0;32mI (347721) AI_VISION_FAST: [FRAME 897] Inference complete in 285 ms | Detections: 1[0m
+[0;32mI (347722) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (348121) AI_VISION_FAST: [FRAME 898] Inference complete in 284 ms | Detections: 1[0m
+[0;32mI (348121) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (348520) AI_VISION_FAST: [FRAME 899] Inference complete in 284 ms | Detections: 1[0m
+[0;32mI (348521) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (348916) AI_VISION_FAST: [FRAME 900] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (348916) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (349324) AI_VISION_FAST: [FRAME 901] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (349718) AI_VISION_FAST: [FRAME 902] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (350115) AI_VISION_FAST: [FRAME 903] Inference complete in 277 ms | Detections: 1[0m
+[0;32mI (350115) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (350507) AI_VISION_FAST: [FRAME 904] Inference complete in 272 ms | Detections: 1[0m
+[0;32mI (350508) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (350836) AI_VISION_FAST: [FRAME 905] Inference complete in 281 ms | Detections: 1[0m
+[0;32mI (350836) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (351235) AI_VISION_FAST: [FRAME 906] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (351236) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (351632) AI_VISION_FAST: [FRAME 907] Inference complete in 276 ms | Detections: 1[0m
+[0;32mI (351633) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (351947) AI_VISION_FAST: [FRAME 908] Inference complete in 273 ms | Detections: 1[0m
+[0;32mI (351948) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (352274) AI_VISION_FAST: [FRAME 909] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (352275) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (352667) AI_VISION_FAST: [FRAME 910] Inference complete in 271 ms | Detections: 1[0m
+[0;32mI (352668) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (353002) AI_VISION_FAST: [FRAME 911] Inference complete in 286 ms | Detections: 1[0m
+[0;32mI (353002) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (353393) AI_VISION_FAST: [FRAME 912] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (353794) AI_VISION_FAST: [FRAME 913] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (354193) AI_VISION_FAST: [FRAME 914] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (354593) AI_VISION_FAST: [FRAME 915] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (354593) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (354920) AI_VISION_FAST: [FRAME 916] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (355318) AI_VISION_FAST: [FRAME 917] Inference complete in 284 ms | Detections: 0[0m
+[0;32mI (355714) AI_VISION_FAST: [FRAME 918] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (355714) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (356128) AI_VISION_FAST: [FRAME 919] Inference complete in 293 ms | Detections: 1[0m
+[0;32mI (356128) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (356517) AI_VISION_FAST: [FRAME 920] Inference complete in 284 ms | Detections: 1[0m
+[0;32mI (356517) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (356911) AI_VISION_FAST: [FRAME 921] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (357313) AI_VISION_FAST: [FRAME 922] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (357710) AI_VISION_FAST: [FRAME 923] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (358029) AI_VISION_FAST: [FRAME 924] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (358589) AI_VISION_FAST: [FRAME 927] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (358913) AI_VISION_FAST: [FRAME 928] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (359312) AI_VISION_FAST: [FRAME 929] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (359870) AI_VISION_FAST: [FRAME 930] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (360268) AI_VISION_FAST: [FRAME 931] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (360672) AI_VISION_FAST: [FRAME 932] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (361071) AI_VISION_FAST: [FRAME 933] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (361471) AI_VISION_FAST: [FRAME 934] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (361869) AI_VISION_FAST: [FRAME 935] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (362271) AI_VISION_FAST: [FRAME 936] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (362673) AI_VISION_FAST: [FRAME 937] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (363217) AI_VISION_FAST: [FRAME 938] Inference complete in 267 ms | Detections: 0[0m
+[0;32mI (363544) AI_VISION_FAST: [FRAME 939] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (363869) AI_VISION_FAST: [FRAME 940] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (364269) AI_VISION_FAST: [FRAME 941] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (364668) AI_VISION_FAST: [FRAME 942] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (365068) AI_VISION_FAST: [FRAME 943] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (365471) AI_VISION_FAST: [FRAME 944] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (365870) AI_VISION_FAST: [FRAME 945] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (366271) AI_VISION_FAST: [FRAME 946] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (366668) AI_VISION_FAST: [FRAME 947] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (367058) AI_VISION_FAST: [FRAME 948] Inference complete in 269 ms | Detections: 0[0m
+[0;32mI (367381) AI_VISION_FAST: [FRAME 949] Inference complete in 273 ms | Detections: 1[0m
+[0;32mI (367382) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (367708) AI_VISION_FAST: [FRAME 950] Inference complete in 280 ms | Detections: 1[0m
+[0;32mI (367709) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (368107) AI_VISION_FAST: [FRAME 951] Inference complete in 279 ms | Detections: 1[0m
+[0;32mI (368108) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (368667) AI_VISION_FAST: [FRAME 954] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (369072) AI_VISION_FAST: [FRAME 955] Inference complete in 283 ms | Detections: 1[0m
+[0;32mI (369073) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (369480) AI_VISION_FAST: [FRAME 956] Inference complete in 288 ms | Detections: 1[0m
+[0;32mI (369481) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (369869) AI_VISION_FAST: [FRAME 957] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (370264) AI_VISION_FAST: [FRAME 958] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (370669) AI_VISION_FAST: [FRAME 959] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (371067) AI_VISION_FAST: [FRAME 960] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (371622) AI_VISION_FAST: [FRAME 961] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (372024) AI_VISION_FAST: [FRAME 962] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (372425) AI_VISION_FAST: [FRAME 963] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (372833) AI_VISION_FAST: [FRAME 964] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (373225) AI_VISION_FAST: [FRAME 965] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (373626) AI_VISION_FAST: [FRAME 966] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (374022) AI_VISION_FAST: [FRAME 967] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (374425) AI_VISION_FAST: [FRAME 968] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (374824) AI_VISION_FAST: [FRAME 969] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (375218) AI_VISION_FAST: [FRAME 970] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (375541) AI_VISION_FAST: [FRAME 971] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (375948) AI_VISION_FAST: [FRAME 972] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (376354) AI_VISION_FAST: [FRAME 973] Inference complete in 289 ms | Detections: 0[0m
+[0;32mI (376742) AI_VISION_FAST: [FRAME 974] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (377143) AI_VISION_FAST: [FRAME 975] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (377541) AI_VISION_FAST: [FRAME 976] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (377948) AI_VISION_FAST: [FRAME 977] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (378344) AI_VISION_FAST: [FRAME 978] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (378743) AI_VISION_FAST: [FRAME 979] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (379146) AI_VISION_FAST: [FRAME 980] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (379550) AI_VISION_FAST: [FRAME 981] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (379940) AI_VISION_FAST: [FRAME 982] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (380345) AI_VISION_FAST: [FRAME 983] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (380740) AI_VISION_FAST: [FRAME 984] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (381141) AI_VISION_FAST: [FRAME 985] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (381543) AI_VISION_FAST: [FRAME 986] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (381942) AI_VISION_FAST: [FRAME 987] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (382344) AI_VISION_FAST: [FRAME 988] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (382665) AI_VISION_FAST: [FRAME 989] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (383061) AI_VISION_FAST: [FRAME 990] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (383462) AI_VISION_FAST: [FRAME 991] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (384018) AI_VISION_FAST: [FRAME 992] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (384418) AI_VISION_FAST: [FRAME 993] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (384824) AI_VISION_FAST: [FRAME 994] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (385217) AI_VISION_FAST: [FRAME 995] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (385540) AI_VISION_FAST: [FRAME 996] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (385950) AI_VISION_FAST: [FRAME 997] Inference complete in 286 ms | Detections: 0[0m
+[0;32mI (386339) AI_VISION_FAST: [FRAME 998] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (386741) AI_VISION_FAST: [FRAME 999] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (387137) AI_VISION_FAST: [FRAME 1000] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (387459) AI_VISION_FAST: [FRAME 1001] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (387852) AI_VISION_FAST: [FRAME 1002] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (388179) AI_VISION_FAST: [FRAME 1003] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (388577) AI_VISION_FAST: [FRAME 1004] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (389143) AI_VISION_FAST: [FRAME 1007] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (389544) AI_VISION_FAST: [FRAME 1008] Inference complete in 285 ms | Detections: 0[0m
+[0;32mI (389938) AI_VISION_FAST: [FRAME 1009] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (390339) AI_VISION_FAST: [FRAME 1010] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (390738) AI_VISION_FAST: [FRAME 1011] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (391136) AI_VISION_FAST: [FRAME 1012] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (391499) AI_VISION_FAST: [FRAME 1013] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (391857) AI_VISION_FAST: [FRAME 1014] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (392256) AI_VISION_FAST: [FRAME 1015] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (392663) AI_VISION_FAST: [FRAME 1016] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (393055) AI_VISION_FAST: [FRAME 1017] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (393456) AI_VISION_FAST: [FRAME 1018] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (393857) AI_VISION_FAST: [FRAME 1019] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (394255) AI_VISION_FAST: [FRAME 1020] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (394658) AI_VISION_FAST: [FRAME 1021] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (395056) AI_VISION_FAST: [FRAME 1022] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (395457) AI_VISION_FAST: [FRAME 1023] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (395869) AI_VISION_FAST: [FRAME 1024] Inference complete in 292 ms | Detections: 0[0m
+[0;32mI (396258) AI_VISION_FAST: [FRAME 1025] Inference complete in 281 ms | Detections: 0[0m
+[0;32mI (396652) AI_VISION_FAST: [FRAME 1026] Inference complete in 275 ms | Detections: 0[0m
+[0;32mI (397055) AI_VISION_FAST: [FRAME 1027] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (397455) AI_VISION_FAST: [FRAME 1028] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (397854) AI_VISION_FAST: [FRAME 1029] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (398253) AI_VISION_FAST: [FRAME 1030] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (398655) AI_VISION_FAST: [FRAME 1031] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (399024) AI_VISION_FAST: [FRAME 1032] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (399532) AI_VISION_FAST: [FRAME 1033] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (399897) AI_VISION_FAST: [FRAME 1034] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (400251) AI_VISION_FAST: [FRAME 1035] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (400651) AI_VISION_FAST: [FRAME 1036] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (401052) AI_VISION_FAST: [FRAME 1037] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (401452) AI_VISION_FAST: [FRAME 1038] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (401853) AI_VISION_FAST: [FRAME 1039] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (402253) AI_VISION_FAST: [FRAME 1040] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (402656) AI_VISION_FAST: [FRAME 1041] Inference complete in 282 ms | Detections: 0[0m
+[0;32mI (403051) AI_VISION_FAST: [FRAME 1042] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (403453) AI_VISION_FAST: [FRAME 1043] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (403851) AI_VISION_FAST: [FRAME 1044] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (404251) AI_VISION_FAST: [FRAME 1045] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (404649) AI_VISION_FAST: [FRAME 1046] Inference complete in 276 ms | Detections: 0[0m
+[0;32mI (405050) AI_VISION_FAST: [FRAME 1047] Inference complete in 277 ms | Detections: 0[0m
+[0;32mI (405422) AI_VISION_FAST: [FRAME 1048] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (405775) AI_VISION_FAST: [FRAME 1049] Inference complete in 280 ms | Detections: 0[0m
+[0;32mI (406086) AI_VISION_FAST: [FRAME 1050] Inference complete in 271 ms | Detections: 0[0m
+[0;32mI (406412) AI_VISION_FAST: [FRAME 1051] Inference complete in 279 ms | Detections: 0[0m
+[0;32mI (406727) AI_VISION_FAST: [FRAME 1052] Inference complete in 274 ms | Detections: 0[0m
+[0;32mI (407045) AI_VISION_FAST: [FRAME 1053] Inference complete in 272 ms | Detections: 0[0m
+[0;32mI (407361) AI_VISION_FAST: [FRAME 1054] Inference complete in 268 ms | Detections: 0[0m
+[0;32mI (407690) AI_VISION_FAST: [FRAME 1055] Inference complete in 278 ms | Detections: 0[0m
+[0;32mI (408095) AI_VISION_FAST: [FRAME 1056] Inference complete in 283 ms | Detections: 0[0m
+[0;32mI (408373) AI_VISION_FAST: [FRAME 1057] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (408627) AI_VISION_FAST: [FRAME 1058] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (408885) AI_VISION_FAST: [FRAME 1059] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (409139) AI_VISION_FAST: [FRAME 1060] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (409395) AI_VISION_FAST: [FRAME 1061] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (409650) AI_VISION_FAST: [FRAME 1062] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (409905) AI_VISION_FAST: [FRAME 1063] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (410159) AI_VISION_FAST: [FRAME 1064] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (410415) AI_VISION_FAST: [FRAME 1065] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (410669) AI_VISION_FAST: [FRAME 1066] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (410925) AI_VISION_FAST: [FRAME 1067] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (411170) esp-tls: [sock=58] select() timeout[0m
+[1;31mE (411171) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (411171) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (411174) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (411180) AI_VISION_FAST: [FRAME 1068] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (411443) AI_VISION_FAST: [FRAME 1069] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (411697) AI_VISION_FAST: [FRAME 1070] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (411951) AI_VISION_FAST: [FRAME 1071] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (412205) AI_VISION_FAST: [FRAME 1072] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (412460) AI_VISION_FAST: [FRAME 1073] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (412715) AI_VISION_FAST: [FRAME 1074] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (412972) AI_VISION_FAST: [FRAME 1075] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (413227) AI_VISION_FAST: [FRAME 1076] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (413482) AI_VISION_FAST: [FRAME 1077] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (413736) AI_VISION_FAST: [FRAME 1078] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (413991) AI_VISION_FAST: [FRAME 1079] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (414246) AI_VISION_FAST: [FRAME 1080] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (414501) AI_VISION_FAST: [FRAME 1081] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (414755) AI_VISION_FAST: [FRAME 1082] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (415008) AI_VISION_FAST: [FRAME 1083] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (415263) AI_VISION_FAST: [FRAME 1084] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (415520) AI_VISION_FAST: [FRAME 1085] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (415774) AI_VISION_FAST: [FRAME 1086] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (416028) AI_VISION_FAST: [FRAME 1087] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (416279) AI_VISION_FAST: [FRAME 1088] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (416534) AI_VISION_FAST: [FRAME 1089] Inference complete in 241 ms | Detections: 0[0m
+[1;31mE (416686) esp-tls: [sock=58] select() timeout[0m
+[1;31mE (416687) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (416687) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (416690) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (416790) AI_VISION_FAST: [FRAME 1090] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (417045) AI_VISION_FAST: [FRAME 1091] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (417300) AI_VISION_FAST: [FRAME 1092] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (417555) AI_VISION_FAST: [FRAME 1093] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (417810) AI_VISION_FAST: [FRAME 1094] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (418064) AI_VISION_FAST: [FRAME 1095] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (418320) AI_VISION_FAST: [FRAME 1096] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (418578) AI_VISION_FAST: [FRAME 1097] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (418833) AI_VISION_FAST: [FRAME 1098] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (418842) httpd_txrx: httpd_sock_err: error in send : 11[0m
+[0;33mW (418842) httpd_uri: httpd_uri: uri handler execution failed[0m
+[0;32mI (419085) AI_VISION_FAST: [FRAME 1099] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (419336) AI_VISION_FAST: [FRAME 1100] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (419590) AI_VISION_FAST: [FRAME 1101] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (419844) AI_VISION_FAST: [FRAME 1102] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (420099) AI_VISION_FAST: [FRAME 1103] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (420116) wifi:state: run -> init (0x1c0)[0m
+[0;32mI (420119) wifi:pm stop, total sleep time: 0 us / 418840389 us[0m
+
+[0;32mI (420121) wifi:<ba-del>idx:0, tid:0[0m
+[1;31mE (420125) esp-tls: [sock=57] delayed connect error: Software caused connection abort[0m
+[1;31mE (420126) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (420131) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (420136) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (420144) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (420264) wifi:state: auth -> init (0x3c0)[0m
+[0;32mI (420367) AI_VISION_FAST: [FRAME 1104] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (420622) AI_VISION_FAST: [FRAME 1105] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (420878) AI_VISION_FAST: [FRAME 1106] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (421133) AI_VISION_FAST: [FRAME 1107] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (421391) AI_VISION_FAST: [FRAME 1108] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (421648) AI_VISION_FAST: [FRAME 1109] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (421900) AI_VISION_FAST: [FRAME 1110] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (422155) AI_VISION_FAST: [FRAME 1111] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (422409) AI_VISION_FAST: [FRAME 1112] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (422662) AI_VISION_FAST: [FRAME 1113] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (422917) AI_VISION_FAST: [FRAME 1114] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (423150) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (423153) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (423154) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (423156) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (423161) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (423177) AI_VISION_FAST: [FRAME 1115] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (423434) AI_VISION_FAST: [FRAME 1116] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (423689) AI_VISION_FAST: [FRAME 1117] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (423946) AI_VISION_FAST: [FRAME 1118] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (424200) AI_VISION_FAST: [FRAME 1119] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (424451) AI_VISION_FAST: [FRAME 1120] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (424705) AI_VISION_FAST: [FRAME 1121] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (424958) AI_VISION_FAST: [FRAME 1122] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (425214) AI_VISION_FAST: [FRAME 1123] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (425472) AI_VISION_FAST: [FRAME 1124] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (425726) AI_VISION_FAST: [FRAME 1125] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (425983) AI_VISION_FAST: [FRAME 1126] Inference complete in 244 ms | Detections: 0[0m
+[0;33mW (426170) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (426172) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (426173) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (426176) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (426180) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (426243) AI_VISION_FAST: [FRAME 1127] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (426498) AI_VISION_FAST: [FRAME 1128] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (426751) AI_VISION_FAST: [FRAME 1129] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (427003) AI_VISION_FAST: [FRAME 1130] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (427258) AI_VISION_FAST: [FRAME 1131] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (427510) AI_VISION_FAST: [FRAME 1132] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (427767) AI_VISION_FAST: [FRAME 1133] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (428025) AI_VISION_FAST: [FRAME 1134] Inference complete in 244 ms | Detections: 0[0m
+cam_hal: EV-VSYNC-OVF - 100 additional misses
+[0;32mI (428278) AI_VISION_FAST: [FRAME 1135] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (428532) AI_VISION_FAST: [FRAME 1136] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (428789) AI_VISION_FAST: [FRAME 1137] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (429043) AI_VISION_FAST: [FRAME 1138] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (429189) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (429192) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (429193) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (429195) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (429200) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (429302) AI_VISION_FAST: [FRAME 1139] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (429557) AI_VISION_FAST: [FRAME 1140] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (429810) AI_VISION_FAST: [FRAME 1141] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (430068) AI_VISION_FAST: [FRAME 1142] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (430326) AI_VISION_FAST: [FRAME 1143] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (430582) AI_VISION_FAST: [FRAME 1144] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (430837) AI_VISION_FAST: [FRAME 1145] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (431091) AI_VISION_FAST: [FRAME 1146] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (431348) AI_VISION_FAST: [FRAME 1147] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (431601) AI_VISION_FAST: [FRAME 1148] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (431855) AI_VISION_FAST: [FRAME 1149] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (432110) AI_VISION_FAST: [FRAME 1150] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (432208) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (432210) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (432211) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (432214) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (432218) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (432368) AI_VISION_FAST: [FRAME 1151] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (432369) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (432629) AI_VISION_FAST: [FRAME 1152] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (432630) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (432890) AI_VISION_FAST: [FRAME 1153] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (433147) AI_VISION_FAST: [FRAME 1154] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (433402) AI_VISION_FAST: [FRAME 1155] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (433659) AI_VISION_FAST: [FRAME 1156] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (433914) AI_VISION_FAST: [FRAME 1157] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (434168) AI_VISION_FAST: [FRAME 1158] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (434420) AI_VISION_FAST: [FRAME 1159] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (434674) AI_VISION_FAST: [FRAME 1160] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (434932) AI_VISION_FAST: [FRAME 1161] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (435186) AI_VISION_FAST: [FRAME 1162] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (435227) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (435230) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (435231) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (435233) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (435238) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (435449) AI_VISION_FAST: [FRAME 1163] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (435706) AI_VISION_FAST: [FRAME 1164] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (435962) AI_VISION_FAST: [FRAME 1165] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (435963) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (436223) AI_VISION_FAST: [FRAME 1166] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (436478) AI_VISION_FAST: [FRAME 1167] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (436732) AI_VISION_FAST: [FRAME 1168] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (436986) AI_VISION_FAST: [FRAME 1169] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (436986) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (437247) AI_VISION_FAST: [FRAME 1170] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (437248) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (437509) AI_VISION_FAST: [FRAME 1171] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (437509) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (437771) AI_VISION_FAST: [FRAME 1172] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (437772) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (438035) AI_VISION_FAST: [FRAME 1173] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (438035) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (438246) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (438250) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (438251) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (438252) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (438257) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (438268) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (438272) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (438277) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (438281) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (438305) AI_VISION_FAST: [FRAME 1174] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (438306) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (438565) AI_VISION_FAST: [FRAME 1175] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (438817) AI_VISION_FAST: [FRAME 1176] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (439071) AI_VISION_FAST: [FRAME 1177] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (439325) AI_VISION_FAST: [FRAME 1178] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (439326) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (439584) AI_VISION_FAST: [FRAME 1179] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (439585) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (439843) AI_VISION_FAST: [FRAME 1180] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (440097) AI_VISION_FAST: [FRAME 1181] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (440353) AI_VISION_FAST: [FRAME 1182] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (440610) AI_VISION_FAST: [FRAME 1183] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (440867) AI_VISION_FAST: [FRAME 1184] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (441121) AI_VISION_FAST: [FRAME 1185] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (441290) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (441292) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (441293) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (441296) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (441300) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (441380) AI_VISION_FAST: [FRAME 1186] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (441634) AI_VISION_FAST: [FRAME 1187] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (441888) AI_VISION_FAST: [FRAME 1188] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (442145) AI_VISION_FAST: [FRAME 1189] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (442401) AI_VISION_FAST: [FRAME 1190] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (442658) AI_VISION_FAST: [FRAME 1191] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (442915) AI_VISION_FAST: [FRAME 1192] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (443172) AI_VISION_FAST: [FRAME 1193] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (443430) AI_VISION_FAST: [FRAME 1194] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (443684) AI_VISION_FAST: [FRAME 1195] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (443938) AI_VISION_FAST: [FRAME 1196] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (444192) AI_VISION_FAST: [FRAME 1197] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (444309) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (444311) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (444314) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (444315) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (444320) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (444451) AI_VISION_FAST: [FRAME 1198] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (444707) AI_VISION_FAST: [FRAME 1199] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (444963) AI_VISION_FAST: [FRAME 1200] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (445219) AI_VISION_FAST: [FRAME 1201] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (445474) AI_VISION_FAST: [FRAME 1202] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (445732) AI_VISION_FAST: [FRAME 1203] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (445988) AI_VISION_FAST: [FRAME 1204] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (446243) AI_VISION_FAST: [FRAME 1205] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (446497) AI_VISION_FAST: [FRAME 1206] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (446750) AI_VISION_FAST: [FRAME 1207] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (447006) AI_VISION_FAST: [FRAME 1208] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (447261) AI_VISION_FAST: [FRAME 1209] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (447328) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (447332) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (447332) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (447334) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (447338) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (447520) AI_VISION_FAST: [FRAME 1210] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (447775) AI_VISION_FAST: [FRAME 1211] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (448033) AI_VISION_FAST: [FRAME 1212] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (448289) AI_VISION_FAST: [FRAME 1213] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (448544) AI_VISION_FAST: [FRAME 1214] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (448798) AI_VISION_FAST: [FRAME 1215] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (449052) AI_VISION_FAST: [FRAME 1216] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (449308) AI_VISION_FAST: [FRAME 1217] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (449562) AI_VISION_FAST: [FRAME 1218] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (449817) AI_VISION_FAST: [FRAME 1219] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (450073) AI_VISION_FAST: [FRAME 1220] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (450331) AI_VISION_FAST: [FRAME 1221] Inference complete in 244 ms | Detections: 0[0m
+[0;33mW (450347) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (450351) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (450352) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (450353) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (450357) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (450589) AI_VISION_FAST: [FRAME 1222] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (450839) AI_VISION_FAST: [FRAME 1223] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (451095) AI_VISION_FAST: [FRAME 1224] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (451350) AI_VISION_FAST: [FRAME 1225] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (451604) AI_VISION_FAST: [FRAME 1226] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (451860) AI_VISION_FAST: [FRAME 1227] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (452113) AI_VISION_FAST: [FRAME 1228] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (452371) AI_VISION_FAST: [FRAME 1229] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (452627) AI_VISION_FAST: [FRAME 1230] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (452886) AI_VISION_FAST: [FRAME 1231] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (453143) AI_VISION_FAST: [FRAME 1232] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (453366) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (453372) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (453373) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (453373) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (453378) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (453402) AI_VISION_FAST: [FRAME 1233] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (453655) AI_VISION_FAST: [FRAME 1234] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (453909) AI_VISION_FAST: [FRAME 1235] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (454164) AI_VISION_FAST: [FRAME 1236] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (454423) AI_VISION_FAST: [FRAME 1237] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (454679) AI_VISION_FAST: [FRAME 1238] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (454936) AI_VISION_FAST: [FRAME 1239] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (455190) AI_VISION_FAST: [FRAME 1240] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (455450) AI_VISION_FAST: [FRAME 1241] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (455703) AI_VISION_FAST: [FRAME 1242] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (455957) AI_VISION_FAST: [FRAME 1243] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (456213) AI_VISION_FAST: [FRAME 1244] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (456386) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (456389) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (456390) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (456392) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (456397) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (456472) AI_VISION_FAST: [FRAME 1245] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (456731) AI_VISION_FAST: [FRAME 1246] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (456989) AI_VISION_FAST: [FRAME 1247] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (457247) AI_VISION_FAST: [FRAME 1248] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (457502) AI_VISION_FAST: [FRAME 1249] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (457761) AI_VISION_FAST: [FRAME 1250] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (458018) AI_VISION_FAST: [FRAME 1251] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (458270) AI_VISION_FAST: [FRAME 1252] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (458524) AI_VISION_FAST: [FRAME 1253] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (458779) AI_VISION_FAST: [FRAME 1254] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (459034) AI_VISION_FAST: [FRAME 1255] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (459291) AI_VISION_FAST: [FRAME 1256] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (459405) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (459408) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (459409) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (459411) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (459416) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (459551) AI_VISION_FAST: [FRAME 1257] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (459552) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (459814) AI_VISION_FAST: [FRAME 1258] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (459814) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (460076) AI_VISION_FAST: [FRAME 1259] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (460332) AI_VISION_FAST: [FRAME 1260] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (460585) AI_VISION_FAST: [FRAME 1261] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (460838) AI_VISION_FAST: [FRAME 1262] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (461091) AI_VISION_FAST: [FRAME 1263] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (461345) AI_VISION_FAST: [FRAME 1264] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (461598) AI_VISION_FAST: [FRAME 1265] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (461851) AI_VISION_FAST: [FRAME 1266] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (462107) AI_VISION_FAST: [FRAME 1267] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (462364) AI_VISION_FAST: [FRAME 1268] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (462424) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (462426) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (462428) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (462430) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (462434) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (462625) AI_VISION_FAST: [FRAME 1269] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (462881) AI_VISION_FAST: [FRAME 1270] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (463136) AI_VISION_FAST: [FRAME 1271] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (463387) AI_VISION_FAST: [FRAME 1272] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (463642) AI_VISION_FAST: [FRAME 1273] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (463898) AI_VISION_FAST: [FRAME 1274] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (464155) AI_VISION_FAST: [FRAME 1275] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (464411) AI_VISION_FAST: [FRAME 1276] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (464666) AI_VISION_FAST: [FRAME 1277] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (464923) AI_VISION_FAST: [FRAME 1278] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (465181) AI_VISION_FAST: [FRAME 1279] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (465438) AI_VISION_FAST: [FRAME 1280] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (465443) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (465445) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (465446) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (465451) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (465456) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (465694) AI_VISION_FAST: [FRAME 1281] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (465946) AI_VISION_FAST: [FRAME 1282] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (466201) AI_VISION_FAST: [FRAME 1283] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (466457) AI_VISION_FAST: [FRAME 1284] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (466713) AI_VISION_FAST: [FRAME 1285] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (466968) AI_VISION_FAST: [FRAME 1286] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (467225) AI_VISION_FAST: [FRAME 1287] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (467484) AI_VISION_FAST: [FRAME 1288] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (467739) AI_VISION_FAST: [FRAME 1289] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (467997) AI_VISION_FAST: [FRAME 1290] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (468252) AI_VISION_FAST: [FRAME 1291] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (468465) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (468467) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (468468) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (468471) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (468476) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (468508) AI_VISION_FAST: [FRAME 1292] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (468764) AI_VISION_FAST: [FRAME 1293] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (469020) AI_VISION_FAST: [FRAME 1294] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (469278) AI_VISION_FAST: [FRAME 1295] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (469535) AI_VISION_FAST: [FRAME 1296] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (469792) AI_VISION_FAST: [FRAME 1297] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (470048) AI_VISION_FAST: [FRAME 1298] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (470302) AI_VISION_FAST: [FRAME 1299] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (470556) AI_VISION_FAST: [FRAME 1300] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (470812) AI_VISION_FAST: [FRAME 1301] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (471064) AI_VISION_FAST: [FRAME 1302] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (471321) AI_VISION_FAST: [FRAME 1303] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (471485) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (471487) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (471489) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (471491) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (471495) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (471581) AI_VISION_FAST: [FRAME 1304] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (471838) AI_VISION_FAST: [FRAME 1305] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (472093) AI_VISION_FAST: [FRAME 1306] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (472350) AI_VISION_FAST: [FRAME 1307] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (472606) AI_VISION_FAST: [FRAME 1308] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (472859) AI_VISION_FAST: [FRAME 1309] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (473114) AI_VISION_FAST: [FRAME 1310] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (473368) AI_VISION_FAST: [FRAME 1311] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (473624) AI_VISION_FAST: [FRAME 1312] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (473882) AI_VISION_FAST: [FRAME 1313] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (474138) AI_VISION_FAST: [FRAME 1314] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (474395) AI_VISION_FAST: [FRAME 1315] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (474504) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (474506) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (474507) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (474510) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (474516) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (474657) AI_VISION_FAST: [FRAME 1316] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (474911) AI_VISION_FAST: [FRAME 1317] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (475167) AI_VISION_FAST: [FRAME 1318] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (475420) AI_VISION_FAST: [FRAME 1319] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (475674) AI_VISION_FAST: [FRAME 1320] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (475930) AI_VISION_FAST: [FRAME 1321] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (476185) AI_VISION_FAST: [FRAME 1322] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (476441) AI_VISION_FAST: [FRAME 1323] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (476697) AI_VISION_FAST: [FRAME 1324] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (476955) AI_VISION_FAST: [FRAME 1325] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (477211) AI_VISION_FAST: [FRAME 1326] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (477465) AI_VISION_FAST: [FRAME 1327] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (477523) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (477525) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (477526) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (477529) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (477533) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (477724) AI_VISION_FAST: [FRAME 1328] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (477979) AI_VISION_FAST: [FRAME 1329] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (478233) AI_VISION_FAST: [FRAME 1330] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (478490) AI_VISION_FAST: [FRAME 1331] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (478744) AI_VISION_FAST: [FRAME 1332] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (479000) AI_VISION_FAST: [FRAME 1333] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (479258) AI_VISION_FAST: [FRAME 1334] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (479515) AI_VISION_FAST: [FRAME 1335] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (479769) AI_VISION_FAST: [FRAME 1336] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (480020) AI_VISION_FAST: [FRAME 1337] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (480276) AI_VISION_FAST: [FRAME 1338] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (480529) AI_VISION_FAST: [FRAME 1339] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (480542) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (480544) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (480545) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (480548) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (480553) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (480787) AI_VISION_FAST: [FRAME 1340] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (481044) AI_VISION_FAST: [FRAME 1341] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (481299) AI_VISION_FAST: [FRAME 1342] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (481556) AI_VISION_FAST: [FRAME 1343] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (481812) AI_VISION_FAST: [FRAME 1344] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (481813) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (482074) AI_VISION_FAST: [FRAME 1345] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (482328) AI_VISION_FAST: [FRAME 1346] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (482581) AI_VISION_FAST: [FRAME 1347] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (482835) AI_VISION_FAST: [FRAME 1348] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (483088) AI_VISION_FAST: [FRAME 1349] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (483344) AI_VISION_FAST: [FRAME 1350] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (483561) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (483563) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (483564) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (483567) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (483571) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (483604) AI_VISION_FAST: [FRAME 1351] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (483859) AI_VISION_FAST: [FRAME 1352] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (484114) AI_VISION_FAST: [FRAME 1353] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (484370) AI_VISION_FAST: [FRAME 1354] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (484626) AI_VISION_FAST: [FRAME 1355] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (484880) AI_VISION_FAST: [FRAME 1356] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (484880) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (485137) AI_VISION_FAST: [FRAME 1357] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (485137) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (485397) AI_VISION_FAST: [FRAME 1358] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (485654) AI_VISION_FAST: [FRAME 1359] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (485654) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (485914) AI_VISION_FAST: [FRAME 1360] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (486171) AI_VISION_FAST: [FRAME 1361] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (486425) AI_VISION_FAST: [FRAME 1362] Inference complete in 241 ms | Detections: 0[0m
+[0;33mW (486580) wifi:Haven't to connect to a suitable AP now![0m
+[1;31mE (486582) esp-tls: [sock=57] connect() error: Host is unreachable[0m
+[1;31mE (486583) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (486586) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (486590) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (486686) AI_VISION_FAST: [FRAME 1363] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (486942) AI_VISION_FAST: [FRAME 1364] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (487197) AI_VISION_FAST: [FRAME 1365] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (487451) AI_VISION_FAST: [FRAME 1366] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (487705) AI_VISION_FAST: [FRAME 1367] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (487930) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (487946) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (487968) AI_VISION_FAST: [FRAME 1368] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (487968) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (487986) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (487986) wifi:security: WPA2-PSK, phy: bgn, rssi: -25, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (487993) wifi:pm start, type: 0[0m
+
+[0;32mI (487994) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (488003) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (488064) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (488065) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (488235) AI_VISION_FAST: [FRAME 1369] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (488490) AI_VISION_FAST: [FRAME 1370] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (488744) AI_VISION_FAST: [FRAME 1371] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (488999) AI_VISION_FAST: [FRAME 1372] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (489036) esp_netif_handlers: sta ip: 10.75.11.50, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (489037) AEGIS_MASTER_MAIN: Wi-Fi Connected! IP: 10.75.11.50[0m
+[0;32mI (489256) AI_VISION_FAST: [FRAME 1373] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (489511) AI_VISION_FAST: [FRAME 1374] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (489767) AI_VISION_FAST: [FRAME 1375] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (490020) AI_VISION_FAST: [FRAME 1376] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (490275) AI_VISION_FAST: [FRAME 1377] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (490528) AI_VISION_FAST: [FRAME 1378] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (490781) AI_VISION_FAST: [FRAME 1379] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (491037) AI_VISION_FAST: [FRAME 1380] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (491291) AI_VISION_FAST: [FRAME 1381] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (491546) AI_VISION_FAST: [FRAME 1382] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (491799) AI_VISION_FAST: [FRAME 1383] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (492056) AI_VISION_FAST: [FRAME 1384] Inference complete in 243 ms | Detections: 0[0m
+[1;31mE (492104) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (492105) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (492105) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (492108) AEGIS_MASTER_MAIN: HTTP POST [/api/v1/telemetry/ingest] failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (492311) AI_VISION_FAST: [FRAME 1385] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (492566) AI_VISION_FAST: [FRAME 1386] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (492819) AI_VISION_FAST: [FRAME 1387] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (493075) AI_VISION_FAST: [FRAME 1388] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (493330) AI_VISION_FAST: [FRAME 1389] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (493584) AI_VISION_FAST: [FRAME 1390] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (493838) AI_VISION_FAST: [FRAME 1391] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (494092) AI_VISION_FAST: [FRAME 1392] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (494347) AI_VISION_FAST: [FRAME 1393] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (494601) AI_VISION_FAST: [FRAME 1394] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (494855) AI_VISION_FAST: [FRAME 1395] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (495109) AI_VISION_FAST: [FRAME 1396] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (495367) AI_VISION_FAST: [FRAME 1397] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (495621) AI_VISION_FAST: [FRAME 1398] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (495876) AI_VISION_FAST: [FRAME 1399] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (496131) AI_VISIO

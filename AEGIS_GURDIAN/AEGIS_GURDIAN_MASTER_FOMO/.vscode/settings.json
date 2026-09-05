@@ -1,0 +1,6 @@
+{
+    "idf.currentSetup": "/home/hp/.espressif/v6.0.2/esp-idf",
+    "idf.flashType": "UART",
+    "esp8266-idf.comPort": "/dev/ttyACM0",
+    "idf.port": "/dev/ttyACM0"
+}

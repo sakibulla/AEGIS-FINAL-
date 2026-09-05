@@ -1,0 +1,1575 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (251) esp_image: segment 1: paddr=000dafd0 vaddr=3fc9db00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037ba92
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=cafa8h (831400) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=000dafd0 vaddr=3fc9db00 size=05048h ( 20552) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000e0020 vaddr=42000020 size=119b10h (1153808) map[0m
+[0;32mI (470) esp_image: segment 3: paddr=001f9b38 vaddr=3fca2b48 size=058dch ( 22748) load[0m
+[0;32mI (475) esp_image: segment 4: paddr=001ff41c vaddr=40374000 size=19a64h (105060) load[0m
+[0;32mI (500) esp_image: segment 5: paddr=00218e88 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (512) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (522) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (522) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (524) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (529) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (533) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (537) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (542) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (547) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (551) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (556) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (561) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (566) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (569) esp_psram: Speed: 80MHz[0m
+[0;32mI (572) cpu_start: Multicore app[0m
+[0;32mI (987) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (996) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (997) cpu_start: Pro cpu start user code[0m
+[0;32mI (997) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (998) app_init: Application information:[0m
+[0;32mI (1002) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1007) app_init: App version:      1[0m
+[0;32mI (1010) app_init: Compile time:     Aug 16 2026 20:32:46[0m
+[0;32mI (1015) app_init: ELF file SHA256:  8ff582c39...[0m
+[0;32mI (1020) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1024) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1028) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1032) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1036) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1042) heap_init: At 3FCC0700 len 00029010 (164 KiB): RAM[0m
+[0;32mI (1047) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1052) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1058) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1065) spi_flash: detected chip: generic[0m
+[0;32mI (1068) spi_flash: flash io: dio[0m
+[0;33mW (1072) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1081) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1088) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1106) main_task: Started on CPU0[0m
+[0;32mI (1106) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1107) main_task: Calling app_main()[0m
+[0;32mI (1110) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1117) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1124) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1130) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1137) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1159) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1161) pp: pp rom version: e7ae62f[0m
+[0;32mI (1161) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1163) wifi:wifi driver task: 3fcd0608, prio:23, stack:6656, core=0[0m
+[0;32mI (1175) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1175) wifi:wifi certification version: v7.0[0m
+[0;32mI (1176) wifi:config NVS flash: enabled[0m
+[0;32mI (1179) wifi:config nano formatting: disabled[0m
+[0;32mI (1184) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1189) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1193) wifi:Init management short buffer num: 32[0m
+[0;32mI (1197) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1201) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1205) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1209) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1213) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1218) wifi_init: rx ba win: 6[0m
+[0;32mI (1220) wifi_init: accept mbox: 6[0m
+[0;32mI (1223) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1226) wifi_init: udp mbox: 6[0m
+[0;32mI (1229) wifi_init: tcp mbox: 6[0m
+[0;32mI (1232) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1235) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1239) wifi_init: tcp mss: 1440[0m
+[0;32mI (1242) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1246) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1249) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1254) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1299) wifi:mode : sta (e8:f6:0a:d7:91:60)[0m
+[0;32mI (1300) wifi:enable tsf[0m
+[0;32mI (1301) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1302) AEGIS_PATHFINDER: Pathfinder MAC: E8:F6:0A:D7:91:60[0m
+[0;32mI (1304) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1308) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (1314) LVGL: Starting LVGL task[0m
+[0;32mI (1460) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (1470) SWARM_DISPLAY: Swarm display ready[0m
+[0;32mI (1471) SWARM_LINK: Swarm link ready on channel 6 (Pathfinder)[0m
+[0;32mI (1471) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[0;32mI (1489) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1489) cam_hal: cam init ok[0m
+[0;32mI (1489) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1490) sccb: sccb_i2c_port=1[0m
+[0;32mI (1504) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1504) camera: Detected OV2640 camera[0m
+[0;32mI (1505) camera: Detected camera at address=0x30[0m
+[0;32mI (1588) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1588) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1588) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1598) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1608) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1613) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1619) cam_hal: cam config ok[0m
+[0;32mI (1622) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1700) AI_VISION_FAST: OV2640 / S3 Camera Hardware successfully initialized![0m
+[0;32mI (1702) WEB_STREAMER: Web Streamer active on Core 0 with /, /snapshot, /detections, and /control routes (no live /stream)[0m
+[0;32mI (1707) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1707) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1707) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1707) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1731) main_task: Returned from app_main()[0m
+[0;32mI (2394) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2639) AI_VISION_FAST: [FRAME 1] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (2639) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (2901) AI_VISION_FAST: [FRAME 2] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (2902) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (2907) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (2914) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;32mI (3160) AI_VISION_FAST: [FRAME 3] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (3161) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (3423) AI_VISION_FAST: [FRAME 4] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (3424) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (3682) AI_VISION_FAST: [FRAME 5] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (3890) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (3935) AI_VISION_FAST: [FRAME 6] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (4189) AI_VISION_FAST: [FRAME 7] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (4442) AI_VISION_FAST: [FRAME 8] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (4698) AI_VISION_FAST: [FRAME 9] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (4699) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (4959) AI_VISION_FAST: [FRAME 10] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (4959) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (5221) AI_VISION_FAST: [FRAME 11] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (5221) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (5479) AI_VISION_FAST: [FRAME 12] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (5479) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (5737) AI_VISION_FAST: [FRAME 13] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (5738) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (5996) AI_VISION_FAST: [FRAME 14] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (5996) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (6255) AI_VISION_FAST: [FRAME 15] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (6255) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (6307) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (6534) AI_VISION_FAST: [FRAME 16] Inference complete in 259 ms | Detections: 1[0m
+[0;32mI (6534) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (6796) AI_VISION_FAST: [FRAME 17] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (6796) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (7058) AI_VISION_FAST: [FRAME 18] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (7058) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (7320) AI_VISION_FAST: [FRAME 19] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (7320) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (7580) AI_VISION_FAST: [FRAME 20] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (7580) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (7840) AI_VISION_FAST: [FRAME 21] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (7840) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (8099) AI_VISION_FAST: [FRAME 22] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (8100) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (8358) AI_VISION_FAST: [FRAME 23] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (8359) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (8615) AI_VISION_FAST: [FRAME 24] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (8616) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (8724) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (8878) AI_VISION_FAST: [FRAME 25] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (8878) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (9134) AI_VISION_FAST: [FRAME 26] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (9134) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (9391) AI_VISION_FAST: [FRAME 27] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (9392) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (9397) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (9651) AI_VISION_FAST: [FRAME 28] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (9908) AI_VISION_FAST: [FRAME 29] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (10164) AI_VISION_FAST: [FRAME 30] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (10165) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (10424) AI_VISION_FAST: [FRAME 31] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (10424) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (10681) AI_VISION_FAST: [FRAME 32] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (10682) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (10939) AI_VISION_FAST: [FRAME 33] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (10939) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (11139) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (11199) AI_VISION_FAST: [FRAME 34] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (11199) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (11462) AI_VISION_FAST: [FRAME 35] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (11730) AI_VISION_FAST: [FRAME 36] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (11731) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (11992) AI_VISION_FAST: [FRAME 37] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (12246) AI_VISION_FAST: [FRAME 38] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (12501) AI_VISION_FAST: [FRAME 39] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (12753) AI_VISION_FAST: [FRAME 40] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (12754) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (13009) AI_VISION_FAST: [FRAME 41] Inference complete in 236 ms | Detections: 1[0m
+[0;32mI (13009) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (13265) AI_VISION_FAST: [FRAME 42] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (13518) AI_VISION_FAST: [FRAME 43] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (13518) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (13557) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (13783) AI_VISION_FAST: [FRAME 44] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (13783) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (14045) AI_VISION_FAST: [FRAME 45] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (14299) AI_VISION_FAST: [FRAME 46] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (14555) AI_VISION_FAST: [FRAME 47] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (14808) AI_VISION_FAST: [FRAME 48] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15063) AI_VISION_FAST: [FRAME 49] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15317) AI_VISION_FAST: [FRAME 50] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15566) AI_VISION_FAST: [FRAME 51] Inference complete in 235 ms | Detections: 0[0m
+[0;32mI (15818) AI_VISION_FAST: [FRAME 52] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (15973) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (16073) AI_VISION_FAST: [FRAME 53] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (16074) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;33mW (16079) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (16336) AI_VISION_FAST: [FRAME 54] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (16336) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16612) AI_VISION_FAST: [FRAME 55] Inference complete in 257 ms | Detections: 0[0m
+[0;32mI (16870) AI_VISION_FAST: [FRAME 56] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (16870) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (17130) AI_VISION_FAST: [FRAME 57] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (17131) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (17391) AI_VISION_FAST: [FRAME 58] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (17392) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (17649) AI_VISION_FAST: [FRAME 59] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (17649) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (17905) AI_VISION_FAST: [FRAME 60] Inference complete in 236 ms | Detections: 1[0m
+[0;32mI (17905) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18164) AI_VISION_FAST: [FRAME 61] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (18165) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18391) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (18424) AI_VISION_FAST: [FRAME 62] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (18424) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18685) AI_VISION_FAST: [FRAME 63] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (18685) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18945) AI_VISION_FAST: [FRAME 64] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (18946) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (19206) AI_VISION_FAST: [FRAME 65] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (19207) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (19468) AI_VISION_FAST: [FRAME 66] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (19469) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (19730) AI_VISION_FAST: [FRAME 67] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (19731) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (19986) AI_VISION_FAST: [FRAME 68] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (19987) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:1, y:0, w:93, h:94][0m
+[0;32mI (20246) AI_VISION_FAST: [FRAME 69] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (20247) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (20505) AI_VISION_FAST: [FRAME 70] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (20505) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (20763) AI_VISION_FAST: [FRAME 71] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (20763) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (20809) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (21027) AI_VISION_FAST: [FRAME 72] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (21028) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (21289) AI_VISION_FAST: [FRAME 73] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (21289) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (21556) AI_VISION_FAST: [FRAME 74] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (21557) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (21816) AI_VISION_FAST: [FRAME 75] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (21816) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (22077) AI_VISION_FAST: [FRAME 76] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (22330) AI_VISION_FAST: [FRAME 77] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (22585) AI_VISION_FAST: [FRAME 78] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (22585) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (22843) AI_VISION_FAST: [FRAME 79] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (22844) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;33mW (22849) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (23103) AI_VISION_FAST: [FRAME 80] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (23103) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (23226) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (23368) AI_VISION_FAST: [FRAME 81] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (23368) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (23632) AI_VISION_FAST: [FRAME 82] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (23632) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (23892) AI_VISION_FAST: [FRAME 83] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (23892) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (24154) AI_VISION_FAST: [FRAME 84] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (24154) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (24416) AI_VISION_FAST: [FRAME 85] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (24417) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (24676) AI_VISION_FAST: [FRAME 86] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (24929) AI_VISION_FAST: [FRAME 87] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (24929) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (25187) AI_VISION_FAST: [FRAME 88] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (25440) AI_VISION_FAST: [FRAME 89] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (25641) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (25695) AI_VISION_FAST: [FRAME 90] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (25950) AI_VISION_FAST: [FRAME 91] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (26206) AI_VISION_FAST: [FRAME 92] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (26461) AI_VISION_FAST: [FRAME 93] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (26732) AI_VISION_FAST: [FRAME 94] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (26986) AI_VISION_FAST: [FRAME 95] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (27239) AI_VISION_FAST: [FRAME 96] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (27491) AI_VISION_FAST: [FRAME 97] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (27745) AI_VISION_FAST: [FRAME 98] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (27997) AI_VISION_FAST: [FRAME 99] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (28058) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (28250) AI_VISION_FAST: [FRAME 100] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (28503) AI_VISION_FAST: [FRAME 101] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (28756) AI_VISION_FAST: [FRAME 102] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (29009) AI_VISION_FAST: [FRAME 103] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (29260) AI_VISION_FAST: [FRAME 104] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (29513) AI_VISION_FAST: [FRAME 105] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (29513) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (29765) AI_VISION_FAST: [FRAME 106] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (30017) AI_VISION_FAST: [FRAME 107] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (30270) AI_VISION_FAST: [FRAME 108] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (30520) AI_VISION_FAST: [FRAME 109] Inference complete in 236 ms | Detections: 1[0m
+[0;32mI (30520) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (30778) AI_VISION_FAST: [FRAME 110] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (30779) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (31037) AI_VISION_FAST: [FRAME 111] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (31288) AI_VISION_FAST: [FRAME 112] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (31288) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (31552) AI_VISION_FAST: [FRAME 113] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (31802) AI_VISION_FAST: [FRAME 114] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (32053) AI_VISION_FAST: [FRAME 115] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (32306) AI_VISION_FAST: [FRAME 116] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (32307) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (32564) AI_VISION_FAST: [FRAME 117] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (32815) AI_VISION_FAST: [FRAME 118] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (32816) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (33074) AI_VISION_FAST: [FRAME 119] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (33332) AI_VISION_FAST: [FRAME 120] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (33332) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (33594) AI_VISION_FAST: [FRAME 121] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (33594) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (33854) AI_VISION_FAST: [FRAME 122] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (33855) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (34116) AI_VISION_FAST: [FRAME 123] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (34117) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (34379) AI_VISION_FAST: [FRAME 124] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (34379) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (34639) AI_VISION_FAST: [FRAME 125] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (34640) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (34900) AI_VISION_FAST: [FRAME 126] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (34900) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (35158) AI_VISION_FAST: [FRAME 127] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (35410) AI_VISION_FAST: [FRAME 128] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (35411) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (35476) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (35673) AI_VISION_FAST: [FRAME 129] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (35674) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (35935) AI_VISION_FAST: [FRAME 130] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (35935) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (36194) AI_VISION_FAST: [FRAME 131] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (36195) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (36200) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (36455) AI_VISION_FAST: [FRAME 132] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (36729) AI_VISION_FAST: [FRAME 133] Inference complete in 261 ms | Detections: 1[0m
+[0;32mI (36730) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (36735) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (36990) AI_VISION_FAST: [FRAME 134] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (36990) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (37249) AI_VISION_FAST: [FRAME 135] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (37250) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (37508) AI_VISION_FAST: [FRAME 136] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (37508) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (37767) AI_VISION_FAST: [FRAME 137] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (37768) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (37773) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [2/10] from Slave...[0m
+[0;32mI (37892) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (38031) AI_VISION_FAST: [FRAME 138] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (38288) AI_VISION_FAST: [FRAME 139] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (38544) AI_VISION_FAST: [FRAME 140] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (38799) AI_VISION_FAST: [FRAME 141] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (39053) AI_VISION_FAST: [FRAME 142] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (39309) AI_VISION_FAST: [FRAME 143] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (39310) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (39568) AI_VISION_FAST: [FRAME 144] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (39568) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (39826) AI_VISION_FAST: [FRAME 145] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (40079) AI_VISION_FAST: [FRAME 146] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (40308) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (40335) AI_VISION_FAST: [FRAME 147] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (40591) AI_VISION_FAST: [FRAME 148] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (40846) AI_VISION_FAST: [FRAME 149] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (41098) AI_VISION_FAST: [FRAME 150] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (41354) AI_VISION_FAST: [FRAME 151] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (41621) AI_VISION_FAST: [FRAME 152] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (41874) AI_VISION_FAST: [FRAME 153] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42128) AI_VISION_FAST: [FRAME 154] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42382) AI_VISION_FAST: [FRAME 155] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42635) AI_VISION_FAST: [FRAME 156] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (42726) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (42893) AI_VISION_FAST: [FRAME 157] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (42893) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (43151) AI_VISION_FAST: [FRAME 158] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (43152) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (43412) AI_VISION_FAST: [FRAME 159] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (43413) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (43673) AI_VISION_FAST: [FRAME 160] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (43674) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (43933) AI_VISION_FAST: [FRAME 161] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (43934) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (43940) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (44195) AI_VISION_FAST: [FRAME 162] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (44195) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (44454) AI_VISION_FAST: [FRAME 163] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (44455) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (44715) AI_VISION_FAST: [FRAME 164] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (44716) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (44973) AI_VISION_FAST: [FRAME 165] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (44973) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (45141) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (45234) AI_VISION_FAST: [FRAME 166] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (45235) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (45496) AI_VISION_FAST: [FRAME 167] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (45496) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (45758) AI_VISION_FAST: [FRAME 168] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (45759) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (46020) AI_VISION_FAST: [FRAME 169] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (46020) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (46279) AI_VISION_FAST: [FRAME 170] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (46280) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (46549) AI_VISION_FAST: [FRAME 171] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (46549) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (46808) AI_VISION_FAST: [FRAME 172] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (46809) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (47066) AI_VISION_FAST: [FRAME 173] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (47067) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (47325) AI_VISION_FAST: [FRAME 174] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (47326) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (47560) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (47586) AI_VISION_FAST: [FRAME 175] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (47586) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (47846) AI_VISION_FAST: [FRAME 176] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (47847) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (48105) AI_VISION_FAST: [FRAME 177] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (48106) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (48366) AI_VISION_FAST: [FRAME 178] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (48622) AI_VISION_FAST: [FRAME 179] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (48878) AI_VISION_FAST: [FRAME 180] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (48879) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (49137) AI_VISION_FAST: [FRAME 181] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (49391) AI_VISION_FAST: [FRAME 182] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (49644) AI_VISION_FAST: [FRAME 183] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49896) AI_VISION_FAST: [FRAME 184] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (49976) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (50155) AI_VISION_FAST: [FRAME 185] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (50155) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (50417) AI_VISION_FAST: [FRAME 186] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (50672) AI_VISION_FAST: [FRAME 187] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (50672) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (50926) AI_VISION_FAST: [FRAME 188] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (51182) AI_VISION_FAST: [FRAME 189] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (51439) AI_VISION_FAST: [FRAME 190] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (51708) AI_VISION_FAST: [FRAME 191] Inference complete in 256 ms | Detections: 0[0m
+[0;32mI (51960) AI_VISION_FAST: [FRAME 192] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (52211) AI_VISION_FAST: [FRAME 193] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (52393) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (52465) AI_VISION_FAST: [FRAME 194] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (52719) AI_VISION_FAST: [FRAME 195] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (52975) AI_VISION_FAST: [FRAME 196] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (53231) AI_VISION_FAST: [FRAME 197] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (53487) AI_VISION_FAST: [FRAME 198] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (53487) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (53747) AI_VISION_FAST: [FRAME 199] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (54000) AI_VISION_FAST: [FRAME 200] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (54001) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (54259) AI_VISION_FAST: [FRAME 201] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (54260) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (54517) AI_VISION_FAST: [FRAME 202] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (54769) AI_VISION_FAST: [FRAME 203] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (54810) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (55028) AI_VISION_FAST: [FRAME 204] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (55282) AI_VISION_FAST: [FRAME 205] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (55536) AI_VISION_FAST: [FRAME 206] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (55788) AI_VISION_FAST: [FRAME 207] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (56044) AI_VISION_FAST: [FRAME 208] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (56300) AI_VISION_FAST: [FRAME 209] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (56301) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (56570) AI_VISION_FAST: [FRAME 210] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (56821) AI_VISION_FAST: [FRAME 211] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (57072) AI_VISION_FAST: [FRAME 212] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (57226) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (57327) AI_VISION_FAST: [FRAME 213] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (57327) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (57584) AI_VISION_FAST: [FRAME 214] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (57836) AI_VISION_FAST: [FRAME 215] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (58091) AI_VISION_FAST: [FRAME 216] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (58347) AI_VISION_FAST: [FRAME 217] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (58348) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (58609) AI_VISION_FAST: [FRAME 218] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (58609) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (58867) AI_VISION_FAST: [FRAME 219] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (58867) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (59126) AI_VISION_FAST: [FRAME 220] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (59126) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (59385) AI_VISION_FAST: [FRAME 221] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (59385) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (59643) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (59645) AI_VISION_FAST: [FRAME 222] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (59899) AI_VISION_FAST: [FRAME 223] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (59899) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (59957) ESPNOW_MESH_PROD: Received 19-point spatial telemetry from Pathfinder Slave.[0m
+[0;32mI (60158) AI_VISION_FAST: [FRAME 224] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (60159) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (60165) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (60417) AI_VISION_FAST: [FRAME 225] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (60668) AI_VISION_FAST: [FRAME 226] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (60669) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 61.1% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (60927) AI_VISION_FAST: [FRAME 227] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (60928) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (61185) AI_VISION_FAST: [FRAME 228] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (61185) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (61191) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [3/10] from Slave...[0m
+[0;32mI (61444) AI_VISION_FAST: [FRAME 229] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (61444) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (61720) AI_VISION_FAST: [FRAME 230] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (61720) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (61979) AI_VISION_FAST: [FRAME 231] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (61979) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (62238) AI_VISION_FAST: [FRAME 232] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (62238) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 78.8% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (62497) AI_VISION_FAST: [FRAME 233] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (62497) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (62753) AI_VISION_FAST: [FRAME 234] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (62754) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (63011) AI_VISION_FAST: [FRAME 235] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (63012) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (63270) AI_VISION_FAST: [FRAME 236] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (63271) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (63529) AI_VISION_FAST: [FRAME 237] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (63529) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (63786) AI_VISION_FAST: [FRAME 238] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (63787) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (64045) AI_VISION_FAST: [FRAME 239] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (64045) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (64304) AI_VISION_FAST: [FRAME 240] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (64304) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (64563) AI_VISION_FAST: [FRAME 241] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (64564) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (64824) AI_VISION_FAST: [FRAME 242] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (64825) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (65086) AI_VISION_FAST: [FRAME 243] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (65087) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (65348) AI_VISION_FAST: [FRAME 244] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (65348) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (65610) AI_VISION_FAST: [FRAME 245] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (65610) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (65871) AI_VISION_FAST: [FRAME 246] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (65872) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (66131) AI_VISION_FAST: [FRAME 247] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (66131) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66390) AI_VISION_FAST: [FRAME 248] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (66391) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66658) AI_VISION_FAST: [FRAME 249] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (66658) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (66917) AI_VISION_FAST: [FRAME 250] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (66917) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (67061) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (67180) AI_VISION_FAST: [FRAME 251] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (67180) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (67440) AI_VISION_FAST: [FRAME 252] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (67441) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (67446) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (67701) AI_VISION_FAST: [FRAME 253] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (67702) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (67962) AI_VISION_FAST: [FRAME 254] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (67963) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68224) AI_VISION_FAST: [FRAME 255] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (68225) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68485) AI_VISION_FAST: [FRAME 256] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (68485) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68744) AI_VISION_FAST: [FRAME 257] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (68744) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69002) AI_VISION_FAST: [FRAME 258] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (69003) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69262) AI_VISION_FAST: [FRAME 259] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (69262) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (69477) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (69524) AI_VISION_FAST: [FRAME 260] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (69524) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (69785) AI_VISION_FAST: [FRAME 261] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (69785) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (70046) AI_VISION_FAST: [FRAME 262] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (70046) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (70309) AI_VISION_FAST: [FRAME 263] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (70310) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (70571) AI_VISION_FAST: [FRAME 264] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (70571) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (70831) AI_VISION_FAST: [FRAME 265] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (70831) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (71090) AI_VISION_FAST: [FRAME 266] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (71091) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (71348) AI_VISION_FAST: [FRAME 267] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (71349) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (71620) AI_VISION_FAST: [FRAME 268] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (71620) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (71878) AI_VISION_FAST: [FRAME 269] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (71878) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (71892) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (72141) AI_VISION_FAST: [FRAME 270] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (72141) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (72402) AI_VISION_FAST: [FRAME 271] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (72403) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (72664) AI_VISION_FAST: [FRAME 272] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (72664) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (72922) AI_VISION_FAST: [FRAME 273] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (72922) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (73181) AI_VISION_FAST: [FRAME 274] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (73182) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (73438) AI_VISION_FAST: [FRAME 275] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (73438) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (73696) AI_VISION_FAST: [FRAME 276] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (73697) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (73954) AI_VISION_FAST: [FRAME 277] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (73955) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (73968) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (74213) AI_VISION_FAST: [FRAME 278] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (74214) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (74310) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (74475) AI_VISION_FAST: [FRAME 279] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (74476) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (74737) AI_VISION_FAST: [FRAME 280] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (74737) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (74999) AI_VISION_FAST: [FRAME 281] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (74999) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (75261) AI_VISION_FAST: [FRAME 282] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (75261) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (75522) AI_VISION_FAST: [FRAME 283] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (75523) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (75781) AI_VISION_FAST: [FRAME 284] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (75782) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (76041) AI_VISION_FAST: [FRAME 285] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (76042) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (76300) AI_VISION_FAST: [FRAME 286] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (76300) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (76567) AI_VISION_FAST: [FRAME 287] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (76568) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (76726) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (76825) AI_VISION_FAST: [FRAME 288] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (76826) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (77085) AI_VISION_FAST: [FRAME 289] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (77085) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (77346) AI_VISION_FAST: [FRAME 290] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (77347) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (77607) AI_VISION_FAST: [FRAME 291] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (77607) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (77865) AI_VISION_FAST: [FRAME 292] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (77865) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (78125) AI_VISION_FAST: [FRAME 293] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (78126) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (78385) AI_VISION_FAST: [FRAME 294] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (78386) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (78644) AI_VISION_FAST: [FRAME 295] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (78645) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (78903) AI_VISION_FAST: [FRAME 296] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (78904) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (79143) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (79163) AI_VISION_FAST: [FRAME 297] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (79163) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (79422) AI_VISION_FAST: [FRAME 298] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (79423) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (79683) AI_VISION_FAST: [FRAME 299] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (79684) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (79943) AI_VISION_FAST: [FRAME 300] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (79943) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (80205) AI_VISION_FAST: [FRAME 301] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (80205) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (80469) AI_VISION_FAST: [FRAME 302] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (80469) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (80482) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (80728) AI_VISION_FAST: [FRAME 303] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (80729) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (80987) AI_VISION_FAST: [FRAME 304] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (80987) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (81247) AI_VISION_FAST: [FRAME 305] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (81248) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (81519) AI_VISION_FAST: [FRAME 306] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (81519) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (81559) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (81785) AI_VISION_FAST: [FRAME 307] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (81786) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (82047) AI_VISION_FAST: [FRAME 308] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (82048) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (82311) AI_VISION_FAST: [FRAME 309] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (82312) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (82572) AI_VISION_FAST: [FRAME 310] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (82573) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (82832) AI_VISION_FAST: [FRAME 311] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (82833) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (83092) AI_VISION_FAST: [FRAME 312] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (83092) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (83350) AI_VISION_FAST: [FRAME 313] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (83351) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (83609) AI_VISION_FAST: [FRAME 314] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (83610) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (83866) AI_VISION_FAST: [FRAME 315] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (83867) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (83977) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (84129) AI_VISION_FAST: [FRAME 316] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (84129) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (84387) AI_VISION_FAST: [FRAME 317] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (84387) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (84645) AI_VISION_FAST: [FRAME 318] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (84645) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (84904) AI_VISION_FAST: [FRAME 319] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (84904) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (85166) AI_VISION_FAST: [FRAME 320] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (85166) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (85428) AI_VISION_FAST: [FRAME 321] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (85428) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (85687) AI_VISION_FAST: [FRAME 322] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (85687) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (85944) AI_VISION_FAST: [FRAME 323] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (85944) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (86202) AI_VISION_FAST: [FRAME 324] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (86203) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (86393) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (86462) AI_VISION_FAST: [FRAME 325] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (86463) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (86747) AI_VISION_FAST: [FRAME 326] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (86748) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (87009) AI_VISION_FAST: [FRAME 327] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (87009) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (87015) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (87271) AI_VISION_FAST: [FRAME 328] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (87272) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (87533) AI_VISION_FAST: [FRAME 329] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (87533) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (87794) AI_VISION_FAST: [FRAME 330] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (87795) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (88050) AI_VISION_FAST: [FRAME 331] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (88050) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (88309) AI_VISION_FAST: [FRAME 332] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (88310) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (88568) AI_VISION_FAST: [FRAME 333] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (88569) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (88809) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (88829) AI_VISION_FAST: [FRAME 334] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (88829) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (89091) AI_VISION_FAST: [FRAME 335] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (89092) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (89352) AI_VISION_FAST: [FRAME 336] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (89353) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (89613) AI_VISION_FAST: [FRAME 337] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (89613) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (89876) AI_VISION_FAST: [FRAME 338] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (89876) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (90137) AI_VISION_FAST: [FRAME 339] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (90138) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (90395) AI_VISION_FAST: [FRAME 340] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (90396) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (90655) AI_VISION_FAST: [FRAME 341] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (90655) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (90915) AI_VISION_FAST: [FRAME 342] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (90915) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (91173) AI_VISION_FAST: [FRAME 343] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (91173) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (91225) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (91433) AI_VISION_FAST: [FRAME 344] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (91433) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (91711) AI_VISION_FAST: [FRAME 345] Inference complete in 259 ms | Detections: 1[0m
+[0;32mI (91712) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (91969) AI_VISION_FAST: [FRAME 346] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (91970) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (92226) AI_VISION_FAST: [FRAME 347] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (92226) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (92483) AI_VISION_FAST: [FRAME 348] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (92483) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (92741) AI_VISION_FAST: [FRAME 349] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (92741) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (92999) AI_VISION_FAST: [FRAME 350] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (93000) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (93258) AI_VISION_FAST: [FRAME 351] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (93258) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (93517) AI_VISION_FAST: [FRAME 352] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (93517) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (93774) AI_VISION_FAST: [FRAME 353] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (93774) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;33mW (93780) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (94033) AI_VISION_FAST: [FRAME 354] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (94033) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (94292) AI_VISION_FAST: [FRAME 355] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (94292) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (94298) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (94551) AI_VISION_FAST: [FRAME 356] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (94552) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (94810) AI_VISION_FAST: [FRAME 357] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (94810) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (95067) AI_VISION_FAST: [FRAME 358] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (95068) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (95325) AI_VISION_FAST: [FRAME 359] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (95326) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (95332) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [4/10] from Slave...[0m
+[0;32mI (95584) AI_VISION_FAST: [FRAME 360] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (95584) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (95842) AI_VISION_FAST: [FRAME 361] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (95843) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (96100) AI_VISION_FAST: [FRAME 362] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (96356) AI_VISION_FAST: [FRAME 363] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (96624) AI_VISION_FAST: [FRAME 364] Inference complete in 255 ms | Detections: 0[0m
+[0;32mI (96879) AI_VISION_FAST: [FRAME 365] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (97134) AI_VISION_FAST: [FRAME 366] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (97388) AI_VISION_FAST: [FRAME 367] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (97647) AI_VISION_FAST: [FRAME 368] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (97899) AI_VISION_FAST: [FRAME 369] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (98152) AI_VISION_FAST: [FRAME 370] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (98404) AI_VISION_FAST: [FRAME 371] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (98644) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (98657) AI_VISION_FAST: [FRAME 372] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (98657) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (98920) AI_VISION_FAST: [FRAME 373] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (98920) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (99180) AI_VISION_FAST: [FRAME 374] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (99181) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (99440) AI_VISION_FAST: [FRAME 375] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (99441) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (99702) AI_VISION_FAST: [FRAME 376] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (99702) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (99962) AI_VISION_FAST: [FRAME 377] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (100216) AI_VISION_FAST: [FRAME 378] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (100216) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (100475) AI_VISION_FAST: [FRAME 379] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (100475) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (100734) AI_VISION_FAST: [FRAME 380] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (100734) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (100990) AI_VISION_FAST: [FRAME 381] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (100990) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (101059) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (101060) ESPNOW_MESH_PROD: Received 19-point spatial telemetry from Pathfinder Slave.[0m
+[0;32mI (101253) AI_VISION_FAST: [FRAME 382] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (101254) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (101260) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (101528) AI_VISION_FAST: [FRAME 383] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (101529) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (101790) AI_VISION_FAST: [FRAME 384] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (101790) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (102052) AI_VISION_FAST: [FRAME 385] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (102052) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (102312) AI_VISION_FAST: [FRAME 386] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (102313) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102318) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [5/10] from Slave...[0m
+[0;32mI (102576) AI_VISION_FAST: [FRAME 387] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (102577) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (102835) AI_VISION_FAST: [FRAME 388] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (102836) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (103094) AI_VISION_FAST: [FRAME 389] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (103094) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (103353) AI_VISION_FAST: [FRAME 390] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (103353) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (103477) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (103616) AI_VISION_FAST: [FRAME 391] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (103617) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (103878) AI_VISION_FAST: [FRAME 392] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (103879) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (104140) AI_VISION_FAST: [FRAME 393] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (104141) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (104403) AI_VISION_FAST: [FRAME 394] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (104403) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (104664) AI_VISION_FAST: [FRAME 395] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (104665) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (104924) AI_VISION_FAST: [FRAME 396] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (104925) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (105183) AI_VISION_FAST: [FRAME 397] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (105183) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (105441) AI_VISION_FAST: [FRAME 398] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (105442) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (105700) AI_VISION_FAST: [FRAME 399] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (105700) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (105892) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (105961) AI_VISION_FAST: [FRAME 400] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (105961) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (106222) AI_VISION_FAST: [FRAME 401] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (106222) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (106491) AI_VISION_FAST: [FRAME 402] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (106491) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (106753) AI_VISION_FAST: [FRAME 403] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (106753) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (107015) AI_VISION_FAST: [FRAME 404] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (107015) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (107275) AI_VISION_FAST: [FRAME 405] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (107276) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (107535) AI_VISION_FAST: [FRAME 406] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (107535) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (107796) AI_VISION_FAST: [FRAME 407] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (107796) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (108055) AI_VISION_FAST: [FRAME 408] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (108308) AI_VISION_FAST: [FRAME 409] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (108310) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (108566) AI_VISION_FAST: [FRAME 410] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (108566) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (108821) AI_VISION_FAST: [FRAME 411] Inference complete in 242 ms | Detections: 2[0m
+[0;32mI (108822) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (108827) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (109092) AI_VISION_FAST: [FRAME 412] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (109092) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:93, h:94][0m
+[0;32mI (109352) AI_VISION_FAST: [FRAME 413] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (109608) AI_VISION_FAST: [FRAME 414] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (109861) AI_VISION_FAST: [FRAME 415] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (110115) AI_VISION_FAST: [FRAME 416] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (110116) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (110373) AI_VISION_FAST: [FRAME 417] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (110374) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110632) AI_VISION_FAST: [FRAME 418] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (110632) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110727) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (110895) AI_VISION_FAST: [FRAME 419] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (110896) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111155) AI_VISION_FAST: [FRAME 420] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (111155) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111415) AI_VISION_FAST: [FRAME 421] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (111415) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111693) AI_VISION_FAST: [FRAME 422] Inference complete in 259 ms | Detections: 1[0m
+[0;32mI (111693) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (111954) AI_VISION_FAST: [FRAME 423] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (111955) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (112216) AI_VISION_FAST: [FRAME 424] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (112216) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (112476) AI_VISION_FAST: [FRAME 425] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (112476) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (112733) AI_VISION_FAST: [FRAME 426] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (112734) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (112991) AI_VISION_FAST: [FRAME 427] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (112992) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (113142) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (113254) AI_VISION_FAST: [FRAME 428] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (113255) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (113515) AI_VISION_FAST: [FRAME 429] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (113515) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (113776) AI_VISION_FAST: [FRAME 430] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (113777) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (114040) AI_VISION_FAST: [FRAME 431] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (114041) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (114301) AI_VISION_FAST: [FRAME 432] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (114302) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (114565) AI_VISION_FAST: [FRAME 433] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (114565) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (114825) AI_VISION_FAST: [FRAME 434] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (114825) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (115083) AI_VISION_FAST: [FRAME 435] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (115084) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (115098) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (115343) AI_VISION_FAST: [FRAME 436] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (115344) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (115558) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (115604) AI_VISION_FAST: [FRAME 437] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (115605) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (115866) AI_VISION_FAST: [FRAME 438] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (115866) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (116127) AI_VISION_FAST: [FRAME 439] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (116128) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (116389) AI_VISION_FAST: [FRAME 440] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (116389) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (116658) AI_VISION_FAST: [FRAME 441] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (116658) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (116917) AI_VISION_FAST: [FRAME 442] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (116917) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (117176) AI_VISION_FAST: [FRAME 443] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (117176) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (117435) AI_VISION_FAST: [FRAME 444] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (117435) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (117692) AI_VISION_FAST: [FRAME 445] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (117693) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (117949) AI_VISION_FAST: [FRAME 446] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (117950) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117975) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (118215) AI_VISION_FAST: [FRAME 447] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (118216) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (118478) AI_VISION_FAST: [FRAME 448] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (118478) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (118739) AI_VISION_FAST: [FRAME 449] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (118739) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (119000) AI_VISION_FAST: [FRAME 450] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (119000) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (119262) AI_VISION_FAST: [FRAME 451] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (119516) AI_VISION_FAST: [FRAME 452] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (119517) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (119776) AI_VISION_FAST: [FRAME 453] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (119777) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (120035) AI_VISION_FAST: [FRAME 454] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (120036) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (120294) AI_VISION_FAST: [FRAME 455] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (120295) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (120391) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (120557) AI_VISION_FAST: [FRAME 456] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (120811) AI_VISION_FAST: [FRAME 457] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (120811) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (121071) AI_VISION_FAST: [FRAME 458] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (121072) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (121334) AI_VISION_FAST: [FRAME 459] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (121335) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (121613) AI_VISION_FAST: [FRAME 460] Inference complete in 258 ms | Detections: 1[0m
+[0;32mI (121613) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (121619) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (121870) AI_VISION_FAST: [FRAME 461] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (121870) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (122128) AI_VISION_FAST: [FRAME 462] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (122129) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (122387) AI_VISION_FAST: [FRAME 463] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (122387) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (122646) AI_VISION_FAST: [FRAME 464] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (122647) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (122807) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (122902) AI_VISION_FAST: [FRAME 465] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (122903) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (123161) AI_VISION_FAST: [FRAME 466] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (123161) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (123419) AI_VISION_FAST: [FRAME 467] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (123420) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (123678) AI_VISION_FAST: [FRAME 468] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (123679) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (123936) AI_VISION_FAST: [FRAME 469] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (124189) AI_VISION_FAST: [FRAME 470] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (124440) AI_VISION_FAST: [FRAME 471] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (124692) AI_VISION_FAST: [FRAME 472] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (124944) AI_VISION_FAST: [FRAME 473] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (125198) AI_VISION_FAST: [FRAME 474] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (125449) AI_VISION_FAST: [FRAME 475] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (125450) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (125707) AI_VISION_FAST: [FRAME 476] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (125707) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (125964) AI_VISION_FAST: [FRAME 477] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (126218) AI_VISION_FAST: [FRAME 478] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (126470) AI_VISION_FAST: [FRAME 479] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (126728) AI_VISION_FAST: [FRAME 480] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (126728) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (126986) AI_VISION_FAST: [FRAME 481] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (126986) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (127244) AI_VISION_FAST: [FRAME 482] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (127244) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (127503) AI_VISION_FAST: [FRAME 483] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (127754) AI_VISION_FAST: [FRAME 484] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (128010) AI_VISION_FAST: [FRAME 485] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (128266) AI_VISION_FAST: [FRAME 486] Inference complete in 243 ms | Detections: 0[0m
+[0;33mW (128267) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (128524) AI_VISION_FAST: [FRAME 487] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (128781) AI_VISION_FAST: [FRAME 488] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (128781) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (129043) AI_VISION_FAST: [FRAME 489] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (129299) AI_VISION_FAST: [FRAME 490] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (129553) AI_VISION_FAST: [FRAME 491] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (129807) AI_VISION_FAST: [FRAME 492] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (130059) AI_VISION_FAST: [FRAME 493] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (130226) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (130313) AI_VISION_FAST: [FRAME 494] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (130314) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (130575) AI_VISION_FAST: [FRAME 495] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (130830) AI_VISION_FAST: [FRAME 496] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (131085) AI_VISION_FAST: [FRAME 497] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (131085) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (131346) AI_VISION_FAST: [FRAME 498] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (131615) AI_VISION_FAST: [FRAME 499] Inference complete in 256 ms | Detections: 0[0m
+[0;32mI (131868) AI_VISION_FAST: [FRAME 500] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (131868) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (132128) AI_VISION_FAST: [FRAME 501] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (132128) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (132385) AI_VISION_FAST: [FRAME 502] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (132386) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (132644) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (132646) AI_VISION_FAST: [FRAME 503] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (132899) AI_VISION_FAST: [FRAME 504] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (133155) AI_VISION_FAST: [FRAME 505] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (133411) AI_VISION_FAST: [FRAME 506] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (133663) AI_VISION_FAST: [FRAME 507] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (133918) AI_VISION_FAST: [FRAME 508] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (134172) AI_VISION_FAST: [FRAME 509] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (134425) AI_VISION_FAST: [FRAME 510] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (134678) AI_VISION_FAST: [FRAME 511] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (134930) AI_VISION_FAST: [FRAME 512] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (134930) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (135062) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (135186) AI_VISION_FAST: [FRAME 513] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (135443) AI_VISION_FAST: [FRAME 514] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (135444) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (135698) AI_VISION_FAST: [FRAME 515] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (135953) AI_VISION_FAST: [FRAME 516] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (136207) AI_VISION_FAST: [FRAME 517] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (136462) AI_VISION_FAST: [FRAME 518] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (136463) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [6/10] from Slave...[0m
+[0;32mI (136735) AI_VISION_FAST: [FRAME 519] Inference complete in 256 ms | Detections: 0[0m
+[0;32mI (136988) AI_VISION_FAST: [FRAME 520] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (137239) AI_VISION_FAST: [FRAME 521] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (137478) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (137493) AI_VISION_FAST: [FRAME 522] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (137746) AI_VISION_FAST: [FRAME 523] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (138002) AI_VISION_FAST: [FRAME 524] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (138258) AI_VISION_FAST: [FRAME 525] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (138512) AI_VISION_FAST: [FRAME 526] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (138513) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (138774) AI_VISION_FAST: [FRAME 527] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (138775) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (139035) AI_VISION_FAST: [FRAME 528] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (139035) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (139295) AI_VISION_FAST: [FRAME 529] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (139295) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (139554) AI_VISION_FAST: [FRAME 530] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (139806) AI_VISION_FAST: [FRAME 531] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (139807) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (139894) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (140070) AI_VISION_FAST: [FRAME 532] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (140070) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (140331) AI_VISION_FAST: [FRAME 533] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (140587) AI_VISION_FAST: [FRAME 534] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (140843) AI_VISION_FAST: [FRAME 535] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (141098) AI_VISION_FAST: [FRAME 536] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (141354) AI_VISION_FAST: [FRAME 537] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (141623) AI_VISION_FAST: [FRAME 538] Inference complete in 256 ms | Detections: 0[0m
+[0;32mI (141874) AI_VISION_FAST: [FRAME 539] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (142127) AI_VISION_FAST: [FRAME 540] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (142310) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (142381) AI_VISION_FAST: [FRAME 541] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (142639) AI_VISION_FAST: [FRAME 542] Inference complete in 244 ms | Detections: 0[0m
+[0;33mW (142639) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (142894) AI_VISION_FAST: [FRAME 543] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (143149) AI_VISION_FAST: [FRAME 544] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (143405) AI_VISION_FAST: [FRAME 545] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (143661) AI_VISION_FAST: [FRAME 546] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (143913) AI_VISION_FAST: [FRAME 547] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (144167) AI_VISION_FAST: [FRAME 548] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (144167) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (144426) AI_VISION_FAST: [FRAME 549] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (144426) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (144685) AI_VISION_FAST: [FRAME 550] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (144728) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (144944) AI_VISION_FAST: [FRAME 551] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (145200) AI_VISION_FAST: [FRAME 552] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (145335) ESPNOW_MESH_PROD: Received 19-point spatial telemetry from Pathfinder Slave.[0m
+[0;32mI (145457) AI_VISION_FAST: [FRAME 553] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (145457) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (145464) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (145719) AI_VISION_FAST: [FRAME 554] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (145973) AI_VISION_FAST: [FRAME 555] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (146226) AI_VISION_FAST: [FRAME 556] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (146227) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (146494) AI_VISION_FAST: [FRAME 557] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (146495) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [7/10] from Slave...[0m
+[0;32mI (146748) AI_VISION_FAST: [FRAME 558] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (147002) AI_VISION_FAST: [FRAME 559] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (147146) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (147257) AI_VISION_FAST: [FRAME 560] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (147514) AI_VISION_FAST: [FRAME 561] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (147768) AI_VISION_FAST: [FRAME 562] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (148025) AI_VISION_FAST: [FRAME 563] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (148277) AI_VISION_FAST: [FRAME 564] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (148530) AI_VISION_FAST: [FRAME 565] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (148783) AI_VISION_FAST: [FRAME 566] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (149035) AI_VISION_FAST: [FRAME 567] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (149289) AI_VISION_FAST: [FRAME 568] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (149542) AI_VISION_FAST: [FRAME 569] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (149564) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (149802) AI_VISION_FAST: [FRAME 570] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (150057) AI_VISION_FAST: [FRAME 571] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (150313) AI_VISION_FAST: [FRAME 572] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (150568) AI_VISION_FAST: [FRAME 573] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (150824) AI_VISION_FAST: [FRAME 574] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (151079) AI_VISION_FAST: [FRAME 575] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (151333) AI_VISION_FAST: [FRAME 576] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (151597) AI_VISION_FAST: [FRAME 577] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (151851) AI_VISION_FAST: [FRAME 578] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (151982) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (152108) AI_VISION_FAST: [FRAME 579] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (152363) AI_VISION_FAST: [FRAME 580] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (152616) AI_VISION_FAST: [FRAME 581] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (152617) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (152870) AI_VISION_FAST: [FRAME 582] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (153124) AI_VISION_FAST: [FRAME 583] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (153378) AI_VISION_FAST: [FRAME 584] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (153631) AI_VISION_FAST: [FRAME 585] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (153885) AI_VISION_FAST: [FRAME 586] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (154139) AI_VISION_FAST: [FRAME 587] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (154393) AI_VISION_FAST: [FRAME 588] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (154398) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (154645) AI_VISION_FAST: [FRAME 589] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (154897) AI_VISION_FAST: [FRAME 590] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (155150) AI_VISION_FAST: [FRAME 591] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (155402) AI_VISION_FAST: [FRAME 592] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (155651) AI_VISION_FAST: [FRAME 593] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (155903) AI_VISION_FAST: [FRAME 594] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (156155) AI_VISION_FAST: [FRAME 595] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (156408) AI_VISION_FAST: [FRAME 596] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (156668) AI_VISION_FAST: [FRAME 597] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (156918) AI_VISION_FAST: [FRAME 598] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (157168) AI_VISION_FAST: [FRAME 599] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (157421) AI_VISION_FAST: [FRAME 600] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (157670) AI_VISION_FAST: [FRAME 601] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (157922) AI_VISION_FAST: [FRAME 602] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (158175) AI_VISION_FAST: [FRAME 603] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (158429) AI_VISION_FAST: [FRAME 604] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (158681) AI_VISION_FAST: [FRAME 605] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (158933) AI_VISION_FAST: [FRAME 606] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (159186) AI_VISION_FAST: [FRAME 607] Inference complete in 240 ms | Detections: 0[0m
+[0;33mW (159187) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (159441) AI_VISION_FAST: [FRAME 608] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (159696) AI_VISION_FAST: [FRAME 609] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (159950) AI_VISION_FAST: [FRAME 610] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (160205) AI_VISION_FAST: [FRAME 611] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (160462) AI_VISION_FAST: [FRAME 612] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (160720) AI_VISION_FAST: [FRAME 613] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (160973) AI_VISION_FAST: [FRAME 614] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (161226) AI_VISION_FAST: [FRAME 615] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (161484) AI_VISION_FAST: [FRAME 616] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (161737) AI_VISION_FAST: [FRAME 617] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (161738) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (161814) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (161999) AI_VISION_FAST: [FRAME 618] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (162255) AI_VISION_FAST: [FRAME 619] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (162512) AI_VISION_FAST: [FRAME 620] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (162769) AI_VISION_FAST: [FRAME 621] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (163025) AI_VISION_FAST: [FRAME 622] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (163279) AI_VISION_FAST: [FRAME 623] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (163532) AI_VISION_FAST: [FRAME 624] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (163780) AI_VISION_FAST: [FRAME 625] Inference complete in 235 ms | Detections: 0[0m
+[0;32mI (164035) AI_VISION_FAST: [FRAME 626] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (164035) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (164230) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (164293) AI_VISION_FAST: [FRAME 627] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (164293) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:92][0m
+[0;32mI (164555) AI_VISION_FAST: [FRAME 628] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (164555) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (164815) AI_VISION_FAST: [FRAME 629] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (165071) AI_VISION_FAST: [FRAME 630] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (165326) AI_VISION_FAST: [FRAME 631] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (165580) AI_VISION_FAST: [FRAME 632] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (165832) AI_VISION_FAST: [FRAME 633] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (165832) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (165838) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (166090) AI_VISION_FAST: [FRAME 634] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (166091) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (166349) AI_VISION_FAST: [FRAME 635] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (166349) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (166624) AI_VISION_FAST: [FRAME 636] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (166625) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (166648) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (166889) AI_VISION_FAST: [FRAME 637] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (167144) AI_VISION_FAST: [FRAME 638] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (167399) AI_VISION_FAST: [FRAME 639] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (167654) AI_VISION_FAST: [FRAME 640] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (167911) AI_VISION_FAST: [FRAME 641] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (168164) AI_VISION_FAST: [FRAME 642] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (168418) AI_VISION_FAST: [FRAME 643] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (168419) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (168676) AI_VISION_FAST: [FRAME 644] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (168928) AI_VISION_FAST: [FRAME 645] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (169067) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (169187) AI_VISION_FAST: [FRAME 646] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (169187) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (169445) AI_VISION_FAST: [FRAME 647] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (169445) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (169706) AI_VISION_FAST: [FRAME 648] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (169707) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (169967) AI_VISION_FAST: [FRAME 649] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (170221) AI_VISION_FAST: [FRAME 650] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (170221) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (170483) AI_VISION_FAST: [FRAME 651] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (170483) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (170741) AI_VISION_FAST: [FRAME 652] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (170742) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (170999) AI_VISION_FAST: [FRAME 653] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (171000) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (171261) AI_VISION_FAST: [FRAME 654] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (171481) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (171528) AI_VISION_FAST: [FRAME 655] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (171784) AI_VISION_FAST: [FRAME 656] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (172038) AI_VISION_FAST: [FRAME 657] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (172294) AI_VISION_FAST: [FRAME 658] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (172548) AI_VISION_FAST: [FRAME 659] Inference complete in 239 ms | Detections: 0[0m
+[0;33mW (172548) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (172803) AI_VISION_FAST: [FRAME 660] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (173056) AI_VISION_FAST: [FRAME 661] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (173056) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (173316) AI_VISION_FAST: [FRAME 662] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (173567) AI_VISION_FAST: [FRAME 663] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (173820) AI_VISION_FAST: [FRAME 664] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (173896) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (174077) AI_VISION_FAST: [FRAME 665] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (174331) AI_VISION_FAST: [FRAME 666] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (174332) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (174593) AI_VISION_FAST: [FRAME 667] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (174848) AI_VISION_FAST: [FRAME 668] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (174848) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (175107) AI_VISION_FAST: [FRAME 669] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (175107) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (175366) AI_VISION_FAST: [FRAME 670] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (175366) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (175625) AI_VISION_FAST: [FRAME 671] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (175878) AI_VISION_FAST: [FRAME 672] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (176130) AI_VISION_FAST: [FRAME 673] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (176314) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (176386) AI_VISION_FAST: [FRAME 674] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (176386) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (176657) AI_VISION_FAST: [FRAME 675] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (176911) AI_VISION_FAST: [FRAME 676] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (177168) AI_VISION_FAST: [FRAME 677] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (177169) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (177428) AI_VISION_FAST: [FRAME 678] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (177428) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (177688) AI_VISION_FAST: [FRAME 679] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (177940) AI_VISION_FAST: [FRAME 680] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (178193) AI_VISION_FAST: [FRAME 681] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (178445) AI_VISION_FAST: [FRAME 682] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (178697) AI_VISION_FAST: [FRAME 683] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (178732) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (178956) AI_VISION_FAST: [FRAME 684] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (179213) AI_VISION_FAST: [FRAME 685] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (179213) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (179466) AI_VISION_FAST: [FRAME 686] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (179719) AI_VISION_FAST: [FRAME 687] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (179719) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (179975) AI_VISION_FAST: [FRAME 688] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (180227) AI_VISION_FAST: [FRAME 689] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (180479) AI_VISION_FAST: [FRAME 690] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (180732) AI_VISION_FAST: [FRAME 691] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (180732) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [8/10] from Slave...[0m
+[0;32mI (180986) AI_VISION_FAST: [FRAME 692] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (181149) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (181239) AI_VISION_FAST: [FRAME 693] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (181506) AI_VISION_FAST: [FRAME 694] Inference complete in 254 ms | Detections: 0[0m
+[0;32mI (181758) AI_VISION_FAST: [FRAME 695] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (182015) AI_VISION_FAST: [FRAME 696] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (182270) AI_VISION_FAST: [FRAME 697] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (182525) AI_VISION_FAST: [FRAME 698] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (182777) AI_VISION_FAST: [FRAME 699] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (183030) AI_VISION_FAST: [FRAME 700] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (183284) AI_VISION_FAST: [FRAME 701] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (183285) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (183542) AI_VISION_FAST: [FRAME 702] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (183566) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (183803) AI_VISION_FAST: [FRAME 703] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (184059) AI_VISION_FAST: [FRAME 704] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (184059) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (184321) AI_VISION_FAST: [FRAME 705] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (184322) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (184582) AI_VISION_FAST: [FRAME 706] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (184582) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (184842) AI_VISION_FAST: [FRAME 707] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (185097) AI_VISION_FAST: [FRAME 708] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (185351) AI_VISION_FAST: [FRAME 709] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (185602) AI_VISION_FAST: [FRAME 710] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (185855) AI_VISION_FAST: [FRAME 711] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (185855) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (185984) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (186115) AI_VISION_FAST: [FRAME 712] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (186368) AI_VISION_FAST: [FRAME 713] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (186368) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (186637) AI_VISION_FAST: [FRAME 714] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (186638) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (186896) AI_VISION_FAST: [FRAME 715] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (186896) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (186902) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (187154) AI_VISION_FAST: [FRAME 716] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (187155) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (187412) AI_VISION_FAST: [FRAME 717] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (187663) AI_VISION_FAST: [FRAME 718] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (187916) AI_VISION_FAST: [FRAME 719] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (188168) AI_VISION_FAST: [FRAME 720] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (188420) AI_VISION_FAST: [FRAME 721] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (188420) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (188678) AI_VISION_FAST: [FRAME 722] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (188930) AI_VISION_FAST: [FRAME 723] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (189182) AI_VISION_FAST: [FRAME 724] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (189183) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (189441) AI_VISION_FAST: [FRAME 725] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (189441) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (189506) ESPNOW_MESH_PROD: Received 19-point spatial telemetry from Pathfinder Slave.[0m
+[0;32mI (189699) AI_VISION_FAST: [FRAME 726] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (189700) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (189951) AI_VISION_FAST: [FRAME 727] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (190202) AI_VISION_FAST: [FRAME 728] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (190202) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (190457) AI_VISION_FAST: [FRAME 729] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (190709) AI_VISION_FAST: [FRAME 730] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (190709) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (190715) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [9/10] from Slave...[0m
+[0;32mI (190967) AI_VISION_FAST: [FRAME 731] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (190967) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (191232) AI_VISION_FAST: [FRAME 732] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (191232) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (191504) AI_VISION_FAST: [FRAME 733] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (191505) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (191764) AI_VISION_FAST: [FRAME 734] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (191764) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (192024) AI_VISION_FAST: [FRAME 735] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (192025) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (192286) AI_VISION_FAST: [FRAME 736] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (192287) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (192547) AI_VISION_FAST: [FRAME 737] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (192547) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (192806) AI_VISION_FAST: [FRAME 738] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (192807) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (193066) AI_VISION_FAST: [FRAME 739] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (193066) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (193325) AI_VISION_FAST: [FRAME 740] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (193325) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (193403) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (193588) AI_VISION_FAST: [FRAME 741] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (193588) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (193849) AI_VISION_FAST: [FRAME 742] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (193850) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (194110) AI_VISION_FAST: [FRAME 743] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (194110) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (194373) AI_VISION_FAST: [FRAME 744] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (194374) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (194636) AI_VISION_FAST: [FRAME 745] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (194636) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (194895) AI_VISION_FAST: [FRAME 746] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (195146) AI_VISION_FAST: [FRAME 747] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (195146) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (195403) AI_VISION_FAST: [FRAME 748] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (195403) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (195661) AI_VISION_FAST: [FRAME 749] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (195662) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (195819) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (195921) AI_VISION_FAST: [FRAME 750] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (195922) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (196185) AI_VISION_FAST: [FRAME 751] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (196185) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (196447) AI_VISION_FAST: [FRAME 752] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (196447) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (196469) ESPNOW_MESH_PROD: Received 19-point spatial telemetry from Pathfinder Slave.[0m
+[0;32mI (196727) AI_VISION_FAST: [FRAME 753] Inference complete in 261 ms | Detections: 0[0m
+[0;32mI (196728) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (196981) AI_VISION_FAST: [FRAME 754] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (197237) AI_VISION_FAST: [FRAME 755] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (197491) AI_VISION_FAST: [FRAME 756] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (197745) AI_VISION_FAST: [FRAME 757] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (197745) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [10/10] from Slave...[0m
+[0;32mI (197999) AI_VISION_FAST: [FRAME 758] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (198236) AEGIS_PATHFINDER: Retry connecting to WiFi (3/10)...[0m
+[0;32mI (198254) AI_VISION_FAST: [FRAME 759] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (198511) AI_VISION_FAST: [FRAME 760] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (198766) AI_VISION_FAST: [FRAME 761] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (199020) AI_VISION_FAST: [FRAME 762] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (199274) AI_VISION_FAST: [FRAME 763] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (199529) AI_VISION_FAST: [FRAME 764] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (199782) AI_VISION_FAST: [FRAME 765] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (200035) AI_VISION_FAST: [FRAME 766] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (200035) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (200292) AI_VISION_FAST: [FRAME 767] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (200544) AI_VISION_FAST: [FRAME 768] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (200651) AEGIS_PATHFINDER: Retry connecting to WiFi (4/10)...[0m
+[0;32mI (200801) AI_VISION_FAST: [FRAME 769] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (201052) AI_VISION_FAST: [FRAME 770] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (201306) AI_VISION_FAST: [FRAME 771] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (201307) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (201575) AI_VISION_FAST: [FRAME 772] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (201830) AI_VISION_FAST: [FRAME 773] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (202085) AI_VISION_FAST: [FRAME 774] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (202339) AI_VISION_FAST: [FRAME 775] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (202339) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (202597) AI_VISION_FAST: [FRAME 776] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (202850) AI_VISION_FAST: [FRAME 777] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (202850) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (203068) AEGIS_PATHFINDER: Retry connecting to WiFi (5/10)...[0m
+[0;32mI (203112) AI_VISION_FAST: [FRAME 778] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (203367) AI_VISION_FAST: [FRAME 779] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (203621) AI_VISION_FAST: [FRAME 780] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (203876) AI_VISION_FAST: [FRAME 781] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (203876) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (204132) AI_VISION_FAST: [FRAME 782] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (204132) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (204393) AI_VISION_FAST: [FRAME 783] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (204393) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (204653) AI_VISION_FAST: [FRAME 784] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (204654) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (204912) AI_VISION_FAST: [FRAME 785] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (205163) AI_VISION_FAST: [FRAME 786] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (205164) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (205422) AI_VISION_FAST: [FRAME 787] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (205422) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (205485) AEGIS_PATHFINDER: Retry connecting to WiFi (6/10)...[0m
+[0;32mI (205686) AI_VISION_FAST: [FRAME 788] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (205942) AI_VISION_FAST: [FRAME 789] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (206199) AI_VISION_FAST: [FRAME 790] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (206455) AI_VISION_FAST: [FRAME 791] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (206729) AI_VISION_FAST: [FRAME 792] Inference complete in 260 ms | Detections: 0[0m
+[0;32mI (206982) AI_VISION_FAST: [FRAME 793] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (207235) AI_VISION_FAST: [FRAME 794] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (207235) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (207490) AI_VISION_FAST: [FRAME 795] Inference complete in 236 ms | Detections: 1[0m
+[0;32mI (207490) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (207748) AI_VISION_FAST: [FRAME 796] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (207902) AEGIS_PATHFINDER: Retry connecting to WiFi (7/10)...[0m
+[0;32mI (208003) AI_VISION_FAST: [FRAME 797] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (208259) AI_VISION_FAST: [FRAME 798] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (208515) AI_VISION_FAST: [FRAME 799] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (208515) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (208774) AI_VISION_FAST: [FRAME 800] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (209029) AI_VISION_FAST: [FRAME 801] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (209030) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (209290) AI_VISION_FAST: [FRAME 802] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (209543) AI_VISION_FAST: [FRAME 803] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (209544) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (209803) AI_VISION_FAST: [FRAME 804] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (210055) AI_VISION_FAST: [FRAME 805] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (210307) AI_VISION_FAST: [FRAME 806] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (210318) AEGIS_PATHFINDER: Retry connecting to WiFi (8/10)...[0m
+[0;32mI (210564) AI_VISION_FAST: [FRAME 807] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (210564) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (210818) AI_VISION_FAST: [FRAME 808] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (211070) AI_VISION_FAST: [FRAME 809] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (211326) AI_VISION_FAST: [FRAME 810] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (211591) AI_VISION_FAST: [FRAME 811] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (211844) AI_VISION_FAST: [FRAME 812] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (212097) AI_VISION_FAST: [FRAME 813] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (212349) AI_VISION_FAST: [FRAME 814] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (212350) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (212607) AI_VISION_FAST: [FRAME 815] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (212607) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:1, y:0, w:93, h:96][0m
+[0;32mI (212737) AEGIS_PATHFINDER: Retry connecting to WiFi (9/10)...[0m
+[0;32mI (212871) AI_VISION_FAST: [FRAME 816] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (212872) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (213132) AI_VISION_FAST: [FRAME 817] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (213388) AI_VISION_FAST: [FRAME 818] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (213644) AI_VISION_FAST: [FRAME 819] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (213898) AI_VISION_FAST: [FRAME 820] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (214155) AI_VISION_FAST: [FRAME 821] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (214156) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (214414) AI_VISION_FAST: [FRAME 822] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (214415) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (214672) AI_VISION_FAST: [FRAME 823] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (214672) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (214929) AI_VISION_FAST: [FRAME 824] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (214929) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (215150) AEGIS_PATHFINDER: Retry connecting to WiFi (10/10)...[0m
+[0;32mI (215188) AI_VISION_FAST: [FRAME 825] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (215189) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (215450) AI_VISION_FAST: [FRAME 826] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (215705) AI_VISION_FAST: [FRAME 827] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (215706) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (215968) AI_VISION_FAST: [FRAME 828] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (215968) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (216230) AI_VISION_FAST: [FRAME 829] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (216230) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (216500) AI_VISION_FAST: [FRAME 830] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (216501) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (216759) AI_VISION_FAST: [FRAME 831] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (216759) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (217017) AI_VISION_FAST: [FRAME 832] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (217271) AI_VISION_FAST: [FRAME 833] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (217271) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (217277) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (217529) AI_VISION_FAST: [FRAME 834] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (217530) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;33mW (217565) AEGIS_PATHFINDER: WiFi retry limit reached, reconnecting shortly[0m
+[0;32mI (217788) AI_VISION_FAST: [FRAME 835] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (217788) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (218045) AI_VISION_FAST: [FRAME 836] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (218046) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (218303) AI_VISION_FAST: [FRAME 837] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (218304) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:1, y:0, w:95, h:96][0m
+[0;32mI (218562) AI_VISION_FAST: [FRAME 838] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (218562) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (218820) AI_VISION_FAST: [FRAME 839] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (218820) AI_VISION_FAST:   

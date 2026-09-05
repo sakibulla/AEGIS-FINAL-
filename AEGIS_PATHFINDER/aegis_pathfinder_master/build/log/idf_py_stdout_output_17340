@@ -1,0 +1,246 @@
+Command: ninja all
+[1/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/mli_interface.cc.obj
+[2/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/mli_slicers.cc.obj
+[3/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/micro_tensor_utils.cc.obj
+[4/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/mirror_pad.cc.obj
+[5/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/neg.cc.obj
+[6/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/pack.cc.obj
+[7/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/pooling.cc.obj
+[8/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/gather.cc.obj
+[9/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/quantize.cc.obj
+[10/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/prelu_common.cc.obj
+[11/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/pooling_common.cc.obj
+[12/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/quantize_common.cc.obj
+[13/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/prelu.cc.obj
+[14/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/scratch_buf_mgr.cc.obj
+[15/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/scratch_buffers.cc.obj
+[16/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/pad.cc.obj
+[17/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc.obj
+[18/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/round.cc.obj
+[19/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/reduce.cc.obj
+[20/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/resize_bilinear.cc.obj
+[21/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cc.obj
+[22/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc.obj
+[23/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/scatter_nd.cc.obj
+[24/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/mul.cc.obj
+[25/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/reduce_common.cc.obj
+[26/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/read_variable.cc.obj
+[27/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/select.cc.obj
+[28/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/mul_common.cc.obj
+[29/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/space_to_depth.cc.obj
+[30/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/slice.cc.obj
+[31/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/softmax.cc.obj
+[32/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/softmax_common.cc.obj
+[33/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/space_to_batch_nd.cc.obj
+[34/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/split.cc.obj
+[35/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/split_v.cc.obj
+[36/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/reshape.cc.obj
+[37/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/shape.cc.obj
+[38/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/squared_difference.cc.obj
+[39/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/svdf.cc.obj
+[40/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/svdf_common.cc.obj
+[41/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/sub_common.cc.obj
+[42/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/tanh.cc.obj
+[43/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/sub.cc.obj
+[44/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/transpose.cc.obj
+[45/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cc.obj
+[46/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/memory_planner/linear_memory_planner.cc.obj
+[47/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/transpose_conv.cc.obj
+[48/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/memory_planner/non_persistent_buffer_planner_shim.cc.obj
+[49/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/tile.cc.obj
+[50/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/strided_slice.cc.obj
+[51/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_error_reporter.cc.obj
+[52/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/tree_ensemble_classifier.cc.obj
+[53/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/unpack.cc.obj
+[54/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_log.cc.obj
+[55/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/squeeze.cc.obj
+[56/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_profiler.cc.obj
+[57/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/zeros_like.cc.obj
+[58/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_time.cc.obj
+[59/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_string.cc.obj
+[60/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/unidirectional_sequence_lstm.cc.obj
+[61/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_context.cc.obj
+[62/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/op_resolver_bridge.cc.obj
+[63/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/var_handle.cc.obj
+[64/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/recording_single_arena_buffer_allocator.cc.obj
+[65/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/mock_micro_graph.cc.obj
+[66/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/while.cc.obj
+[67/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/system_setup.cc.obj
+[68/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/schema_utils.cc.obj
+[69/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/memory_helpers.cc.obj
+[70/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc.obj
+[71/213] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj
+[72/213] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj
+[73/213] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj
+[74/213] Linking C static library esp-idf\unity\libunity.a
+[75/213] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj
+[76/213] Building C object esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src/cmock.c.obj
+[77/213] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/esp_cam_ctlr.c.obj
+[78/213] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp_share_ctrl.c.obj
+[79/213] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp/src/esp_cam_ctlr_dvp_gdma.c.obj
+[80/213] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp/src/esp_cam_ctlr_dvp_cam.c.obj
+[81/213] Building C object esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/common/touch_sens_common.c.obj
+[82/213] Building C object esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/hw_ver2/touch_version_specific.c.obj
+[83/213] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+[84/213] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj
+[85/213] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj
+[86/213] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj
+[87/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_allocation_info.cc.obj
+[88/213] Linking C static library esp-idf\esp_https_server\libesp_https_server.a
+[89/213] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj
+[90/213] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj
+[91/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj
+[92/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj
+[93/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/test_helper_custom_ops.cc.obj
+[94/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_nt35510.c.obj
+[95/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj
+[96/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj
+[97/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj
+[98/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v1.c.obj
+[99/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v2.c.obj
+[100/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/spi/esp_lcd_panel_io_spi.c.obj
+[101/213] Linking C static library esp-idf\protocomm\libprotocomm.a
+[102/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i80/esp_lcd_panel_io_i80.c.obj
+[103/213] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj
+[104/213] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj
+[105/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_init.c.obj
+[106/213] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj
+[107/213] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj
+[108/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj
+[109/213] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rgb/esp_lcd_panel_rgb.c.obj
+[110/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj
+[111/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj
+[112/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_sha.c.obj
+[113/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj
+[114/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj
+[115/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj
+[116/213] Building ASM object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_stack_switch.S.obj
+[117/213] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_port.c.obj
+[118/213] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[119/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj
+[120/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj
+[121/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj
+[122/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj
+[123/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj
+[124/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj
+[125/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj
+[126/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj
+[127/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj
+[128/213] Linking C static library esp-idf\json\libjson.a
+[129/213] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj
+[130/213] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj
+[131/213] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj
+[132/213] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj
+[133/213] Building C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj
+[134/213] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_access.c.obj
+[135/213] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_apis.c.obj
+[136/213] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj
+[137/213] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_utils.c.obj
+[138/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+[139/213] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_mqueue.c.obj
+[140/213] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj
+[141/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+[142/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+[143/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+[144/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+[145/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+[146/213] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj
+[147/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_graph.cc.obj
+[148/213] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj
+[149/213] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+[150/213] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj
+[151/213] Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj
+[152/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj
+[153/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj
+[154/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj
+[155/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj
+[156/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj
+[157/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_config.c.obj
+[158/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj
+[159/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_allocator.cc.obj
+[160/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj
+[161/213] Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj
+[162/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_ctrl.c.obj
+[163/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_scan.c.obj
+[164/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/handlers.c.obj
+[165/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_console.c.obj
+[166/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_config.pb-c.c.obj
+[167/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj
+[168/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_constants.pb-c.c.obj
+[169/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_ctrl.pb-c.c.obj
+[170/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_softap.c.obj
+[171/213] Linking C static library esp-idf\esp_camera\libesp_camera.a
+[172/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_interpreter.cc.obj
+[173/213] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/espnow_mesh.cpp.obj
+[174/213] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/manager.c.obj
+[175/213] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/web_streamer.cpp.obj
+[176/213] Linking C static library esp-idf\app_trace\libapp_trace.a
+[177/213] Linking C static library esp-idf\cmock\libcmock.a
+[178/213] Linking C static library esp-idf\esp_driver_cam\libesp_driver_cam.a
+[179/213] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/swarm_link.cpp.obj
+[180/213] Linking C static library esp-idf\esp_driver_touch_sens\libesp_driver_touch_sens.a
+[181/213] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[182/213] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[183/213] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[184/213] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[185/213] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[186/213] Linking C static library esp-idf\mqtt\libmqtt.a
+[187/213] Linking C static library esp-idf\fatfs\libfatfs.a
+[188/213] Linking C static library esp-idf\nvs_sec_provider\libnvs_sec_provider.a
+[189/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_utils.cc.obj
+[190/213] Linking C static library esp-idf\perfmon\libperfmon.a
+[191/213] Linking C static library esp-idf\rt\librt.a
+[192/213] Linking C static library esp-idf\touch_element\libtouch_element.a
+[193/213] Linking C static library esp-idf\spiffs\libspiffs.a
+[194/213] Linking C static library esp-idf\usb\libusb.a
+[195/213] Linking C static library esp-idf\wifi_provisioning\libwifi_provisioning.a
+[196/213] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+[197/213] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/bootloader/bootloader.bin"
+Bootloader binary size 0x4d00 bytes. 0x3300 bytes (40%) free.
+[198/213] No install step for 'bootloader'
+[199/213] Completed 'bootloader'
+[200/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/non_persistent_arena_buffer_allocator.cc.obj
+[201/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/micro_resource_variable.cc.obj
+[202/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/single_arena_buffer_allocator.cc.obj
+[203/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/persistent_arena_buffer_allocator.cc.obj
+[204/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/recording_micro_allocator.cc.obj
+[205/213] Building CXX object esp-idf/edge_impulse/CMakeFiles/__idf_edge_impulse.dir/edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.obj
+[206/213] Linking C static library esp-idf\edge_impulse\libedge_impulse.a
+[207/213] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/vision_task.cpp.obj
+In file included from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/ei_classifier_types.h:40,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/ei_model_types.h:40,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/ei_run_classifier.h:38,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/main/vision_task.cpp:20:
+E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/model-parameters/model_metadata.h:113:2: warning: #warning 'EI_CLASSFIER_OBJECT_DETECTION_COUNT' is used for the guaranteed minimum number of objects detected. To get all objects during inference use 'bounding_boxes_count' from the 'ei_impulse_result_t' struct instead. [-Wcpp]
+  113 | #warning 'EI_CLASSFIER_OBJECT_DETECTION_COUNT' is used for the guaranteed minimum number of objects detected. To get all objects during inference use 'bounding_boxes_count' from the 'ei_impulse_result_t' struct instead.
+      |  ^~~~~~~
+In file included from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/micro/micro_mutable_op_resolver.h:22,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/micro/all_ops_resolver.h:19,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/inferencing_engines/tflite_helper.h:52,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/inferencing_engines/tflite_eon.h:44,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/ei_run_classifier.h:63:
+E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/core/api/flatbuffer_conversions.h: In member function 'T* tflite::BuiltinDataAllocator::AllocatePOD()':
+E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/tensorflow/lite/core/api/flatbuffer_conversions.h:46:24: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+   46 |     static_assert(std::is_pod<T>::value, "Builtin data structure must be POD.");
+      |                        ^~~~~~
+In file included from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/move.h:37,
+                 from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/bits/stl_function.h:60,
+                 from E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/functional:49,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/dsp/numpy_types.h:39,
+                 from E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/components/edge_impulse/edge-impulse-sdk/classifier/ei_classifier_types.h:41:
+E:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20260121/xtensa-esp-elf/xtensa-esp-elf/include/c++/14.2.0/type_traits:890:5: note: declared here
+  890 |     is_pod
+      |     ^~~~~~
+[208/213] Linking C static library esp-idf\main\libmain.a
+[209/213] Generating esp-idf/esp_system/ld/sections.ld
+[210/213] Building C object CMakeFiles/aegis_yolo_vision.elf.dir/project_elf_src_esp32s3.c.obj
+[211/213] Linking CXX executable aegis_yolo_vision.elf
+[212/213] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 3 ELF sections
+Successfully created esp32s3 image.
+Generated E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/aegis_yolo_vision.bin
+[213/213] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/partition_table/partition-table.bin E:/AEGIS_GUARDIAN_FOMO/AEGIS_PATHFINDER/aegis_pathfinder_master/build/aegis_yolo_vision.bin"
+aegis_yolo_vision.bin binary size 0x1a5740 bytes. Smallest app partition is 0x700000 bytes. 0x55a8c0 bytes (76%) free.

@@ -1,0 +1,13 @@
+# Target Chip Configuration
+CONFIG_IDF_TARGET="esp32"
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+
+# Flash Memory (Standard 30-pin DevKit has 4MB Flash)
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="4MB"
+
+# FreeRTOS Tick Rate (1000 Hz for precise 1ms delay resolution)
+CONFIG_FREERTOS_HZ=1000
+
+# Explicitly Disable SPIRAM (Standard ESP32 DevKit has no PSRAM)
+CONFIG_SPIRAM=n

@@ -1,0 +1,1481 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d1a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=c3d88h (802184) map[0m
+[0;32mI (245) esp_image: segment 1: paddr=000d3db0 vaddr=3fc9db00 size=0a924h ( 43300) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000de6dc vaddr=40374000 size=0193ch (  6460) load[0m
+[0;32mI (257) esp_image: segment 3: paddr=000e0020 vaddr=42000020 size=1196b8h (1152696) map[0m
+[0;32mI (473) esp_image: segment 4: paddr=001f96e0 vaddr=4037593c size=1813ch ( 98620) load[0m
+[0;32mI (496) esp_image: segment 5: paddr=00211824 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (507) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (507) boot: Disabling RNG early entropy source...[0m
+[0;32mI (518) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (518) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (518) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (520) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (525) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (529) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (533) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (538) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (543) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (547) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (552) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (557) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (561) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (565) esp_psram: Speed: 80MHz[0m
+[0;32mI (567) cpu_start: Multicore app[0m
+[0;32mI (983) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (992) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (992) cpu_start: Pro cpu start user code[0m
+[0;32mI (993) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (994) app_init: Application information:[0m
+[0;32mI (998) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1003) app_init: App version:      1[0m
+[0;32mI (1006) app_init: Compile time:     Aug 16 2026 17:20:00[0m
+[0;32mI (1011) app_init: ELF file SHA256:  0bd95c767...[0m
+[0;32mI (1016) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1020) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1023) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1032) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1038) heap_init: At 3FCC0668 len 000290A8 (164 KiB): RAM[0m
+[0;32mI (1043) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1048) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1054) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1061) spi_flash: detected chip: generic[0m
+[0;32mI (1064) spi_flash: flash io: dio[0m
+[0;33mW (1067) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1077) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1083) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1102) main_task: Started on CPU0[0m
+[0;32mI (1102) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1103) main_task: Calling app_main()[0m
+[0;32mI (1106) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1113) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1120) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1126) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1133) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1155) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1157) pp: pp rom version: e7ae62f[0m
+[0;32mI (1157) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1159) wifi:wifi driver task: 3fcd0570, prio:23, stack:6656, core=0[0m
+[0;32mI (1170) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1171) wifi:wifi certification version: v7.0[0m
+[0;32mI (1172) wifi:config NVS flash: enabled[0m
+[0;32mI (1175) wifi:config nano formatting: disabled[0m
+[0;32mI (1179) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1184) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1188) wifi:Init management short buffer num: 32[0m
+[0;32mI (1193) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1197) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1201) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1205) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1209) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1214) wifi_init: rx ba win: 6[0m
+[0;32mI (1216) wifi_init: accept mbox: 6[0m
+[0;32mI (1219) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1222) wifi_init: udp mbox: 6[0m
+[0;32mI (1225) wifi_init: tcp mbox: 6[0m
+[0;32mI (1228) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1231) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1235) wifi_init: tcp mss: 1440[0m
+[0;32mI (1238) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1242) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1245) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1250) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1289) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1297) wifi:mode : sta (e8:f6:0a:d7:91:60)[0m
+[0;32mI (1298) wifi:enable tsf[0m
+[0;32mI (1299) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1301) AEGIS_PATHFINDER: Pathfinder MAC: E8:F6:0A:D7:91:60[0m
+[0;32mI (1303) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1307) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (1310) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1321) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1325) LVGL: Starting LVGL task[0m
+[0;32mI (1363) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1389) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1409) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1410) wifi:security: WPA2-PSK, phy: bgn, rssi: -45, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1416) wifi:pm start, type: 0[0m
+
+[0;32mI (1417) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1425) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1444) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1445) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1458) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (1479) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (1480) wifi:STA is scanning or connecting, or AP has connected with external STAs, cannot set channel[0m
+
+[0;32mI (1482) SWARM_LINK: Swarm link ready on channel 6 (Pathfinder)[0m
+[0;32mI (1487) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[0;33mW (1508) wifi:sta is connected, disconnect before connecting to new ap[0m
+[0;32mI (1508) s3 ll_cam: DMA Channel=2[0m
+[0;32mI (1509) cam_hal: cam init ok[0m
+[0;32mI (1512) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1515) sccb: sccb_i2c_port=1[0m
+[0;32mI (1531) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1531) camera: Detected OV2640 camera[0m
+[0;32mI (1531) camera: Detected camera at address=0x30[0m
+[0;32mI (1613) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1613) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1614) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1623) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1633) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1639) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1645) cam_hal: cam config ok[0m
+[0;32mI (1647) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1725) AI_VISION_FAST: OV2640 / S3 Camera Hardware successfully initialized![0m
+[0;32mI (1727) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (1731) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1731) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1731) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1731) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1755) main_task: Returned from app_main()[0m
+[0;32mI (2420) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2457) esp_netif_handlers: sta ip: 10.122.202.176, mask: 255.255.255.0, gw: 10.122.202.195[0m
+[0;32mI (2458) AEGIS_PATHFINDER: Connected to WiFi! IP: 10.122.202.176[0m
+[0;32mI (2461) AEGIS_PATHFINDER: Wi-Fi AP Connected on Channel: 6 (RSSI: -53 dBm)[0m
+[0;32mI (2467) ESPNOW: esp now already init![0m
+[0;32mI (2470) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (2514) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2676) AI_VISION_FAST: [FRAME 1] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (2739) AEGIS_PATHFINDER: Backend Health Check: ONLINE[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (2947) AI_VISION_FAST: [FRAME 2] Inference complete in 258 ms | Detections: 0[0m
+[0;32mI (3204) AI_VISION_FAST: [FRAME 3] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (3457) AI_VISION_FAST: [FRAME 4] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (3710) AI_VISION_FAST: [FRAME 5] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (3964) AI_VISION_FAST: [FRAME 6] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (3965) AEGIS_PATHFINDER: Swarm: waiting for WAKE before scouting...[0m
+[0;32mI (4216) AI_VISION_FAST: [FRAME 7] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (4469) AI_VISION_FAST: [FRAME 8] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (4722) AI_VISION_FAST: [FRAME 9] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (4992) AI_VISION_FAST: [FRAME 10] Inference complete in 256 ms | Detections: 0[0m
+[0;32mI (5248) AI_VISION_FAST: [FRAME 11] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (5500) AI_VISION_FAST: [FRAME 12] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (5755) AI_VISION_FAST: [FRAME 13] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (6009) AI_VISION_FAST: [FRAME 14] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (6264) AI_VISION_FAST: [FRAME 15] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (6525) AI_VISION_FAST: [FRAME 16] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (6780) AI_VISION_FAST: [FRAME 17] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (7034) AI_VISION_FAST: [FRAME 18] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (7290) AI_VISION_FAST: [FRAME 19] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (7543) AI_VISION_FAST: [FRAME 20] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (7803) AI_VISION_FAST: [FRAME 21] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (8064) AI_VISION_FAST: [FRAME 22] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (8320) AI_VISION_FAST: [FRAME 23] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (8573) AI_VISION_FAST: [FRAME 24] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (8827) AI_VISION_FAST: [FRAME 25] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (9080) AI_VISION_FAST: [FRAME 26] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (9334) AI_VISION_FAST: [FRAME 27] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (9586) AI_VISION_FAST: [FRAME 28] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (9840) AI_VISION_FAST: [FRAME 29] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (10093) AI_VISION_FAST: [FRAME 30] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (10348) AI_VISION_FAST: [FRAME 31] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (10604) AI_VISION_FAST: [FRAME 32] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (10866) AI_VISION_FAST: [FRAME 33] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (11126) AI_VISION_FAST: [FRAME 34] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (11380) AI_VISION_FAST: [FRAME 35] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (11642) AI_VISION_FAST: [FRAME 36] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (11895) AI_VISION_FAST: [FRAME 37] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (12150) AI_VISION_FAST: [FRAME 38] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (12403) AI_VISION_FAST: [FRAME 39] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (12657) AI_VISION_FAST: [FRAME 40] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (12909) AI_VISION_FAST: [FRAME 41] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (13162) AI_VISION_FAST: [FRAME 42] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (13414) AI_VISION_FAST: [FRAME 43] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (13668) AI_VISION_FAST: [FRAME 44] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (13925) AI_VISION_FAST: [FRAME 45] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (14184) AI_VISION_FAST: [FRAME 46] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (14438) AI_VISION_FAST: [FRAME 47] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (14690) AI_VISION_FAST: [FRAME 48] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (14944) AI_VISION_FAST: [FRAME 49] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15197) AI_VISION_FAST: [FRAME 50] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (15450) AI_VISION_FAST: [FRAME 51] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15704) AI_VISION_FAST: [FRAME 52] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (15957) AI_VISION_FAST: [FRAME 53] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (16211) AI_VISION_FAST: [FRAME 54] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (16464) AI_VISION_FAST: [FRAME 55] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (16730) AI_VISION_FAST: [FRAME 56] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (16996) AI_VISION_FAST: [FRAME 57] Inference complete in 253 ms | Detections: 0[0m
+[0;32mI (17250) AI_VISION_FAST: [FRAME 58] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (17504) AI_VISION_FAST: [FRAME 59] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (17758) AI_VISION_FAST: [FRAME 60] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (18010) AI_VISION_FAST: [FRAME 61] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (18265) AI_VISION_FAST: [FRAME 62] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (18518) AI_VISION_FAST: [FRAME 63] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (18773) AI_VISION_FAST: [FRAME 64] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (19026) AI_VISION_FAST: [FRAME 65] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (19281) AI_VISION_FAST: [FRAME 66] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (19536) AI_VISION_FAST: [FRAME 67] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (19795) AI_VISION_FAST: [FRAME 68] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (20054) AI_VISION_FAST: [FRAME 69] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (20310) AI_VISION_FAST: [FRAME 70] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (20563) AI_VISION_FAST: [FRAME 71] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (20817) AI_VISION_FAST: [FRAME 72] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (21070) AI_VISION_FAST: [FRAME 73] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (21325) AI_VISION_FAST: [FRAME 74] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (21325) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (21589) AI_VISION_FAST: [FRAME 75] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (21844) AI_VISION_FAST: [FRAME 76] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (22096) AI_VISION_FAST: [FRAME 77] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (22350) AI_VISION_FAST: [FRAME 78] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (22604) AI_VISION_FAST: [FRAME 79] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (22868) AI_VISION_FAST: [FRAME 80] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (23125) AI_VISION_FAST: [FRAME 81] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (23379) AI_VISION_FAST: [FRAME 82] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (23631) AI_VISION_FAST: [FRAME 83] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (23885) AI_VISION_FAST: [FRAME 84] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (24138) AI_VISION_FAST: [FRAME 85] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (24391) AI_VISION_FAST: [FRAME 86] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (24644) AI_VISION_FAST: [FRAME 87] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (24896) AI_VISION_FAST: [FRAME 88] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (25150) AI_VISION_FAST: [FRAME 89] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (25404) AI_VISION_FAST: [FRAME 90] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (25659) AI_VISION_FAST: [FRAME 91] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (25659) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (25925) AI_VISION_FAST: [FRAME 92] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (26185) AI_VISION_FAST: [FRAME 93] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (26444) AI_VISION_FAST: [FRAME 94] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (26707) AI_VISION_FAST: [FRAME 95] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (26960) AI_VISION_FAST: [FRAME 96] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (27214) AI_VISION_FAST: [FRAME 97] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (27469) AI_VISION_FAST: [FRAME 98] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (27722) AI_VISION_FAST: [FRAME 99] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (27723) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (27995) AI_VISION_FAST: [FRAME 100] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (27996) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (28256) AI_VISION_FAST: [FRAME 101] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (28518) AI_VISION_FAST: [FRAME 102] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (28519) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (28785) AI_VISION_FAST: [FRAME 103] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (28785) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (29055) AI_VISION_FAST: [FRAME 104] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (29312) AI_VISION_FAST: [FRAME 105] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (29565) AI_VISION_FAST: [FRAME 106] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (29819) AI_VISION_FAST: [FRAME 107] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (29819) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (30077) AI_VISION_FAST: [FRAME 108] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (30078) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (30344) AI_VISION_FAST: [FRAME 109] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (30345) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (30612) AI_VISION_FAST: [FRAME 110] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (30612) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (30880) AI_VISION_FAST: [FRAME 111] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (31138) AI_VISION_FAST: [FRAME 112] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (31392) AI_VISION_FAST: [FRAME 113] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (31650) AI_VISION_FAST: [FRAME 114] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (31912) AI_VISION_FAST: [FRAME 115] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (32171) AI_VISION_FAST: [FRAME 116] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (32424) AI_VISION_FAST: [FRAME 117] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (32677) AI_VISION_FAST: [FRAME 118] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (32931) AI_VISION_FAST: [FRAME 119] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (33185) AI_VISION_FAST: [FRAME 120] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (33438) AI_VISION_FAST: [FRAME 121] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (33691) AI_VISION_FAST: [FRAME 122] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (33945) AI_VISION_FAST: [FRAME 123] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (34199) AI_VISION_FAST: [FRAME 124] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (34454) AI_VISION_FAST: [FRAME 125] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (34706) AI_VISION_FAST: [FRAME 126] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (34968) AI_VISION_FAST: [FRAME 127] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (35227) AI_VISION_FAST: [FRAME 128] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (35482) AI_VISION_FAST: [FRAME 129] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (35736) AI_VISION_FAST: [FRAME 130] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (35990) AI_VISION_FAST: [FRAME 131] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (36240) AI_VISION_FAST: [FRAME 132] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (36501) AI_VISION_FAST: [FRAME 133] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (36751) AI_VISION_FAST: [FRAME 134] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (37006) AI_VISION_FAST: [FRAME 135] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (37260) AI_VISION_FAST: [FRAME 136] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (37515) AI_VISION_FAST: [FRAME 137] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (37773) AI_VISION_FAST: [FRAME 138] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (38031) AI_VISION_FAST: [FRAME 139] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (38388) AI_VISION_FAST: [FRAME 140] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (38640) AI_VISION_FAST: [FRAME 141] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (38894) AI_VISION_FAST: [FRAME 142] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (39148) AI_VISION_FAST: [FRAME 143] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (39401) AI_VISION_FAST: [FRAME 144] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (39655) AI_VISION_FAST: [FRAME 145] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (39909) AI_VISION_FAST: [FRAME 146] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40162) AI_VISION_FAST: [FRAME 147] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (40416) AI_VISION_FAST: [FRAME 148] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (40670) AI_VISION_FAST: [FRAME 149] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (40930) AI_VISION_FAST: [FRAME 150] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (41190) AI_VISION_FAST: [FRAME 151] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (41445) AI_VISION_FAST: [FRAME 152] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (41712) AI_VISION_FAST: [FRAME 153] Inference complete in 253 ms | Detections: 0[0m
+[0;32mI (41966) AI_VISION_FAST: [FRAME 154] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (42221) AI_VISION_FAST: [FRAME 155] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (42474) AI_VISION_FAST: [FRAME 156] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (42728) AI_VISION_FAST: [FRAME 157] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (42981) AI_VISION_FAST: [FRAME 158] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (43233) AI_VISION_FAST: [FRAME 159] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (43485) AI_VISION_FAST: [FRAME 160] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (43739) AI_VISION_FAST: [FRAME 161] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44003) AI_VISION_FAST: [FRAME 162] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (44257) AI_VISION_FAST: [FRAME 163] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (44510) AI_VISION_FAST: [FRAME 164] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (44762) AI_VISION_FAST: [FRAME 165] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (45016) AI_VISION_FAST: [FRAME 166] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45270) AI_VISION_FAST: [FRAME 167] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (45526) AI_VISION_FAST: [FRAME 168] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (45781) AI_VISION_FAST: [FRAME 169] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (46035) AI_VISION_FAST: [FRAME 170] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (46289) AI_VISION_FAST: [FRAME 171] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (46549) AI_VISION_FAST: [FRAME 172] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (46810) AI_VISION_FAST: [FRAME 173] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (47067) AI_VISION_FAST: [FRAME 174] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (47321) AI_VISION_FAST: [FRAME 175] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (47575) AI_VISION_FAST: [FRAME 176] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (47830) AI_VISION_FAST: [FRAME 177] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (48084) AI_VISION_FAST: [FRAME 178] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (48338) AI_VISION_FAST: [FRAME 179] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (48592) AI_VISION_FAST: [FRAME 180] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (48845) AI_VISION_FAST: [FRAME 181] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49099) AI_VISION_FAST: [FRAME 182] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (49353) AI_VISION_FAST: [FRAME 183] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49607) AI_VISION_FAST: [FRAME 184] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (49867) AI_VISION_FAST: [FRAME 185] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (50126) AI_VISION_FAST: [FRAME 186] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (50382) AI_VISION_FAST: [FRAME 187] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (50636) AI_VISION_FAST: [FRAME 188] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (50889) AI_VISION_FAST: [FRAME 189] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (51141) AI_VISION_FAST: [FRAME 190] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (51395) AI_VISION_FAST: [FRAME 191] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (51657) AI_VISION_FAST: [FRAME 192] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (51910) AI_VISION_FAST: [FRAME 193] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (52164) AI_VISION_FAST: [FRAME 194] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (52415) AI_VISION_FAST: [FRAME 195] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (52669) AI_VISION_FAST: [FRAME 196] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (52929) AI_VISION_FAST: [FRAME 197] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (53187) AI_VISION_FAST: [FRAME 198] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (53442) AI_VISION_FAST: [FRAME 199] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (53695) AI_VISION_FAST: [FRAME 200] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (53948) AI_VISION_FAST: [FRAME 201] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (54202) AI_VISION_FAST: [FRAME 202] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (54457) AI_VISION_FAST: [FRAME 203] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (54712) AI_VISION_FAST: [FRAME 204] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (54966) AI_VISION_FAST: [FRAME 205] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (55221) AI_VISION_FAST: [FRAME 206] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (55474) AI_VISION_FAST: [FRAME 207] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (55729) AI_VISION_FAST: [FRAME 208] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (55996) AI_VISION_FAST: [FRAME 209] Inference complete in 253 ms | Detections: 0[0m
+[0;32mI (56250) AI_VISION_FAST: [FRAME 210] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (56511) AI_VISION_FAST: [FRAME 211] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (56766) AI_VISION_FAST: [FRAME 212] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (57018) AI_VISION_FAST: [FRAME 213] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (57274) AI_VISION_FAST: [FRAME 214] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (57526) AI_VISION_FAST: [FRAME 215] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (57778) AI_VISION_FAST: [FRAME 216] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (58032) AI_VISION_FAST: [FRAME 217] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (58286) AI_VISION_FAST: [FRAME 218] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (58538) AI_VISION_FAST: [FRAME 219] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (58796) AI_VISION_FAST: [FRAME 220] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (59058) AI_VISION_FAST: [FRAME 221] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (59312) AI_VISION_FAST: [FRAME 222] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (59565) AI_VISION_FAST: [FRAME 223] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (59816) AI_VISION_FAST: [FRAME 224] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (60067) AI_VISION_FAST: [FRAME 225] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (60322) AI_VISION_FAST: [FRAME 226] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (60575) AI_VISION_FAST: [FRAME 227] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (60830) AI_VISION_FAST: [FRAME 228] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (61084) AI_VISION_FAST: [FRAME 229] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (61338) AI_VISION_FAST: [FRAME 230] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (61599) AI_VISION_FAST: [FRAME 231] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (61859) AI_VISION_FAST: [FRAME 232] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (62119) AI_VISION_FAST: [FRAME 233] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (62373) AI_VISION_FAST: [FRAME 234] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (62627) AI_VISION_FAST: [FRAME 235] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (62882) AI_VISION_FAST: [FRAME 236] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (63133) AI_VISION_FAST: [FRAME 237] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (63388) AI_VISION_FAST: [FRAME 238] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (63643) AI_VISION_FAST: [FRAME 239] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (63895) AI_VISION_FAST: [FRAME 240] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (64151) AI_VISION_FAST: [FRAME 241] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (64405) AI_VISION_FAST: [FRAME 242] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (64659) AI_VISION_FAST: [FRAME 243] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (64916) AI_VISION_FAST: [FRAME 244] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (65177) AI_VISION_FAST: [FRAME 245] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (65431) AI_VISION_FAST: [FRAME 246] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (65686) AI_VISION_FAST: [FRAME 247] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (65939) AI_VISION_FAST: [FRAME 248] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (66194) AI_VISION_FAST: [FRAME 249] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (66194) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (66464) AI_VISION_FAST: [FRAME 250] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (66465) AI_VISION_FAST:   └─ DETECTED: 'dustbin' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (66739) AI_VISION_FAST: [FRAME 251] Inference complete in 255 ms | Detections: 0[0m
+[0;32mI (66994) AI_VISION_FAST: [FRAME 252] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (67249) AI_VISION_FAST: [FRAME 253] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (67502) AI_VISION_FAST: [FRAME 254] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (67758) AI_VISION_FAST: [FRAME 255] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (68016) AI_VISION_FAST: [FRAME 256] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (68270) AI_VISION_FAST: [FRAME 257] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (68523) AI_VISION_FAST: [FRAME 258] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (68777) AI_VISION_FAST: [FRAME 259] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (69030) AI_VISION_FAST: [FRAME 260] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (69284) AI_VISION_FAST: [FRAME 261] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (69538) AI_VISION_FAST: [FRAME 262] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (69792) AI_VISION_FAST: [FRAME 263] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (70046) AI_VISION_FAST: [FRAME 264] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (70300) AI_VISION_FAST: [FRAME 265] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (70554) AI_VISION_FAST: [FRAME 266] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (70816) AI_VISION_FAST: [FRAME 267] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (71072) AI_VISION_FAST: [FRAME 268] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (71326) AI_VISION_FAST: [FRAME 269] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (71327) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (71590) AI_VISION_FAST: [FRAME 270] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (71843) AI_VISION_FAST: [FRAME 271] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (71844) AI_VISION_FAST:   └─ DETECTED: 'dustbin' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (72102) AI_VISION_FAST: [FRAME 272] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (72355) AI_VISION_FAST: [FRAME 273] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (72609) AI_VISION_FAST: [FRAME 274] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (72862) AI_VISION_FAST: [FRAME 275] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (72863) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 90.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (73121) AI_VISION_FAST: [FRAME 276] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (73375) AI_VISION_FAST: [FRAME 277] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (73375) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 94.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (73634) AI_VISION_FAST: [FRAME 278] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (73897) AI_VISION_FAST: [FRAME 279] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (74152) AI_VISION_FAST: [FRAME 280] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (74407) AI_VISION_FAST: [FRAME 281] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (74659) AI_VISION_FAST: [FRAME 282] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (74911) AI_VISION_FAST: [FRAME 283] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (75166) AI_VISION_FAST: [FRAME 284] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (75420) AI_VISION_FAST: [FRAME 285] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (75420) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (75680) AI_VISION_FAST: [FRAME 286] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (75933) AI_VISION_FAST: [FRAME 287] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (76184) AI_VISION_FAST: [FRAME 288] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (76438) AI_VISION_FAST: [FRAME 289] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (76700) AI_VISION_FAST: [FRAME 290] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (76965) AI_VISION_FAST: [FRAME 291] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (77222) AI_VISION_FAST: [FRAME 292] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (77476) AI_VISION_FAST: [FRAME 293] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (77730) AI_VISION_FAST: [FRAME 294] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (77980) AI_VISION_FAST: [FRAME 295] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (78234) AI_VISION_FAST: [FRAME 296] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (78488) AI_VISION_FAST: [FRAME 297] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (78741) AI_VISION_FAST: [FRAME 298] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (78995) AI_VISION_FAST: [FRAME 299] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (79249) AI_VISION_FAST: [FRAME 300] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (79505) AI_VISION_FAST: [FRAME 301] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (79763) AI_VISION_FAST: [FRAME 302] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (80024) AI_VISION_FAST: [FRAME 303] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (80278) AI_VISION_FAST: [FRAME 304] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (80533) AI_VISION_FAST: [FRAME 305] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (80785) AI_VISION_FAST: [FRAME 306] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (81039) AI_VISION_FAST: [FRAME 307] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (81293) AI_VISION_FAST: [FRAME 308] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (81554) AI_VISION_FAST: [FRAME 309] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (81805) AI_VISION_FAST: [FRAME 310] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (82059) AI_VISION_FAST: [FRAME 311] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (82312) AI_VISION_FAST: [FRAME 312] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (82313) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (82571) AI_VISION_FAST: [FRAME 313] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (82571) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (82836) AI_VISION_FAST: [FRAME 314] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (83099) AI_VISION_FAST: [FRAME 315] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (83358) AI_VISION_FAST: [FRAME 316] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (83611) AI_VISION_FAST: [FRAME 317] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (83866) AI_VISION_FAST: [FRAME 318] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (84121) AI_VISION_FAST: [FRAME 319] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (84374) AI_VISION_FAST: [FRAME 320] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (84629) AI_VISION_FAST: [FRAME 321] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (84630) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (84896) AI_VISION_FAST: [FRAME 322] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (84897) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (85157) AI_VISION_FAST: [FRAME 323] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (85158) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (85424) AI_VISION_FAST: [FRAME 324] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (85424) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (85685) AI_VISION_FAST: [FRAME 325] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (85685) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (85952) AI_VISION_FAST: [FRAME 326] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (85952) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (86230) AI_VISION_FAST: [FRAME 327] Inference complete in 261 ms | Detections: 1[0m
+[0;32mI (86231) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:1, y:0, w:91, h:96][0m
+[0;32mI (86508) AI_VISION_FAST: [FRAME 328] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (86508) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 89.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (86769) AI_VISION_FAST: [FRAME 329] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (86769) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (87037) AI_VISION_FAST: [FRAME 330] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (87037) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (87300) AI_VISION_FAST: [FRAME 331] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (87556) AI_VISION_FAST: [FRAME 332] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (87810) AI_VISION_FAST: [FRAME 333] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (88062) AI_VISION_FAST: [FRAME 334] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (88317) AI_VISION_FAST: [FRAME 335] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (88571) AI_VISION_FAST: [FRAME 336] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (88831) AI_VISION_FAST: [FRAME 337] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (89085) AI_VISION_FAST: [FRAME 338] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (89085) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (89353) AI_VISION_FAST: [FRAME 339] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (89353) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (89620) AI_VISION_FAST: [FRAME 340] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (89620) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (89888) AI_VISION_FAST: [FRAME 341] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (89889) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (90153) AI_VISION_FAST: [FRAME 342] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (90154) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 88.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90421) AI_VISION_FAST: [FRAME 343] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (90422) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:1, w:94, h:93][0m
+[0;32mI (90685) AI_VISION_FAST: [FRAME 344] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (90685) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (90955) AI_VISION_FAST: [FRAME 345] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (90955) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (91219) AI_VISION_FAST: [FRAME 346] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (91220) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 87.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (91490) AI_VISION_FAST: [FRAME 347] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (91491) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 88.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (91755) AI_VISION_FAST: [FRAME 348] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (91756) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 86.6% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (92026) AI_VISION_FAST: [FRAME 349] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (92027) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (92296) AI_VISION_FAST: [FRAME 350] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (92297) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 81.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (92562) AI_VISION_FAST: [FRAME 351] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (92563) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (92826) AI_VISION_FAST: [FRAME 352] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (92827) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (93087) AI_VISION_FAST: [FRAME 353] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (93088) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (93349) AI_VISION_FAST: [FRAME 354] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (93350) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (93613) AI_VISION_FAST: [FRAME 355] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (93613) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (93883) AI_VISION_FAST: [FRAME 356] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (93883) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (94147) AI_VISION_FAST: [FRAME 357] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (94148) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (94414) AI_VISION_FAST: [FRAME 358] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (94414) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (94674) AI_VISION_FAST: [FRAME 359] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (94674) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (94940) AI_VISION_FAST: [FRAME 360] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (94940) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (95210) AI_VISION_FAST: [FRAME 361] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (95211) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (95487) AI_VISION_FAST: [FRAME 362] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (95487) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (95750) AI_VISION_FAST: [FRAME 363] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (95751) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (96013) AI_VISION_FAST: [FRAME 364] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (96014) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (96275) AI_VISION_FAST: [FRAME 365] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (96275) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (96550) AI_VISION_FAST: [FRAME 366] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (96550) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (96811) AI_VISION_FAST: [FRAME 367] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (96812) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (97072) AI_VISION_FAST: [FRAME 368] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (97072) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (97339) AI_VISION_FAST: [FRAME 369] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (97339) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (97601) AI_VISION_FAST: [FRAME 370] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (97602) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (97868) AI_VISION_FAST: [FRAME 371] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (97869) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (98142) AI_VISION_FAST: [FRAME 372] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (98142) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (98414) AI_VISION_FAST: [FRAME 373] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (98414) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (98677) AI_VISION_FAST: [FRAME 374] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (98677) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (98943) AI_VISION_FAST: [FRAME 375] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (98943) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (99204) AI_VISION_FAST: [FRAME 376] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (99204) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (99473) AI_VISION_FAST: [FRAME 377] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (99474) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (99738) AI_VISION_FAST: [FRAME 378] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (99738) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (100003) AI_VISION_FAST: [FRAME 379] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (100004) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (100267) AI_VISION_FAST: [FRAME 380] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (100268) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (100536) AI_VISION_FAST: [FRAME 381] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (100536) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (100801) AI_VISION_FAST: [FRAME 382] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (100801) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (101069) AI_VISION_FAST: [FRAME 383] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (101069) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (101337) AI_VISION_FAST: [FRAME 384] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (101338) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (101606) AI_VISION_FAST: [FRAME 385] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (101606) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (101874) AI_VISION_FAST: [FRAME 386] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (101875) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102140) AI_VISION_FAST: [FRAME 387] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (102141) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102408) AI_VISION_FAST: [FRAME 388] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (102409) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102675) AI_VISION_FAST: [FRAME 389] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (102675) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102941) AI_VISION_FAST: [FRAME 390] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (102942) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (103204) AI_VISION_FAST: [FRAME 391] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (103204) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (103475) AI_VISION_FAST: [FRAME 392] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (103476) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (103741) AI_VISION_FAST: [FRAME 393] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (103741) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (104006) AI_VISION_FAST: [FRAME 394] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (104007) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (104280) AI_VISION_FAST: [FRAME 395] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (104281) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (104548) AI_VISION_FAST: [FRAME 396] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (104799) AI_VISION_FAST: [FRAME 397] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (105053) AI_VISION_FAST: [FRAME 398] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (105309) AI_VISION_FAST: [FRAME 399] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (105561) AI_VISION_FAST: [FRAME 400] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (105813) AI_VISION_FAST: [FRAME 401] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (106065) AI_VISION_FAST: [FRAME 402] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (106317) AI_VISION_FAST: [FRAME 403] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (106577) AI_VISION_FAST: [FRAME 404] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (106835) AI_VISION_FAST: [FRAME 405] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (107090) AI_VISION_FAST: [FRAME 406] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (107344) AI_VISION_FAST: [FRAME 407] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (107597) AI_VISION_FAST: [FRAME 408] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (107852) AI_VISION_FAST: [FRAME 409] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (108105) AI_VISION_FAST: [FRAME 410] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (108358) AI_VISION_FAST: [FRAME 411] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (108612) AI_VISION_FAST: [FRAME 412] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (108867) AI_VISION_FAST: [FRAME 413] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (109120) AI_VISION_FAST: [FRAME 414] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (109373) AI_VISION_FAST: [FRAME 415] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (109627) AI_VISION_FAST: [FRAME 416] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (109889) AI_VISION_FAST: [FRAME 417] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (110149) AI_VISION_FAST: [FRAME 418] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (110404) AI_VISION_FAST: [FRAME 419] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (110658) AI_VISION_FAST: [FRAME 420] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (110912) AI_VISION_FAST: [FRAME 421] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (111166) AI_VISION_FAST: [FRAME 422] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (111420) AI_VISION_FAST: [FRAME 423] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (111678) AI_VISION_FAST: [FRAME 424] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (111931) AI_VISION_FAST: [FRAME 425] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (112185) AI_VISION_FAST: [FRAME 426] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (112436) AI_VISION_FAST: [FRAME 427] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (112690) AI_VISION_FAST: [FRAME 428] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (112948) AI_VISION_FAST: [FRAME 429] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (113205) AI_VISION_FAST: [FRAME 430] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (113458) AI_VISION_FAST: [FRAME 431] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (113712) AI_VISION_FAST: [FRAME 432] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (113965) AI_VISION_FAST: [FRAME 433] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (114220) AI_VISION_FAST: [FRAME 434] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (114475) AI_VISION_FAST: [FRAME 435] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (114729) AI_VISION_FAST: [FRAME 436] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (114983) AI_VISION_FAST: [FRAME 437] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (115235) AI_VISION_FAST: [FRAME 438] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (115489) AI_VISION_FAST: [FRAME 439] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (115743) AI_VISION_FAST: [FRAME 440] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (116002) AI_VISION_FAST: [FRAME 441] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (116257) AI_VISION_FAST: [FRAME 442] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (116519) AI_VISION_FAST: [FRAME 443] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (116771) AI_VISION_FAST: [FRAME 444] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (117025) AI_VISION_FAST: [FRAME 445] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (117279) AI_VISION_FAST: [FRAME 446] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (117533) AI_VISION_FAST: [FRAME 447] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (117788) AI_VISION_FAST: [FRAME 448] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (118042) AI_VISION_FAST: [FRAME 449] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (118296) AI_VISION_FAST: [FRAME 450] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (118549) AI_VISION_FAST: [FRAME 451] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (118809) AI_VISION_FAST: [FRAME 452] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (119067) AI_VISION_FAST: [FRAME 453] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (119321) AI_VISION_FAST: [FRAME 454] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (119575) AI_VISION_FAST: [FRAME 455] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (119829) AI_VISION_FAST: [FRAME 456] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (120082) AI_VISION_FAST: [FRAME 457] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (120335) AI_VISION_FAST: [FRAME 458] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (120589) AI_VISION_FAST: [FRAME 459] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (120842) AI_VISION_FAST: [FRAME 460] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (121097) AI_VISION_FAST: [FRAME 461] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (121352) AI_VISION_FAST: [FRAME 462] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (121615) AI_VISION_FAST: [FRAME 463] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (121879) AI_VISION_FAST: [FRAME 464] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (122137) AI_VISION_FAST: [FRAME 465] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (122393) AI_VISION_FAST: [FRAME 466] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (122646) AI_VISION_FAST: [FRAME 467] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (122900) AI_VISION_FAST: [FRAME 468] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (123152) AI_VISION_FAST: [FRAME 469] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (123407) AI_VISION_FAST: [FRAME 470] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (123660) AI_VISION_FAST: [FRAME 471] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (123911) AI_VISION_FAST: [FRAME 472] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (124164) AI_VISION_FAST: [FRAME 473] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (124419) AI_VISION_FAST: [FRAME 474] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (124670) AI_VISION_FAST: [FRAME 475] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (124931) AI_VISION_FAST: [FRAME 476] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (125189) AI_VISION_FAST: [FRAME 477] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (125443) AI_VISION_FAST: [FRAME 478] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (125697) AI_VISION_FAST: [FRAME 479] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (125952) AI_VISION_FAST: [FRAME 480] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (126206) AI_VISION_FAST: [FRAME 481] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (126460) AI_VISION_FAST: [FRAME 482] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (126724) AI_VISION_FAST: [FRAME 483] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (126979) AI_VISION_FAST: [FRAME 484] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (127233) AI_VISION_FAST: [FRAME 485] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (127487) AI_VISION_FAST: [FRAME 486] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (127741) AI_VISION_FAST: [FRAME 487] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (128004) AI_VISION_FAST: [FRAME 488] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (128261) AI_VISION_FAST: [FRAME 489] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (128514) AI_VISION_FAST: [FRAME 490] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (128767) AI_VISION_FAST: [FRAME 491] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (129021) AI_VISION_FAST: [FRAME 492] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (129275) AI_VISION_FAST: [FRAME 493] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (129528) AI_VISION_FAST: [FRAME 494] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (129779) AI_VISION_FAST: [FRAME 495] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (130032) AI_VISION_FAST: [FRAME 496] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (130287) AI_VISION_FAST: [FRAME 497] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (130540) AI_VISION_FAST: [FRAME 498] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (130796) AI_VISION_FAST: [FRAME 499] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (131056) AI_VISION_FAST: [FRAME 500] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (131308) AI_VISION_FAST: [FRAME 501] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (131566) AI_VISION_FAST: [FRAME 502] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (131567) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (131832) AI_VISION_FAST: [FRAME 503] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (132088) AI_VISION_FAST: [FRAME 504] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (132088) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 93.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (132355) AI_VISION_FAST: [FRAME 505] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (132612) AI_VISION_FAST: [FRAME 506] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (132866) AI_VISION_FAST: [FRAME 507] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (133119) AI_VISION_FAST: [FRAME 508] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (133374) AI_VISION_FAST: [FRAME 509] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (133625) AI_VISION_FAST: [FRAME 510] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (133885) AI_VISION_FAST: [FRAME 511] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (134147) AI_VISION_FAST: [FRAME 512] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (134401) AI_VISION_FAST: [FRAME 513] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (134655) AI_VISION_FAST: [FRAME 514] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (134907) AI_VISION_FAST: [FRAME 515] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (134908) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (135163) AI_VISION_FAST: [FRAME 516] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (135418) AI_VISION_FAST: [FRAME 517] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (135418) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (135676) AI_VISION_FAST: [FRAME 518] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (135677) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (135943) AI_VISION_FAST: [FRAME 519] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (135944) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:1, y:0, w:91, h:96][0m
+[0;32mI (136205) AI_VISION_FAST: [FRAME 520] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (136205) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (136473) AI_VISION_FAST: [FRAME 521] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (136474) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (136741) AI_VISION_FAST: [FRAME 522] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (136742) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (137008) AI_VISION_FAST: [FRAME 523] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (137008) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:1, y:0, w:93, h:94][0m
+[0;32mI (137289) AI_VISION_FAST: [FRAME 524] Inference complete in 262 ms | Detections: 1[0m
+[0;32mI (137290) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (137556) AI_VISION_FAST: [FRAME 525] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (137556) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (137820) AI_VISION_FAST: [FRAME 526] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (137820) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (138084) AI_VISION_FAST: [FRAME 527] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (138085) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (138353) AI_VISION_FAST: [FRAME 528] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (138354) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (138616) AI_VISION_FAST: [FRAME 529] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (138617) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (138885) AI_VISION_FAST: [FRAME 530] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (138885) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (139146) AI_VISION_FAST: [FRAME 531] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (139147) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (139416) AI_VISION_FAST: [FRAME 532] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (139417) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (139679) AI_VISION_FAST: [FRAME 533] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (139680) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (139944) AI_VISION_FAST: [FRAME 534] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (139945) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (140212) AI_VISION_FAST: [FRAME 535] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (140213) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (140481) AI_VISION_FAST: [FRAME 536] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (140481) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (140747) AI_VISION_FAST: [FRAME 537] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (140747) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (141012) AI_VISION_FAST: [FRAME 538] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (141272) AI_VISION_FAST: [FRAME 539] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (141272) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (141540) AI_VISION_FAST: [FRAME 540] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (141541) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (141806) AI_VISION_FAST: [FRAME 541] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (141806) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (142069) AI_VISION_FAST: [FRAME 542] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (142070) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (142332) AI_VISION_FAST: [FRAME 543] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (142333) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (142595) AI_VISION_FAST: [FRAME 544] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (142595) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:1, y:0, w:93, h:94][0m
+[0;32mI (142862) AI_VISION_FAST: [FRAME 545] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (142862) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (143128) AI_VISION_FAST: [FRAME 546] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (143128) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (143400) AI_VISION_FAST: [FRAME 547] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (143400) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (143662) AI_VISION_FAST: [FRAME 548] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (143663) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (143929) AI_VISION_FAST: [FRAME 549] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (143930) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (144192) AI_VISION_FAST: [FRAME 550] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (144446) AI_VISION_FAST: [FRAME 551] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (144446) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (144705) AI_VISION_FAST: [FRAME 552] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (144706) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (144978) AI_VISION_FAST: [FRAME 553] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (144978) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (145244) AI_VISION_FAST: [FRAME 554] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (145245) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (145510) AI_VISION_FAST: [FRAME 555] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (145510) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (145774) AI_VISION_FAST: [FRAME 556] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (145775) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (146046) AI_VISION_FAST: [FRAME 557] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (146047) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 70.5% | BBox: [x:1, y:0, w:91, h:94][0m
+[0;32mI (146315) AI_VISION_FAST: [FRAME 558] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (146584) AI_VISION_FAST: [FRAME 559] Inference complete in 255 ms | Detections: 0[0m
+[0;32mI (146838) AI_VISION_FAST: [FRAME 560] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (146838) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (147097) AI_VISION_FAST: [FRAME 561] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (147098) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (147365) AI_VISION_FAST: [FRAME 562] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (147366) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (147624) AI_VISION_FAST: [FRAME 563] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (147625) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (147894) AI_VISION_FAST: [FRAME 564] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (147895) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (148158) AI_VISION_FAST: [FRAME 565] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (148159) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (148426) AI_VISION_FAST: [FRAME 566] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (148426) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (148689) AI_VISION_FAST: [FRAME 567] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (148690) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (148955) AI_VISION_FAST: [FRAME 568] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (148956) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (149225) AI_VISION_FAST: [FRAME 569] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (149225) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (149499) AI_VISION_FAST: [FRAME 570] Inference complete in 255 ms | Detections: 0[0m
+[0;32mI (149756) AI_VISION_FAST: [FRAME 571] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (149756) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (150016) AI_VISION_FAST: [FRAME 572] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (150017) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (150281) AI_VISION_FAST: [FRAME 573] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (150282) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (150546) AI_VISION_FAST: [FRAME 574] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (150800) AI_VISION_FAST: [FRAME 575] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (150800) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (151058) AI_VISION_FAST: [FRAME 576] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (151058) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (151321) AI_VISION_FAST: [FRAME 577] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (151586) AI_VISION_FAST: [FRAME 578] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (151843) AI_VISION_FAST: [FRAME 579] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (151843) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (152102) AI_VISION_FAST: [FRAME 580] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (152103) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (152370) AI_VISION_FAST: [FRAME 581] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (152625) AI_VISION_FAST: [FRAME 582] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (152626) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (152894) AI_VISION_FAST: [FRAME 583] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (153153) AI_VISION_FAST: [FRAME 584] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (153407) AI_VISION_FAST: [FRAME 585] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (153661) AI_VISION_FAST: [FRAME 586] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (153662) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (153929) AI_VISION_FAST: [FRAME 587] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (153929) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (154192) AI_VISION_FAST: [FRAME 588] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (154192) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (154459) AI_VISION_FAST: [FRAME 589] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (154460) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (154720) AI_VISION_FAST: [FRAME 590] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (154721) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (154992) AI_VISION_FAST: [FRAME 591] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (154993) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (155268) AI_VISION_FAST: [FRAME 592] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (155268) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (155540) AI_VISION_FAST: [FRAME 593] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (155540) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (155809) AI_VISION_FAST: [FRAME 594] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (155810) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (156077) AI_VISION_FAST: [FRAME 595] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (156078) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (156340) AI_VISION_FAST: [FRAME 596] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (156340) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (156609) AI_VISION_FAST: [FRAME 597] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (156863) AI_VISION_FAST: [FRAME 598] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (156864) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (157121) AI_VISION_FAST: [FRAME 599] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (157375) AI_VISION_FAST: [FRAME 600] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (157376) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (157635) AI_VISION_FAST: [FRAME 601] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (157635) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (157900) AI_VISION_FAST: [FRAME 602] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (157901) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (158174) AI_VISION_FAST: [FRAME 603] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (158174) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (158448) AI_VISION_FAST: [FRAME 604] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (158448) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (158712) AI_VISION_FAST: [FRAME 605] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (158712) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (158980) AI_VISION_FAST: [FRAME 606] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (159239) AI_VISION_FAST: [FRAME 607] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (159239) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (159508) AI_VISION_FAST: [FRAME 608] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (159508) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (159777) AI_VISION_FAST: [FRAME 609] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (159777) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (160045) AI_VISION_FAST: [FRAME 610] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (160046) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (160309) AI_VISION_FAST: [FRAME 611] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (160309) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (160573) AI_VISION_FAST: [FRAME 612] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (160574) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (160838) AI_VISION_FAST: [FRAME 613] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (160839) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (161107) AI_VISION_FAST: [FRAME 614] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (161107) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (161373) AI_VISION_FAST: [FRAME 615] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (161374) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (161641) AI_VISION_FAST: [FRAME 616] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (161642) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (161909) AI_VISION_FAST: [FRAME 617] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (161909) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (162172) AI_VISION_FAST: [FRAME 618] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (162425) AI_VISION_FAST: [FRAME 619] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (162679) AI_VISION_FAST: [FRAME 620] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (162935) AI_VISION_FAST: [FRAME 621] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (163188) AI_VISION_FAST: [FRAME 622] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (163443) AI_VISION_FAST: [FRAME 623] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (163692) AI_VISION_FAST: [FRAME 624] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (163952) AI_VISION_FAST: [FRAME 625] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (164208) AI_VISION_FAST: [FRAME 626] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (164462) AI_VISION_FAST: [FRAME 627] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (164716) AI_VISION_FAST: [FRAME 628] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (164970) AI_VISION_FAST: [FRAME 629] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (165224) AI_VISION_FAST: [FRAME 630] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (165477) AI_VISION_FAST: [FRAME 631] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (165729) AI_VISION_FAST: [FRAME 632] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (165981) AI_VISION_FAST: [FRAME 633] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (166235) AI_VISION_FAST: [FRAME 634] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (166493) AI_VISION_FAST: [FRAME 635] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (166745) AI_VISION_FAST: [FRAME 636] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (167009) AI_VISION_FAST: [FRAME 637] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (167269) AI_VISION_FAST: [FRAME 638] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (167523) AI_VISION_FAST: [FRAME 639] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (167777) AI_VISION_FAST: [FRAME 640] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (168030) AI_VISION_FAST: [FRAME 641] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (168284) AI_VISION_FAST: [FRAME 642] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (168538) AI_VISION_FAST: [FRAME 643] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (168792) AI_VISION_FAST: [FRAME 644] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (169046) AI_VISION_FAST: [FRAME 645] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (169300) AI_VISION_FAST: [FRAME 646] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (169554) AI_VISION_FAST: [FRAME 647] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (169814) AI_VISION_FAST: [FRAME 648] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (170072) AI_VISION_FAST: [FRAME 649] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (170327) AI_VISION_FAST: [FRAME 650] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (170580) AI_VISION_FAST: [FRAME 651] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (170834) AI_VISION_FAST: [FRAME 652] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (171087) AI_VISION_FAST: [FRAME 653] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (171339) AI_VISION_FAST: [FRAME 654] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (171597) AI_VISION_FAST: [FRAME 655] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (171849) AI_VISION_FAST: [FRAME 656] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (172102) AI_VISION_FAST: [FRAME 657] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (172356) AI_VISION_FAST: [FRAME 658] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (172609) AI_VISION_FAST: [FRAME 659] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (172872) AI_VISION_FAST: [FRAME 660] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (173129) AI_VISION_FAST: [FRAME 661] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (173382) AI_VISION_FAST: [FRAME 662] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (173636) AI_VISION_FAST: [FRAME 663] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (173889) AI_VISION_FAST: [FRAME 664] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (173890) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (174147) AI_VISION_FAST: [FRAME 665] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (174401) AI_VISION_FAST: [FRAME 666] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (174654) AI_VISION_FAST: [FRAME 667] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (174655) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (174922) AI_VISION_FAST: [FRAME 668] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (174922) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (175183) AI_VISION_FAST: [FRAME 669] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (175438) AI_VISION_FAST: [FRAME 670] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (175951) AI_VISION_FAST: [FRAME 672] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (176464) AI_VISION_FAST: [FRAME 674] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (176465) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (176732) AI_VISION_FAST: [FRAME 675] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (176986) AI_VISION_FAST: [FRAME 676] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (177238) AI_VISION_FAST: [FRAME 677] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (177491) AI_VISION_FAST: [FRAME 678] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (177744) AI_VISION_FAST: [FRAME 679] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (177745) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (178006) AI_VISION_FAST: [FRAME 680] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (178007) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (178275) AI_VISION_FAST: [FRAME 681] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (178533) AI_VISION_FAST: [FRAME 682] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (178790) AI_VISION_FAST: [FRAME 683] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (179051) AI_VISION_FAST: [FRAME 684] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (179303) AI_VISION_FAST: [FRAME 685] Inference complete in 237 ms | Detections: 1[0m
+[0;32mI (179304) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (179562) AI_VISION_FAST: [FRAME 686] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (179563) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (179828) AI_VISION_FAST: [FRAME 687] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (180086) AI_VISION_FAST: [FRAME 688] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (180339) AI_VISION_FAST: [FRAME 689] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (180340) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (180598) AI_VISION_FAST: [FRAME 690] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (180598) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (180865) AI_VISION_FAST: [FRAME 691] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (180866) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (181125) AI_VISION_FAST: [FRAME 692] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (181379) AI_VISION_FAST: [FRAME 693] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (181640) AI_VISION_FAST: [FRAME 694] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (181900) AI_VISION_FAST: [FRAME 695] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (181901) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (182164) AI_VISION_FAST: [FRAME 696] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (182165) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (182429) AI_VISION_FAST: [FRAME 697] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (182430) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (182947) AI_VISION_FAST: [FRAME 699] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (182947) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (183207) AI_VISION_FAST: [FRAME 700] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (183457) AI_VISION_FAST: [FRAME 701] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (183458) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (183716) AI_VISION_FAST: [FRAME 702] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (183970) AI_VISION_FAST: [FRAME 703] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (184223) AI_VISION_FAST: [FRAME 704] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (184477) AI_VISION_FAST: [FRAME 705] Inference complete in 240 ms | Detections: 0[0m
+cam_hal: EV-VSYNC-OVF - 100 additional misses
+[0;32mI (184730) AI_VISION_FAST: [FRAME 706] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (184991) AI_VISION_FAST: [FRAME 707] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (185247) AI_VISION_FAST: [FRAME 708] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (185501) AI_VISION_FAST: [FRAME 709] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (185756) AI_VISION_FAST: [FRAME 710] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (186007) AI_VISION_FAST: [FRAME 711] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (186261) AI_VISION_FAST: [FRAME 712] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (186525) AI_VISION_FAST: [FRAME 713] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (186778) AI_VISION_FAST: [FRAME 714] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (187032) AI_VISION_FAST: [FRAME 715] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (187286) AI_VISION_FAST: [FRAME 716] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (187541) AI_VISION_FAST: [FRAME 717] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (187800) AI_VISION_FAST: [FRAME 718] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (188061) AI_VISION_FAST: [FRAME 719] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (188314) AI_VISION_FAST: [FRAME 720] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (188566) AI_VISION_FAST: [FRAME 721] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (188816) AI_VISION_FAST: [FRAME 722] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (189070) AI_VISION_FAST: [FRAME 723] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (189324) AI_VISION_FAST: [FRAME 724] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (189577) AI_VISION_FAST: [FRAME 725] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (189831) AI_VISION_FAST: [FRAME 726] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (190087) AI_VISION_FAST: [FRAME 727] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (190337) AI_VISION_FAST: [FRAME 728] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (190593) AI_VISION_FAST: [FRAME 729] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (190853) AI_VISION_FAST: [FRAME 730] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (191111) AI_VISION_FAST: [FRAME 731] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (191362) AI_VISION_FAST: [FRAME 732] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (191625) AI_VISION_FAST: [FRAME 733] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (191878) AI_VISION_FAST: [FRAME 734] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (192133) AI_VISION_FAST: [FRAME 735] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (192386) AI_VISION_FAST: [FRAME 736] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (192640) AI_VISION_FAST: [FRAME 737] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (192894) AI_VISION_FAST: [FRAME 738] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (193147) AI_VISION_FAST: [FRAME 739] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (193402) AI_VISION_FAST: [FRAME 740] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (193657) AI_VISION_FAST: [FRAME 741] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (193919) AI_VISION_FAST: [FRAME 742] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (194177) AI_VISION_FAST: [FRAME 743] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (194432) AI_VISION_FAST: [FRAME 744] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (194685) AI_VISION_FAST: [FRAME 745] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (194686) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (194951) AI_VISION_FAST: [FRAME 746] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (194952) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (195213) AI_VISION_FAST: [FRAME 747] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (195214) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (195484) AI_VISION_FAST: [FRAME 748] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (195485) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (195749) AI_VISION_FAST: [FRAME 749] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (195749) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (196011) AI_VISION_FAST: [FRAME 750] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (196012) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (196278) AI_VISION_FAST: [FRAME 751] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (196279) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (196548) AI_VISION_FAST: [FRAME 752] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (196549) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (196810) AI_VISION_FAST: [FRAME 753] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (196811) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (197081) AI_VISION_FAST: [FRAME 754] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (197082) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (197352) AI_VISION_FAST: [FRAME 755] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (197353) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (197618) AI_VISION_FAST: [FRAME 756] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (197619) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (197889) AI_VISION_FAST: [FRAME 757] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (197889) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (198153) AI_VISION_FAST: [FRAME 758] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (198154) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (198419) AI_VISION_FAST: [FRAME 759] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (198420) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (198682) AI_VISION_FAST: [FRAME 760] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (198682) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (198947) AI_VISION_FAST: [FRAME 761] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (198947) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (199211) AI_VISION_FAST: [FRAME 762] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (199212) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (199483) AI_VISION_FAST: [FRAME 763] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (199483) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (199744) AI_VISION_FAST: [FRAME 764] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (199745) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (200006) AI_VISION_FAST: [FRAME 765] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (200007) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (200281) AI_VISION_FAST: [FRAME 766] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (200281) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (200551) AI_VISION_FAST: [FRAME 767] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (200552) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (200816) AI_VISION_FAST: [FRAME 768] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (200817) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (201078) AI_VISION_FAST: [FRAME 769] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (201079) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (201342) AI_VISION_FAST: [FRAME 770] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (201343) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (201609) AI_VISION_FAST: [FRAME 771] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (201610) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (201877) AI_VISION_FAST: [FRAME 772] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (201877) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (202139) AI_VISION_FAST: [FRAME 773] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (202140) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (202408) AI_VISION_FAST: [FRAME 774] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (202408) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (202670) AI_VISION_FAST: [FRAME 775] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (202671) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (202936) AI_VISION_FAST: [FRAME 776] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (202937) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (203210) AI_VISION_FAST: [FRAME 777] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (203211) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (203479) AI_VISION_FAST: [FRAME 778] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (203480) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (203741) AI_VISION_FAST: [FRAME 779] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (203741) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (204005) AI_VISION_FAST: [FRAME 780] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (204006) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (204275) AI_VISION_FAST: [FRAME 781] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (204275) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (204543) AI_VISION_FAST: [FRAME 782] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (204543) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (204808) AI_VISION_FAST: [FRAME 783] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (204809) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (205074) AI_VISION_FAST: [FRAME 784] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (205075) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (205341) AI_VISION_FAST: [FRAME 785] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (205341) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (205601) AI_VISION_FAST: [FRAME 786] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (205601) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (205868) AI_VISION_FAST: [FRAME 787] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (205869) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (206138) AI_VISION_FAST: [FRAME 788] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (206138) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (206406) AI_VISION_FAST: [FRAME 789] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (206406) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (206674) AI_VISION_FAST: [FRAME 790] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (206674) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (206941) AI_VISION_FAST: [FRAME 791] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (206941) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (207202) AI_VISION_FAST: [FRAME 792] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (207202) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (207473) AI_VISION_FAST: [FRAME 793] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (207474) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (207737) AI_VISION_FAST: [FRAME 794] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (207737) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (208007) AI_VISION_FAST: [FRAME 795] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (208007) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (208275) AI_VISION_FAST: [FRAME 796] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (208276) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (208537) AI_VISION_FAST: [FRAME 797] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (208537) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (208808) AI_VISION_FAST: [FRAME 798] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (208809) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (209077) AI_VISION_FAST: [FRAME 799] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (209077) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (209350) AI_VISION_FAST: [FRAME 800] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (209351) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (209617) AI_VISION_FAST: [FRAME 801] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (209618) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (209885) AI_VISION_FAST: [FRAME 802] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (209885) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (210149) AI_VISION_FAST: [FRAME 803] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (210149) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (210418) AI_VISION_FAST: [FRAME 804] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (210418) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (210682) AI_VISION_FAST: [FRAME 805] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (210683) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (210949) AI_VISION_FAST: [FRAME 806] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (210950) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (211212) AI_VISION_FAST: [FRAME 807] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (211213) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (211482) AI_VISION_FAST: [FRAME 808] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (211482) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (211744) AI_VISION_FAST: [FRAME 809] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (211745) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (212012) AI_VISION_FAST: [FRAME 810] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (212012) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (212279) AI_VISION_FAST: [FRAME 811] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (212280) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (212554) AI_VISION_FAST: [FRAME 812] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (212554) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (212822) AI_VISION_FAST: [FRAME 813] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (212823) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (213085) AI_VISION_FAST: [FRAME 814] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (213085) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (213349) AI_VISION_FAST: [FRAME 815] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (213349) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (213612) AI_VISION_FAST: [FRAME 816] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (213613) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (213881) AI_VISION_FAST: [FRAME 817] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (213881) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (214144) AI_VISION_FAST: [FRAME 818] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (214144) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (214411) AI_VISION_FAST: [FRAME 819] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (214411) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (214675) AI_VISION_FAST: [FRAME 820] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (214675) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (214943) AI_VISION_FAST: [FRAME 821] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (214943) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (215216) AI_VISION_FAST: [FRAME 822] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (215216) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (215487) AI_VISION_FAST: [FRAME 823] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (215488) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (215750) AI_VISION_FAST: [FRAME 824] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (215750) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (216012) AI_VISION_FAST: [FRAME 825] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (216013) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (216282) AI_VISION_FAST: [FRAME 826] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (216282) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (216552) AI_VISION_FAST: [FRAME 827] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (216553) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (216816) AI_VISION_FAST: [FRAME 828] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (216816) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (217082) AI_VISION_FAST: [FRAME 829] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (217083) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (217349) AI_VISION_FAST: [FRAME 830] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (217605) AI_VISION_FAST: [FRAME 831] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (217606) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (217874) AI_VISION_FAST: [FRAME 832] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (217874) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (218144) AI_VISION_FAST: [FRAME 833] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (218144) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (218414) AI_VISION_FAST: [FRAME 834] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (218415) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (218675) AI_VISION_FAST: [FRAME 835] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (218676) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (218942) AI_VISION_FAST: [FRAME 836] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (218942) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (219207) AI_VISION_FAST: [FRAME 837] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (219207) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (219475) AI_VISION_FAST: [FRAME 838] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (219476) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (219739) AI_VISION_FAST: [FRAME 839] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (219740) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (220008) AI_VISION_FAST: [FRAME 840] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (220008) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (220275) AI_VISION_FAST: [FRAME 841] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (220276) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (220542) AI_VISION_FAST: [FRAME 842] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (220543) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (220806) AI_VISION_FAST: [FRAME 843] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (220806) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (221071) AI_VISION_FAST: [FRAME 844] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (221071) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (221354) AI_VISION_FAST: [FRAME 845] Inference complete in 261 ms | Detections: 0[0m
+[0;32mI (221624) AI_VISION_FAST: [FRAME 846] Inference complete in 257 ms | Detections: 0[0m
+[0;32mI (221877) AI_VISION_FAST: [FRAME 847] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (222131) AI_VISION_FAST: [FRAME 848] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (222385) AI_VISION_FAST: [FRAME 849] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (222640) AI_VISION_FAST: [FRAME 850] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (222894) AI_VISION_FAST: [FRAME 851] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (223148) AI_VISION_FAST: [FRAME 852] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (223149) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (223414) AI_VISION_FAST: [FRAME 853] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (223674) AI_VISION_FAST: [FRAME 854] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (223675) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (223941) AI_VISION_FAST: [FRAME 855] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (223941) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (224207) AI_VISION_FAST: [FRAME 856] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (224208) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (224481) AI_VISION_FAST: [FRAME 857] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (224481) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (224743) AI_VISION_FAST: [FRAME 858] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (224743) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (225010) AI_VISION_FAST: [FRAME 859] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (225011) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (225277) AI_VISION_FAST: [FRAME 860] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (225278) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (225538) AI_VISION_FAST: [FRAME 861] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (225539) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (225807) AI_VISION_FAST: [FRAME 862] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (225808) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (226074) AI_VISION_FAST: [FRAME 863] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (226075) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (226339) AI_VISION_FAST: [FRAME 864] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (226340) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (226605) AI_VISION_FAST: [FRAME 865] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (226606) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (226873) AI_VISION_FAST: [FRAME 866] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (226874) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (227143) AI_VISION_FAST: [FRAME 867] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (227143) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (227406) AI_VISION_FAST: [FRAME 868] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (227406) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (227673) AI_VISION_FAST: [FRAME 869] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (227674) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (227934) AI_VISION_FAST: [FRAME 870] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (227935) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (228235) AI_VISION_FAST: [FRAME 871] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (228236) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (228501) AI_VISION_FAST: [FRAME 872] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (228501) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (228769) AI_VISION_FAST: [FRAME 873] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (228770) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (229032) AI_VISION_FAST: [FRAME 874] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (229033) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (229296) AI_VISION_FAST: [FRAME 875] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (229297) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (229561) AI_VISION_FAST: [FRAME 876] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (229561) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (229824) AI_VISION_FAST: [FRAME 877] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (229824) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (230094) AI_VISION_FAST: [FRAME 878] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (230094) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (230362) AI_VISION_FAST: [FRAME 879] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (230363) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (230636) AI_VISION_FAST: [FRAME 880] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (230637) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (230906) AI_VISION_FAST: [FRAME 881] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (230906) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (231170) AI_VISION_FAST: [FRAME 882] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (231170) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (231434) AI_VISION_FAST: [FRAME 883] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (231435) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (231705) AI_VISION_FAST: [FRAME 884] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (231706) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (231977) AI_VISION_FAST: [FRAME 885] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (231977) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (232238) AI_VISION_FAST: [FRAME 886] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (232239) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (232507) AI_VISION_FAST: [FRAME 887] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (232508) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (232776) AI_VISION_FAST: [FRAME 888] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (232777) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (233038) AI_VISION_FAST: [FRAME 889] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (233038) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (233313) AI_VISION_FAST: [FRAME 890] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (233313) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (233578) AI_VISION_FAST: [FRAME 891] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (233579) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (233844) AI_VISION_FAST: [FRAME 892] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (233844) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (234108) AI_VISION_FAST: [FRAME 893] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (234362) AI_VISION_FAST: [FRAME 894] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (234616) AI_VISION_FAST: [FRAME 895] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (234867) AI_VISION_FAST: [FRAME 896] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (235116) AI_VISION_FAST: [FRAME 897] Inference complete in 236 ms | Detections: 0[0m
+[0;32mI (235430) AI_VISION_FAST: [FRAME 898] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (235684) AI_VISION_FAST: [FRAME 899] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (235944) AI_VISION_FAST: [FRAME 900] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (236201) AI_VISION_FAST: [FRAME 901] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (236455) AI_VISION_FAST: [FRAME 902] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (236716) AI_VISION_FAST: [FRAME 903] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (236970) AI_VISION_FAST: [FRAME 904] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (237222) AI_VISION_FAST: [FRAME 905] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (237475) AI_VISION_FAST: [FRAME 906] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (237728) AI_VISION_FAST: [FRAME 907] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (237982) AI_VISION_FAST: [FRAME 908] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (238236) AI_VISION_FAST: [FRAME 909] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (238489) AI_VISION_FAST: [FRAME 910] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (238740) AI_VISION_FAST: [FRAME 911] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (239004) AI_VISION_FAST: [FRAME 912] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (239262) AI_VISION_FAST: [FRAME 913] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (239516) AI_VISION_FAST: [FRAME 914] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (239769) AI_VISION_FAST: [FRAME 915] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (240019) AI_VISION_FAST: [FRAME 916] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (240273) AI_VISION_FAST: [FRAME 917] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (240274) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (240532) AI_VISION_FAST: [FRAME 918] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (240786) AI_VISION_FAST: [FRAME 919] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (241040) AI_VISION_FAST: [FRAME 920] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (241293) AI_VISION_FAST: [FRAME 921] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (241546) AI_VISION_FAST: [FRAME 922] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (241831) AI_VISION_FAST: [FRAME 923] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (242092) AI_VISION_FAST: [FRAME 924] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (242343) AI_VISION_FAST: [FRAME 925] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (242596) AI_VISION_FAST: [FRAME 926] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (242851) AI_VISION_FAST: [FRAME 927] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (243104) AI_VISION_FAST: [FRAME 928] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (243359) AI_VISION_FAST: [FRAME 929] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (243613) AI_VISION_FAST: [FRAME 930] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (243867) AI_VISION_FAST: [FRAME 931] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (244122) AI_VISION_FAST: [FRAME 932] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (244378) AI_VISION_FAST: [FRAME 933] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (244631) AI_VISION_FAST: [FRAME 934] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (244896) AI_VISION_FAST: [FRAME 935] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (245152) AI_VISION_FAST: [FRAME 936] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (245405) AI_VISION_FAST: [FRAME 937] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (245659) AI_VISION_FAST: [FRAME 938] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (245912) AI_VISION_FAST: [FRAME 939] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (246166) AI_VISION_FAST: [FRAME 940] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (246416) AI_VISION_FAST: [FRAME 941] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (246718) AI_VISION_FAST: [FRAME 942] Inference complete in 253 ms | Detections: 0[0m
+[0;32mI (246970) AI_VISION_FAST: [FRAME 943] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (247222) AI_VISION_FAST: [FRAME 944] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (247476) AI_VISION_FAST: [FRAME 945] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (247731) AI_VISION_FAST: [FRAME 946] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (247995) AI_VISION_FAST: [FRAME 947] Inference complete in 251 ms | Detections: 0[0m
+[0;32mI (248253) AI_VISION_FAST: [FRAME 948] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (248506) AI_VISION_FAST: [FRAME 949] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (248762) AI_VISION_FAST: [FRAME 950] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (249016) AI_VISION_FAST: [FRAME 951] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (249270) AI_VISION_FAST: [FRAME 952] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (249523) AI_VISION_FAST: [FRAME 953] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (249778) AI_VISION_FAST: [FRAME 954] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (250032) AI_VISION_FAST: [FRAME 955] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (250285) AI_VISION_FAST: [FRAME 956] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (250537) AI_VISION_FAST: [FRAME 957] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (250798) AI_VISION_FAST: [FRAME 958] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (251056) AI_VISION_FAST: [FRAME 959] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (251310) AI_VISION_FAST: [FRAME 960] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (251567) AI_VISION_FAST: [FRAME 961] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (251820) AI_VISION_FAST: [FRAME 962] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (252076) AI_VISION_FAST: [FRAME 963] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (252328) AI_VISION_FAST: [FRAME 964] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (252579) AI_VISION_FAST: [FRAME 965] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (252834) AI_VISION_FAST: [FRAME 966] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (253086) AI_VISION_FAST: [FRAME 967] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (253340) AI_VISION_FAST: [FRAME 968] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (253594) AI_VISION_FAST: [FRAME 969] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (253854) AI_VISION_FAST: [FRAME 970] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (254111) AI_VISION_FAST: [FRAME 971] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (254367) AI_VISION_FAST: [FRAME 972] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (254618) AI_VISION_FAST: [FRAME 973] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (254871) AI_VISION_FAST: [FRAME 974] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (255125) AI_VISION_FAST: [FRAME 975] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (255379) AI_VISION_FAST: [FRAME 976] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (255633) AI_VISION_FAST: [FRAME 977] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (255633) AI_VISION_FAST:   └─ DETECTED: 'chair' | Confidence: 52.2% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (255902) AI_VISION_FAST: [FRAME 978] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (256160) AI_VISION_FAST: [FRAME 979] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (256414) AI_VISION_FAST: [FRAME 980] Inference complete in 241 ms | Detections: 0[0m

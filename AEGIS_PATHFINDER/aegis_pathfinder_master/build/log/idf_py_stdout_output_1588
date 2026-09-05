@@ -1,0 +1,2005 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (237) esp_image: segment 1: paddr=000c87a4 vaddr=3fc99f00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403cd8b9
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=b877ch (755580) map[0m
+[0;32mI (237) esp_image: segment 1: paddr=000c87a4 vaddr=3fc99f00 size=07874h ( 30836) load[0m
+[0;32mI (244) esp_image: segment 2: paddr=000d0020 vaddr=42000020 size=b66f8h (747256) map[0m
+[0;32mI (383) esp_image: segment 3: paddr=00186720 vaddr=3fca1774 size=00a58h (  2648) load[0m
+[0;32mI (384) esp_image: segment 4: paddr=00187180 vaddr=40374000 size=15e38h ( 89656) load[0m
+[0;32mI (407) esp_image: segment 5: paddr=0019cfc0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (427) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (427) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (428) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (429) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (434) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (438) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (442) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (447) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (452) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (456) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (462) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (466) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (471) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (474) esp_psram: Speed: 80MHz[0m
+[0;32mI (477) cpu_start: Multicore app[0m
+[0;32mI (893) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (901) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (902) cpu_start: Pro cpu start user code[0m
+[0;32mI (902) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (903) app_init: Application information:[0m
+[0;32mI (907) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (912) app_init: App version:      1[0m
+[0;32mI (915) app_init: Compile time:     Aug 14 2026 23:45:35[0m
+[0;32mI (920) app_init: ELF file SHA256:  f6af53877...[0m
+[0;32mI (925) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (928) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (932) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (936) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (940) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (946) heap_init: At 3FCA9EF8 len 0003F818 (254 KiB): RAM[0m
+[0;32mI (952) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (957) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (962) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (969) spi_flash: detected chip: gd[0m
+[0;32mI (972) spi_flash: flash io: dio[0m
+[0;32mI (975) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (981) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (999) main_task: Started on CPU0[0m
+[0;32mI (999) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1000) main_task: Calling app_main()[0m
+[0;32mI (1003) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1010) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1016) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1023) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1030) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1058) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1060) pp: pp rom version: e7ae62f[0m
+[0;32mI (1060) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1062) wifi:wifi driver task: 3fcb9530, prio:23, stack:6656, core=0[0m
+[0;32mI (1076) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1076) wifi:wifi certification version: v7.0[0m
+[0;32mI (1076) wifi:config NVS flash: enabled[0m
+[0;32mI (1078) wifi:config nano formatting: disabled[0m
+[0;32mI (1082) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1087) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1092) wifi:Init management short buffer num: 32[0m
+[0;32mI (1096) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1100) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1104) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1108) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1112) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1117) wifi_init: rx ba win: 6[0m
+[0;32mI (1119) wifi_init: accept mbox: 6[0m
+[0;32mI (1122) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1125) wifi_init: udp mbox: 6[0m
+[0;32mI (1128) wifi_init: tcp mbox: 6[0m
+[0;32mI (1131) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1134) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1138) wifi_init: tcp mss: 1440[0m
+[0;32mI (1141) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1145) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1148) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1153) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1197) wifi:mode : sta (94:a9:90:0a:ef:6c)[0m
+[0;32mI (1197) wifi:enable tsf[0m
+[0;32mI (1199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1201) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (1201) wifi:sta is connecting, return error[0m
+[0;32mI (1209) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (1213) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1218) WEB_STREAMER: Web Streamer active on Core 0 with /, /stream, /snapshot, /detections, and /control routes[0m
+[0;32mI (1227) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1227) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1232) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1232) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1250) main_task: Returned from app_main()[0m
+[0;32mI (1255) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1279) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1297) wifi:connected with A34, aid = 1, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1298) wifi:security: WPA2-PSK, phy: bgn, rssi: -13, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1304) wifi:pm start, type: 0[0m
+
+[0;32mI (1305) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1313) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1328) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1329) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1727) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2345) esp_netif_handlers: sta ip: 10.75.11.50, mask: 255.255.255.0, gw: 10.75.11.36[0m
+[0;32mI (2345) AEGIS_PATHFINDER: Connected to WiFi! IP: 10.75.11.50[0m
+[0;32mI (2347) AEGIS_PATHFINDER: Wi-Fi AP Connected on Channel: 6 (RSSI: -13 dBm)[0m
+[0;32mI (2354) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (2358) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (2374) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (2738) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (2738) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;33mW (2742) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (4884) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (4884) AEGIS_PATHFINDER: Backend GET / failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (7396) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (7396) AEGIS_PATHFINDER: Backend GET /api/v1/test/current-scenario failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (8750) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (9250) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (9910) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (9910) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (12425) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (12425) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (14948) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (14948) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (15250) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (15750) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (17464) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (17464) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (19981) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (19981) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (21750) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (22250) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (22499) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (22499) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (25014) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (25014) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (27530) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (27530) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (28250) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (28750) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (30048) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (30048) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (32563) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (32563) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (34750) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;33mW (35078) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (35078) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (35250) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (35250) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (36254) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [2/10] from Slave...[0m
+[0;33mW (36254) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (37593) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (37593) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (40111) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (40111) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (42259) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (42626) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (42626) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;33mW (42759) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (48760) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (49260) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (55261) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (55761) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (61762) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (62262) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (68262) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (68762) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (68762) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (69766) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [3/10] from Slave...[0m
+[0;33mW (69767) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (75771) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (76271) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (82272) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (82772) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (88773) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (89273) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (95273) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (95773) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (101773) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (102273) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (102273) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (103277) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [4/10] from Slave...[0m
+[0;33mW (103277) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (109282) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (109782) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (115783) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (116283) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (122283) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (122783) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (128783) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (129283) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (135283) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (135783) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (135783) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (136787) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [5/10] from Slave...[0m
+[0;33mW (136788) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (142792) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (143292) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (149292) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (149792) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (155793) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (156293) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (162294) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (162794) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (168794) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (169294) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (169295) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (170298) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [6/10] from Slave...[0m
+[0;33mW (170299) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (176303) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (176803) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (182804) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (183304) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (189305) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (189805) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (195805) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (196305) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (202306) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (202806) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (202806) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (203810) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [7/10] from Slave...[0m
+[0;33mW (203811) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (209815) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (210315) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (216315) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (216815) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (222816) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (223316) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (229317) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (229817) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (235818) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (236318) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (236318) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (237322) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [8/10] from Slave...[0m
+[0;33mW (237323) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (243327) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (243827) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (249827) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (250327) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (256328) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (256828) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (262829) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (263329) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (269330) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (269830) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (269830) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;32mI (270834) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [9/10] from Slave...[0m
+[0;33mW (270835) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (276839) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (277339) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (283340) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (283840) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (289841) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (290341) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;33mW (296342) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (296842) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (300747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (300747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (300748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (300750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (302842) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (303342) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;33mW (303342) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (303747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (303747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (303747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (303750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (304346) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [10/10] from Slave...[0m
+[0;33mW (304347) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (306747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (306747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (306748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (306750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (309747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (309747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (309748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (309750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (310351) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;33mW (310851) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (312747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (312747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (312748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (312750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (315747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (315747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (315748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (315750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (316851) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;33mW (317351) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (318747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (318747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (318748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (318750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (321747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (321747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (321748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (321750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (323351) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;33mW (323851) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (324747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (324747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (324748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (324750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (327747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (327747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (327748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (327750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (329851) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;33mW (330351) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (330747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (330747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (330747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (330750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (333747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (333747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (333748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (333750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (336351) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[1;31mE (336746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (336746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (336747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (336749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (336851) AEGIS_PATHFINDER: === PHASE 1 COMPLETE: BASELINE 2D GRID STORED ===[0m
+[0;32mI (336851) AEGIS_PATHFINDER: Executing 180-degree turnaround for Phase 2 Patrol...[0m
+[0;33mW (336854) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (338062) AEGIS_PATHFINDER: === PATROL CYCLE 1: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (338063) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (339747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (339747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (339748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (339750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (342263) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (342263) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (342264) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (342266) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (344066) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (344779) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (344779) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (344780) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (344782) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (345067) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (347295) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (347295) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (347296) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (347298) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (349811) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (349811) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (349812) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (349814) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (351068) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (352069) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (352327) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (352327) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (352327) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (352330) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (354843) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (354843) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (354844) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (354846) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (357747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (357747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (357748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (357750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (358070) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (359070) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (360747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (360747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (360748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (360750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (363747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (363747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (363748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (363750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (365071) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (366072) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (366747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (366747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (366748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (366750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (369747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (369747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (369748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (369750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (372073) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (372747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (372747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (372747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (372750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (373074) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (375746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (375746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (375747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (375749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (378747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (378747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (378748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (378750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (379075) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (380075) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (381746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (381746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (381747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (381749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (384747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (384747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (384748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (384750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (386076) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (387077) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (387747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (387747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (387748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (387750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (390747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (390747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (390748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (390750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (393078) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (393747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (393747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (393748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (393750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (394079) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (396747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (396747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (396748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (396750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (399747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (399747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (399748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (399750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (400079) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (401080) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (402747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (402747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (402748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (402750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (405747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (405747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (405748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (405750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (407081) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (408282) AEGIS_PATHFINDER: === PATROL CYCLE 2: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (408283) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (408746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (408746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (408746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (408749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (411747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (411747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (411748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (411750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (414286) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (414747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (414747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (414748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (414750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (415287) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (417747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (417747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (417748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (417750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (420747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (420747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (420748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (420750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (421288) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (422289) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (423747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (423747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (423748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (423750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (426747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (426747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (426748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (426750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (428289) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (429290) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (429747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (429747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (429747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (429750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (432747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (432747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (432748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (432750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (435291) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (435747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (435747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (435747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (435750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (436292) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (438747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (438747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (438748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (438750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (441746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (441746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (441747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (441749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (442293) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (443294) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (444747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (444747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (444748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (444750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (447747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (447747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (447748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (447750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (449295) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (450296) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (450746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (450746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (450747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (450749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (453747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (453747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (453748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (453750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (456297) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (456747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (456747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (456747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (456750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (457298) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (459747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (459747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (459748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (459750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (462746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (462746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (462747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (462749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (463299) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (464300) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (465747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (465747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (465748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (465750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (468747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (468747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (468748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (468750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (470300) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (471301) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (471747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (471747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (471747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (471750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (474747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (474747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (474748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (474750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (477302) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[1;31mE (477747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (477747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (477748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (477750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (478503) AEGIS_PATHFINDER: === PATROL CYCLE 3: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (478504) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (480747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (480747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (480748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (480750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (483747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (483747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (483748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (483750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (484507) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (485508) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (486746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (486746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (486747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (486749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (489746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (489746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (489747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (489749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (491508) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (492509) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (492747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (492747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (492747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (492750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (495746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (495746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (495747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (495749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (498510) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (498746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (498746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (498746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (498749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (499511) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (501747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (501747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (501748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (501750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (504747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (504747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (504748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (504750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (505512) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (506513) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (507747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (507747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (507748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (507750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (510747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (510747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (510748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (510750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (512514) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (513515) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (513747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (513747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (513748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (513750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (516747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (516747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (516748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (516750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (519516) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (519747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (519747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (519747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (519750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (520517) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (522746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (522746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (522747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (522749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (525747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (525747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (525748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (525750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (526518) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (527519) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (528747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (528747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (528748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (528750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (531747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (531747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (531748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (531750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (533520) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (534521) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (534747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (534747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (534747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (534750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (537747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (537747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (537748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (537750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (540522) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (540746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (540746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (540746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (540749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (541523) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (543747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (543747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (543748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (543750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (546747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (546747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (546748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (546750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (547524) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (548725) AEGIS_PATHFINDER: === PATROL CYCLE 4: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (548725) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (549747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (549747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (549748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (549750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (552747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (552747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (552748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (552750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (554729) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (555730) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (555747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (555747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (555747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (555750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (558747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (558747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (558748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (558750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (561731) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (561747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (561747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (561747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (561750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (562732) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (564747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (564747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (564748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (564750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (567747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (567747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (567748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (567750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (568733) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (569734) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (570747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (570747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (570748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (570750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (573747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (573747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (573748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (573750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (575735) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (576736) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (576747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (576747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (576747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (576750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (579746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (579746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (579747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (579749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (582737) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (582746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (582746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (582746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (582749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (583738) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (585746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (585746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (585747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (585749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (588746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (588746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (588747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (588749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (589739) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (590740) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (591747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (591747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (591748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (591750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (594746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (594746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (594747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (594749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (596741) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (597742) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (597746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (597746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (597749) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (597754) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (600746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (600746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (600747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (600749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (603743) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (603746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (603746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (603750) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (603755) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (604744) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (606747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (606747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (606748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (606750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (609746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (609746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (609747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (609749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (610745) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (611746) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (612746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (612746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (612747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (612749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (615746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (615746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (615747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (615749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (617746) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[1;31mE (618746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (618746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (618747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (618749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (618947) AEGIS_PATHFINDER: === PATROL CYCLE 5: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (618947) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (621747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (621747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (621748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (621750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (624746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (624746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (624747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (624749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (624951) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (625951) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (627746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (627746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (627747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (627749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (630746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (630746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (630747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (630749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (631952) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (632953) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (633746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (633746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (633747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (633749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (636747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (636747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (636748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (636750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (638954) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (639746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (639746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (639747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (639749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (639955) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (642746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (642746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (642747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (642749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (645746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (645746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (645747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (645749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (645955) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (646955) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (648746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (648746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (648747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (648749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (651747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (651747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (651748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (651750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (652956) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (653957) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (654746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (654746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (654747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (654749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (657746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (657746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (657747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (657749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (659958) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (660746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (660746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (660747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (660749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (660959) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (663746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (663746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (663747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (663750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (666747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (666747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (666748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (666750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (666959) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (667959) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (669746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (669746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (669747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (669749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (672746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (672746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (672747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (672749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (673960) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (674961) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (675746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (675746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (675747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (675749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (678746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (678746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (678747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (678749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (680962) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (681747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (681747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (681748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (681750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (681963) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (684746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (684746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (684747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (684749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (687746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (687746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (687747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (687749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (687963) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (689163) AEGIS_PATHFINDER: === PATROL CYCLE 6: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (689164) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (690746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (690746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (690747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (690749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (693746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (693746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (693747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (693749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (695167) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (696168) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (696747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (696747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (696748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (696750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (699746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (699746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (699747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (699749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (702169) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (702746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (702746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (702746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (702749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (703170) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (705746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (705746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (705747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (705749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (708746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (708746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (708747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (708749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (709170) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (710171) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (711747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (711747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (711748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (711750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (714746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (714746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (714747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (714749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (716172) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (717173) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (717746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (717746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (717746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (717749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (720746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (720746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (720747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (720749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (723174) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (723746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (723746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (723747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (723749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (724175) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (726747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (726747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (726748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (726750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (729746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (729746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (729747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (729749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (730175) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (731175) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (732746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (732746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (732747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (732749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (735746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (735746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (735747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (735749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (737176) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (738177) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (738746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (738746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (738746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (738749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (741747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (741747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (741748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (741750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (744178) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (744746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (744746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (744747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (744749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (745179) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (747746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (747746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (747747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (747749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (750746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (750746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (750747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (750749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (751180) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (752180) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (753746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (753746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (753747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (753749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (756747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (756747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (756748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (756750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (758181) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (759382) AEGIS_PATHFINDER: === PATROL CYCLE 7: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (759383) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (759746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (759746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (759747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (759749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (762746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (762746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (762747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (762749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (765386) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (765746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (765746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (765746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (765749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (766387) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (768746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (768746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (768747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (768749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (771747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (771747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (771748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (771750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (772388) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (773389) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (774746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (774746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (774747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (774749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (777746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (777746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (777747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (777749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (779390) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (780391) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (780746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (780746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (780746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (780749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (783746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (783746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (783747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (783749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (786392) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (786747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (786747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (786748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (786750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (787393) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (789746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (789746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (789747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (789749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (792746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (792746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (792747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (792749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (793394) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (794395) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (795746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (795746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (795747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (795749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (798746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (798746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (798747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (798749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (800395) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (801396) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (801747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (801747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (801747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (801750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (804746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (804746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (804747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (804749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (807397) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (807746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (807746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (807746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (807749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (808398) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (810746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (810746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (810747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (810749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (813746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (813746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (813747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (813749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (814399) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (815400) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (816747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (816747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (816748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (816750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (819746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (819746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (819747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (819749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (821401) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (822402) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (822746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (822746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (822746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (822749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (825746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (825746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (825747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (825749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (828403) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[1;31mE (828746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (828746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (828747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (828749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (829604) AEGIS_PATHFINDER: === PATROL CYCLE 8: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (829605) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (831747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (831747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (831748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (831750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (834746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (834746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (834747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (834749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (835608) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (836609) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (837746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (837746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (837747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (837749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (840746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (840746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (840747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (840749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (842610) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (843611) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (843746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (843746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (843746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (843749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (846747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (846747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (846748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (846750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (849612) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (849746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (849746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (849746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (849749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (850613) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (852746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (852746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (852747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (852749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (855746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (855746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (855747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (855749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (856614) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (857615) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (858746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (858746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (858747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (858749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (861747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (861747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (861748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (861750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (863616) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (864617) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (864746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (864746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (864746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (864749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (867746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (867746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (867747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (867749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (870618) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (870746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (870746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (870747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (870749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (871619) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (873746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (873746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (873747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (873749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (876747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (876747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (876748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (876750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (877620) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (878621) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (879746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (879746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (879747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (879749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (882746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (882746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (882747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (882749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (884622) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (885623) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (885746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (885746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (885746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (885749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (888746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (888746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (888747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (888749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (891624) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (891747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (891747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (891747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (891750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (892625) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (894746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (894746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (894747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (894749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (897746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (897746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (897747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (897749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (898626) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (899827) AEGIS_PATHFINDER: === PATROL CYCLE 9: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (899827) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (900746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (900746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (900747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (900749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (903746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (903746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (903747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (903749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (905831) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (906747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (906747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (906748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (906751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (906832) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (909746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (909746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (909747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (909749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (912746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (912746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (912747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (912749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (912832) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (913832) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (915746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (915746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (915747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (915749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (918746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (918746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (918747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (918749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (919833) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (920834) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (921747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (921747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (921748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (921750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (924746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (924746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (924747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (924749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (926835) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (927746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (927746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (927747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (927749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (927836) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (930746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (930746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (930747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (930749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (933746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (933746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (933747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (933749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (933836) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (934837) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (936747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (936747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (936748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (936750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (939746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (939746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (939747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (939749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (940838) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (941839) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (942746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (942746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (942747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (942749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (945746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (945746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (945747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (945749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (947840) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (948746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (948746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (948747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (948749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (948841) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (951747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (951747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (951748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (951750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (954746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (954746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (954747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (954749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (954841) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (955841) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (957746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (957746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (957747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (957749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (960746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (960746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (960747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (960749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (961842) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (962843) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (963746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (963746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (963747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (963749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (966747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (966747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (966748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (966750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (968844) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[1;31mE (969746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (969746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (969747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (969749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (970045) AEGIS_PATHFINDER: === PATROL CYCLE 10: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (970045) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (972746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (972746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (972747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (972749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (975746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (975746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (975747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (975749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (976049) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (977049) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (978746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (978746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (978747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (978749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (981747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (981747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (981748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (981750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (983050) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (984051) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (984746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (984746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (984747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (984749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (987746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (987746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (987747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (987749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (990052) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (990746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (990746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (990747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (990749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (991053) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (993746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (993746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (993747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (993749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (996747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (996747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (996748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (996750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (997053) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (998053) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (999746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (999746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (999747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (999749) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1002746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1002746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1002747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1002750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1004054) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1005055) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1005746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1005746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1005747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1005750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1008746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1008746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1008747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1008750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1011056) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1011747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1011747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1011748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1011751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1012057) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1014746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1014746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1014747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1014750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1017746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1017746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1017747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1017750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1018057) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1019058) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1020746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1020746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1020747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1020750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1023746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1023746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1023747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1023750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1025059) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1026060) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1026747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1026747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1026748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1026751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1029746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1029746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1029747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1029750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1032061) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1032746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1032746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1032747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1032750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1033062) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1035746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1035746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1035747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1035750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1038746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1038746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1038747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1038750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1039063) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (1040263) AEGIS_PATHFINDER: === PATROL CYCLE 11: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (1040264) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1041747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1041747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1041748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1041751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1044746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1044746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1044747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1044750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1046268) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1047269) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1047746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1047746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1047746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1047750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1050746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1050746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1050747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1050750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1053270) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1053746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1053746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1053746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1053750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1054271) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1056747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1056747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1056748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1056751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1059746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1059746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1059747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1059750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1060272) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1061273) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1062746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1062746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1062747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1062750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1065746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1065746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1065747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1065750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1067274) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1068275) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1068746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1068746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1068746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1068750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1071747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1071747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1071748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1071751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1074276) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1074746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1074746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1074747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1074750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1075277) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1077746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1077746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1077747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1077750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1080746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1080746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1080747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1080750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1081278) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1082279) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1083746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1083746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1083747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1083750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1086747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1086747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1086748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1086751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1088280) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1089281) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1089746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1089746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1089747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1089750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1092746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1092746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1092747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1092750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1095281) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1095746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1095746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1095746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1095750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1096282) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1098746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1098746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1098747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1098750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1101747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1101747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1101748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1101751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1102283) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1103284) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1104746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1104746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1104747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1104750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1107746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1107746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1107747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1107750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1109285) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (1110486) AEGIS_PATHFINDER: === PATROL CYCLE 12: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (1110487) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1110746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1110746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1110747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1110750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1113746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1113746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1113747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1113750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1116491) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1116747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1116747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1116747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1116751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1117492) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1119746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1119746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1119747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1119750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1122746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1122746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1122747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1122750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1123493) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1124494) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1125746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1125746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1125747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1125750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1128746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1128746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1128747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1128750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1130495) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1131496) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1131747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1131747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1131747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1131751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1134746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1134746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1134747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1134750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1137497) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1137746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1137746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1137746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1137750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1138498) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1140746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1140746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1140747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1140750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1143746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1143746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1143747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1143750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1144499) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1145500) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1146747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1146747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1146748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1146751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1149746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1149746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1149747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1149750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1151501) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1152502) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1152746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1152746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1152746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1152750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1155746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1155746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1155747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1155750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1158503) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1158746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1158746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1158746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1158750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1159504) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1161747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1161747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1161748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1161751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1164746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1164746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1164747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1164750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1165505) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1166506) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1167746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1167746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1167747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1167750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1170746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1170746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1170747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1170750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1172507) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1173508) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1173746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1173746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1173746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1173750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1176747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1176747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1176748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1176751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1179509) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[1;31mE (1179746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1179746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1179746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1179750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1180710) AEGIS_PATHFINDER: === PATROL CYCLE 13: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (1180711) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1182746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1182746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1182747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1182750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1185746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1185746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1185747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1185750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1186715) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1187716) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1188746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1188746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1188747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1188750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1191747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1191747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1191748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1191751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1193717) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1194718) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1194746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1194746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1194746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1194750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1197746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1197746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1197747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1197750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1200719) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1200746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1200746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1200746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1200750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1201720) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1203746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1203746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1203747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1203750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1206747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1206747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1206748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1206751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1207721) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1208722) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1209746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1209746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1209747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1209750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1212746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1212746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1212747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1212750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1214722) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1215723) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1215746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1215746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1215746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1215750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1218746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1218746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1218747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1218750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1221724) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1221747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1221747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1221747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1221751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1222725) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1224747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1224747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1224748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1224751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1227746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1227746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1227747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1227750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1228726) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1229727) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1230746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1230746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1230747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1230750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1233746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1233746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1233747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1233750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1235728) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1236729) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1236747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1236747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1236747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1236751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1239746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1239746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1239747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1239750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1242730) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1242746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1242746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1242746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1242750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1243731) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1245746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1245746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1245747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1245750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1248746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1248746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1248747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1248750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1249732) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[0;32mI (1250933) AEGIS_PATHFINDER: === PATROL CYCLE 14: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (1250934) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1251747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1251747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1251748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1251751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1254746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1254746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1254747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1254750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1256938) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1257746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1257746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1257747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1257750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1257939) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1260746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1260746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1260747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1260750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1263746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1263746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1263747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1263750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1263939) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1264939) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1266747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1266747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1266748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1266751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1269746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1269746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1269747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1269750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1270940) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1271941) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1272746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1272746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1272747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1272750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1275746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1275746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1275747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1275750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1277942) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1278746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1278746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1278747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1278750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1278943) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1281747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1281747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1281748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1281751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1284746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1284746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1284747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1284750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1284943) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1285943) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1287746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1287746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1287747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1287750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1290746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1290746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1290747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1290750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1291944) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1292945) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1293746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1293746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1293747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1293750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1296747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1296747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1296748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1296751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1298946) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1299746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1299746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1299747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1299750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1299947) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1302746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1302746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1302747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1302750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1305746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1305746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1305747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1305750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1305947) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1306947) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1308746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1308746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1308747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1308750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1311747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1311747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1311748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1311751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1312948) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1313949) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1314746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1314746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1314747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1314750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1317746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1317746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1317747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1317750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1319950) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x07, Err: 0x3069)[0m
+[1;31mE (1320746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1320746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1320747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1320750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (1321151) AEGIS_PATHFINDER: === PATROL CYCLE 15: CONTINUOUS DRIFT MONITORING ===[0m
+[0;33mW (1321151) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1323746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1323746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1323747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1323750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1326747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1326747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1326748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1326751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1327156) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1328157) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1329746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1329746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1329747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1329750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1332746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1332746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1332747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1332750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1334158) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[0;33mW (1335159) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1335746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1335746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1335746) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1335750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (1338746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1338746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1338747) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1338750) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1341160) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x03, Err: 0x3069)[0m
+[1;31mE (1341747) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1341747) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1341748) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (1341751) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (1342161) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[1;31mE (1344746) esp-tls: [sock=57] select() timeout[0m
+[1;31mE (1344746) transport_base: Failed to open a new connection: 32774[0m
+[1;31mE (1344747) HTTP_CLIENT: Connection 

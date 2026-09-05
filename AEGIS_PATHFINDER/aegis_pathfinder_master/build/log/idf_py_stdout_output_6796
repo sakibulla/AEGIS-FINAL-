@@ -1,0 +1,180 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (251) esp_image: segment 1: paddr=000daf90 vaddr=3fc9db00 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008cdb
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=caf68h (831336) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=000daf90 vaddr=3fc9db00 size=05088h ( 20616) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000e0020 vaddr=42000020 size=119a9ch (1153692) map[0m
+[0;32mI (470) esp_image: segment 3: paddr=001f9ac4 vaddr=3fca2b88 size=0589ch ( 22684) load[0m
+[0;32mI (475) esp_image: segment 4: paddr=001ff368 vaddr=40374000 size=19a64h (105060) load[0m
+[0;32mI (500) esp_image: segment 5: paddr=00218dd4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (511) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (522) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (522) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (524) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (529) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (533) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (537) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (542) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (547) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (551) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (556) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (561) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (565) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (569) esp_psram: Speed: 80MHz[0m
+[0;32mI (572) cpu_start: Multicore app[0m
+[0;32mI (987) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (996) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (996) cpu_start: Pro cpu start user code[0m
+[0;32mI (997) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (998) app_init: Application information:[0m
+[0;32mI (1002) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1007) app_init: App version:      1[0m
+[0;32mI (1010) app_init: Compile time:     Aug 16 2026 20:32:46[0m
+[0;32mI (1015) app_init: ELF file SHA256:  e95a6f018...[0m
+[0;32mI (1020) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1024) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1028) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1032) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1036) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1042) heap_init: At 3FCC0700 len 00029010 (164 KiB): RAM[0m
+[0;32mI (1047) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1052) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1058) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1065) spi_flash: detected chip: generic[0m
+[0;32mI (1068) spi_flash: flash io: dio[0m
+[0;33mW (1072) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1081) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1088) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1106) main_task: Started on CPU0[0m
+[0;32mI (1106) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1107) main_task: Calling app_main()[0m
+[0;32mI (1110) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1117) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1124) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1130) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1137) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1159) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1160) pp: pp rom version: e7ae62f[0m
+[0;32mI (1161) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1162) wifi:wifi driver task: 3fcd0608, prio:23, stack:6656, core=0[0m
+[0;32mI (1174) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1174) wifi:wifi certification version: v7.0[0m
+[0;32mI (1175) wifi:config NVS flash: enabled[0m
+[0;32mI (1179) wifi:config nano formatting: disabled[0m
+[0;32mI (1183) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1188) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1192) wifi:Init management short buffer num: 32[0m
+[0;32mI (1197) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1201) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1205) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1209) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1213) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1218) wifi_init: rx ba win: 6[0m
+[0;32mI (1220) wifi_init: accept mbox: 6[0m
+[0;32mI (1223) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1226) wifi_init: udp mbox: 6[0m
+[0;32mI (1229) wifi_init: tcp mbox: 6[0m
+[0;32mI (1232) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1235) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1238) wifi_init: tcp mss: 1440[0m
+[0;32mI (1241) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1245) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1249) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1254) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1293) wifi:mode : sta (e8:f6:0a:d7:91:60)[0m
+[0;32mI (1294) wifi:enable tsf[0m
+[0;32mI (1295) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1297) AEGIS_PATHFINDER: Pathfinder MAC: E8:F6:0A:D7:91:60[0m
+[0;32mI (1298) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1302) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 9[0m
+[0;32mI (1308) LVGL: Starting LVGL task[0m
+[0;32mI (1455) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (1464) SWARM_DISPLAY: Swarm display ready[0m
+[0;33mW (1464) wifi:STA is scanning or connecting, or AP has connected with external STAs, cannot set channel[0m
+
+[0;32mI (1467) SWARM_LINK: Swarm link ready on channel 6 (Pathfinder)[0m
+[0;32mI (1506) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[1;31mE (1506) wifi:sta is connecting, return error[0m
+[0;32mI (1508) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1511) cam_hal: cam init ok[0m
+[0;32mI (1513) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1516) sccb: sccb_i2c_port=1[0m
+[0;32mI (1533) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1533) camera: Detected OV2640 camera[0m
+[0;32mI (1533) camera: Detected camera at address=0x30[0m
+[0;32mI (1615) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1616) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1616) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1625) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1635) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1641) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1647) cam_hal: cam config ok[0m
+[0;32mI (1649) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1728) AI_VISION_FAST: OV2640 / S3 Camera Hardware successfully initialized![0m
+[0;32mI (1730) WEB_STREAMER: Web Streamer active on Core 0 with /, /snapshot, /detections, and /control routes (no live /stream)[0m
+[0;32mI (1735) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1735) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1735) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1735) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1759) main_task: Returned from app_main()[0m
+[0;32mI (2422) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2667) AI_VISION_FAST: [FRAME 1] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (2921) AI_VISION_FAST: [FRAME 2] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (2922) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (2925) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;32mI (3175) AI_VISION_FAST: [FRAME 3] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (3176) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:88][0m
+[0;33mW (3181) ESPNOW_MESH_PROD: ESP-NOW Command Transmission Failed (Cmd: 0x02, Err: 0x3069)[0m
+[0;32mI (3435) AI_VISION_FAST: [FRAME 4] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (3435) AI_VISION_FAST:   └─ DETECTED: 'exit_door' | Confidence: 53.3% | BBox: [x:1, y:0, w:93, h:87][0m
+[0;32mI (3692) AI_VISION_FAST: [FRAME 5] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (3692) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (3710) AEGIS_PATHFINDER: Retry connecting to WiFi (1/10)...[0m
+[0;32mI (3955) AI_VISION_FAST: [FRAME 6] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (4211) AI_VISION_FAST: [FRAME 7] Inference complete in 241 ms | Detections: 0[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (4464) AI_VISION_FAST: [FRAME 8] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (4721) AI_VISION_FAST: [FRAME 9] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (4972) AI_VISION_FAST: [FRAME 10] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (5227) AI_VISION_FAST: [FRAME 11] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (5480) AI_VISION_FAST: [FRAME 12] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (5480) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (5736) AI_VISION_FAST: [FRAME 13] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (5990) AI_VISION_FAST: [FRAME 14] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (6128) AEGIS_PATHFINDER: Retry connecting to WiFi (2/10)...[0m
+[0;32mI (6248) AI_VISION_FAST: [FRAME 15] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (6517) AI_VISION_FAST: [FRAME 16] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (6518) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (6776) AI_VISION_FAST: [FRAME 17] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (6777) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (7037) AI_VISION_FAST: [FRAME 18] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (7293) AI_VISION_FAST: [FRAME 19] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (7550) AI_VISION_FAST: [FRAME 20] Inference complete in 243 ms | Detections: 0[0m

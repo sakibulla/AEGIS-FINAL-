@@ -1,0 +1,1043 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (251) esp_image: segment 1: paddr=000dafd0 vaddr=3fc9db00 sizeI (1356) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200bf81
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x115c
+load:0x403c8700,len:0xd08
+load:0x403cb700,len:0x2e44
+entry 0x403c8914
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 14 2026 23:50:07[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (62) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  3 factory          factory app      00 00 00010000 00700000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (85) boot: Defaulting to factory image[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3c120020 size=cafa8h (831400) map[0m
+[0;32mI (251) esp_image: segment 1: paddr=000dafd0 vaddr=3fc9db00 size=05048h ( 20552) load[0m
+[0;32mI (255) esp_image: segment 2: paddr=000e0020 vaddr=42000020 size=119b10h (1153808) map[0m
+[0;32mI (470) esp_image: segment 3: paddr=001f9b38 vaddr=3fca2b48 size=058dch ( 22748) load[0m
+[0;32mI (475) esp_image: segment 4: paddr=001ff41c vaddr=40374000 size=19a64h (105060) load[0m
+[0;32mI (500) esp_image: segment 5: paddr=00218e88 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (511) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (512) boot: Disabling RNG early entropy source...[0m
+[0;32mI (522) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (522) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (522) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (524) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (529) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (533) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (537) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (542) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (547) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (551) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (556) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (561) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (566) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (569) esp_psram: Speed: 80MHz[0m
+[0;32mI (572) cpu_start: Multicore app[0m
+[0;32mI (987) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (996) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (997) cpu_start: Pro cpu start user code[0m
+[0;32mI (997) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (998) app_init: Application information:[0m
+[0;32mI (1002) app_init: Project name:     aegis_yolo_vision[0m
+[0;32mI (1007) app_init: App version:      1[0m
+[0;32mI (1010) app_init: Compile time:     Aug 16 2026 20:32:46[0m
+[0;32mI (1015) app_init: ELF file SHA256:  bd591bafb...[0m
+[0;32mI (1020) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1024) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1028) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1032) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1036) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1042) heap_init: At 3FCC0700 len 00029010 (164 KiB): RAM[0m
+[0;32mI (1047) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1052) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1058) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1065) spi_flash: detected chip: generic[0m
+[0;32mI (1068) spi_flash: flash io: dio[0m
+[0;33mW (1072) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1081) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1088) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1106) main_task: Started on CPU0[0m
+[0;32mI (1106) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1107) main_task: Calling app_main()[0m
+[0;32mI (1110) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1117) AEGIS_PATHFINDER:    A.E.G.I.S. PATHFINDER MASTER NODE (ESP32-S3)   [0m
+[0;32mI (1124) AEGIS_PATHFINDER:    Dual-Core SLAM Mapping & Vision Intelligence   [0m
+[0;32mI (1130) AEGIS_PATHFINDER: ==================================================[0m
+[0;32mI (1137) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 240, Light sleep: DISABLED[0m
+[0;32mI (1159) AEGIS_PATHFINDER: Telemetry dispatcher task active CPU0[0m
+[0;32mI (1160) pp: pp rom version: e7ae62f[0m
+[0;32mI (1161) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1163) wifi:wifi driver task: 3fcd0608, prio:23, stack:6656, core=0[0m
+[0;32mI (1174) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1175) wifi:wifi certification version: v7.0[0m
+[0;32mI (1175) wifi:config NVS flash: enabled[0m
+[0;32mI (1179) wifi:config nano formatting: disabled[0m
+[0;32mI (1183) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1188) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1192) wifi:Init management short buffer num: 32[0m
+[0;32mI (1197) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1201) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1205) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1209) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1213) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1218) wifi_init: rx ba win: 6[0m
+[0;32mI (1220) wifi_init: accept mbox: 6[0m
+[0;32mI (1223) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1226) wifi_init: udp mbox: 6[0m
+[0;32mI (1229) wifi_init: tcp mbox: 6[0m
+[0;32mI (1232) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1235) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1239) wifi_init: tcp mss: 1440[0m
+[0;32mI (1242) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (1246) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1249) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1254) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1372) wifi:mode : sta (e8:f6:0a:d7:91:60)[0m
+[0;32mI (1372) wifi:enable tsf[0m
+[0;32mI (1374) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1374) AEGIS_PATHFINDER: Pathfinder MAC: E8:F6:0A:D7:91:60[0m
+[0;32mI (1377) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (1380) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (1387) LVGL: Starting LVGL task[0m
+[0;32mI (1533) S3-EYE: Setting LCD backlight: 100%[0m
+[0;32mI (1543) SWARM_DISPLAY: Swarm display ready[0m
+[0;32mI (1544) SWARM_LINK: Swarm link ready on channel 6 (Pathfinder)[0m
+[0;32mI (1544) AEGIS_PATHFINDER: Connecting to WiFi SSID: A34 ...[0m
+[0;32mI (1562) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1565) s3 ll_cam: DMA Channel=1[0m
+[0;32mI (1566) cam_hal: cam init ok[0m
+[0;32mI (1566) sccb: pin_sda 4 pin_scl 5[0m
+[0;32mI (1566) sccb: sccb_i2c_port=1[0m
+[0;32mI (1581) camera: Camera PID=0x26 VER=0x42 MIDL=0x7f MIDH=0xa2[0m
+[0;32mI (1581) camera: Detected OV2640 camera[0m
+[0;32mI (1581) camera: Detected camera at address=0x30[0m
+[0;32mI (1664) cam_hal: PSRAM DMA mode disabled[0m
+[0;32mI (1665) s3 ll_cam: node_size: 3840, nodes_per_line: 1, lines_per_node: 6[0m
+[0;32mI (1665) s3 ll_cam: dma_half_buffer_min:  3840, dma_half_buffer: 15360, lines_per_half_buffer: 24, dma_buffer_size: 30720[0m
+[0;32mI (1675) cam_hal: buffer_size: 30720, half_buffer_size: 15360, node_buffer_size: 3840, node_cnt: 8, total_cnt: 10[0m
+[0;32mI (1684) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1690) cam_hal: Allocating 153600 Byte frame buffer in PSRAM[0m
+[0;32mI (1696) cam_hal: cam config ok[0m
+[0;32mI (1698) ov2640: Set PLL: clk_2x: 1, clk_div: 3, pclk_auto: 1, pclk_div: 8[0m
+[0;32mI (1762) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1778) AI_VISION_FAST: OV2640 / S3 Camera Hardware successfully initialized![0m
+[0;32mI (1781) WEB_STREAMER: Web Streamer active on Core 0 with /, /snapshot, /detections, and /control routes (no live /stream)[0m
+[0;32mI (1785) AEGIS_PATHFINDER: Pathfinder autonomous SLAM task active CPU1[0m
+[0;32mI (1785) AEGIS_PATHFINDER: Vision streaming task active CPU0[0m
+[0;32mI (1786) AEGIS_PATHFINDER: Heartbeat sync task started CPU0[0m
+[0;32mI (1786) AEGIS_PATHFINDER: AEGIS Pathfinder Master initialization complete![0m
+[0;32mI (1809) main_task: Returned from app_main()[0m
+[0;32mI (1872) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1947) wifi:connected with A34, aid = 2, channel 6, BW20, bssid = 0a:14:4e:6d:e7:41[0m
+[0;32mI (1947) wifi:security: WPA2-PSK, phy: bgn, rssi: -35, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (1954) wifi:pm start, type: 0[0m
+
+[0;32mI (1955) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+cam_hal: EV-VSYNC-OVF
+[0;32mI (1963) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1973) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1981) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2631) AI_VISION_FAST: Vision pipeline active (ESP-NN SIMD + Endian-Correct RGB565) on Core 1.[0m
+[0;32mI (2876) AI_VISION_FAST: [FRAME 1] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (2877) AEGIS_PATHFINDER: === STARTING PHASE 1: INITIAL 2D MAPPING RUN (10 SNAPS) ===[0m
+[0;32mI (2880) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [1/10] from Slave...[0m
+[0;32mI (3129) AI_VISION_FAST: [FRAME 2] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (3220) esp_netif_handlers: sta ip: 10.244.86.176, mask: 255.255.255.0, gw: 10.244.86.114[0m
+[0;32mI (3221) AEGIS_PATHFINDER: Connected to WiFi! IP: 10.244.86.176[0m
+[0;32mI (3223) AEGIS_PATHFINDER: Wi-Fi AP Connected on Channel: 6 (RSSI: -38 dBm)[0m
+[0;32mI (3230) ESPNOW: esp now already init![0m
+[0;32mI (3233) ESPNOW_MESH_PROD: ESP-NOW Master active on Wi-Fi Channel 6[0m
+[0;32mI (3391) AI_VISION_FAST: [FRAME 3] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (3391) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (3651) AI_VISION_FAST: [FRAME 4] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (3902) AI_VISION_FAST: [FRAME 5] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (4158) AI_VISION_FAST: [FRAME 6] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (4255) wifi:<ba-add>idx:0 (ifx:0, 0a:14:4e:6d:e7:41), tid:0, ssn:4, winSize:64[0m
+[0;32mI (4416) AI_VISION_FAST: [FRAME 7] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (4673) AI_VISION_FAST: [FRAME 8] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (4928) AI_VISION_FAST: [FRAME 9] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (5079) AEGIS_PATHFINDER: Backend Health Check: ONLINE[0m
+[0;32mI (5191) AI_VISION_FAST: [FRAME 10] Inference complete in 250 ms | Detections: 0[0m
+[0;32mI (5457) AI_VISION_FAST: [FRAME 11] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (5712) AI_VISION_FAST: [FRAME 12] Inference complete in 242 ms | Detections: 0[0m
+[0;32mI (5975) AI_VISION_FAST: [FRAME 13] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (6234) AI_VISION_FAST: [FRAME 14] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (6493) AI_VISION_FAST: [FRAME 15] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (6759) AI_VISION_FAST: [FRAME 16] Inference complete in 253 ms | Detections: 0[0m
+[0;32mI (7010) AI_VISION_FAST: [FRAME 17] Inference complete in 237 ms | Detections: 0[0m
+[0;32mI (7264) AI_VISION_FAST: [FRAME 18] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (7521) AI_VISION_FAST: [FRAME 19] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (7776) AI_VISION_FAST: [FRAME 20] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (8032) AI_VISION_FAST: [FRAME 21] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (8287) AI_VISION_FAST: [FRAME 22] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (8546) AI_VISION_FAST: [FRAME 23] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (8801) AI_VISION_FAST: [FRAME 24] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (8802) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (9061) AI_VISION_FAST: [FRAME 25] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (9316) AI_VISION_FAST: [FRAME 26] Inference complete in 242 ms | Detections: 0[0m
+[0;33mW (9317) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (9569) AI_VISION_FAST: [FRAME 27] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (9569) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (9830) AI_VISION_FAST: [FRAME 28] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (10087) AI_VISION_FAST: [FRAME 29] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (10088) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 89.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (10351) AI_VISION_FAST: [FRAME 30] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (10351) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (10615) AI_VISION_FAST: [FRAME 31] Inference complete in 245 ms | Detections: 2[0m
+[0;32mI (10615) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 90.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (10621) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (10895) AI_VISION_FAST: [FRAME 32] Inference complete in 252 ms | Detections: 2[0m
+[0;32mI (10896) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 88.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (10901) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:1, y:0, w:91, h:94][0m
+[0;32mI (11180) AI_VISION_FAST: [FRAME 33] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (11181) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 91.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (11448) AI_VISION_FAST: [FRAME 34] Inference complete in 249 ms | Detections: 0[0m
+[0;32mI (11716) AI_VISION_FAST: [FRAME 35] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (11716) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (11989) AI_VISION_FAST: [FRAME 36] Inference complete in 255 ms | Detections: 0[0m
+[0;32mI (12243) AI_VISION_FAST: [FRAME 37] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (12501) AI_VISION_FAST: [FRAME 38] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (12501) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 91.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (12758) AI_VISION_FAST: [FRAME 39] Inference complete in 239 ms | Detections: 0[0m
+[0;32mI (13013) AI_VISION_FAST: [FRAME 40] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (13013) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 88.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (13271) AI_VISION_FAST: [FRAME 41] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (13271) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (13534) AI_VISION_FAST: [FRAME 42] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (13534) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (13795) AI_VISION_FAST: [FRAME 43] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (14047) AI_VISION_FAST: [FRAME 44] Inference complete in 238 ms | Detections: 0[0m
+[0;32mI (14304) AI_VISION_FAST: [FRAME 45] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (14561) AI_VISION_FAST: [FRAME 46] Inference complete in 244 ms | Detections: 0[0m
+[0;32mI (14820) AI_VISION_FAST: [FRAME 47] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (14821) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 97.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (15084) AI_VISION_FAST: [FRAME 48] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (15342) AI_VISION_FAST: [FRAME 49] Inference complete in 245 ms | Detections: 0[0m
+[0;32mI (15597) AI_VISION_FAST: [FRAME 50] Inference complete in 242 ms | Detections: 2[0m
+[0;32mI (15598) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 97.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (15603) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (15870) AI_VISION_FAST: [FRAME 51] Inference complete in 245 ms | Detections: 2[0m
+[0;32mI (15870) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 95.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (15875) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;33mW (15885) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (16140) AI_VISION_FAST: [FRAME 52] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (16140) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 91.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16414) AI_VISION_FAST: [FRAME 53] Inference complete in 256 ms | Detections: 2[0m
+[0;32mI (16414) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16420) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (16702) AI_VISION_FAST: [FRAME 54] Inference complete in 260 ms | Detections: 1[0m
+[0;32mI (16702) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16973) AI_VISION_FAST: [FRAME 55] Inference complete in 253 ms | Detections: 2[0m
+[0;32mI (16974) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 93.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (16979) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (17243) AI_VISION_FAST: [FRAME 56] Inference complete in 242 ms | Detections: 2[0m
+[0;32mI (17244) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 94.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (17249) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (17518) AI_VISION_FAST: [FRAME 57] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (17518) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 88.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (17783) AI_VISION_FAST: [FRAME 58] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (17783) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18045) AI_VISION_FAST: [FRAME 59] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (18307) AI_VISION_FAST: [FRAME 60] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (18560) AI_VISION_FAST: [FRAME 61] Inference complete in 240 ms | Detections: 2[0m
+[0;32mI (18561) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (18566) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (18835) AI_VISION_FAST: [FRAME 62] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (18836) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (19098) AI_VISION_FAST: [FRAME 63] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (19098) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (19363) AI_VISION_FAST: [FRAME 64] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (19363) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (19635) AI_VISION_FAST: [FRAME 65] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (19635) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (19907) AI_VISION_FAST: [FRAME 66] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (19907) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (20179) AI_VISION_FAST: [FRAME 67] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (20179) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (20448) AI_VISION_FAST: [FRAME 68] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (20448) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (20709) AI_VISION_FAST: [FRAME 69] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (20709) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (20980) AI_VISION_FAST: [FRAME 70] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (20981) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (21257) AI_VISION_FAST: [FRAME 71] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (21257) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (21528) AI_VISION_FAST: [FRAME 72] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (21528) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (21814) AI_VISION_FAST: [FRAME 73] Inference complete in 264 ms | Detections: 1[0m
+[0;32mI (21815) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (22079) AI_VISION_FAST: [FRAME 74] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (22080) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (22349) AI_VISION_FAST: [FRAME 75] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (22349) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (22613) AI_VISION_FAST: [FRAME 76] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (22613) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (22619) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (22878) AI_VISION_FAST: [FRAME 77] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (22878) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (23146) AI_VISION_FAST: [FRAME 78] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (23147) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (23410) AI_VISION_FAST: [FRAME 79] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (23411) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (23676) AI_VISION_FAST: [FRAME 80] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (23676) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (23948) AI_VISION_FAST: [FRAME 81] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (23948) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (24214) AI_VISION_FAST: [FRAME 82] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (24215) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (24473) AI_VISION_FAST: [FRAME 83] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (24474) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (24736) AI_VISION_FAST: [FRAME 84] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (24737) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (24998) AI_VISION_FAST: [FRAME 85] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (24998) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (25264) AI_VISION_FAST: [FRAME 86] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (25265) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (25526) AI_VISION_FAST: [FRAME 87] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (25527) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (25792) AI_VISION_FAST: [FRAME 88] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (25792) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (26053) AI_VISION_FAST: [FRAME 89] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (26054) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (26323) AI_VISION_FAST: [FRAME 90] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (26324) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (26609) AI_VISION_FAST: [FRAME 91] Inference complete in 265 ms | Detections: 1[0m
+[0;32mI (26609) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (26880) AI_VISION_FAST: [FRAME 92] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (26880) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (27143) AI_VISION_FAST: [FRAME 93] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (27143) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (27409) AI_VISION_FAST: [FRAME 94] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (27409) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (27672) AI_VISION_FAST: [FRAME 95] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (27672) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (27935) AI_VISION_FAST: [FRAME 96] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (27936) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (28198) AI_VISION_FAST: [FRAME 97] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (28199) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (28472) AI_VISION_FAST: [FRAME 98] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (28472) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (28747) AI_VISION_FAST: [FRAME 99] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (28747) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (29015) AI_VISION_FAST: [FRAME 100] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (29016) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (29282) AI_VISION_FAST: [FRAME 101] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (29282) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (29288) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (29543) AI_VISION_FAST: [FRAME 102] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (29544) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (29808) AI_VISION_FAST: [FRAME 103] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (29808) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (30067) AI_VISION_FAST: [FRAME 104] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (30067) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (30370) AI_VISION_FAST: [FRAME 105] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (30371) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (30637) AI_VISION_FAST: [FRAME 106] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (30637) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (30913) AI_VISION_FAST: [FRAME 107] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (30914) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (31185) AI_VISION_FAST: [FRAME 108] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (31186) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (31453) AI_VISION_FAST: [FRAME 109] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (31453) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (31724) AI_VISION_FAST: [FRAME 110] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (31724) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (31993) AI_VISION_FAST: [FRAME 111] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (31994) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (32258) AI_VISION_FAST: [FRAME 112] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (32258) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (32519) AI_VISION_FAST: [FRAME 113] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (32520) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (32782) AI_VISION_FAST: [FRAME 114] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (32782) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (33043) AI_VISION_FAST: [FRAME 115] Inference complete in 242 ms | Detections: 2[0m
+[0;32mI (33044) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (33049) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (33312) AI_VISION_FAST: [FRAME 116] Inference complete in 241 ms | Detections: 2[0m
+[0;32mI (33313) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (33318) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (33581) AI_VISION_FAST: [FRAME 117] Inference complete in 241 ms | Detections: 2[0m
+[0;32mI (33582) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (33587) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (33847) AI_VISION_FAST: [FRAME 118] Inference complete in 238 ms | Detections: 2[0m
+[0;32mI (33848) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (33853) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (34115) AI_VISION_FAST: [FRAME 119] Inference complete in 240 ms | Detections: 2[0m
+[0;32mI (34115) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (34120) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 61.1% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (34383) AI_VISION_FAST: [FRAME 120] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (34383) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (34641) AI_VISION_FAST: [FRAME 121] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (34641) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (34899) AI_VISION_FAST: [FRAME 122] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (34899) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (35160) AI_VISION_FAST: [FRAME 123] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (35161) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (35419) AI_VISION_FAST: [FRAME 124] Inference complete in 240 ms | Detections: 0[0m
+[0;32mI (35673) AI_VISION_FAST: [FRAME 125] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (35674) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (35932) AI_VISION_FAST: [FRAME 126] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (35933) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (35938) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (36192) AI_VISION_FAST: [FRAME 127] Inference complete in 241 ms | Detections: 0[0m
+[0;32mI (36444) AI_VISION_FAST: [FRAME 128] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (36445) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (36450) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (36716) AI_VISION_FAST: [FRAME 129] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (36716) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (36976) AI_VISION_FAST: [FRAME 130] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (36977) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (37234) AI_VISION_FAST: [FRAME 131] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (37234) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (37494) AI_VISION_FAST: [FRAME 132] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (37494) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (37500) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [2/10] from Slave...[0m
+[0;33mW (37657) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;33mW (37657) AEGIS_PATHFINDER: Backend POST /api/v1/telemetry/ingest failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (37759) AI_VISION_FAST: [FRAME 133] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (37759) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (38019) AI_VISION_FAST: [FRAME 134] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (38019) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (38275) AI_VISION_FAST: [FRAME 135] Inference complete in 236 ms | Detections: 2[0m
+[0;32mI (38275) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (38281) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (38546) AI_VISION_FAST: [FRAME 136] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (38546) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (38803) AI_VISION_FAST: [FRAME 137] Inference complete in 238 ms | Detections: 1[0m
+[0;32mI (38803) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (39063) AI_VISION_FAST: [FRAME 138] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (39063) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (39337) AI_VISION_FAST: [FRAME 139] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (39337) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (39608) AI_VISION_FAST: [FRAME 140] Inference complete in 251 ms | Detections: 2[0m
+[0;32mI (39608) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (39614) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (39886) AI_VISION_FAST: [FRAME 141] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (39887) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (40157) AI_VISION_FAST: [FRAME 142] Inference complete in 252 ms | Detections: 2[0m
+[0;32mI (40157) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (40162) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 52.2% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (40436) AI_VISION_FAST: [FRAME 143] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (40436) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (40705) AI_VISION_FAST: [FRAME 144] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (40705) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (40974) AI_VISION_FAST: [FRAME 145] Inference complete in 251 ms | Detections: 2[0m
+[0;32mI (40975) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (40980) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (41252) AI_VISION_FAST: [FRAME 146] Inference complete in 250 ms | Detections: 2[0m
+[0;32mI (41253) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (41259) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (41537) AI_VISION_FAST: [FRAME 147] Inference complete in 252 ms | Detections: 2[0m
+[0;32mI (41538) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:1, y:0, w:95, h:94][0m
+[0;32mI (41543) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (41820) AI_VISION_FAST: [FRAME 148] Inference complete in 253 ms | Detections: 2[0m
+[0;32mI (41821) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (41826) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (42094) AI_VISION_FAST: [FRAME 149] Inference complete in 246 ms | Detections: 2[0m
+[0;32mI (42096) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (42100) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (42375) AI_VISION_FAST: [FRAME 150] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (42376) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (42648) AI_VISION_FAST: [FRAME 151] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (42649) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (42921) AI_VISION_FAST: [FRAME 152] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (42921) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (43190) AI_VISION_FAST: [FRAME 153] Inference complete in 250 ms | Detections: 2[0m
+[0;32mI (43191) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (43197) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (43465) AI_VISION_FAST: [FRAME 154] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (43466) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (43724) AI_VISION_FAST: [FRAME 155] Inference complete in 240 ms | Detections: 2[0m
+[0;32mI (43725) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (43731) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (43740) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (43995) AI_VISION_FAST: [FRAME 156] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (43995) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (44260) AI_VISION_FAST: [FRAME 157] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (44261) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 53.3% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (44532) AI_VISION_FAST: [FRAME 158] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (44533) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (44799) AI_VISION_FAST: [FRAME 159] Inference complete in 247 ms | Detections: 0[0m
+[0;32mI (45056) AI_VISION_FAST: [FRAME 160] Inference complete in 243 ms | Detections: 0[0m
+[0;32mI (45329) AI_VISION_FAST: [FRAME 161] Inference complete in 259 ms | Detections: 0[0m
+[0;32mI (45596) AI_VISION_FAST: [FRAME 162] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (45597) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (45861) AI_VISION_FAST: [FRAME 163] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (45862) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (46128) AI_VISION_FAST: [FRAME 164] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (46395) AI_VISION_FAST: [FRAME 165] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (46395) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 67.7% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (46674) AI_VISION_FAST: [FRAME 166] Inference complete in 260 ms | Detections: 1[0m
+[0;32mI (46674) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (46944) AI_VISION_FAST: [FRAME 167] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (46945) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (47217) AI_VISION_FAST: [FRAME 168] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (47218) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (47483) AI_VISION_FAST: [FRAME 169] Inference complete in 246 ms | Detections: 0[0m
+[0;32mI (47748) AI_VISION_FAST: [FRAME 170] Inference complete in 252 ms | Detections: 0[0m
+[0;32mI (48011) AI_VISION_FAST: [FRAME 171] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (48011) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (48285) AI_VISION_FAST: [FRAME 172] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (48285) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (48549) AI_VISION_FAST: [FRAME 173] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (48549) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (48823) AI_VISION_FAST: [FRAME 174] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (48823) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (49088) AI_VISION_FAST: [FRAME 175] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (49088) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (49355) AI_VISION_FAST: [FRAME 176] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (49355) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (49618) AI_VISION_FAST: [FRAME 177] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (49618) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (49882) AI_VISION_FAST: [FRAME 178] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (49882) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (50144) AI_VISION_FAST: [FRAME 179] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (50144) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (50415) AI_VISION_FAST: [FRAME 180] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (50416) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (50421) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (50676) AI_VISION_FAST: [FRAME 181] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (50677) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (50942) AI_VISION_FAST: [FRAME 182] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (50942) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (51215) AI_VISION_FAST: [FRAME 183] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (51216) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (51483) AI_VISION_FAST: [FRAME 184] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (51483) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (51756) AI_VISION_FAST: [FRAME 185] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (51756) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (52028) AI_VISION_FAST: [FRAME 186] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (52028) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (52293) AI_VISION_FAST: [FRAME 187] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (52294) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (52556) AI_VISION_FAST: [FRAME 188] Inference complete in 244 ms | Detections: 2[0m
+[0;32mI (52557) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (52562) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (52832) AI_VISION_FAST: [FRAME 189] Inference complete in 248 ms | Detections: 0[0m
+[0;32mI (53089) AI_VISION_FAST: [FRAME 190] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (53090) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (53361) AI_VISION_FAST: [FRAME 191] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (53361) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (53628) AI_VISION_FAST: [FRAME 192] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (53628) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (53895) AI_VISION_FAST: [FRAME 193] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (53896) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (54162) AI_VISION_FAST: [FRAME 194] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (54163) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (54431) AI_VISION_FAST: [FRAME 195] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (54431) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (54694) AI_VISION_FAST: [FRAME 196] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (54695) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (54966) AI_VISION_FAST: [FRAME 197] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (54966) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (55235) AI_VISION_FAST: [FRAME 198] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (55236) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (55508) AI_VISION_FAST: [FRAME 199] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (55509) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (55783) AI_VISION_FAST: [FRAME 200] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (55784) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (56058) AI_VISION_FAST: [FRAME 201] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (56059) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (56323) AI_VISION_FAST: [FRAME 202] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (56323) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (56606) AI_VISION_FAST: [FRAME 203] Inference complete in 263 ms | Detections: 1[0m
+[0;32mI (56607) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (56877) AI_VISION_FAST: [FRAME 204] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (56877) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (57153) AI_VISION_FAST: [FRAME 205] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (57153) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (57159) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (57423) AI_VISION_FAST: [FRAME 206] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (57424) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (57692) AI_VISION_FAST: [FRAME 207] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (57693) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (57958) AI_VISION_FAST: [FRAME 208] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (57958) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (58229) AI_VISION_FAST: [FRAME 209] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (58230) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (58498) AI_VISION_FAST: [FRAME 210] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (58498) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (58774) AI_VISION_FAST: [FRAME 211] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (58774) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (59044) AI_VISION_FAST: [FRAME 212] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (59044) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (59327) AI_VISION_FAST: [FRAME 213] Inference complete in 263 ms | Detections: 1[0m
+[0;32mI (59327) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (59597) AI_VISION_FAST: [FRAME 214] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (59597) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (59866) AI_VISION_FAST: [FRAME 215] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (59866) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (60137) AI_VISION_FAST: [FRAME 216] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (60138) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (60412) AI_VISION_FAST: [FRAME 217] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (60412) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (60678) AI_VISION_FAST: [FRAME 218] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (60679) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (60953) AI_VISION_FAST: [FRAME 219] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (60954) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (61216) AI_VISION_FAST: [FRAME 220] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (61216) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (61484) AI_VISION_FAST: [FRAME 221] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (61484) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (61757) AI_VISION_FAST: [FRAME 222] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (61757) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (62028) AI_VISION_FAST: [FRAME 223] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (62028) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (62306) AI_VISION_FAST: [FRAME 224] Inference complete in 259 ms | Detections: 1[0m
+[0;32mI (62307) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (62571) AI_VISION_FAST: [FRAME 225] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (62572) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (62834) AI_VISION_FAST: [FRAME 226] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (62834) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (63097) AI_VISION_FAST: [FRAME 227] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (63097) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (63359) AI_VISION_FAST: [FRAME 228] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (63360) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (63624) AI_VISION_FAST: [FRAME 229] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (63625) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (63890) AI_VISION_FAST: [FRAME 230] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (63890) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (63896) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (64154) AI_VISION_FAST: [FRAME 231] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (64154) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (64422) AI_VISION_FAST: [FRAME 232] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (64423) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (64689) AI_VISION_FAST: [FRAME 233] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (64690) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (64957) AI_VISION_FAST: [FRAME 234] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (64957) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (65228) AI_VISION_FAST: [FRAME 235] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (65229) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (65501) AI_VISION_FAST: [FRAME 236] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (65502) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (65767) AI_VISION_FAST: [FRAME 237] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (65768) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (66036) AI_VISION_FAST: [FRAME 238] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (66037) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (66302) AI_VISION_FAST: [FRAME 239] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (66303) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (66581) AI_VISION_FAST: [FRAME 240] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (66581) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (66848) AI_VISION_FAST: [FRAME 241] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (66848) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (67113) AI_VISION_FAST: [FRAME 242] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (67114) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (67381) AI_VISION_FAST: [FRAME 243] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (67382) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (67646) AI_VISION_FAST: [FRAME 244] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (67647) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (67914) AI_VISION_FAST: [FRAME 245] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (67915) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68181) AI_VISION_FAST: [FRAME 246] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (68182) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68457) AI_VISION_FAST: [FRAME 247] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (68457) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68719) AI_VISION_FAST: [FRAME 248] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (68719) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (68984) AI_VISION_FAST: [FRAME 249] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (68984) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (69246) AI_VISION_FAST: [FRAME 250] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (69246) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (69514) AI_VISION_FAST: [FRAME 251] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (69514) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (69780) AI_VISION_FAST: [FRAME 252] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (69780) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (70051) AI_VISION_FAST: [FRAME 253] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (70052) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (70314) AI_VISION_FAST: [FRAME 254] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (70315) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (70578) AI_VISION_FAST: [FRAME 255] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (70578) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (70584) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (70847) AI_VISION_FAST: [FRAME 256] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (70847) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (71116) AI_VISION_FAST: [FRAME 257] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (71116) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (71122) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (71389) AI_VISION_FAST: [FRAME 258] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (71389) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (71661) AI_VISION_FAST: [FRAME 259] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (71662) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (71932) AI_VISION_FAST: [FRAME 260] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (71933) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (72197) AI_VISION_FAST: [FRAME 261] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (72198) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (72203) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [3/10] from Slave...[0m
+[0;32mI (72464) AI_VISION_FAST: [FRAME 262] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (72465) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (72728) AI_VISION_FAST: [FRAME 263] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (72729) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (72990) AI_VISION_FAST: [FRAME 264] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (72991) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (73254) AI_VISION_FAST: [FRAME 265] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (73254) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (73516) AI_VISION_FAST: [FRAME 266] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (73516) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (73779) AI_VISION_FAST: [FRAME 267] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (73779) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (74051) AI_VISION_FAST: [FRAME 268] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (74052) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (74312) AI_VISION_FAST: [FRAME 269] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (74313) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (74581) AI_VISION_FAST: [FRAME 270] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (74582) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (74845) AI_VISION_FAST: [FRAME 271] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (74846) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (75110) AI_VISION_FAST: [FRAME 272] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (75111) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (75371) AI_VISION_FAST: [FRAME 273] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (75371) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (75631) AI_VISION_FAST: [FRAME 274] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (75631) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (75899) AI_VISION_FAST: [FRAME 275] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (75899) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (76162) AI_VISION_FAST: [FRAME 276] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (76162) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (76441) AI_VISION_FAST: [FRAME 277] Inference complete in 260 ms | Detections: 1[0m
+[0;32mI (76442) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (76721) AI_VISION_FAST: [FRAME 278] Inference complete in 261 ms | Detections: 1[0m
+[0;32mI (76722) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (76984) AI_VISION_FAST: [FRAME 279] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (76984) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (77251) AI_VISION_FAST: [FRAME 280] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (77251) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (77515) AI_VISION_FAST: [FRAME 281] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (77516) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (77787) AI_VISION_FAST: [FRAME 282] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (77787) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (78059) AI_VISION_FAST: [FRAME 283] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (78060) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (78332) AI_VISION_FAST: [FRAME 284] Inference complete in 254 ms | Detections: 2[0m
+[0;32mI (78333) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (78338) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (78347) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (78612) AI_VISION_FAST: [FRAME 285] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (78613) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (78877) AI_VISION_FAST: [FRAME 286] Inference complete in 246 ms | Detections: 2[0m
+[0;32mI (78877) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (78883) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (79152) AI_VISION_FAST: [FRAME 287] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (79153) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (79415) AI_VISION_FAST: [FRAME 288] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (79416) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (79686) AI_VISION_FAST: [FRAME 289] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (79687) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (79953) AI_VISION_FAST: [FRAME 290] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (79953) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (80220) AI_VISION_FAST: [FRAME 291] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (80220) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (80484) AI_VISION_FAST: [FRAME 292] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (80484) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (80744) AI_VISION_FAST: [FRAME 293] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (80745) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (81018) AI_VISION_FAST: [FRAME 294] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (81019) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (81285) AI_VISION_FAST: [FRAME 295] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (81285) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (81554) AI_VISION_FAST: [FRAME 296] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (81555) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (81818) AI_VISION_FAST: [FRAME 297] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (81818) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (82089) AI_VISION_FAST: [FRAME 298] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (82090) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (82350) AI_VISION_FAST: [FRAME 299] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (82351) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (82617) AI_VISION_FAST: [FRAME 300] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (82617) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (82882) AI_VISION_FAST: [FRAME 301] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (82882) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (83142) AI_VISION_FAST: [FRAME 302] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (83142) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (83410) AI_VISION_FAST: [FRAME 303] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (83410) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 70.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (83671) AI_VISION_FAST: [FRAME 304] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (83672) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (83940) AI_VISION_FAST: [FRAME 305] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (83941) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (84207) AI_VISION_FAST: [FRAME 306] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (84208) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (84470) AI_VISION_FAST: [FRAME 307] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (84470) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (84733) AI_VISION_FAST: [FRAME 308] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (84734) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (84998) AI_VISION_FAST: [FRAME 309] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (84998) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (85004) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (2/5)...[0m
+[0;32mI (85267) AI_VISION_FAST: [FRAME 310] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (85267) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (85528) AI_VISION_FAST: [FRAME 311] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (85529) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (85802) AI_VISION_FAST: [FRAME 312] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (85803) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (86065) AI_VISION_FAST: [FRAME 313] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (86065) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (86340) AI_VISION_FAST: [FRAME 314] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (86341) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (86620) AI_VISION_FAST: [FRAME 315] Inference complete in 260 ms | Detections: 1[0m
+[0;32mI (86621) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (86888) AI_VISION_FAST: [FRAME 316] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (86889) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (87152) AI_VISION_FAST: [FRAME 317] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (87152) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (87420) AI_VISION_FAST: [FRAME 318] Inference complete in 249 ms | Detections: 1[0m
+[0;32mI (87421) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (87686) AI_VISION_FAST: [FRAME 319] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (87686) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (87950) AI_VISION_FAST: [FRAME 320] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (87951) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (88216) AI_VISION_FAST: [FRAME 321] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (88216) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (88485) AI_VISION_FAST: [FRAME 322] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (88486) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (88748) AI_VISION_FAST: [FRAME 323] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (88748) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (89012) AI_VISION_FAST: [FRAME 324] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (89012) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (89277) AI_VISION_FAST: [FRAME 325] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (89278) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (89540) AI_VISION_FAST: [FRAME 326] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (89540) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (89812) AI_VISION_FAST: [FRAME 327] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (89812) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90080) AI_VISION_FAST: [FRAME 328] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (90080) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90341) AI_VISION_FAST: [FRAME 329] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (90341) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90602) AI_VISION_FAST: [FRAME 330] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (90603) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (90873) AI_VISION_FAST: [FRAME 331] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (90874) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (91147) AI_VISION_FAST: [FRAME 332] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (91148) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (91407) AI_VISION_FAST: [FRAME 333] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (91407) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (91689) AI_VISION_FAST: [FRAME 334] Inference complete in 263 ms | Detections: 1[0m
+[0;32mI (91690) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (91695) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (3/5)...[0m
+[0;32mI (91952) AI_VISION_FAST: [FRAME 335] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (91952) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (92219) AI_VISION_FAST: [FRAME 336] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (92220) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (92485) AI_VISION_FAST: [FRAME 337] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (92485) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (92756) AI_VISION_FAST: [FRAME 338] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (92757) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (93027) AI_VISION_FAST: [FRAME 339] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (93028) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (93291) AI_VISION_FAST: [FRAME 340] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (93292) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (93561) AI_VISION_FAST: [FRAME 341] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (93561) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (93822) AI_VISION_FAST: [FRAME 342] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (93823) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (94092) AI_VISION_FAST: [FRAME 343] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (94093) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (94356) AI_VISION_FAST: [FRAME 344] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (94356) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (94625) AI_VISION_FAST: [FRAME 345] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (94626) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (94890) AI_VISION_FAST: [FRAME 346] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (94891) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (95161) AI_VISION_FAST: [FRAME 347] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (95161) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (95428) AI_VISION_FAST: [FRAME 348] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (95429) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (95691) AI_VISION_FAST: [FRAME 349] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (95691) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (95958) AI_VISION_FAST: [FRAME 350] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (95959) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (96228) AI_VISION_FAST: [FRAME 351] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (96228) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 76.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (96500) AI_VISION_FAST: [FRAME 352] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (96501) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (96780) AI_VISION_FAST: [FRAME 353] Inference complete in 261 ms | Detections: 1[0m
+[0;32mI (96781) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (97055) AI_VISION_FAST: [FRAME 354] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (97055) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (97331) AI_VISION_FAST: [FRAME 355] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (97332) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (97598) AI_VISION_FAST: [FRAME 356] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (97599) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (97864) AI_VISION_FAST: [FRAME 357] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (97864) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 88.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (98127) AI_VISION_FAST: [FRAME 358] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (98127) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (98401) AI_VISION_FAST: [FRAME 359] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (98402) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;33mW (98408) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (4/5)...[0m
+[0;32mI (98665) AI_VISION_FAST: [FRAME 360] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (98666) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (98932) AI_VISION_FAST: [FRAME 361] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (98932) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (99194) AI_VISION_FAST: [FRAME 362] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (99195) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (99455) AI_VISION_FAST: [FRAME 363] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (99455) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (99725) AI_VISION_FAST: [FRAME 364] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (99726) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 87.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (99987) AI_VISION_FAST: [FRAME 365] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (99987) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (100247) AI_VISION_FAST: [FRAME 366] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (100248) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (100508) AI_VISION_FAST: [FRAME 367] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (100509) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (100778) AI_VISION_FAST: [FRAME 368] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (100779) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (101049) AI_VISION_FAST: [FRAME 369] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (101049) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (101313) AI_VISION_FAST: [FRAME 370] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (101313) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (101596) AI_VISION_FAST: [FRAME 371] Inference complete in 263 ms | Detections: 1[0m
+[0;32mI (101596) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (101863) AI_VISION_FAST: [FRAME 372] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (101863) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102125) AI_VISION_FAST: [FRAME 373] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (102126) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102395) AI_VISION_FAST: [FRAME 374] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (102396) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102659) AI_VISION_FAST: [FRAME 375] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (102660) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (102926) AI_VISION_FAST: [FRAME 376] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (102927) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (103194) AI_VISION_FAST: [FRAME 377] Inference complete in 248 ms | Detections: 1[0m
+[0;32mI (103195) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (103459) AI_VISION_FAST: [FRAME 378] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (103459) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (103723) AI_VISION_FAST: [FRAME 379] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (103723) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (103985) AI_VISION_FAST: [FRAME 380] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (103986) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (104248) AI_VISION_FAST: [FRAME 381] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (104249) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (104520) AI_VISION_FAST: [FRAME 382] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (104520) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (104781) AI_VISION_FAST: [FRAME 383] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (104782) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (105052) AI_VISION_FAST: [FRAME 384] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (105052) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;33mW (105058) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (5/5)...[0m
+[0;32mI (105315) AI_VISION_FAST: [FRAME 385] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (105316) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (105589) AI_VISION_FAST: [FRAME 386] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (105589) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (105595) AEGIS_PATHFINDER: --> Stepping forward to next mapping sector...[0m
+[0;32mI (105853) AI_VISION_FAST: [FRAME 387] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (105853) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 83.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (106116) AI_VISION_FAST: [FRAME 388] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (106117) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (106377) AI_VISION_FAST: [FRAME 389] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (106377) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (106658) AI_VISION_FAST: [FRAME 390] Inference complete in 262 ms | Detections: 1[0m
+[0;32mI (106659) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (106665) AEGIS_PATHFINDER: --> Phase 1: Requesting Map Snapshot [4/10] from Slave...[0m
+[0;32mI (106924) AI_VISION_FAST: [FRAME 391] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (106924) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 84.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (107191) AI_VISION_FAST: [FRAME 392] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (107192) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (107453) AI_VISION_FAST: [FRAME 393] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (107454) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (107717) AI_VISION_FAST: [FRAME 394] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (107717) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 85.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (107981) AI_VISION_FAST: [FRAME 395] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (107982) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (108252) AI_VISION_FAST: [FRAME 396] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (108252) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (108525) AI_VISION_FAST: [FRAME 397] Inference complete in 254 ms | Detections: 2[0m
+[0;32mI (108526) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 79.9% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (108531) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 55.5% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (108811) AI_VISION_FAST: [FRAME 398] Inference complete in 257 ms | Detections: 2[0m
+[0;32mI (108812) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (108817) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (109090) AI_VISION_FAST: [FRAME 399] Inference complete in 251 ms | Detections: 2[0m
+[0;32mI (109091) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 74.9% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (109096) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 62.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (109364) AI_VISION_FAST: [FRAME 400] Inference complete in 245 ms | Detections: 1[0m
+[0;32mI (109365) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 81.0% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (109636) AI_VISION_FAST: [FRAME 401] Inference complete in 253 ms | Detections: 1[0m
+[0;32mI (109636) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (109895) AI_VISION_FAST: [FRAME 402] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (109896) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 94.9% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (110165) AI_VISION_FAST: [FRAME 403] Inference complete in 250 ms | Detections: 1[0m
+[0;32mI (110166) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 86.6% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (110426) AI_VISION_FAST: [FRAME 404] Inference complete in 242 ms | Detections: 2[0m
+[0;32mI (110427) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 72.2% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (110432) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110702) AI_VISION_FAST: [FRAME 405] Inference complete in 247 ms | Detections: 2[0m
+[0;32mI (110703) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (110708) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 53.3% | BBox: [x:0, y:0, w:96, h:94][0m
+[0;32mI (110975) AI_VISION_FAST: [FRAME 406] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (110975) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 82.7% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (111246) AI_VISION_FAST: [FRAME 407] Inference complete in 251 ms | Detections: 2[0m
+[0;32mI (111246) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 66.0% | BBox: [x:0, y:0, w:96, h:96][0m
+[0;32mI (111252) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 64.4% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (111528) AI_VISION_FAST: [FRAME 408] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (111528) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (111807) AI_VISION_FAST: [FRAME 409] Inference complete in 257 ms | Detections: 1[0m
+[0;32mI (111807) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 84.4% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (112077) AI_VISION_FAST: [FRAME 410] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (112077) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 61.1% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (112340) AI_VISION_FAST: [FRAME 411] Inference complete in 244 ms | Detections: 1[0m
+[0;32mI (112341) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (112607) AI_VISION_FAST: [FRAME 412] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (112607) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.1% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (112881) AI_VISION_FAST: [FRAME 413] Inference complete in 255 ms | Detections: 1[0m
+[0;32mI (112882) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 90.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;33mW (112887) AEGIS_PATHFINDER: Slave sweep timeout. Retrying (1/5)...[0m
+[0;32mI (113156) AI_VISION_FAST: [FRAME 414] Inference complete in 256 ms | Detections: 1[0m
+[0;32mI (113156) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 88.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (113422) AI_VISION_FAST: [FRAME 415] Inference complete in 247 ms | Detections: 1[0m
+[0;32mI (113422) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 90.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (113691) AI_VISION_FAST: [FRAME 416] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (113691) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 86.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (113956) AI_VISION_FAST: [FRAME 417] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (113957) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 92.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (114216) AI_VISION_FAST: [FRAME 418] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (114217) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 90.5% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (114476) AI_VISION_FAST: [FRAME 419] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (114476) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 92.7% | BBox: [x:0, y:0, w:92, h:96][0m
+[0;32mI (114749) AI_VISION_FAST: [FRAME 420] Inference complete in 254 ms | Detections: 1[0m
+[0;32mI (114750) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (115008) AI_VISION_FAST: [FRAME 421] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (115009) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (115278) AI_VISION_FAST: [FRAME 422] Inference complete in 251 ms | Detections: 1[0m
+[0;32mI (115279) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 91.6% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (115543) AI_VISION_FAST: [FRAME 423] Inference complete in 246 ms | Detections: 1[0m
+[0;32mI (115543) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 91.6% | BBox: [x:0, y:0, w:94, h:94][0m
+[0;32mI (115804) AI_VISION_FAST: [FRAME 424] Inference complete in 242 ms | Detections: 1[0m
+[0;32mI (115804) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 90.5% | BBox: [x:0, y:0, w:92, h:94][0m
+[0;32mI (116067) AI_VISION_FAST: [FRAME 425] Inference complete in 241 ms | Detections: 1[0m
+[0;32mI (116067) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 66.0% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (116326) AI_VISION_FAST: [FRAME 426] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (116327) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (116597) AI_VISION_FAST: [FRAME 427] Inference complete in 252 ms | Detections: 1[0m
+[0;32mI (116598) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 73.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (116855) AI_VISION_FAST: [FRAME 428] Inference complete in 239 ms | Detections: 1[0m
+[0;32mI (116855) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 87.7% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117115) AI_VISION_FAST: [FRAME 429] Inference complete in 240 ms | Detections: 2[0m
+[0;32mI (117115) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 58.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117121) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 57.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117387) AI_VISION_FAST: [FRAME 430] Inference complete in 243 ms | Detections: 1[0m
+[0;32mI (117387) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 78.8% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117647) AI_VISION_FAST: [FRAME 431] Inference complete in 241 ms | Detections: 2[0m
+[0;32mI (117647) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 69.4% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117653) AI_VISION_FAST:   └─ DETECTED: 'lift' | Confidence: 52.2% | BBox: [x:0, y:0, w:94, h:96][0m
+[0;32mI (117915) AI_VISION_FAST: [FRAME 432] Inference complete in 240 ms | Detections: 1[0m
+[0;32mI (117916) AI_VISION_FAST:   └─ DETECTED: 'class_door' | Confidence: 77.7% | BBox: [x:0, y:0, w:94, h:96][0m

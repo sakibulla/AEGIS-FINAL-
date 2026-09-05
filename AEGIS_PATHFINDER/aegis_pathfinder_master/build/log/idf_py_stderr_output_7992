@@ -1,0 +1,638 @@
+Command: E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\aegis_yolo_vision.elf E:\AEGIS_GUARDIAN_FOMO\AEGIS_PATHFINDER\aegis_pathfinder_master\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.10_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM13 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM13 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40056f59: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0m--- 0x4037e139: [0;33mpanic_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/panic.c[0m[0m:[1;31m477[0m
+[0m--- 0x4037e105: [0;33mesp_system_abort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40386872: [0;33mabort[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x42090fb8: [0;33mcheck_i2c_driver_conflict[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/i2c.c[0m[0m:[1;31m1738[0m
+[0m--- 0x42003c02: [0;33mdo_global_ctors[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m104[0m
+[0m--- (inlined by) [0;33mstart_cpu0_default[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/startup.c[0m[0m:[1;31m207[0m
+[0m--- 0x4037524a: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/cpu_start.c[0m[0m:[1;31m985[0m
+[0m--- 0x403ccbc4: [0;33mset_cache_and_start_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m1156[0m
+[0m--- (inlined by) [0;33munpack_load_app[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m891[0m
+[0m--- (inlined by) [0;33mload_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m801[0m
+[0m--- 0x403cd009: [0;33mbootloader_utility_load_boot_image[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/bootloader_utility.c[0m[0m:[1;31m603[0m
+[0m--- 0x403c897d: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m64[0m
+[0m--- 0x40045c01: [0;33mets_run_flash_bootloader[0m[0m in [0;32mROM[0m
+[0m--- 0x40043ab6: [0;33mmain[0m[0m in [0;32mROM[0m
+[0m--- 0x40034c45: [0;33m.stack_ok[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e2c8: [0;33mesp_restart_noos[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m164[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8914: [0;33mcall_start_cpu0[0m[0m at [0;32mE:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m
