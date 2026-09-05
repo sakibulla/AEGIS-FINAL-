@@ -1,4 +1,4 @@
-# AEGIS Guardian FOMO
+# AEGIS 
 
 AEGIS Guardian FOMO is a multi-robot security and monitoring system built around ESP32 devices, a FastAPI backend, and a frontend dashboard. The platform combines fire/smoke detection, intrusion monitoring, object detection, and robot coordination into a single connected ecosystem.
 
